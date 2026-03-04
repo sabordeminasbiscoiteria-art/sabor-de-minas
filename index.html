@@ -3,10 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Biscoiteria Sabor de Minas</title>
 
-<link rel="stylesheet" href="style.css">
+<meta name="description" content="Biscoitos artesanais feitos com carinho e sabor mineiro.">
 
+<!-- WhatsApp Preview -->
+<meta property="og:title" content="Biscoiteria Sabor de Minas">
+<meta property="og:description" content="Biscoitos artesanais feitos com carinho e sabor mineiro.">
+<meta property="og:image" content="https://sabordeminasbiscoiteria-art.github.io/sabor-de-minas/img/logo.png">
+<meta property="og:url" content="https://sabordeminasbiscoiteria-art.github.io/sabor-de-minas/">
+<meta property="og:type" content="website">
+
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
@@ -16,22 +25,20 @@
 <header>
 
     <div class="logo">
-    <img src="img/logo.png" alt="Biscoiteria Sabor de Minas">
-</div>
-
+        <img src="img/logo.png" alt="Biscoiteria Sabor de Minas">
+    </div>
 
     <nav>
         <a href="#">Início</a>
         <a href="produtos.html">Produtos</a>
         <a href="contato.html">Contato</a>
-
-</a>
     </nav>
 
     <div class="search-box">
         <i class="fa fa-search"></i>
         <input type="text" id="searchInput" placeholder="Pesquisar...">
     </div>
+
 </header>
 
 <section class="hero">
@@ -39,9 +46,8 @@
         <h1>Biscoitos Artesanais</h1>
         <p>O sabor que alegra seu dia</p>
         <button onclick="window.location.href='produtos.html'">
-    Ver Produtos
-</button>
-
+            Ver Produtos
+        </button>
     </div>
 </section>
 
@@ -52,27 +58,25 @@
         Nenhum produto encontrado.
     </p>
 
-    <div class="grid">
+    <!-- ALTEREI grid PARA produtos -->
+    <div class="produtos">
 
         <div class="card">
-            <img src="img/casadinho.jpeg">
+            <img src="img/casadinho.jpeg" alt="Biscoito Casadinho de Avelã">
             <h3>Biscoito Casadinho de Avelã</h3>
             <p>Crocante e caseiro</p>
-            
         </div>
 
         <div class="card">
-            <img src="img/beijinho.jpeg">
+            <img src="img/beijinho.jpeg" alt="Biscoito de Beijinho">
             <h3>Biscoito de Beijinho</h3>
             <p>Receita tradicional</p>
-            
         </div>
 
         <div class="card">
-            <img src="img/canela.jpeg">
+            <img src="img/canela.jpeg" alt="Biscoito de Canela">
             <h3>Biscoito de Canela</h3>
             <p>Leve e saboroso</p>
-            
         </div>
 
     </div>
@@ -112,4 +116,3 @@ searchInput.addEventListener("keyup", function() {
 
 </body>
 </html>
-

@@ -22,12 +22,12 @@ header {
     position: relative;
     background: url("img/logo.png") center/cover no-repeat;
 }
-
-header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.85);
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    background-color: white; /* fundo simples */
 }
 
 header * {
@@ -501,4 +501,5 @@ nav a {
         object-fit: cover;
     }
 }
+
 

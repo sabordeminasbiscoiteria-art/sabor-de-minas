@@ -250,3 +250,255 @@ nav a {
         object-fit: cover;
     }
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f6f3;
+    color: #3e2f2f;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 100px;
+    position: relative;
+    background: url("img/logo.png") center/cover no-repeat;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+header * {
+    position: relative;
+}
+
+.logo img {
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 30px;
+    color: #4A2C1D;
+    font-weight: 500;
+}
+
+/* Barra de pesquisa */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 5px 15px;
+    background: white;
+}
+
+.search-box i {
+    margin-right: 8px;
+    color: #888;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 300px;
+    background: url('img/beijinho.jpeg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    color: #000;
+}
+
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+
+.hero-text p {
+    margin: 20px 0;
+}
+
+.hero-text button {
+    background-color: #C62828;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* ================= PRODUTOS ================= */
+
+.products {
+    padding: 80px;
+    text-align: center;
+}
+
+.products h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+}
+
+/* ================= CARD ================= */
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin: 15px 0 5px;
+}
+
+.card button {
+    background-color: #C62828;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card a:hover {
+    color: #C62828;
+}
+
+/* ================= CONTATO ================= */
+
+.contato-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.contato-item {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.contato-item:hover {
+    background: #C62828;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.mapa {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+/* ================= BOTÃO DETALHES ================= */
+
+.btn-detalhes {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-detalhes:hover {
+    background: #C62828;
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .products {
+        padding: 40px 20px;
+    }
+
+    .produtos {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .card img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+

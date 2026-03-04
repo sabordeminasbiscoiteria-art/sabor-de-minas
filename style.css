@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FCE9D4;
+    color: #4A2D1D;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 100px;
+    position: relative;
+
+    background: url("img/logo.png") center/cover no-repeat;
+}
+
+/* Camada branca suave por cima da imagem */
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+/* Mantém os itens acima da imagem */
+header * {
+    position: relative;
+}
+
+/* Logo */
+.logo img {
+    height: 100px;
+}
+
+/* Menu */
+nav a {
+    text-decoration: none;
+    margin-left: 30px;
+    color: #4A2C1D;
+    font-weight: 500;
+}
+
+/* Barra de pesquisa */
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 5px 15px;
+    background: white;
+}
+
+.search-box i {
+    margin-right: 8px;
+    color: #888;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    height: 30vh;
+    background: url('img/beijinho.jpeg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    color: rgb(3, 3, 3);
+}
+
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin: 0;
+}
+
+.hero-text p {
+    margin: 20px 0 20px;
+}
+
+.hero-text button {
+    background-color: #C62828;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* ================= PRODUTOS ================= */
+
+.products {
+    padding: 80px;
+    text-align: center;
+}
+
+.products h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+
+}.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+    
+
+}.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin: 15px 0 5px;
+}
+
+.card button {
+    background-color: #C62828;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f6f3; /* fundo bege claro */
+    color: #3e2f2f;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    font-weight: 700;
+}
+
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+}
+
+
+p {
+    font-size: 16px;
+}.card a 
+
+
+{
+    text-decoration: none;
+    color: black;
+}
+
+.card a:hover {
+    color: #C62828;
+    
+}.card i {
+    font-size: 28px;
+    margin-right: 8px;
+}
+
+
+.fa-instagram {
+    color: #E1306C;
+}
+
+
+.fa-whatsapp {
+    color: #25D366;
+}
+
+.fa-location-dot {
+    color: #C62828;
+    font-size: 24px;
+}
+
+.contato-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.contato-item {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+.contato-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+.contato-item i {
+    margin-right: 8px;
+    font-size: 22px;
+}
+
+.fa-instagram {
+    color: #E1306C;
+}
+
+.fa-whatsapp {
+    color: #25D366;
+}
+
+.fa-location-dot {
+    color: #C62828;
+}
+
+.contato-item:hover {
+    background: #C62828;
+}
+
+.contato-item i {
+    margin-right: 6px;
+}
+
+.mapa {
+    max-width: 600px;
+    margin: 50px auto;
+}
+.btn-detalhes {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-detalhes:hover {
+    background: #C62828;
+}
+
+/* ===== CELULAR ===== */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .produtos {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biscoiteria Sabor de Minas</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+    <img src="img/logo.png" alt="Biscoiteria Sabor de Minas">
+</div>
+
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="contato.html">Contato</a>
+
+</a>
+    </nav>
+
+    <div class="search-box">
+        <i class="fa fa-search"></i>
+        <input type="text" id="searchInput" placeholder="Pesquisar...">
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Biscoitos Artesanais</h1>
+        <p>O sabor que alegra seu dia</p>
+        <button onclick="window.location.href='produtos.html'">
+    Ver Produtos
+</button>
+
+    </div>
+</section>
+
+<section class="products">
+    <h2>Nossos Produtos</h2>
+
+    <p id="noResults" style="display:none; text-align:center; margin-top:20px;">
+        Nenhum produto encontrado.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="img/casadinho.jpeg">
+            <h3>Biscoito Casadinho de Avelã</h3>
+            <p>Crocante e caseiro</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="img/beijinho.jpeg">
+            <h3>Biscoito de Beijinho</h3>
+            <p>Receita tradicional</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="img/canela.jpeg">
+            <h3>Biscoito de Canela</h3>
+            <p>Leve e saboroso</p>
+            
+        </div>
+
+    </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+const searchInput = document.getElementById("searchInput");
+const cards = document.querySelectorAll(".card");
+const noResults = document.getElementById("noResults");
+
+searchInput.addEventListener("keyup", function() {
+    const searchValue = searchInput.value.toLowerCase();
+    let visibleCount = 0;
+
+    cards.forEach(function(card) {
+        const text = card.textContent.toLowerCase();
+
+        if(text.includes(searchValue)) {
+            card.style.display = "";
+            visibleCount++;
+        } else {
+            card.style.display = "none";
+        }
+    });
+
+    if(visibleCount === 0) {
+        noResults.style.display = "block";
+    } else {
+        noResults.style.display = "none";
+    }
+});
+
+});
+</script>
+
+</body>
+</html>
+

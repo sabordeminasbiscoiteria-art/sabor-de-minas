@@ -30,10 +30,6 @@ header {
     background-color: white; /* fundo simples */
 }
 
-header * {
-    position: relative;
-}
-
 .logo img {
     height: 100px;
 }
@@ -501,5 +497,6 @@ nav a {
         object-fit: cover;
     }
 }
+
 
 

@@ -164,109 +164,22 @@ nav a {
 }
 
 /* ================= PC ================= */
+/* ===== BOTÃO SOBRE PRODUTO ===== */
 
-@media (min-width: 1024px) {
-
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px 60px;
-    }
-
-    nav {
-        margin: 0;
-    }
-
-}
-/* ===== FUNDO E CENTRALIZAÇÃO ===== */
-
-body {
-    background-color: #f5f1ec;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* ===== MENU DISCRETO ===== */
-
-header {
-    background: transparent;
-    padding: 20px 0;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #6b4c3b;
-    font-size: 16px;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #c0392b;
-}
-
-/* ===== TÍTULO ===== */
-
-.contato h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
-    margin-bottom: 30px;
-    color: #4a2f27;
-}
-
-/* ===== CARD CENTRAL ===== */
-
-.contato-card {
-    background: #ffffff;
-    max-width: 380px;
-    margin: 0 auto 40px auto;
-    padding: 35px 25px;
-    border-radius: 18px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-}
-
-/* ===== BOTÕES ===== */
-
-.contato-btn {
-    display: block;
-    text-decoration: none;
+.card button {
+    background-color: #C62828;
     color: white;
-    padding: 13px;
-    margin-bottom: 15px;
-    border-radius: 12px;
-    font-weight: 600;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
     transition: 0.3s;
 }
 
-.insta {
-    background: #E1306C;
-}
-
-.whatsapp {
-    background: #c0392b;
-}
-
-.contato-btn:hover {
-    opacity: 0.9;
-}
-
-/* ===== ENDEREÇO ===== */
-
-.endereco {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #555;
-}
-
-/* ===== MAPA ===== */
-
-.mapa {
-    max-width: 500px;
-    margin: 0 auto 60px auto;
+.card button:hover {
+    background-color: #a61e1e;
+    transform: scale(1.05);
 }

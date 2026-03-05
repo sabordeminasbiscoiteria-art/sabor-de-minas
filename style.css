@@ -115,15 +115,37 @@ nav a {
 
 /* ================= PRODUTOS ================= */
 
-.products {
-    padding: 60px 20px;
-    text-align: center;
+.produtos{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+padding:20px;
 }
 
-.products h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 34px;
-    margin-bottom: 30px;
+.produto{
+width:220px;
+text-align:center;
+border:1px solid #ddd;
+padding:10px;
+border-radius:0;
+background:white;
+}
+
+.produto img{
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:0;
+}
+
+.produto button{
+background:red;
+color:white;
+border:none;
+padding:8px 15px;
+margin-top:10px;
+cursor:pointer;
 }
 
 /* GRID DOS PRODUTOS */
@@ -269,4 +291,5 @@ nav a {
 }
 
 }
+
 

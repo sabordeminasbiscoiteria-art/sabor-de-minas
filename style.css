@@ -156,10 +156,11 @@ nav a {
     object-fit: cover;
     border-radius: 12px;
 }
-
-.card h3 {
-    margin: 10px 0 5px;
-    font-size: 16px;
+.card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 0;
 }
 
 /* BOTÃO SOBRE PRODUTO */
@@ -268,3 +269,4 @@ nav a {
 }
 
 }
+

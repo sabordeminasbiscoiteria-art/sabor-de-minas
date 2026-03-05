@@ -165,23 +165,3 @@ nav a {
 
 /* ================= PC ================= */
 
-/* ================= BOTÃO SOBRE PRODUTO ================= */
-
-.card button {
-    background-color: #C62828 !important;
-    color: white !important;
-    border: none !important;
-    padding: 10px 22px !important;
-    border-radius: 25px !important;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 10px;
-    transition: 0.3s;
-    box-shadow: 0 5px 15px rgba(198, 40, 40, 0.3);
-}
-
-.card button:hover {
-    background-color: #a61e1e !important;
-    transform: scale(1.05);
-}

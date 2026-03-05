@@ -1,87 +1,156 @@
-<header>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nossos Produtos</title>
 
-<nav>
-<a href="index.html">Início</a>
-<a href="produtos.html">Produtos</a>
-<a href="contato.html">Contato</a>
-</nav>
-
-<div class="search-box">
-<i class="fa fa-search"></i>
-<input type="text" id="searchInput" placeholder="Pesquisar...">
-</div>
-
-</header>
-
-.produtos{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-padding:30px;
-max-width:1000px;
-margin:auto;
-}
-
-.produto{
-background:white;
-border:1px solid #ddd;
-padding:15px;
-text-align:center;
-}
-
-.produto img{
-width:100%;
-aspect-ratio:1/1;
-object-fit:cover;
-}
-
-.produto h3{
-margin:10px 0;
-}
-
-.produto button{
-background:red;
-color:white;
-border:none;
-padding:10px 15px;
-cursor:pointer;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<h1 style="text-align:center;">Nossos Produtos</h1>
+<header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="contato.html">Contato</a>
+    </nav>
 
-<div class="produtos">
+    <div class="search-box">
+        <i class="fa fa-search"></i>
+        <input type="text" id="searchInput" placeholder="Pesquisar...">
+    </div>
+</header>
 
-<div class="produto">
-<img src="produto1.jpg">
-<h3>Produto 1</h3>
-<button>Comprar</button>
-</div>
+<section class="products">
+    <h2>Todos os Produtos</h2>
 
-<div class="produto">
-<img src="produto2.jpg">
-<h3>Produto 2</h3>
-<button>Comprar</button>
-</div>
+    <div class="grid">
 
-<div class="produto">
-<img src="produto3.jpg">
-<h3>Produto 3</h3>
-<button>Comprar</button>
-</div>
+        <!-- PRODUTO 1 -->
+        <div class="card">
+            <img src="img/casadinho.jpeg">
+            <h3>Casadinho</h3>
+            <p>Caseiro</p>
+            <button class="btn-detalhes" onclick="mostrarInfo(this)">Sobre o produto</button>
+            <p class="descricao" style="display:none;">
+                Biscoito artesanal casadinho de avelã,
+                crocante por fora e macio por dentro.
+            </p>
+        </div>
 
-<div class="produto">
-<img src="produto4.jpg">
-<h3>Produto 4</h3>
-<button>Comprar</button>
-</div>
+        <!-- PRODUTO 2 -->
+        <div class="card">
+            <img src="img/casadinhoo.jpeg">
+            <h3>Casadinho</h3>
+            <p>Caseiro</p>
+            <button class="btn-detalhes" onclick="mostrarInfo(this)">Sobre o produto</button>
+            <p class="descricao" style="display:none;">
+                Biscoito artesanal casadinho de goiabada,
+                crocante por fora e macio por dentro.
+            </p>
+        </div>
 
-</div>
+        <!-- PRODUTO 3 -->
+        <div class="card">
+            <img src="img/canela.jpeg">
+            <h3>Canela</h3>
+            <p>Caseiro</p>
+            <button class="btn-detalhes" onclick="mostrarInfo(this)">Sobre o produto</button>
+            <p class="descricao" style="display:none;">
+                Biscoito artesanal feito com ingredientes selecionados,
+                crocante por fora e macio por dentro.
+            </p>
+        </div>
+
+        <!-- PRODUTO 4 -->
+        <div class="card">
+            <img src="img/ugauga.jpeg">
+            <h3>Ugauga</h3>
+            <p>Caseiro</p>
+            <button class="btn-detalhes" onclick="mostrarInfo(this)">Sobre o produto</button>
+            <p class="descricao" style="display:none;">
+                Biscoito artesanal com recheio de goiabada,
+                crocante por fora e macio por dentro.
+            </p>
+        </div>
+
+        <!-- PRODUTO 5 -->
+        <div class="card">
+            <img src="img/beijinho.jpeg">
+            <h3>Beijinho</h3>
+            <p>Caseiro</p>
+            <button class="btn-detalhes" onclick="mostrarInfo(this)">Sobre o produto</button>
+            <p class="descricao" style="display:none;">
+                Biscoito artesanal feito com ingredientes selecionados,
+                crocante por fora e macio por dentro.
+            </p>
+        </div>
+
+        <!-- PRODUTO 6 -->
+        <div class="card">
+            <img src="img/banbole.jpeg">
+            <h3>Bambolê</h3>
+            <p>Caseiro</p>
+            <button class="btn-detalhes" onclick="mostrarInfo(this)">Sobre o produto</button>
+            <p class="descricao" style="display:none;">
+                Biscoito artesanal feito com ingredientes selecionados,
+                crocante.
+            </p>
+        </div>
+
+        <!-- PRODUTO 7 -->
+        <div class="card">
+            <img src="img/sasha.jpeg">
+            <h3>Sasha</h3>
+            <p>Caseiro</p>
+            <button class="btn-detalhes" onclick="mostrarInfo(this)">Sobre o produto</button>
+            <p class="descricao" style="display:none;">
+                Biscoito artesanal feito com ingredientes selecionados,
+                crocante por fora e macio por dentro.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+function mostrarInfo(botao) {
+    const descricao = botao.nextElementSibling;
+
+    if (descricao.style.display === "none") {
+        descricao.style.display = "block";
+        botao.textContent = "Fechar";
+    } else {
+        descricao.style.display = "none";
+        botao.textContent = "Sobre o produto";
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const searchInput = document.getElementById("searchInput");
+    const cards = document.querySelectorAll(".card");
+
+    searchInput.addEventListener("keyup", function() {
+        const searchValue = searchInput.value.toLowerCase();
+
+        cards.forEach(function(card) {
+            const text = card.textContent.toLowerCase();
+
+            if(text.includes(searchValue)) {
+                card.style.display = "";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+
+});
+</script>
 
 </body>
 </html>

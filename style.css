@@ -316,3 +316,9 @@ right:15px;
 font-size:28px;
 cursor:pointer;
 }
+body{
+font-family:'Poppins',sans-serif;
+background:#f8f6f3;
+color:#3e2f2f;
+overflow-x:hidden;
+}

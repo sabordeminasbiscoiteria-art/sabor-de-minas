@@ -8,6 +8,9 @@
 
 <link rel="stylesheet" href="style.css">
 
+<!-- ICONES (LUPINHA) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <style>
 
 /* BARRA DE PESQUISA */
@@ -15,14 +18,29 @@
 .search-box{
 display:flex;
 justify-content:center;
+align-items:center;
+gap:8px;
 margin:20px;
+border:1px solid #ddd;
+border-radius:25px;
+padding:8px 15px;
+background:white;
+width:260px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.search-box i{
+color:#888;
+font-size:14px;
 }
 
 .search-box input{
-padding:10px;
-width:250px;
-border-radius:8px;
-border:1px solid #ccc;
+border:none;
+outline:none;
+font-size:14px;
+background:transparent;
+width:100%;
 }
 
 /* PRODUTOS */
@@ -68,6 +86,7 @@ border-radius:10px;
 </nav>
 
 <div class="search-box">
+<i class="fa fa-search"></i>
 <input type="text" placeholder="Pesquisar produto...">
 </div>
 

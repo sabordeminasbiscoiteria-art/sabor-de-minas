@@ -59,8 +59,6 @@ color:#C62828;
 display:none;
 }
 
-/* MOSTRAR BUSCA SOMENTE NA PAGINA PRODUTOS */
-
 body.produtos-page .search-box{
 display:flex;
 align-items:center;
@@ -163,7 +161,7 @@ margin:auto;
 
 .card{
 background:white;
-border-radius:0;   /* TIRA ARREDONDADO */
+border-radius:0;
 padding:15px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
 transition:0.3s;
@@ -173,14 +171,14 @@ transition:0.3s;
 transform:translateY(-5px);
 }
 
-/* IMAGEM PRODUTO QUADRADA */
+/* IMAGEM PRODUTO CORRIGIDA */
 
 .card img{
 width:100%;
-aspect-ratio:1/1;
+height:auto;
 object-fit:cover;
 border-radius:0;
-height:auto;
+display:block;
 }
 
 /* TITULO */
@@ -223,8 +221,6 @@ border-radius:20px;
 box-shadow:0 15px 35px rgba(0,0,0,0.08);
 }
 
-/* BOTÕES */
-
 .contato-btn{
 display:block;
 text-decoration:none;
@@ -237,8 +233,6 @@ font-size:16px;
 transition:0.3s;
 }
 
-/* WHATSAPP */
-
 .whatsapp{
 background:#25D366;
 }
@@ -247,8 +241,6 @@ background:#25D366;
 background:#1ebe5d;
 transform:translateY(-3px);
 }
-
-/* INSTAGRAM */
 
 .insta{
 background:linear-gradient(
@@ -312,7 +304,7 @@ width:140px;
 body:not(.home-page) .logo{
 display:none;
 }
-img {
-  border-radius: 0 !important;
-}
 
+img{
+border-radius:0 !important;
+}

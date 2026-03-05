@@ -6,8 +6,8 @@
 <title>Biscoiteria Sabor de Minas</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -26,7 +26,7 @@
 
     <div class="search-box">
         <i class="fa fa-search"></i>
-        <input type="text" id="searchInput" placeholder="Pesquisar...">
+        <input type="text" placeholder="Pesquisar...">
     </div>
 
 </header>
@@ -41,45 +41,5 @@
     </div>
 </section>
 
-<section class="products">
-    <h2>Nossos Produtos</h2>
-
-    <p id="noResults" style="display:none; text-align:center; margin-top:20px;">
-        Nenhum produto encontrado.
-    </p>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-
-const searchInput = document.getElementById("searchInput");
-const cards = document.querySelectorAll(".card");
-const noResults = document.getElementById("noResults");
-
-searchInput.addEventListener("keyup", function() {
-    const searchValue = searchInput.value.toLowerCase();
-    let visibleCount = 0;
-
-    cards.forEach(function(card) {
-        const text = card.textContent.toLowerCase();
-
-        if(text.includes(searchValue)) {
-            card.style.display = "";
-            visibleCount++;
-        } else {
-            card.style.display = "none";
-        }
-    });
-
-    if(visibleCount === 0) {
-        noResults.style.display = "block";
-    } else {
-        noResults.style.display = "none";
-    }
-});
-
-});
-</script>
-
 </body>
 </html>
-

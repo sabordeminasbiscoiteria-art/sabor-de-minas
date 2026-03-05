@@ -312,3 +312,6 @@ width:140px;
 body:not(.home-page) .logo{
 display:none;
 }
+img {
+  border-radius: 0 !important;
+}

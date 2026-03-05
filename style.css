@@ -22,11 +22,6 @@ header {
     background-color: #f8f6f3;
 }
 
-.logo img {
-    height: 100px;
-    margin-bottom: 10px;
-}
-
 nav {
     margin-bottom: 10px;
 }
@@ -35,16 +30,22 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     color: #4A2C1D;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
 }
+
+nav a:hover {
+    color: #C62828;
+}
+
+/* ================= BUSCA ================= */
 
 .search-box {
     display: flex;
     align-items: center;
     border: 1px solid #ddd;
     border-radius: 25px;
-    padding: 5px 15px;
+    padding: 6px 15px;
     background: white;
 }
 
@@ -86,9 +87,7 @@ nav a {
 }
 
 .hero-text h1 {
-    font-family: 'Playfair Display', serif;
     font-size: 42px;
-    font-weight: 600;
     margin-bottom: 15px;
 }
 
@@ -106,11 +105,10 @@ nav a {
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
-    transition: 0.3s;
 }
 
 .hero-text button:hover {
-    transform: translateY(-4px);
+    transform: translateY(-3px);
 }
 
 /* ================= PRODUTOS ================= */
@@ -121,22 +119,25 @@ nav a {
 }
 
 .products h2 {
-    font-family: 'Playfair Display', serif;
     font-size: 34px;
     margin-bottom: 30px;
 }
-          /* GRID DOS PRODUTOS */
+
+/* GRID */
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 produtos por linha */
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     max-width: 900px;
     margin: auto;
 }
 
+/* CARD */
+
 .card {
     background: white;
-    border-radius: 16px;
+    border-radius: 15px;
     padding: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     transition: 0.3s;
@@ -146,19 +147,20 @@ nav a {
     transform: translateY(-5px);
 }
 
+/* IMAGEM QUADRADA */
+
 .card img {
     width: 100%;
-    aspect-ratio: 1 / 1; /* deixa quadrada */
-    object-fit: cover; /* não distorce a imagem */
-    border-radius: 12px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 0;
 }
 
 .card h3 {
     margin: 10px 0 5px;
 }
 
-
-/* BOTÃO SOBRE PRODUTO */
+/* BOTÃO */
 
 .btn-detalhes {
     background: linear-gradient(135deg, #C62828, #8E0000);
@@ -169,7 +171,6 @@ nav a {
     cursor: pointer;
     margin-top: 10px;
     font-weight: 600;
-    transition: 0.3s;
 }
 
 .btn-detalhes:hover {
@@ -200,11 +201,7 @@ nav a {
     margin-bottom: 15px;
     border-radius: 30px;
     font-weight: 600;
-    font-size: 15px;
-    transition: 0.3s;
 }
-
-/* WhatsApp */
 
 .whatsapp {
     background: #25D366;
@@ -212,10 +209,7 @@ nav a {
 
 .whatsapp:hover {
     background: #1ebe5d;
-    transform: translateY(-3px);
 }
-
-/* Instagram */
 
 .insta {
     background: linear-gradient(
@@ -226,10 +220,6 @@ nav a {
         #cc2366,
         #bc1888
     );
-}
-
-.insta:hover {
-    transform: translateY(-3px);
 }
 
 .endereco {
@@ -245,8 +235,6 @@ nav a {
 
 /* ===== RESPONSIVO ===== */
 
-/* Tablet */
-
 @media (min-width: 768px) {
 
 .grid {
@@ -255,8 +243,6 @@ nav a {
 
 }
 
-/* PC */
-
 @media (min-width: 1100px) {
 
 .grid {
@@ -264,4 +250,3 @@ nav a {
 }
 
 }
-

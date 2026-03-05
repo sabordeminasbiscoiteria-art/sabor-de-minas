@@ -175,10 +175,9 @@ transform:translateY(-5px);
 
 .card img{
 width:100%;
-aspect-ratio:1/1;
+height:200px;
 object-fit:cover;
 border-radius:0;
-display:block;
 }
 
 /* TITULO */
@@ -308,3 +307,4 @@ display:none;
 img{
 border-radius:0 !important;
 }
+

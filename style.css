@@ -322,3 +322,84 @@ background:#f8f6f3;
 color:#3e2f2f;
 overflow-x:hidden;
 }
+/* ================= CONTATO BONITO ================= */
+
+.contato{
+padding:60px 20px;
+text-align:center;
+}
+
+.contato h2{
+font-size:34px;
+margin-bottom:30px;
+}
+
+.contato-card{
+background:#fff;
+max-width:420px;
+margin:0 auto 40px auto;
+padding:35px 30px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+/* BOTÕES */
+
+.contato-btn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+text-decoration:none;
+color:white;
+padding:14px;
+margin-bottom:15px;
+border-radius:30px;
+font-weight:600;
+font-size:16px;
+transition:0.3s;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+background:#25D366;
+}
+
+.whatsapp:hover{
+background:#1ebe5d;
+transform:translateY(-3px);
+}
+
+/* INSTAGRAM */
+
+.insta{
+background:linear-gradient(
+45deg,
+#f09433,
+#e6683c,
+#dc2743,
+#cc2366,
+#bc1888
+);
+}
+
+.insta:hover{
+transform:translateY(-3px);
+filter:brightness(1.05);
+}
+
+/* ENDEREÇO */
+
+.endereco{
+margin-top:20px;
+color:#444;
+font-size:15px;
+}
+
+/* MAPA */
+
+.mapa{
+max-width:700px;
+margin:auto;
+}

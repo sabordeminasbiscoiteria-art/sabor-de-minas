@@ -59,10 +59,11 @@ nav a {
     font-size: 14px;
 }
 
-/* ================= HERO ================= */
+/* ================= HERO PREMIUM ================= */
 
 .hero {
-    min-height: 300px;
+    position: relative;
+    min-height: 90vh;
     background: url('img/beijinho.jpeg') center/cover no-repeat;
     display: flex;
     align-items: center;
@@ -71,23 +72,55 @@ nav a {
     padding: 40px 20px;
 }
 
+/* Camada escura elegante */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Conteúdo na frente */
+.hero-text {
+    position: relative;
+    color: white;
+    max-width: 500px;
+}
+
+/* Título chique */
 .hero-text h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 36px;
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
+/* Subtítulo */
 .hero-text p {
-    margin: 15px 0;
+    font-size: 18px;
+    margin-bottom: 25px;
+    opacity: 0.9;
 }
 
+/* Botão premium */
 .hero-text button {
-    background-color: #C62828;
+    background: linear-gradient(135deg, #C62828, #8E0000);
     color: white;
     border: none;
-    padding: 12px 30px;
-    border-radius: 30px;
+    padding: 14px 45px;
+    border-radius: 40px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.hero-text button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
 }
 
 /* ================= PRODUTOS ================= */
@@ -165,3 +198,4 @@ nav a {
     background-color: #a61e1e !important;
     transform: scale(1.05);
 }
+

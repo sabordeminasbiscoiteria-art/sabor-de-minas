@@ -22,6 +22,7 @@ justify-content:space-between;
 align-items:center;
 padding:15px 40px;
 background:#f8f6f3;
+flex-wrap:wrap;
 }
 
 /* LOGO */
@@ -48,10 +49,32 @@ nav a:hover{
 color:#C62828;
 }
 
-/* REMOVE BUSCA */
+/* BUSCA */
 
 .search-box{
 display:none;
+}
+
+/* MOSTRAR BUSCA SOMENTE NA PAGINA PRODUTOS */
+
+body.produtos-page .search-box{
+display:flex;
+align-items:center;
+border:1px solid #ddd;
+border-radius:25px;
+padding:6px 15px;
+background:white;
+}
+
+.search-box i{
+margin-right:8px;
+color:#888;
+}
+
+.search-box input{
+border:none;
+outline:none;
+font-size:14px;
 }
 
 /* ================= HERO ================= */
@@ -260,14 +283,14 @@ grid-template-columns:repeat(3,1fr);
 @media(max-width:700px){
 
 header{
-flex-direction:column;
-gap:10px;
-text-align:center;
+flex-direction:row;
+justify-content:space-between;
+align-items:center;
 }
 
 nav{
-flex-direction:column;
-gap:10px;
+flex-direction:row;
+gap:15px;
 }
 
 .grid{

@@ -15,55 +15,37 @@ body {
 /* ================= HEADER ================= */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 60px;
-    position: relative;
-    background: url("img/logo.png") center/cover no-repeat;
-}
-
-/* camada leve por cima, sem escurecer muito */
-header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.35);
-}
-
-header * {
-    position: relative;
+    text-align: center;
+    padding: 30px 20px;
+    background: url("img/logo.png") center no-repeat;
+    background-size: 300px;
+    background-color: #f8f6f3;
 }
 
 .logo img {
     height: 90px;
+    margin-bottom: 10px;
 }
 
 nav {
-    display: flex;
-    gap: 25px;
+    margin: 10px 0;
 }
 
 nav a {
     text-decoration: none;
+    margin: 0 15px;
     color: #4A2C1D;
     font-weight: 500;
 }
 
-/* Barra de pesquisa */
-
 .search-box {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     border: 1px solid #ddd;
     border-radius: 25px;
     padding: 5px 15px;
     background: white;
-}
-
-.search-box i {
-    margin-right: 8px;
-    color: #888;
+    margin-top: 10px;
 }
 
 .search-box input {
@@ -79,12 +61,14 @@ nav a {
     background: url('img/beijinho.jpeg') center/cover no-repeat;
     display: flex;
     align-items: center;
-    padding: 40px;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
 }
 
 .hero-text h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 38px;
+    font-size: 36px;
 }
 
 .hero-text p {
@@ -103,35 +87,27 @@ nav a {
 /* ================= PRODUTOS ================= */
 
 .products {
-    padding: 60px 40px;
+    padding: 60px 20px;
     text-align: center;
 }
 
 .products h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 36px;
+    font-size: 34px;
+    margin-bottom: 30px;
 }
 
 .produtos {
     display: grid;
-    /* melhor responsividade automática */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 30px;
+    gap: 25px;
 }
-
-/* ================= CARD ================= */
 
 .card {
     background: white;
     border-radius: 16px;
     padding: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
 }
 
 .card img {
@@ -139,37 +115,16 @@ nav a {
     border-radius: 12px;
 }
 
-.card h3 {
-    margin: 15px 0 5px;
-}
-
 /* ================= RESPONSIVO ================= */
 
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
 
     header {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-        padding: 20px;
-    }
-
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .hero {
-        padding: 20px;
-        text-align: center;
+        background-size: 400px;
     }
 
     .hero-text h1 {
-        font-size: 28px;
-    }
-
-    .products {
-        padding: 40px 20px;
+        font-size: 42px;
     }
 
 }

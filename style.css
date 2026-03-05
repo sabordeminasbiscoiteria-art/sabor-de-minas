@@ -317,3 +317,13 @@ height:50px;
 }
 
 }
+
+/* ================= AJUSTE EXTRA ================= */
+
+/* MOSTRAR LOGO SOMENTE NA HOME */
+
+body:not(.home-page) .logo{
+display:none;
+}
+
+

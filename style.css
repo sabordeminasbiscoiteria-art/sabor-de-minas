@@ -198,4 +198,59 @@ nav a {
     background-color: #a61e1e !important;
     transform: scale(1.05);
 }
+/* ================= CONTATO PROFISSIONAL ================= */
+
+.contato {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contato h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.contato-card {
+    background: white;
+    max-width: 400px;
+    margin: 0 auto 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.contato-btn {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.insta {
+    background: linear-gradient(45deg, #E1306C, #C13584);
+}
+
+.whatsapp {
+    background: linear-gradient(45deg, #25D366, #128C7E);
+}
+
+.contato-btn:hover {
+    transform: translateY(-3px);
+}
+
+.endereco {
+    margin-top: 20px;
+    color: #444;
+    font-size: 15px;
+}
+
+.mapa {
+    max-width: 600px;
+    margin: 0 auto;
+}
 

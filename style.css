@@ -125,16 +125,14 @@ nav a {
     font-size: 34px;
     margin-bottom: 30px;
 }
-
-/* GRID DOS PRODUTOS */
-
+          /* GRID DOS PRODUTOS */
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr); /* 2 produtos por linha */
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
 }
-
-/* CARD */
 
 .card {
     background: white;
@@ -148,19 +146,17 @@ nav a {
     transform: translateY(-5px);
 }
 
-/* FOTO QUADRADA */
-
 .card img {
     width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+    aspect-ratio: 1 / 1; /* deixa quadrada */
+    object-fit: cover; /* não distorce a imagem */
     border-radius: 12px;
 }
 
 .card h3 {
     margin: 10px 0 5px;
-    font-size: 16px;
 }
+
 
 /* BOTÃO SOBRE PRODUTO */
 
@@ -268,3 +264,4 @@ nav a {
 }
 
 }
+

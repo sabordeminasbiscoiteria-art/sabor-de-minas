@@ -46,9 +46,7 @@ font-weight:600;
 font-size:16px;
 }
 
-nav a:hover{
-color:#C62828;
-}
+nav a:hover
 
 /* ================= BUSCA ================= */
 
@@ -169,13 +167,19 @@ transition:0.3s;
 transform:translateY(-5px);
 }
 
-/* IMAGEM PRODUTO QUADRADA */
+/* IMAGEM PRODUTO QUADRADA (CORRIGIDO) */
 
 .card img{
 width:100%;
-aspect-ratio:1/1;
+height:250px;
 object-fit:cover;
 border-radius:10px;
+display:block;
+transition:0.3s;
+}
+
+.card:hover img{
+transform:scale(1.05);
 }
 
 /* TITULO */

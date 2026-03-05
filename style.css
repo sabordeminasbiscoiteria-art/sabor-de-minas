@@ -173,11 +173,11 @@ transition:0.3s;
 transform:translateY(-5px);
 }
 
-/* IMAGEM PRODUTO */
+/* IMAGEM PRODUTO QUADRADA (CORRIGIDO) */
 
 .card img{
 width:100%;
-height:220px;
+aspect-ratio:1/1;
 object-fit:cover;
 border-radius:10px;
 display:block;

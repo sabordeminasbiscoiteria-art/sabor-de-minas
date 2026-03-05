@@ -8,8 +8,6 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 <style>
 
 /* BARRA DE PESQUISA */
@@ -17,7 +15,6 @@
 .search-box{
 display:flex;
 justify-content:center;
-align-items:center;
 margin:20px;
 }
 
@@ -26,14 +23,13 @@ padding:10px;
 width:250px;
 border-radius:8px;
 border:1px solid #ccc;
-margin-left:8px;
 }
 
-/* PRODUTOS */
+/* PRODUTOS LADO A LADO */
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+grid-template-columns:repeat(3,1fr);
 gap:20px;
 padding:20px;
 }
@@ -48,6 +44,8 @@ box-shadow:0 2px 10px rgba(0,0,0,0.1);
 
 .card img{
 width:100%;
+height:200px;
+object-fit:cover;
 border-radius:10px;
 }
 
@@ -76,7 +74,6 @@ cursor:pointer;
 </nav>
 
 <div class="search-box">
-<i class="fa fa-search"></i>
 <input type="text" id="searchInput" placeholder="Pesquisar produto...">
 </div>
 
@@ -86,168 +83,51 @@ cursor:pointer;
 
 <div class="grid">
 
-<!-- PRODUTO 1 -->
-
 <div class="card">
 <img src="img/casadinho.jpeg">
 <h3>Casadinho</h3>
 <p>Caseiro</p>
-
-<button class="btn-detalhes" onclick="mostrarInfo(this)">
-Sobre o produto
-</button>
-
-<p class="descricao" style="display:none;">
-Biscoito artesanal casadinho de avelã, crocante por fora e macio por dentro.
-</p>
 </div>
-
-<!-- PRODUTO 2 -->
 
 <div class="card">
 <img src="img/casadinhoo.jpeg">
 <h3>Casadinho</h3>
 <p>Caseiro</p>
-
-<button class="btn-detalhes" onclick="mostrarInfo(this)">
-Sobre o produto
-</button>
-
-<p class="descricao" style="display:none;">
-Biscoito artesanal casadinho de goiabada.
-</p>
 </div>
-
-<!-- PRODUTO 3 -->
 
 <div class="card">
 <img src="img/canela.jpeg">
 <h3>Canela</h3>
 <p>Caseiro</p>
-
-<button class="btn-detalhes" onclick="mostrarInfo(this)">
-Sobre o produto
-</button>
-
-<p class="descricao" style="display:none;">
-Biscoito artesanal de canela.
-</p>
 </div>
-
-<!-- PRODUTO 4 -->
 
 <div class="card">
 <img src="img/ugauga.jpeg">
 <h3>Ugauga</h3>
 <p>Caseiro</p>
-
-<button class="btn-detalhes" onclick="mostrarInfo(this)">
-Sobre o produto
-</button>
-
-<p class="descricao" style="display:none;">
-Biscoito artesanal com recheio de goiabada.
-</p>
 </div>
-
-<!-- PRODUTO 5 -->
 
 <div class="card">
 <img src="img/beijinho.jpeg">
 <h3>Beijinho</h3>
 <p>Caseiro</p>
-
-<button class="btn-detalhes" onclick="mostrarInfo(this)">
-Sobre o produto
-</button>
-
-<p class="descricao" style="display:none;">
-Biscoito artesanal beijinho.
-</p>
 </div>
-
-<!-- PRODUTO 6 -->
 
 <div class="card">
 <img src="img/banbole.jpeg">
 <h3>Bambolê</h3>
 <p>Caseiro</p>
-
-<button class="btn-detalhes" onclick="mostrarInfo(this)">
-Sobre o produto
-</button>
-
-<p class="descricao" style="display:none;">
-Biscoito artesanal crocante.
-</p>
 </div>
-
-<!-- PRODUTO 7 -->
 
 <div class="card">
 <img src="img/sasha.jpeg">
 <h3>Sasha</h3>
 <p>Caseiro</p>
-
-<button class="btn-detalhes" onclick="mostrarInfo(this)">
-Sobre o produto
-</button>
-
-<p class="descricao" style="display:none;">
-Biscoito artesanal feito com ingredientes selecionados.
-</p>
 </div>
 
 </div>
 
 </section>
-
-<script>
-
-/* BOTÃO SOBRE O PRODUTO */
-
-function mostrarInfo(botao){
-
-const descricao = botao.nextElementSibling;
-
-if(descricao.style.display === "none"){
-descricao.style.display = "block";
-botao.textContent = "Fechar";
-}else{
-descricao.style.display = "none";
-botao.textContent = "Sobre o produto";
-}
-
-}
-
-/* BARRA DE PESQUISA */
-
-document.addEventListener("DOMContentLoaded",function(){
-
-const searchInput = document.getElementById("searchInput");
-const cards = document.querySelectorAll(".card");
-
-searchInput.addEventListener("keyup",function(){
-
-const value = searchInput.value.toLowerCase();
-
-cards.forEach(function(card){
-
-const text = card.textContent.toLowerCase();
-
-if(text.includes(value)){
-card.style.display="";
-}else{
-card.style.display="none";
-}
-
-});
-
-});
-
-});
-
-</script>
 
 </body>
 </html>

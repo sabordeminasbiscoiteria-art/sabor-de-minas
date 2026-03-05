@@ -155,6 +155,7 @@ grid-template-columns:repeat(2,1fr);
 gap:25px;
 max-width:900px;
 margin:auto;
+padding:20px;
 }
 
 /* CARD PRODUTO */
@@ -165,6 +166,7 @@ border-radius:0;
 padding:15px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
 transition:0.3s;
+width:100%;
 }
 
 .card:hover{
@@ -186,24 +188,6 @@ border-radius:0;
 margin:10px 0 5px;
 }
 
-/* BOTÃO SOBRE PRODUTO */
-
-.btn-detalhes{
-background:linear-gradient(135deg,#C62828,#8E0000);
-color:white;
-border:none;
-padding:10px 20px;
-border-radius:25px;
-cursor:pointer;
-margin-top:10px;
-font-weight:600;
-transition:0.3s;
-}
-
-.btn-detalhes:hover{
-transform:translateY(-3px);
-}
-
 /* ================= CONTATO ================= */
 
 .contato{
@@ -218,54 +202,6 @@ margin:0 auto 40px auto;
 padding:30px;
 border-radius:20px;
 box-shadow:0 15px 35px rgba(0,0,0,0.08);
-}
-
-.contato-btn{
-display:block;
-text-decoration:none;
-color:white;
-padding:14px;
-margin-bottom:15px;
-border-radius:30px;
-font-weight:600;
-font-size:16px;
-transition:0.3s;
-}
-
-.whatsapp{
-background:#25D366;
-}
-
-.whatsapp:hover{
-background:#1ebe5d;
-transform:translateY(-3px);
-}
-
-.insta{
-background:linear-gradient(
-45deg,
-#f09433,
-#e6683c,
-#dc2743,
-#cc2366,
-#bc1888
-);
-}
-
-.insta:hover{
-transform:translateY(-3px);
-filter:brightness(1.05);
-}
-
-.endereco{
-margin-top:20px;
-color:#444;
-font-size:15px;
-}
-
-.mapa{
-max-width:700px;
-margin:auto;
 }
 
 /* ================= RESPONSIVO ================= */
@@ -290,8 +226,13 @@ font-size:32px;
 @media(max-width:480px){
 
 .grid{
-grid-template-columns:repeat(2,1fr);
+display:grid;
+grid-template-columns:1fr 1fr;
 gap:12px;
+padding:15px;
+}
+
+.card{
 padding:10px;
 }
 

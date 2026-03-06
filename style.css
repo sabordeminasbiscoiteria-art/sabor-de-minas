@@ -642,4 +642,13 @@ margin-bottom: 25px;
 font-weight: 500;
 font-style: italic;
 }
+.descricao-biscoitos{
+text-align: center;
+font-size: 18px;
+font-weight: 600;
+color: #b22222;
+margin-top: 10px;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
 

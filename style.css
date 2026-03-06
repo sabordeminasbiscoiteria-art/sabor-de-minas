@@ -633,3 +633,9 @@ transition:0.3s;
 .menu-topo a:hover{
 color:#C62828;
 }
+.descricao-biscoitos{
+text-align:center;
+margin-top:10px;
+font-size:16px;
+color:#555;
+}

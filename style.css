@@ -400,3 +400,78 @@ padding:10px;
 }
 
 }
+/* TOPO DO SITE */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #d32f2f;
+    padding: 10px 20px;
+}
+
+/* BOTÃO DO MENU LATERAL (3 risquinhos) */
+.menu-toggle {
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+/* LOGO */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+/* MENU SUPERIOR */
+.menu-topo {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-topo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-topo a:hover {
+    text-decoration: underline;
+}
+
+/* BARRA DE PESQUISA EMBAIXO */
+.pesquisa {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+/* MENU LATERAL */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.menu-lateral a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-lateral a:hover {
+    background: #444;
+}
+
+/* MENU ABERTO */
+.menu-lateral.ativo {
+    left: 0;
+}

@@ -4,104 +4,113 @@
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-<title>Contato - Sabor de Minas</title>
+<title>Nossos Produtos</title>
 
 <link rel="stylesheet" href="style.css">
 
-<!-- ICONES -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
-<body class="home-page">
+<body class="produtos-page">
 
 <header>
 
-<!-- BOTÃO MENU -->
-<div class="menu-btn" onclick="abrirMenu()">
-<i class="fa fa-bars"></i>
-</div>
+<nav>
+<a href="index.html">Início</a>
+<a href="produtos.html">Produtos</a>
+<a href="sobre.html">Sobre</a>
+<a href="contato.html">Contato</a>
+</nav>
 
-<div class="logo">
-<img src="img/logo.png" alt="Logo Biscoiteria Sabor de Minas">
+<div class="search-box">
+<i class="fa fa-search"></i>
+<input type="text" id="searchInput" placeholder="Pesquisar produto...">
 </div>
 
 </header>
 
 
-<!-- MENU LATERAL -->
-<div id="menu-lateral" class="menu-lateral">
+<section class="products">
 
-<div class="fechar-menu" onclick="fecharMenu()">
-<i class="fa fa-times"></i>
+<div class="grid">
+
+<div class="card" data-name="casadinho">
+<img src="img/casadinho.jpeg">
+<h3>Casadinho</h3>
+<p>Caseiro</p>
+<button class="btn-ver" onclick="abrirProduto('casadinho','Casadinho')">Ver mais</button>
 </div>
 
-<a href="index.html">Início</a>
-<a href="produtos.html">Biscoitos</a>
-<a href="sobre.html">Sobre</a>
-<a href="contato.html">Contato</a>
+<div class="card" data-name="casadinho goiabada">
+<img src="img/casadinhoo.jpeg">
+<h3>Casadinho Goiabada</h3>
+<p>Caseiro</p>
+<button class="btn-ver" onclick="abrirProduto('goiabada','Casadinho Goiabada')">Ver mais</button>
+</div>
+
+<div class="card" data-name="canela">
+<img src="img/canela.jpeg">
+<h3>Canela</h3>
+<p>Caseiro</p>
+<button class="btn-ver" onclick="abrirProduto('canela','Canela')">Ver mais</button>
+</div>
+
+<div class="card" data-name="ugauga">
+<img src="img/ugauga.jpeg">
+<h3>Uga-uga</h3>
+<p>Caseiro</p>
+<button class="btn-ver" onclick="abrirProduto('ugauga','Uga-uga')">Ver mais</button>
+</div>
+
+<div class="card" data-name="beijinho">
+<img src="img/beijinho.jpeg">
+<h3>Beijinho</h3>
+<p>Caseiro</p>
+<button class="btn-ver" onclick="abrirProduto('beijinho','Beijinho')">Ver mais</button>
+</div>
+
+<div class="card" data-name="bambole">
+<img src="img/banbole.jpeg">
+<h3>Bambolê</h3>
+<p>Caseiro</p>
+<button class="btn-ver" onclick="abrirProduto('bambole','Bambolê')">Ver mais</button>
+</div>
+
+<div class="card" data-name="sasha">
+<img src="img/sasha.jpeg">
+<h3>Sasha</h3>
+<p>Caseiro</p>
+<button class="btn-ver" onclick="abrirProduto('sasha','Sasha')">Ver mais</button>
+</div>
 
 </div>
 
-
-<section class="contato">
-
-<h2>Fale Conosco</h2>
-
-<div class="contato-card">
-
-<a href="https://www.instagram.com/biscoiteriasabordeminas/" 
-target="_blank" 
-class="contato-btn insta">
-
-<i class="fa-brands fa-instagram"></i>
-Instagram
-
-</a>
-
-<a href="https://wa.me/5531992767228" 
-target="_blank" 
-class="contato-btn whatsapp">
-
-<i class="fa-brands fa-whatsapp"></i>
-WhatsApp
-
-</a>
-
-<div class="endereco">
-
-<i class="fa-solid fa-location-dot"></i>
-
-<br><br>
-
-Av. Waldyr Soeiro Emrich, 73 <br>
-Belo Horizonte - MG <br>
-30610-590
-
-</div>
-
-</div>
-
-<div class="mapa">
-
-<iframe
-src="https://www.google.com/maps?q=Av.+Waldyr+Soeiro+Emrich,+73,+Belo+Horizonte,+MG&output=embed"
-width="100%"
-height="300"
-style="border:0; border-radius:15px;"
-loading="lazy"
-title="Localização da Biscoiteria Sabor de Minas">
-</iframe>
-
-</div>
+<p id="noResult" style="display:none;">Produto não encontrado</p>
 
 </section>
 
 
-<!-- BOTÃO WHATSAPP FLUTUANTE -->
+<!-- MODAL -->
+
+<div id="produtoModal" class="modal">
+
+<div class="modal-content">
+
+<span class="fechar" onclick="fecharProduto()">&times;</span>
+
+<h2 id="produtoTitulo"></h2>
+
+<p id="produtoDescricao"></p>
+
+</div>
+
+</div>
+
+
+<!-- BOTÃO WHATSAPP -->
 
 <a href="https://wa.me/5531992767228" class="whatsapp-float" target="_blank">
 <i class="fa-brands fa-whatsapp"></i>
@@ -110,16 +119,69 @@ title="Localização da Biscoiteria Sabor de Minas">
 
 <script>
 
-function abrirMenu(){
-document.getElementById("menu-lateral").classList.add("ativo");
+const searchInput = document.getElementById("searchInput");
+const products = document.querySelectorAll(".card");
+const noResult = document.getElementById("noResult");
+
+searchInput.addEventListener("keyup", () => {
+
+let search = searchInput.value.toLowerCase();
+let visible = 0;
+
+products.forEach(card => {
+
+let name = card.getAttribute("data-name").toLowerCase();
+
+if(name.includes(search)){
+card.style.display = "block";
+visible++;
+}else{
+card.style.display = "none";
 }
 
-function fecharMenu(){
-document.getElementById("menu-lateral").classList.remove("ativo");
+});
+
+noResult.style.display = visible === 0 ? "block" : "none";
+
+});
+
+
+const descricaoProdutos = {
+
+casadinho: "Biscoito amanteigado tradicional recheado com goiabada. Disponível em nossa loja física.",
+
+goiabada: "Casadinho delicioso com recheio de goiabada artesanal. Disponível em nossa loja física.",
+
+canela: "Biscoito crocante com sabor suave de canela. Disponível em nossa loja física.",
+
+ugauga: "Biscoito caseiro tradicional muito saboroso. Disponível em nossa loja física.",
+
+beijinho: "Biscoito doce com sabor delicado de coco. Disponível em nossa loja física.",
+
+bambole: "Biscoito crocante e leve perfeito para café. Disponível em nossa loja física.",
+
+sasha: "Biscoito amanteigado caseiro muito macio. Disponível em nossa loja física."
+
+};
+
+
+function abrirProduto(id,nome){
+
+document.getElementById("produtoModal").style.display = "flex";
+
+document.getElementById("produtoTitulo").innerText = nome;
+
+document.getElementById("produtoDescricao").innerText = descricaoProdutos[id];
+
+}
+
+function fecharProduto(){
+
+document.getElementById("produtoModal").style.display = "none";
+
 }
 
 </script>
 
 </body>
 </html>
-

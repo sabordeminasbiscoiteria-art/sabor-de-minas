@@ -459,3 +459,51 @@ padding:10px;
 }
 
 }
+/* BOTÃO MENU */
+.menu-btn{
+font-size:28px;
+cursor:pointer;
+position:absolute;
+left:20px;
+top:20px;
+z-index:1001;
+}
+
+/* ESCONDER MENU NORMAL */
+nav{
+display:none;
+}
+
+/* MENU LATERAL */
+.menu-lateral{
+position:fixed;
+top:0;
+left:-250px;
+width:250px;
+height:100%;
+background:#fff;
+padding-top:60px;
+transition:0.3s;
+z-index:1000;
+}
+
+.menu-lateral a{
+display:block;
+padding:15px 20px;
+text-decoration:none;
+color:#333;
+font-size:18px;
+}
+
+.menu-lateral.ativo{
+left:0;
+}
+
+/* BOTÃO FECHAR */
+.fechar-menu{
+position:absolute;
+top:15px;
+right:20px;
+font-size:25px;
+cursor:pointer;
+}

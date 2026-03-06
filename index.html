@@ -56,66 +56,10 @@ Ver Produtos
 
 </section>
 
-<!-- DESTAQUE DE PRODUTOS -->
-<section class="destaques">
-
-<h2>Destaques</h2>
-
-<div class="slider">
-
-<div class="slide">
-<img src="img/casadinho.jpeg">
-<h3>Casadinho</h3>
-</div>
-
-<div class="slide">
-<img src="img/beijinho.jpeg">
-<h3>Beijinho</h3>
-</div>
-
-<div class="slide">
-<img src="img/canela.jpeg">
-<h3>Canela</h3>
-</div>
-
-<div class="slide">
-<img src="img/sasha.jpeg">
-<h3>Sasha</h3>
-</div>
-
-</div>
-
-</section>
-
 <!-- BOTÃO WHATSAPP -->
 <a href="https://wa.me/5531992767228" class="whatsapp-float" target="_blank">
 <i class="fa-brands fa-whatsapp"></i>
 </a>
-
-<script>
-
-const slider = document.querySelector(".slider");
-
-let scrollAmount = 0;
-
-function slideAuto(){
-
-scrollAmount += 220;
-
-if(scrollAmount >= slider.scrollWidth){
-scrollAmount = 0;
-}
-
-slider.scrollTo({
-left: scrollAmount,
-behavior: "smooth"
-});
-
-}
-
-setInterval(slideAuto,3000);
-
-</script>
 
 </body>
 </html>

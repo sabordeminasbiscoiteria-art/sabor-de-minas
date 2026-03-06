@@ -410,11 +410,13 @@ header {
 }
 
 /* BOTÃO DO MENU LATERAL (3 risquinhos) */
-.menu-toggle {
-    font-size: 26px;
-    color: white;
-    cursor: pointer;
-    margin-right: 15px;
+.menu-btn{
+position: absolute;
+left: 15px;
+top: 20px;
+font-size: 28px;
+cursor: pointer;
+z-index: 1001;
 }
 
 /* LOGO */
@@ -544,4 +546,5 @@ left:0;
     left: 10px;
     z-index: 9999;
 }
+
 

@@ -35,12 +35,12 @@
 <input type="text" id="searchInput" placeholder="Pesquisar produto...">
 </div>
 
+</header>
+
 <!-- DESCRIÇÃO -->
 <p class="descricao-biscoitos">
 Biscoitos artesanais feitos com carinho em Minas Gerais.
 </p>
-
-</header>
 
 
 <!-- MENU LATERAL -->
@@ -152,7 +152,6 @@ function fecharMenu(){
 document.getElementById("menu-lateral").classList.remove("ativo");
 }
 
-
 const searchInput = document.getElementById("searchInput");
 const products = document.querySelectorAll(".card");
 const noResult = document.getElementById("noResult");
@@ -179,7 +178,6 @@ noResult.style.display = visible === 0 ? "block" : "none";
 
 });
 
-
 const descricaoProdutos = {
 
 casadinho: "Biscoito amanteigado tradicional recheado com goiabada. Disponível em nossa loja física.",
@@ -197,7 +195,6 @@ bambole: "Biscoito crocante e leve perfeito para café. Disponível em nossa loj
 sasha: "Biscoito amanteigado caseiro muito macio. Disponível em nossa loja física."
 
 };
-
 
 function abrirProduto(id,nome){
 

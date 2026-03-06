@@ -47,7 +47,7 @@ position:relative;
 height:60px;
 }
 
-/* MENU NORMAL (DESKTOP) */
+/* MENU NORMAL */
 
 nav{
 display:none;
@@ -191,6 +191,7 @@ padding:15px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
 transition:0.3s;
 width:100%;
+border-radius:10px;
 }
 
 .card:hover{
@@ -210,11 +211,11 @@ margin:10px 0 5px;
 /* BOTÃO VER MAIS */
 
 .btn-detalhes{
-background:linear-gradient(135deg,#C62828,#8E0000);
+background:#C62828;
 color:white;
 border:none;
 padding:10px 18px;
-border-radius:25px;
+border-radius:20px;
 cursor:pointer;
 margin-top:10px;
 font-weight:600;
@@ -223,6 +224,7 @@ transition:0.3s;
 }
 
 .btn-detalhes:hover{
+background:#8E0000;
 transform:translateY(-3px);
 }
 

@@ -132,8 +132,16 @@ margin-bottom:15px;
 
 .hero-text p{
 font-size:18px;
-margin-bottom:25px;
+margin-bottom:20px;
 }
+
+.experiencia{
+margin-top:10px;
+font-size:15px;
+opacity:0.9;
+}
+
+/* BOTÃO HERO */
 
 .hero-text button{
 background:linear-gradient(135deg,#C62828,#8E0000);
@@ -285,7 +293,7 @@ flex-direction:column;
 gap:15px;
 }
 
-/* BOTÕES */
+/* BOTÕES CONTATO */
 
 .contato-btn{
 display:flex;
@@ -299,6 +307,10 @@ border-radius:30px;
 font-weight:600;
 font-size:16px;
 transition:0.3s;
+}
+
+.contato-btn i{
+font-size:18px;
 }
 
 /* WHATSAPP */
@@ -328,12 +340,6 @@ background:linear-gradient(
 .insta:hover{
 transform:translateY(-3px);
 filter:brightness(1.05);
-}
-
-/* ÍCONES */
-
-.contato-btn i{
-font-size:18px;
 }
 
 /* ENDEREÇO */
@@ -395,7 +401,8 @@ width:140px;
 body:not(.home-page) .logo{
 display:none;
 }
-/* BOTAO WHATSAPP FLUTUANTE */
+
+/* ================= WHATSAPP FLUTUANTE ================= */
 
 .whatsapp-float{
 position:fixed;
@@ -415,12 +422,8 @@ transition:0.3s;
 transform:scale(1.1);
 background:#1ebe5d;
 }
-.experiencia{
-margin-top:10px;
-font-size:15px;
-opacity:0.9;
-}
-/* SLIDER HOME */
+
+/* ================= SLIDER HOME ================= */
 
 .slider{
 position:relative;
@@ -471,4 +474,3 @@ margin-bottom:10px;
 .slide-text p{
 margin-bottom:20px;
 }
-

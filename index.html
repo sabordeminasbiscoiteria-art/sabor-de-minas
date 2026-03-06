@@ -20,7 +20,7 @@
 <header>
 
 <!-- BOTÃO MENU LATERAL -->
-<div class="menu-btn" onclick="abrirMenu()">
+<div class="menu-btn" onclick="toggleMenu()">
 <i class="fa fa-bars"></i>
 </div>
 
@@ -41,10 +41,6 @@
 
 <!-- MENU LATERAL -->
 <div id="menu-lateral" class="menu-lateral">
-
-<div class="fechar-menu" onclick="fecharMenu()">
-<i class="fa fa-times"></i>
-</div>
 
 <a href="index.html">Início</a>
 <a href="produtos.html">Biscoitos</a>
@@ -84,16 +80,18 @@ Ver Produtos
 
 <script>
 
-function abrirMenu(){
-document.getElementById("menu-lateral").classList.add("ativo");
+function toggleMenu(){
+let menu = document.getElementById("menu-lateral");
+
+if(menu.classList.contains("ativo")){
+menu.classList.remove("ativo");
+}else{
+menu.classList.add("ativo");
 }
 
-function fecharMenu(){
-document.getElementById("menu-lateral").classList.remove("ativo");
 }
 
 </script>
 
 </body>
 </html>
-

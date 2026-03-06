@@ -481,3 +481,18 @@ body.produtos-page .search-box{
 .menu-superior nav a:hover {
   color: #C62828;  /* Cor de destaque ao passar o mouse */
 }
+.menu-topo{
+display:flex;
+gap:25px;
+}
+
+.menu-topo a{
+text-decoration:none;
+color:#4A2C1D;
+font-weight:600;
+font-size:16px;
+}
+
+.menu-topo a:hover{
+color:#C62828;
+}

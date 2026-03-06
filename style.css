@@ -404,3 +404,87 @@ max-width:600px;
 margin-left:auto;
 margin-right:auto;
 }
+/* CARD DE CONTATO */
+
+.contato-card{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:20px;
+margin-top:20px;
+}
+
+/* BOTÕES DE CONTATO */
+
+.contato-btn{
+display:flex;
+align-items:center;
+gap:10px;
+padding:12px 25px;
+border-radius:10px;
+font-size:18px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+background:#25D366;
+}
+
+.whatsapp:hover{
+background:#1ebe5d;
+transform:scale(1.05);
+}
+
+/* INSTAGRAM */
+
+.insta{
+background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+}
+
+.insta:hover{
+transform:scale(1.05);
+}
+
+/* ICONE */
+
+.contato-btn i{
+font-size:22px;
+}
+
+/* ENDEREÇO */
+
+.endereco{
+text-align:center;
+margin-top:20px;
+font-size:16px;
+}
+
+/* BOTÃO WHATSAPP FLUTUANTE */
+
+.whatsapp-float{
+position:fixed;
+width:60px;
+height:60px;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+box-shadow:2px 2px 10px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+background:#1ebe5d;
+}

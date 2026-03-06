@@ -455,3 +455,104 @@ padding:10px;
 }
 
 }
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* MENU */
+.menu{
+    background:#d60000;
+    padding:15px;
+    text-align:center;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    text-decoration:underline;
+}
+
+/* TITULO */
+h1{
+    text-align:center;
+    margin:20px 0;
+}
+
+/* PESQUISA */
+.barra-pesquisa{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.barra-pesquisa input{
+    padding:10px;
+    width:250px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+/* PRODUTOS */
+.produtos{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.produto{
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:15px;
+    width:200px;
+    text-align:center;
+    background:white;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.produto img{
+    width:100%;
+    border-radius:8px;
+}
+
+.produto h3{
+    margin:10px 0;
+}
+
+/* BOTÕES */
+button{
+    background:#d60000;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#a80000;
+}
+
+/* RESPONSIVO */
+@media (max-width:700px){
+
+    .produtos{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .produto{
+        width:90%;
+    }
+
+}

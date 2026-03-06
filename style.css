@@ -1,500 +1,63 @@
-/* ===== RESET ===== */
-
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
-
-/* ===== BODY ===== */
-
-body{
-font-family:'Poppins',sans-serif;
-background:#f8f6f3;
-color:#3e2f2f;
-overflow-x:hidden;
-
-/* bloquear seleção */
--webkit-user-select:none;
--moz-user-select:none;
--ms-user-select:none;
-user-select:none;
-}
-
-/* ===== BLOQUEAR SEGURAR IMAGEM ===== */
-
-img{
-pointer-events:none;
-user-select:none;
--webkit-user-drag:none;
-border-radius:0 !important;
-}
-
-/* ================= HEADER ================= */
-
-header{
-display:flex;
-flex-direction:column;
-align-items:center;
-padding:20px 40px;
-background:#f8f6f3;
-gap:10px;
-}
-
-/* LOGO */
-
-.logo img{
-height:60px;
-}
-
-/* MENU */
-
-nav{
-display:flex;
-gap:25px;
-align-items:center;
-justify-content:center;
-flex-wrap:wrap;
-}
-
-nav a{
-text-decoration:none;
-color:#4A2C1D;
-font-weight:600;
-font-size:16px;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#C62828;
-}
-
-/* ================= BUSCA ================= */
-
-.search-box{
-display:none;
-}
-
-body.produtos-page .search-box{
-display:flex;
-align-items:center;
-gap:8px;
-border:1px solid #ddd;
-border-radius:25px;
-padding:8px 15px;
-background:white;
-margin-top:10px;
-}
-
-.search-box i{
-color:#888;
-font-size:14px;
-}
-
-.search-box input{
-border:none;
-outline:none;
-font-size:14px;
-width:200px;
-background:transparent;
-}
-
-/* ================= HERO ================= */
-
-.hero{
-position:relative;
-min-height:85vh;
-background:url('img/beijinho.jpeg') center/cover no-repeat;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:40px 20px;
-}
-
-.hero::before{
-content:"";
-position:absolute;
-inset:0;
-background:rgba(0,0,0,0.45);
-}
-
-.hero-text{
-position:relative;
-color:white;
-max-width:500px;
-}
-
-.hero-text h1{
-font-size:42px;
-margin-bottom:15px;
-}
-
-.hero-text p{
-font-size:18px;
-margin-bottom:20px;
-}
-
-.experiencia{
-margin-top:10px;
-font-size:15px;
-opacity:0.9;
-}
-
-/* BOTÃO HERO */
-
-.hero-text button{
-background:linear-gradient(135deg,#C62828,#8E0000);
-color:white;
-border:none;
-padding:14px 45px;
-border-radius:40px;
-cursor:pointer;
-font-size:16px;
-font-weight:600;
-transition:0.3s;
-}
-
-.hero-text button:hover{
-transform:translateY(-3px);
-}
-
-/* ================= PRODUTOS ================= */
-
-.products{
-padding:60px 20px;
-text-align:center;
-}
-
-.products h2{
-font-size:34px;
-margin-bottom:30px;
-}
-
-/* GRID */
-
-.grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:25px;
-max-width:900px;
-margin:auto;
-padding:20px;
-}
-
-/* CARD */
-
-.card{
-background:white;
-padding:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-transition:0.3s;
-width:100%;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card img{
-width:100%;
-aspect-ratio:1/1;
-object-fit:cover;
-}
-
-.card h3{
-margin:10px 0 5px;
-}
-
-/* BOTÃO VER MAIS */
-
-.btn-detalhes{
-background:linear-gradient(135deg,#C62828,#8E0000);
-color:white;
-border:none;
-padding:8px 16px;
-border-radius:20px;
-cursor:pointer;
-margin-top:8px;
-font-weight:600;
-font-size:14px;
-transition:0.3s;
-}
-
-.btn-detalhes:hover{
-transform:translateY(-3px);
-}
-
-/* ================= MODAL PRODUTO ================= */
-
-.modal{
-display:none;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.6);
-align-items:center;
-justify-content:center;
-z-index:999;
-padding:20px;
-}
-
-.modal-content{
-background:white;
-padding:30px;
-border-radius:10px;
-max-width:400px;
-width:100%;
-text-align:center;
-position:relative;
-}
-
-.modal-content h2{
-margin-bottom:10px;
-}
-
-.modal-content p{
-color:#444;
-font-size:16px;
-}
-
-.fechar{
-position:absolute;
-top:10px;
-right:15px;
-font-size:28px;
-cursor:pointer;
-}
-
-/* ================= CONTATO ================= */
-
-.contato{
-padding:60px 20px;
-text-align:center;
-}
-
-.contato h2{
-font-size:34px;
-margin-bottom:30px;
-color:#4A2C1D;
-}
-
-.contato-card{
-background:#fff;
-max-width:420px;
-margin:0 auto 40px auto;
-padding:35px;
-border-radius:20px;
-box-shadow:0 15px 35px rgba(0,0,0,0.08);
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-/* BOTÕES CONTATO */
-
-.contato-btn{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:10px;
-text-decoration:none;
-color:white;
-padding:14px;
-border-radius:30px;
-font-weight:600;
-font-size:16px;
-transition:0.3s;
-}
-
-.contato-btn i{
-font-size:18px;
-}
-
-/* WHATSAPP */
-
-.whatsapp{
-background:#25D366;
-}
-
-.whatsapp:hover{
-background:#1ebe5d;
-transform:translateY(-3px);
-}
-
-/* INSTAGRAM */
-
-.insta{
-background:linear-gradient(
-45deg,
-#f09433,
-#e6683c,
-#dc2743,
-#cc2366,
-#bc1888
-);
-}
-
-.insta:hover{
-transform:translateY(-3px);
-filter:brightness(1.05);
-}
-
-/* ENDEREÇO */
-
-.endereco{
-margin-top:10px;
-color:#444;
-font-size:15px;
-line-height:1.6;
-}
-
-/* MAPA */
-
-.mapa{
-max-width:700px;
-margin:auto;
-margin-top:30px;
-}
-
-/* ================= RESPONSIVO ================= */
-
-@media(max-width:768px){
-
-.grid{
-grid-template-columns:repeat(2,1fr);
-gap:15px;
-}
-
-.hero-text h1{
-font-size:32px;
-}
-
-}
-
-@media(max-width:480px){
-
-.grid{
-grid-template-columns:1fr 1fr;
-gap:12px;
-padding:15px;
-}
-
-.card{
-padding:10px;
-}
-
-.logo img{
-height:50px;
-}
-
-.search-box input{
-width:140px;
-}
-
-}
-
-/* ESCONDER LOGO NAS OUTRAS PAGINAS */
-
-body:not(.home-page) .logo{
-display:none;
-}
-
-/* ================= WHATSAPP FLUTUANTE ================= */
-
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-font-size:26px;
-padding:15px 17px;
-border-radius:50%;
-box-shadow:0 8px 20px rgba(0,0,0,0.25);
-z-index:999;
-transition:0.3s;
-}
-
-.whatsapp-float:hover{
-transform:scale(1.1);
-background:#1ebe5d;
-}
-
-/* ================= SLIDER HOME ================= */
-
-.slider{
-position:relative;
-height:85vh;
-overflow:hidden;
-}
-
-.slides{
-position:relative;
-height:100%;
-}
-
-.slide{
-position:absolute;
-width:100%;
-height:100%;
-opacity:0;
-transition:opacity 1s;
-}
-
-.slide.active{
-opacity:1;
-}
-
-.slide img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
-
-.slide-text{
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-color:white;
-text-align:center;
-background:rgba(0,0,0,0.4);
-padding:30px;
-border-radius:10px;
-}
-
-.slide-text h1{
-font-size:40px;
-margin-bottom:10px;
-}
-
-.slide-text p{
-margin-bottom:20px;
-}
-/* DESTAQUES HOME */
+/* ================= DESTAQUES HOME ================= */
 
 .destaques{
 padding:60px 20px;
 text-align:center;
+background:#f8f6f3;
 }
 
 .destaques h2{
 font-size:32px;
-margin-bottom:25px;
+margin-bottom:30px;
 color:#4A2C1D;
+font-weight:700;
 }
 
 .destaque-slider{
 max-width:500px;
 margin:auto;
+position:relative;
+height:320px;
+overflow:hidden;
 }
 
 .destaque-slider img{
+position:absolute;
 width:100%;
+height:100%;
+object-fit:cover;
+opacity:0;
+animation:trocarImagem 12s infinite;
 border-radius:10px;
 box-shadow:0 10px 25px rgba(0,0,0,0.15);
-transition:0.5s;
+}
+
+/* TEMPO DE CADA IMAGEM */
+
+.destaque-slider img:nth-child(1){
+animation-delay:0s;
+}
+
+.destaque-slider img:nth-child(2){
+animation-delay:4s;
+}
+
+.destaque-slider img:nth-child(3){
+animation-delay:8s;
+}
+
+/* ANIMAÇÃO */
+
+@keyframes trocarImagem{
+
+0%{opacity:0;}
+
+10%{opacity:1;}
+
+30%{opacity:1;}
+
+40%{opacity:0;}
+
+100%{opacity:0;}
+
 }

@@ -1,403 +1,177 @@
-/* ===== RESET ===== */
+<!DOCTYPE html>
+<html lang="pt-br">
 
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Nossos Produtos</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- ICONES -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body class="produtos-page">
+
+<header>
+
+<nav>
+<a href="index.html">Início</a>
+<a href="produtos.html">Produtos</a>
+<a href="contato.html">Contato</a>
+</nav>
+
+<div class="search-box">
+<i class="fa fa-search"></i>
+<input type="text" id="searchInput" placeholder="Pesquisar produto...">
+</div>
+
+</header>
+
+<section class="products">
+
+<div class="grid">
+
+<div class="card" data-name="casadinho">
+<img src="img/casadinho.jpeg" alt="Casadinho">
+<h3>Casadinho</h3>
+<p>Caseiro</p>
+<button class="btn-detalhes" onclick="abrirProduto('casadinho')">Ver mais</button>
+</div>
+
+<div class="card" data-name="casadinho goiabada">
+<img src="img/casadinhoo.jpeg" alt="Casadinho Goiabada">
+<h3>Casadinho Goiabada</h3>
+<p>Caseiro</p>
+<button class="btn-detalhes" onclick="abrirProduto('goiabada')">Ver mais</button>
+</div>
+
+<div class="card" data-name="canela">
+<img src="img/canela.jpeg" alt="Canela">
+<h3>Canela</h3>
+<p>Caseiro</p>
+<button class="btn-detalhes" onclick="abrirProduto('canela')">Ver mais</button>
+</div>
+
+<div class="card" data-name="ugauga">
+<img src="img/ugauga.jpeg" alt="Uga-uga">
+<h3>Uga-uga</h3>
+<p>Caseiro</p>
+<button class="btn-detalhes" onclick="abrirProduto('ugauga')">Ver mais</button>
+</div>
+
+<div class="card" data-name="beijinho">
+<img src="img/beijinho.jpeg" alt="Beijinho">
+<h3>Beijinho</h3>
+<p>Caseiro</p>
+<button class="btn-detalhes" onclick="abrirProduto('beijinho')">Ver mais</button>
+</div>
+
+<div class="card" data-name="bambole">
+<img src="img/banbole.jpeg" alt="Bambolê">
+<h3>Bambolê</h3>
+<p>Caseiro</p>
+<button class="btn-detalhes" onclick="abrirProduto('bambole')">Ver mais</button>
+</div>
+
+<div class="card" data-name="sasha">
+<img src="img/sasha.jpeg" alt="Sasha">
+<h3>Sasha</h3>
+<p>Caseiro</p>
+<button class="btn-detalhes" onclick="abrirProduto('sasha')">Ver mais</button>
+</div>
+
+</div>
+
+<p class="no-result" id="noResult">Produto não encontrado</p>
+
+</section>
+
+<!-- MODAL PRODUTO -->
+
+<div class="modal" id="produtoModal">
+
+<div class="modal-content">
+
+<span class="fechar" onclick="fecharProduto()">&times;</span>
+
+<h2 id="produtoTitulo"></h2>
+
+<p id="produtoDescricao"></p>
+
+</div>
+
+</div>
+
+<script>
+
+const searchInput = document.getElementById("searchInput");
+const products = document.querySelectorAll(".card");
+const noResult = document.getElementById("noResult");
+
+searchInput.addEventListener("keyup", () => {
+
+let search = searchInput.value.toLowerCase();
+let visible = 0;
+
+products.forEach(card => {
+
+let name = card.getAttribute("data-name");
+
+if(name.includes(search)){
+card.style.display = "block";
+visible++;
+}else{
+card.style.display = "none";
 }
 
-/* ===== BODY ===== */
-
-body{
-font-family:'Poppins',sans-serif;
-background:#f8f6f3;
-color:#3e2f2f;
-overflow-x:hidden;
--webkit-user-select:none;
--moz-user-select:none;
--ms-user-select:none;
-user-select:none;
-}
-
-/* ================= HEADER ================= */
-
-header{
-display:flex;
-flex-direction:column;
-align-items:center;
-padding:20px 40px;
-background:#f8f6f3;
-gap:10px;
-}
-
-/* LOGO */
-
-.logo img{
-height:60px;
-pointer-events:none;
--webkit-user-drag:none;
-}
-
-/* MENU */
-
-nav{
-display:flex;
-gap:25px;
-align-items:center;
-justify-content:center;
-flex-wrap:wrap;
-}
-
-nav a{
-text-decoration:none;
-color:#4A2C1D;
-font-weight:600;
-font-size:16px;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#C62828;
-}
-
-/* ================= BUSCA ================= */
-
-.search-box{
-display:none;
-}
-
-body.produtos-page .search-box{
-display:flex;
-align-items:center;
-gap:8px;
-border:1px solid #ddd;
-border-radius:25px;
-padding:8px 15px;
-background:white;
-margin-top:10px;
-}
-
-.search-box i{
-color:#888;
-font-size:14px;
-}
-
-.search-box input{
-border:none;
-outline:none;
-font-size:14px;
-width:200px;
-background:transparent;
-}
-
-/* ================= HERO ================= */
-
-.hero{
-position:relative;
-min-height:85vh;
-background:url('img/beijinho.jpeg') center/cover no-repeat;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:40px 20px;
-}
-
-.hero::before{
-content:"";
-position:absolute;
-inset:0;
-background:rgba(0,0,0,0.45);
-}
-
-.hero-text{
-position:relative;
-color:white;
-max-width:500px;
-}
-
-.hero-text h1{
-font-size:42px;
-margin-bottom:15px;
-}
-
-.hero-text p{
-font-size:18px;
-margin-bottom:25px;
-}
-
-.hero-text button{
-background:linear-gradient(135deg,#C62828,#8E0000);
-color:white;
-border:none;
-padding:14px 45px;
-border-radius:40px;
-cursor:pointer;
-font-size:16px;
-font-weight:600;
-transition:0.3s;
-}
-
-.hero-text button:hover{
-transform:translateY(-3px);
-}
-
-/* ================= PRODUTOS ================= */
-
-.products{
-padding:60px 20px;
-text-align:center;
-}
-
-.products h2{
-font-size:34px;
-margin-bottom:30px;
-}
-
-/* GRID PRODUTOS */
-
-.grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:25px;
-max-width:900px;
-margin:auto;
-padding:20px;
-}
-
-/* CARD PRODUTO */
-
-.card{
-background:white;
-border-radius:0;
-padding:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-transition:0.3s;
-width:100%;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-/* IMAGEM PRODUTO */
-
-.card img{
-width:100%;
-aspect-ratio:1/1;
-object-fit:cover;
-border-radius:0;
-pointer-events:none;
--webkit-user-drag:none;
-}
-
-.card h3{
-margin:10px 0 5px;
-}
-
-/* ================= BOTÃO VER MAIS ================= */
-
-.btn-detalhes{
-background:linear-gradient(135deg,#C62828,#8E0000);
-color:white;
-border:none;
-padding:8px 16px;
-border-radius:20px;
-cursor:pointer;
-margin-top:8px;
-font-weight:600;
-font-size:14px;
-transition:0.3s;
-}
-
-.btn-detalhes:hover{
-transform:translateY(-3px);
-}
-
-/* ================= MODAL PRODUTO ================= */
-
-.modal{
-display:none;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.6);
-align-items:center;
-justify-content:center;
-z-index:999;
-padding:20px;
-}
-
-.modal-content{
-background:white;
-padding:30px;
-border-radius:10px;
-max-width:400px;
-width:100%;
-text-align:center;
-position:relative;
-}
-
-.modal-content h2{
-margin-bottom:10px;
-text-transform:capitalize;
-}
-
-.modal-content p{
-color:#444;
-font-size:16px;
-}
-
-.fechar{
-position:absolute;
-top:10px;
-right:15px;
-font-size:28px;
-cursor:pointer;
-}
-
-/* ================= CONTATO ================= */
-
-.contato{
-padding:60px 20px;
-text-align:center;
-}
-
-.contato h2{
-font-size:34px;
-margin-bottom:30px;
-color:#4A2C1D;
-}
-
-.contato-card{
-background:#fff;
-max-width:420px;
-margin:auto;
-padding:35px;
-border-radius:20px;
-box-shadow:0 15px 35px rgba(0,0,0,0.08);
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-/* BOTÕES CONTATO */
-
-.contato-btn{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:10px;
-text-decoration:none;
-color:white;
-padding:14px;
-border-radius:30px;
-font-weight:600;
-font-size:16px;
-transition:0.3s;
-}
-
-.contato-btn i{
-font-size:18px;
-}
-
-/* WHATSAPP */
-
-.whatsapp{
-background:#25D366;
-}
-
-.whatsapp:hover{
-background:#1ebe5d;
-transform:translateY(-3px);
-}
-
-/* INSTAGRAM */
-
-.insta{
-background:linear-gradient(
-45deg,
-#f09433,
-#e6683c,
-#dc2743,
-#cc2366,
-#bc1888
-);
-}
-
-.insta:hover{
-transform:translateY(-3px);
-filter:brightness(1.05);
-}
-
-/* ENDEREÇO */
-
-.endereco{
-margin-top:10px;
-color:#444;
-font-size:15px;
-line-height:1.6;
-}
-
-/* MAPA */
-
-.mapa{
-max-width:700px;
-margin:auto;
-margin-top:30px;
-}
-
-/* TEXTO PRODUTO NÃO ENCONTRADO */
-
-.no-result{
-display:none;
-margin-top:30px;
-font-weight:600;
-color:#C62828;
-font-size:18px;
-}
-
-/* ================= RESPONSIVO ================= */
-
-@media(max-width:768px){
-
-.grid{
-grid-template-columns:repeat(2,1fr);
-gap:15px;
-}
-
-.hero-text h1{
-font-size:32px;
-}
+});
+
+noResult.style.display = visible === 0 ? "block" : "none";
+
+});
+
+/* DESCRIÇÃO PRODUTOS */
+
+const descricaoProdutos = {
+
+casadinho: "Biscoito amanteigado tradicional recheado com goiabada.",
+
+goiabada: "Casadinho delicioso com recheio de goiabada artesanal.",
+
+canela: "Biscoito crocante com sabor suave de canela.",
+
+ugauga: "Biscoito caseiro tradicional muito saboroso.",
+
+beijinho: "Biscoito doce com sabor delicado de coco.",
+
+bambole: "Biscoito crocante e leve perfeito para café.",
+
+sasha: "Biscoito amanteigado caseiro muito macio."
+
+};
+
+function abrirProduto(nome){
+
+document.getElementById("produtoModal").style.display="flex";
+
+document.getElementById("produtoTitulo").innerText=nome;
+
+document.getElementById("produtoDescricao").innerText=descricaoProdutos[nome];
 
 }
 
-@media(max-width:480px){
+function fecharProduto(){
 
-.grid{
-grid-template-columns:1fr 1fr;
-gap:12px;
-padding:15px;
-}
-
-.card{
-padding:10px;
-}
-
-.logo img{
-height:50px;
-}
-
-.search-box input{
-width:140px;
-}
+document.getElementById("produtoModal").style.display="none";
 
 }
 
-/* ================= AJUSTES ================= */
+</script>
 
-body:not(.home-page) .logo{
-display:none;
-}
+</body>
+</html>

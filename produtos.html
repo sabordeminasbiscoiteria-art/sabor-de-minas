@@ -128,7 +128,7 @@ let visible = 0;
 
 products.forEach(card => {
 
-let name = card.getAttribute("data-name");
+let name = card.getAttribute("data-name").toLowerCase();
 
 if(name.includes(search)){
 card.style.display = "block";
@@ -142,6 +142,7 @@ card.style.display = "none";
 noResult.style.display = visible === 0 ? "block" : "none";
 
 });
+
 
 /* DESCRIÇÃO PRODUTOS */
 
@@ -165,6 +166,25 @@ sasha: "Biscoito amanteigado caseiro muito macio. Disponível em nossa loja fís
 
 function abrirProduto(nome){
 
+document.getElementById("produtoModal").style.display = "flex";
+
+document.getElementById("produtoTitulo").innerText = nome;
+
+document.getElementById("produtoDescricao").innerText = descricaoProdutos[nome];
+
+}
+
+function fecharProduto(){
+
+document.getElementById("produtoModal").style.display = "none";
+
+}
+
+</script>
+};
+
+function abrirProduto(nome){
+
 document.getElementById("produtoModal").style.display="flex";
 
 document.getElementById("produtoTitulo").innerText=nome;
@@ -183,3 +203,4 @@ document.getElementById("produtoModal").style.display="none";
 
 </body>
 </html>
+

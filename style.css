@@ -474,3 +474,27 @@ margin-bottom:10px;
 .slide-text p{
 margin-bottom:20px;
 }
+/* DESTAQUES HOME */
+
+.destaques{
+padding:60px 20px;
+text-align:center;
+}
+
+.destaques h2{
+font-size:32px;
+margin-bottom:25px;
+color:#4A2C1D;
+}
+
+.destaque-slider{
+max-width:500px;
+margin:auto;
+}
+
+.destaque-slider img{
+width:100%;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+transition:0.5s;
+}

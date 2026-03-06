@@ -12,6 +12,22 @@ body{
 font-family:'Poppins',sans-serif;
 background:#f8f6f3;
 color:#3e2f2f;
+overflow-x:hidden;
+
+/* bloquear seleção */
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+}
+
+/* ===== BLOQUEAR SEGURAR IMAGEM ===== */
+
+img{
+pointer-events:none;
+user-select:none;
+-webkit-user-drag:none;
+border-radius:0 !important;
 }
 
 /* ================= HEADER ================= */
@@ -147,7 +163,7 @@ font-size:34px;
 margin-bottom:30px;
 }
 
-/* GRID PRODUTOS */
+/* GRID */
 
 .grid{
 display:grid;
@@ -158,11 +174,10 @@ margin:auto;
 padding:20px;
 }
 
-/* CARD PRODUTO */
+/* CARD */
 
 .card{
 background:white;
-border-radius:0;
 padding:15px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
 transition:0.3s;
@@ -173,89 +188,17 @@ width:100%;
 transform:translateY(-5px);
 }
 
-/* IMAGEM PRODUTO QUADRADA */
-
 .card img{
 width:100%;
 aspect-ratio:1/1;
 object-fit:cover;
-border-radius:0;
 }
-
-/* TITULO */
 
 .card h3{
 margin:10px 0 5px;
 }
 
-/* ================= CONTATO ================= */
-
-.contato{
-padding:60px 20px;
-text-align:center;
-}
-
-.contato-card{
-background:#fff;
-max-width:420px;
-margin:0 auto 40px auto;
-padding:30px;
-border-radius:20px;
-box-shadow:0 15px 35px rgba(0,0,0,0.08);
-}
-
-/* ================= RESPONSIVO ================= */
-
-/* Tablet */
-
-@media(max-width:768px){
-
-.grid{
-grid-template-columns:repeat(2,1fr);
-gap:15px;
-}
-
-.hero-text h1{
-font-size:32px;
-}
-
-}
-
-/* Celular */
-
-@media(max-width:480px){
-
-.grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:12px;
-padding:15px;
-}
-
-.card{
-padding:10px;
-}
-
-.logo img{
-height:50px;
-}
-
-.search-box input{
-width:140px;
-}
-
-}
-
-/* ================= AJUSTES ================= */
-
-body:not(.home-page) .logo{
-display:none;
-}
-
-img{
-border-radius:0 !important;
-}
-/* ================= BOTAO VER MAIS ================= */
+/* BOTÃO VER MAIS */
 
 .btn-detalhes{
 background:linear-gradient(135deg,#C62828,#8E0000);
@@ -316,94 +259,8 @@ right:15px;
 font-size:28px;
 cursor:pointer;
 }
-body{
-font-family:'Poppins',sans-serif;
-background:#f8f6f3;
-color:#3e2f2f;
-overflow-x:hidden;
-}
-/* ================= CONTATO BONITO ================= */
 
-.contato{
-padding:60px 20px;
-text-align:center;
-}
-
-.contato h2{
-font-size:34px;
-margin-bottom:30px;
-}
-
-.contato-card{
-background:#fff;
-max-width:420px;
-margin:0 auto 40px auto;
-padding:35px 30px;
-border-radius:20px;
-box-shadow:0 15px 35px rgba(0,0,0,0.08);
-}
-
-/* BOTÕES */
-
-.contato-btn{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:10px;
-text-decoration:none;
-color:white;
-padding:14px;
-margin-bottom:15px;
-border-radius:30px;
-font-weight:600;
-font-size:16px;
-transition:0.3s;
-}
-
-/* WHATSAPP */
-
-.whatsapp{
-background:#25D366;
-}
-
-.whatsapp:hover{
-background:#1ebe5d;
-transform:translateY(-3px);
-}
-
-/* INSTAGRAM */
-
-.insta{
-background:linear-gradient(
-45deg,
-#f09433,
-#e6683c,
-#dc2743,
-#cc2366,
-#bc1888
-);
-}
-
-.insta:hover{
-transform:translateY(-3px);
-filter:brightness(1.05);
-}
-
-/* ENDEREÇO */
-
-.endereco{
-margin-top:20px;
-color:#444;
-font-size:15px;
-}
-
-/* MAPA */
-
-.mapa{
-max-width:700px;
-margin:auto;
-}
-/* ================= CONTATO PROFISSIONAL ================= */
+/* ================= CONTATO ================= */
 
 .contato{
 padding:60px 20px;
@@ -495,19 +352,46 @@ max-width:700px;
 margin:auto;
 margin-top:30px;
 }
-/* BLOQUEAR SEGURAR IMAGEM */
 
-img{
-pointer-events:none;
-user-select:none;
--webkit-user-drag:none;
+/* ================= RESPONSIVO ================= */
+
+@media(max-width:768px){
+
+.grid{
+grid-template-columns:repeat(2,1fr);
+gap:15px;
 }
 
-/* BLOQUEAR SELEÇÃO DE TEXTO */
+.hero-text h1{
+font-size:32px;
+}
 
-body{
--webkit-user-select:none;
--moz-user-select:none;
--ms-user-select:none;
-user-select:none;
+}
+
+@media(max-width:480px){
+
+.grid{
+grid-template-columns:1fr 1fr;
+gap:12px;
+padding:15px;
+}
+
+.card{
+padding:10px;
+}
+
+.logo img{
+height:50px;
+}
+
+.search-box input{
+width:140px;
+}
+
+}
+
+/* ESCONDER LOGO NAS OUTRAS PAGINAS */
+
+body:not(.home-page) .logo{
+display:none;
 }

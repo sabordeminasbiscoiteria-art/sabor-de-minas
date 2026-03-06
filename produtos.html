@@ -8,11 +8,13 @@
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body class="produtos-page">
 
 <header>
+
 <!-- BOTÃO MENU -->
 <div class="menu-btn" onclick="abrirMenu()">
 <i class="fa fa-bars"></i>
@@ -57,8 +59,59 @@ Biscoitos artesanais
 </div>
 
 <section class="products">
+
 <div class="grid">
-<!-- Adicione os cards aqui -->
+
+<!-- CARD DO PRODUTO -->
+<div class="card" data-name="casadinho">
+<img src="img/casadinho.jpeg">
+<h3>Casadinho</h3>
+<p>Caseiro</p>
+<button class="btn-detalhes" onclick="abrirProduto('casadinho','Casadinho')">Ver mais</button>
+</div>
+
+<div class="card" data-name="casadinho goiabada">
+<img src="img/casadinhoo.jpeg">
+<h3>Casadinho Goiabada</h3>
+<p>Caseiro</p>
+<button class="btn-detalhes" onclick="abrirProduto('goiabada','Casadinho Goiabada')">Ver mais</button>
+</div>
+
+<div class="card" data-name="canela">
+<img src="img/canela.jpeg">
+<h3>Canela</h3>
+<p>Caseiro</p>
+<button class="btn-detalhes" onclick="abrirProduto('canela','Canela')">Ver mais</button>
+</div>
+
+<div class="card" data-name="ugauga">
+<img src="img/ugauga.jpeg">
+<h3>Uga-uga</h3>
+<p>Caseiro</p>
+<button class="btn-detalhes" onclick="abrirProduto('ugauga','Uga-uga')">Ver mais</button>
+</div>
+
+<div class="card" data-name="beijinho">
+<img src="img/beijinho.jpeg">
+<h3>Beijinho</h3>
+<p>Caseiro</p>
+<button class="btn-detalhes" onclick="abrirProduto('beijinho','Beijinho')">Ver mais</button>
+</div>
+
+<div class="card" data-name="bambole">
+<img src="img/banbole.jpeg">
+<h3>Bambolê</h3>
+<p>Caseiro</p>
+<button class="btn-detalhes" onclick="abrirProduto('bambole','Bambolê')">Ver mais</button>
+</div>
+
+<div class="card" data-name="sasha">
+<img src="img/sasha.jpeg">
+<h3>Sasha</h3>
+<p>Caseiro</p>
+<button class="btn-detalhes" onclick="abrirProduto('sasha','Sasha')">Ver mais</button>
+</div>
+
 </div>
 
 <p id="noResult" style="display:none;">Produto não encontrado</p>
@@ -80,6 +133,7 @@ Biscoitos artesanais
 </a>
 
 <script>
+
 function abrirMenu(){
 document.getElementById("menu-lateral").classList.add("ativo");
 }
@@ -129,6 +183,7 @@ document.getElementById("produtoDescricao").innerText = descricaoProdutos[id];
 function fecharProduto(){
 document.getElementById("produtoModal").style.display = "none";
 }
+
 </script>
 
 </body>

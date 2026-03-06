@@ -538,4 +538,10 @@ left:0;
     cursor: pointer;
     border-radius: 5px;
 }
+.menu-toggle {
+    position: fixed !important;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+}
 

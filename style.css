@@ -1,4 +1,4 @@
-/* ===== RESET ===== */
+/* ================= RESET ================= */
 
 *{
 box-sizing:border-box;
@@ -6,7 +6,7 @@ margin:0;
 padding:0;
 }
 
-/* ===== BODY ===== */
+/* ================= BODY ================= */
 
 body{
 font-family:'Poppins',sans-serif;
@@ -20,7 +20,7 @@ overflow-x:hidden;
 user-select:none;
 }
 
-/* ===== BLOQUEAR SEGURAR IMAGEM ===== */
+/* ================= BLOQUEAR IMAGENS ================= */
 
 img{
 pointer-events:none;
@@ -33,11 +33,11 @@ border-radius:0 !important;
 
 header{
 display:flex;
+flex-direction:column;
 align-items:center;
-justify-content:space-between;
-padding:20px 40px;
+padding:20px;
 background:#f8f6f3;
-position:relative;
+gap:12px;
 }
 
 /* LOGO */
@@ -46,12 +46,14 @@ position:relative;
 height:60px;
 }
 
-/* MENU */
+/* ================= MENU ================= */
 
 nav{
 display:flex;
 gap:25px;
 align-items:center;
+justify-content:center;
+flex-wrap:wrap;
 }
 
 nav a{
@@ -200,7 +202,7 @@ object-fit:cover;
 margin:10px 0 5px;
 }
 
-/* BOTÃO VER MAIS */
+/* BOTÃO PRODUTO */
 
 .btn-ver{
 background:#c62828;
@@ -211,6 +213,7 @@ border-radius:6px;
 cursor:pointer;
 font-weight:bold;
 margin-top:10px;
+transition:0.3s;
 }
 
 .btn-ver:hover{
@@ -254,6 +257,8 @@ width:220px;
 transition:0.3s;
 }
 
+/* WHATSAPP */
+
 .whatsapp{
 background:#25D366;
 }
@@ -262,6 +267,8 @@ background:#25D366;
 background:#1ebe5d;
 transform:translateY(-3px);
 }
+
+/* INSTAGRAM */
 
 .insta{
 background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
@@ -275,7 +282,7 @@ transform:translateY(-3px);
 font-size:22px;
 }
 
-/* ================= WHATSAPP FLUTUANTE ================= */
+/* ================= BOTÃO WHATSAPP ================= */
 
 .whatsapp-float{
 position:fixed;
@@ -301,7 +308,7 @@ transform:scale(1.1);
 background:#1ebe5d;
 }
 
-/* ================= MODAL PRODUTO ================= */
+/* ================= MODAL ================= */
 
 .modal{
 display:none;

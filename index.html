@@ -38,6 +38,11 @@
 <!-- MENU LATERAL -->
 <div id="menu-lateral" class="menu-lateral">
 
+<!-- BOTÃO FECHAR -->
+<div class="fechar-menu" onclick="fecharMenu()">
+<i class="fa fa-times"></i>
+</div>
+
 <a href="index.html">Início</a>
 <a href="produtos.html">Produtos</a>
 <a href="sobre.html">Sobre</a>
@@ -81,8 +86,11 @@ Ver Produtos
 
 <script>
 function abrirMenu() {
-const menu = document.getElementById("menu-lateral");
-menu.classList.toggle("ativo");
+document.getElementById("menu-lateral").classList.add("ativo");
+}
+
+function fecharMenu() {
+document.getElementById("menu-lateral").classList.remove("ativo");
 }
 </script>
 

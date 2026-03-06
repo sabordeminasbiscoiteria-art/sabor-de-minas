@@ -47,10 +47,10 @@ position:relative;
 height:60px;
 }
 
-/* MENU */
+/* MENU NORMAL (DESKTOP) */
 
 nav{
-display:flex;
+display:none;
 gap:25px;
 align-items:center;
 justify-content:center;
@@ -65,7 +65,9 @@ font-size:16px;
 transition:0.3s;
 }
 
-nav a:hover
+nav a:hover{
+color:#C62828;
+}
 
 /* ================= BUSCA ================= */
 
@@ -211,10 +213,10 @@ margin:10px 0 5px;
 background:linear-gradient(135deg,#C62828,#8E0000);
 color:white;
 border:none;
-padding:8px 16px;
-border-radius:20px;
+padding:10px 18px;
+border-radius:25px;
 cursor:pointer;
-margin-top:8px;
+margin-top:10px;
 font-weight:600;
 font-size:14px;
 transition:0.3s;
@@ -237,8 +239,6 @@ margin-bottom:30px;
 color:#4A2C1D;
 }
 
-/* CARD CONTATO */
-
 .contato-card{
 display:flex;
 flex-direction:column;
@@ -247,8 +247,6 @@ gap:20px;
 max-width:400px;
 margin:auto;
 }
-
-/* BOTÕES CONTATO */
 
 .contato-btn{
 display:flex;
@@ -265,8 +263,6 @@ width:220px;
 transition:0.3s;
 }
 
-/* WHATSAPP */
-
 .whatsapp{
 background:#25D366;
 }
@@ -275,8 +271,6 @@ background:#25D366;
 background:#1ebe5d;
 transform:translateY(-3px);
 }
-
-/* INSTAGRAM */
 
 .insta{
 background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
@@ -288,25 +282,6 @@ transform:translateY(-3px);
 
 .contato-btn i{
 font-size:22px;
-}
-
-/* ENDEREÇO */
-
-.endereco{
-margin-top:15px;
-font-size:16px;
-color:#3e2f2f;
-line-height:1.6;
-text-align:center;
-}
-
-/* MAPA */
-
-.mapa{
-margin-top:30px;
-max-width:600px;
-margin-left:auto;
-margin-right:auto;
 }
 
 /* ================= WHATSAPP FLUTUANTE ================= */
@@ -338,11 +313,11 @@ background:#1ebe5d;
 /* ================= MENU LATERAL ================= */
 
 .menu-btn{
+font-size:28px;
+cursor:pointer;
 position:absolute;
 left:20px;
 top:20px;
-font-size:22px;
-cursor:pointer;
 z-index:1200;
 }
 
@@ -354,12 +329,12 @@ width:250px;
 height:100%;
 background:white;
 box-shadow:2px 0 10px rgba(0,0,0,0.2);
-padding-top:80px;
+padding-top:70px;
 display:flex;
 flex-direction:column;
 gap:20px;
 transition:0.3s;
-z-index:1000;
+z-index:1100;
 }
 
 .menu-lateral a{
@@ -374,139 +349,14 @@ font-weight:600;
 left:0;
 }
 
-/* BOTÃO FECHAR MENU */
-
 .fechar-menu{
 position:absolute;
 top:15px;
 right:15px;
 font-size:28px;
-color:#4A2C1D;
-cursor:pointer;
-z-index:1100;
-}
-
-/* ================= RESPONSIVO ================= */
-
-/* TABLET */
-
-@media (min-width:768px){
-
-header{
-flex-direction:row;
-justify-content:space-between;
-max-width:1000px;
-margin:auto;
-}
-
-.menu-btn{
-top:30px;
-left:30px;
-}
-
-.hero-text h1{
-font-size:44px;
-}
-
-.grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-}
-
-/* COMPUTADOR */
-
-@media (min-width:1024px){
-
-header{
-max-width:1200px;
-}
-
-.hero{
-min-height:90vh;
-}
-
-.hero-text h1{
-font-size:52px;
-}
-
-.hero-text p{
-font-size:20px;
-}
-
-.grid{
-grid-template-columns:repeat(3,1fr);
-max-width:1100px;
-}
-
-}
-
-/* CELULAR PEQUENO */
-
-@media (max-width:480px){
-
-.logo img{
-height:50px;
-}
-
-.hero-text h1{
-font-size:30px;
-}
-
-.grid{
-gap:15px;
-padding:10px;
-}
-
-}
-/* BOTÃO MENU */
-.menu-btn{
-font-size:28px;
-cursor:pointer;
-position:absolute;
-left:20px;
-top:20px;
-z-index:1001;
-}
-
-/* ESCONDER MENU NORMAL */
-nav{
-display:none;
-}
-
-/* MENU LATERAL */
-.menu-lateral{
-position:fixed;
-top:0;
-left:-250px;
-width:250px;
-height:100%;
-background:#fff;
-padding-top:60px;
-transition:0.3s;
-z-index:1000;
-}
-
-.menu-lateral a{
-display:block;
-padding:15px 20px;
-text-decoration:none;
-color:#333;
-font-size:18px;
-}
-
-.menu-lateral.ativo{
-left:0;
-}
-
-/* BOTÃO FECHAR */
-.fechar-menu{
-position:absolute;
-top:15px;
-right:20px;
-font-size:25px;
 cursor:pointer;
 }
+
 /* ================= MODAL PRODUTO ================= */
 
 .modal{
@@ -549,7 +399,6 @@ top:10px;
 right:15px;
 font-size:25px;
 cursor:pointer;
-color:#4A2C1D;
 }
 
 @keyframes aparecer{
@@ -562,19 +411,45 @@ transform:scale(1);
 opacity:1;
 }
 }
-.btn-detalhes{
-background: #d62828;
-color: white;
-border: none;
-padding: 10px 18px;
-border-radius: 6px;
-font-size: 14px;
-cursor: pointer;
-margin-top: 8px;
-transition: 0.3s;
+
+/* ================= RESPONSIVO ================= */
+
+@media (min-width:768px){
+
+header{
+flex-direction:row;
+justify-content:center;
+gap:40px;
 }
 
-.btn-detalhes:hover{
-background: #a4161a;
-transform: scale(1.05);
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (min-width:1024px){
+
+.grid{
+grid-template-columns:repeat(3,1fr);
+max-width:1100px;
+}
+
+}
+
+@media (max-width:480px){
+
+.logo img{
+height:50px;
+}
+
+.hero-text h1{
+font-size:30px;
+}
+
+.grid{
+gap:15px;
+padding:10px;
+}
+
 }

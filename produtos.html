@@ -4,13 +4,12 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Nossos Produtos</title>
 
 <link rel="stylesheet" href="style.css">
 
-<!-- ICONES -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
@@ -38,65 +37,64 @@
 <div class="grid">
 
 <div class="card" data-name="casadinho">
-<img src="img/casadinho.jpeg" alt="Casadinho">
+<img src="img/casadinho.jpeg">
 <h3>Casadinho</h3>
 <p>Caseiro</p>
-<button class="btn-detalhes" onclick="abrirProduto('casadinho')">Ver mais</button>
+<button onclick="abrirProduto('casadinho','Casadinho')">Ver mais</button>
 </div>
 
 <div class="card" data-name="casadinho goiabada">
-<img src="img/casadinhoo.jpeg" alt="Casadinho Goiabada">
+<img src="img/casadinhoo.jpeg">
 <h3>Casadinho Goiabada</h3>
 <p>Caseiro</p>
-<button class="btn-detalhes" onclick="abrirProduto('goiabada')">Ver mais</button>
+<button onclick="abrirProduto('goiabada','Casadinho Goiabada')">Ver mais</button>
 </div>
 
 <div class="card" data-name="canela">
-<img src="img/canela.jpeg" alt="Canela">
+<img src="img/canela.jpeg">
 <h3>Canela</h3>
 <p>Caseiro</p>
-<button class="btn-detalhes" onclick="abrirProduto('canela')">Ver mais</button>
+<button onclick="abrirProduto('canela','Canela')">Ver mais</button>
 </div>
 
 <div class="card" data-name="ugauga">
-<img src="img/ugauga.jpeg" alt="Uga-uga">
+<img src="img/ugauga.jpeg">
 <h3>Uga-uga</h3>
 <p>Caseiro</p>
-<button class="btn-detalhes" onclick="abrirProduto('ugauga')">Ver mais</button>
+<button onclick="abrirProduto('ugauga','Uga-uga')">Ver mais</button>
 </div>
 
 <div class="card" data-name="beijinho">
-<img src="img/beijinho.jpeg" alt="Beijinho">
+<img src="img/beijinho.jpeg">
 <h3>Beijinho</h3>
 <p>Caseiro</p>
-<button class="btn-detalhes" onclick="abrirProduto('beijinho')">Ver mais</button>
+<button onclick="abrirProduto('beijinho','Beijinho')">Ver mais</button>
 </div>
 
 <div class="card" data-name="bambole">
-<img src="img/banbole.jpeg" alt="Bambolê">
+<img src="img/banbole.jpeg">
 <h3>Bambolê</h3>
 <p>Caseiro</p>
-<button class="btn-detalhes" onclick="abrirProduto('bambole')">Ver mais</button>
+<button onclick="abrirProduto('bambole','Bambolê')">Ver mais</button>
 </div>
 
 <div class="card" data-name="sasha">
-<img src="img/sasha.jpeg" alt="Sasha">
+<img src="img/sasha.jpeg">
 <h3>Sasha</h3>
 <p>Caseiro</p>
-<button class="btn-detalhes" onclick="abrirProduto('sasha')">Ver mais</button>
+<button onclick="abrirProduto('sasha','Sasha')">Ver mais</button>
 </div>
 
 </div>
 
-<p class="no-result" id="noResult" style="display:none;">
-Produto não encontrado
-</p>
+<p id="noResult" style="display:none;">Produto não encontrado</p>
 
 </section>
 
-<!-- MODAL PRODUTO -->
 
-<div class="modal" id="produtoModal">
+<!-- MODAL -->
+
+<div id="produtoModal" class="modal">
 
 <div class="modal-content">
 
@@ -110,10 +108,13 @@ Produto não encontrado
 
 </div>
 
+
 <!-- BOTÃO WHATSAPP -->
+
 <a href="https://wa.me/5531992767228" class="whatsapp-float" target="_blank">
 <i class="fa-brands fa-whatsapp"></i>
 </a>
+
 
 <script>
 
@@ -162,11 +163,14 @@ sasha: "Biscoito amanteigado caseiro muito macio. Disponível em nossa loja fís
 
 };
 
-function abrirProduto(nome){
+
+function abrirProduto(id,nome){
 
 document.getElementById("produtoModal").style.display = "flex";
+
 document.getElementById("produtoTitulo").innerText = nome;
-document.getElementById("produtoDescricao").innerText = descricaoProdutos[nome];
+
+document.getElementById("produtoDescricao").innerText = descricaoProdutos[id];
 
 }
 

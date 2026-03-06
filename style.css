@@ -527,3 +527,9 @@ font-weight:600;
 .menu-lateral.ativo{
 left:0;
 }
+.fechar-menu{
+font-size: 25px;
+color: #333;
+cursor: pointer;
+margin-bottom: 20px;
+}

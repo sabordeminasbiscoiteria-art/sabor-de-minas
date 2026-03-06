@@ -635,12 +635,13 @@ color:#C62828;
 }
 .descricao-biscoitos{
 text-align: center;
-font-size: 18px;
+font-size: 20px;
 font-weight: 600;
-color: #b22222;
+color: #111;
 margin-top: 10px;
-margin-bottom: 15px;
+margin-bottom: 20px;
 letter-spacing: 1px;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 

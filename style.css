@@ -196,6 +196,10 @@ padding: 20px;
   object-fit: cover; /* Ajusta as imagens de forma responsiva */
 }
 
+.card{
+width:100%;
+}
+
 .card h3 {
   margin: 10px 0 5px;
 }
@@ -770,5 +774,6 @@ font-size:30px;
 }
 
 }
+
 
 

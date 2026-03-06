@@ -525,4 +525,17 @@ background:#f5f5f5;
 .menu-lateral.ativo{
 left:0;
 }
+.menu-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px; /* muda para right: 15px; se quiser no canto direito */
+    z-index: 1001;
+    background: #111;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 

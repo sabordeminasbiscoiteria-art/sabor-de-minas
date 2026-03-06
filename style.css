@@ -495,3 +495,19 @@ max-width:700px;
 margin:auto;
 margin-top:30px;
 }
+/* BLOQUEAR SEGURAR IMAGEM */
+
+img{
+pointer-events:none;
+user-select:none;
+-webkit-user-drag:none;
+}
+
+/* BLOQUEAR SELEÇÃO DE TEXTO */
+
+body{
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+}

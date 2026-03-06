@@ -454,3 +454,29 @@ padding:10px;
 }
 
 }
+/* ===== MENU SUPERIOR (ABAIXO DA LOGO) ===== */
+
+.menu-superior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f6f3;  /* Cor de fundo do menu */
+    padding: 10px 0;  /* Ajusta o espaçamento ao redor */
+}
+
+.menu-superior nav {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-superior nav a {
+    text-decoration: none;
+    color: #4A2C1D;  /* Cor das opções do menu */
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.menu-superior nav a:hover {
+    color: #C62828;  /* Cor de destaque ao passar o mouse */
+}

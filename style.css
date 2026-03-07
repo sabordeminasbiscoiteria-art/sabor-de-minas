@@ -1,4 +1,6 @@
-/* ================= RESET ================= */
+/* ===================================================== */
+/* ======================= RESET ======================= */
+/* ===================================================== */
 
 *{
 box-sizing:border-box;
@@ -6,17 +8,38 @@ margin:0;
 padding:0;
 }
 
-/* ================= BODY ================= */
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+/* ===================================================== */
+/* ======================== BODY ======================= */
+/* ===================================================== */
 
 body{
 font-family:'Poppins',sans-serif;
 background:#f8f6f3;
 color:#3e2f2f;
 overflow-x:hidden;
+
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
 user-select:none;
 }
 
-/* ================= IMAGENS ================= */
+body{
+font-family:'Poppins',sans-serif;
+background:#f8f6f3;
+color:#3e2f2f;
+overflow-x:hidden;
+}
+
+/* ===================================================== */
+/* ======================= IMAGENS ===================== */
+/* ===================================================== */
 
 img{
 pointer-events:none;
@@ -25,7 +48,26 @@ user-select:none;
 border-radius:0 !important;
 }
 
-/* ================= HEADER ================= */
+/* ===================================================== */
+/* ======================== HEADER ===================== */
+/* ===================================================== */
+
+header{
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:20px;
+background:#f8f6f3;
+gap:12px;
+}
+
+header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+background:#d32f2f;
+padding:10px 20px;
+}
 
 header{
 display:flex;
@@ -36,16 +78,71 @@ background:#f8f6f3;
 position:relative;
 }
 
+/* ===================================================== */
+/* ========================= LOGO ====================== */
+/* ===================================================== */
+
 .logo img{
 height:60px;
 }
 
-/* ================= MENU TOPO ================= */
+.logo img{
+height:60px;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:white;
+}
+
+/* ===================================================== */
+/* ========================= NAV ======================= */
+/* ===================================================== */
+
+nav{
+display:flex;
+gap:25px;
+align-items:center;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+nav a{
+text-decoration:none;
+color:#4A2C1D;
+font-weight:600;
+font-size:16px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#C62828;
+}
+
+/* ===================================================== */
+/* ====================== MENU TOPO ==================== */
+/* ===================================================== */
+
+.menu-topo{
+display:flex;
+gap:20px;
+}
 
 .menu-topo{
 display:flex;
 gap:25px;
 align-items:center;
+}
+
+.menu-topo a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.menu-topo a:hover{
+text-decoration:underline;
 }
 
 .menu-topo a{
@@ -60,51 +157,43 @@ transition:0.3s;
 color:#C62828;
 }
 
-/* ================= BOTÃO MENU (☰) ================= */
+/* ===================================================== */
+/* ====================== BUSCA ======================== */
+/* ===================================================== */
 
-.menu-btn{
-font-size:28px;
-cursor:pointer;
-color:#4A2C1D;
-position:absolute;
-top:20px;
-left:15px;
-z-index:1001;
-}
-
-/* ================= MENU LATERAL ================= */
-
-.menu-lateral{
-position:fixed;
-top:0;
-left:-260px;
-width:260px;
-height:100%;
+.search-box{
+display:flex;
+align-items:center;
+gap:8px;
+border:1px solid #ddd;
+border-radius:25px;
+padding:8px 15px;
 background:white;
-box-shadow:2px 0 10px rgba(0,0,0,0.2);
-padding-top:60px;
-transition:0.3s;
-z-index:1400;
 }
 
-.menu-lateral a{
-display:block;
-padding:15px 25px;
-text-decoration:none;
-color:#4A2C1D;
-font-weight:600;
-border-bottom:1px solid #eee;
+.search-box i{
+color:#888;
+font-size:14px;
 }
 
-.menu-lateral a:hover{
-background:#f5f5f5;
+.search-box input{
+border:none;
+outline:none;
+font-size:14px;
+width:200px;
+background:transparent;
 }
 
-.menu-lateral.ativo{
-left:0;
+.pesquisa{
+width:100%;
+padding:10px;
+border:none;
+outline:none;
 }
 
-/* ================= HERO ================= */
+/* ===================================================== */
+/* ======================= HERO ======================== */
+/* ===================================================== */
 
 .hero{
 position:relative;
@@ -141,6 +230,12 @@ font-size:18px;
 margin-bottom:20px;
 }
 
+.experiencia{
+margin-top:10px;
+font-size:15px;
+opacity:0.9;
+}
+
 .hero-text button{
 background:linear-gradient(135deg,#C62828,#8E0000);
 color:white;
@@ -157,7 +252,9 @@ transition:0.3s;
 transform:translateY(-3px);
 }
 
-/* ================= PRODUTOS ================= */
+/* ===================================================== */
+/* ====================== PRODUTOS ===================== */
+/* ===================================================== */
 
 .products{
 padding:60px 20px;
@@ -169,8 +266,6 @@ font-size:34px;
 margin-bottom:30px;
 }
 
-/* GRID PRODUTOS */
-
 .grid{
 display:grid;
 grid-template-columns:repeat(2,1fr);
@@ -180,14 +275,13 @@ margin:auto;
 padding:20px;
 }
 
-/* CARD */
-
 .card{
 background:white;
 padding:15px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
-border-radius:10px;
 transition:0.3s;
+width:100%;
+border-radius:10px;
 }
 
 .card:hover{
@@ -203,8 +297,6 @@ object-fit:cover;
 .card h3{
 margin:10px 0 5px;
 }
-
-/* BOTÃO PRODUTO */
 
 .btn-ver{
 background:#c62828;
@@ -222,7 +314,9 @@ transition:0.3s;
 background:#a61f1f;
 }
 
-/* ================= CONTATO ================= */
+/* ===================================================== */
+/* ======================= CONTATO ===================== */
+/* ===================================================== */
 
 .contato{
 padding:60px 20px;
@@ -259,8 +353,6 @@ width:220px;
 transition:0.3s;
 }
 
-/* WHATSAPP */
-
 .whatsapp{
 background:#25D366;
 }
@@ -270,8 +362,6 @@ background:#1ebe5d;
 transform:translateY(-3px);
 }
 
-/* INSTAGRAM */
-
 .insta{
 background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
 }
@@ -280,7 +370,13 @@ background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
 transform:translateY(-3px);
 }
 
-/* ================= BOTÃO WHATSAPP FIXO ================= */
+.contato-btn i{
+font-size:22px;
+}
+
+/* ===================================================== */
+/* ================== WHATSAPP FLOAT =================== */
+/* ===================================================== */
 
 .whatsapp-float{
 position:fixed;
@@ -303,9 +399,12 @@ z-index:999;
 
 .whatsapp-float:hover{
 transform:scale(1.1);
+background:#1ebe5d;
 }
 
-/* ================= MODAL ================= */
+/* ===================================================== */
+/* ======================== MODAL ====================== */
+/* ===================================================== */
 
 .modal{
 display:none;
@@ -328,6 +427,17 @@ max-width:400px;
 width:90%;
 text-align:center;
 position:relative;
+animation:aparecer 0.3s ease;
+}
+
+.modal-content h2{
+margin-bottom:15px;
+color:#4A2C1D;
+}
+
+.modal-content p{
+font-size:16px;
+line-height:1.5;
 }
 
 .fechar{
@@ -338,17 +448,50 @@ font-size:25px;
 cursor:pointer;
 }
 
-/* ================= RESPONSIVO ================= */
+@keyframes aparecer{
+from{
+transform:scale(0.8);
+opacity:0;
+}
+to{
+transform:scale(1);
+opacity:1;
+}
+}
+
+/* ===================================================== */
+/* ====================== RESPONSIVO =================== */
+/* ===================================================== */
+
+@media (min-width:768px){
+
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (min-width:1024px){
+
+.grid{
+grid-template-columns:repeat(3,1fr);
+max-width:1100px;
+}
+
+}
 
 @media (max-width:768px){
 
 header{
 flex-direction:column;
+align-items:center;
 gap:10px;
 }
 
 .menu-topo{
+display:flex;
 justify-content:center;
+gap:15px;
 flex-wrap:wrap;
 }
 
@@ -362,13 +505,19 @@ font-size:30px;
 
 }
 
-/* PC */
+@media (max-width:480px){
 
-@media (min-width:1024px){
+.logo img{
+height:50px;
+}
+
+.hero-text h1{
+font-size:30px;
+}
 
 .grid{
-grid-template-columns:repeat(3,1fr);
-max-width:1100px;
+gap:15px;
+padding:10px;
 }
 
 }

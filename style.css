@@ -36,7 +36,7 @@ background:#f8f6f3;
 position:relative;
 }
 
-/* ================= LOGO ================= */
+/* LOGO */
 
 .logo img{
 height:60px;
@@ -171,10 +171,6 @@ border-radius:40px;
 cursor:pointer;
 font-size:16px;
 font-weight:600;
-}
-
-.hero-text button:hover{
-transform:translateY(-3px);
 }
 
 /* ================= PRODUTOS ================= */
@@ -312,17 +308,9 @@ color:white;
 width:220px;
 }
 
-/* WHATSAPP */
-
 .whatsapp{
 background:#25D366;
 }
-
-.whatsapp:hover{
-background:#1ebe5d;
-}
-
-/* INSTAGRAM */
 
 .insta{
 background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
@@ -364,13 +352,23 @@ grid-template-columns:repeat(2,1fr);
 
 @media (min-width:1024px){
 
-.grid{
-grid-template-columns:repeat(3,1fr);
+body{
+max-width:1200px;
+margin:auto;
 }
 
 header{
 flex-direction:row;
 justify-content:space-between;
+}
+
+.menu-topo{
+gap:30px;
+}
+
+.grid{
+grid-template-columns:repeat(3,1fr);
+gap:25px;
 }
 
 }

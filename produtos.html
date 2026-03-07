@@ -1,186 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Produtos</title>
+<title>Nossos Produtos</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-/* RESET */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-/* BODY */
-
-body{
-font-family:Arial, Helvetica, sans-serif;
-background:#f8f6f3;
-color:#3e2f2f;
-}
-
-/* LOGO */
-
-.logo{
-text-align:center;
-margin-top:20px;
-}
-
-.logo img{
-width:180px;
-}
-
-/* PRODUTOS */
-
-.produtos-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-padding:30px;
-max-width:1100px;
-margin:auto;
-}
-
-/* CARD PRODUTO */
-
-.produto{
-background:white;
-border-radius:10px;
-padding:15px;
-text-align:center;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-.produto img{
-width:100%;
-border-radius:8px;
-}
-
-/* TITULO */
-
-.produto h3{
-margin:10px 0;
-}
-
-/* BOTÃO */
-
-button{
-background:#8b5e3c;
-color:white;
-border:none;
-padding:10px 15px;
-border-radius:6px;
-cursor:pointer;
-margin-top:8px;
-}
-
-button:hover{
-background:#6e472c;
-}
-
-/* DESCRIÇÃO */
-
-.descricao{
-display:none;
-margin-top:10px;
-font-size:14px;
-}
-
-</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<!-- LOGO -->
+<header>
 
-<div class="logo">
-<img src="img/logo.png">
+<nav class="menu-topo">
+<a href="index.html">Início</a>
+<a href="produtos.html">Biscoitos</a>
+<a href="contato.html">Contato</a>
+</nav>
+
+<div class="search-box">
+<i class="fa fa-search"></i>
+<input type="text" id="searchInput" placeholder="Pesquisar produto...">
+</div>
+
+</header>
+
+
+<section class="products">
+
+<h2>Nossos Biscoitos</h2>
+
+<div class="grid">
+
+<div class="card" data-name="casadinho">
+<img src="img/casadinho.jpeg">
+<h3>Casadinho</h3>
+<p>Caseiro</p>
+<button class="btn-ver" onclick="abrirProduto('casadinho','Casadinho')">Ver mais</button>
+</div>
+
+<div class="card" data-name="casadinho goiabada">
+<img src="img/casadinhoo.jpeg">
+<h3>Casadinho Goiabada</h3>
+<p>Caseiro</p>
+<button class="btn-ver" onclick="abrirProduto('goiabada','Casadinho Goiabada')">Ver mais</button>
+</div>
+
+<div class="card" data-name="canela">
+<img src="img/canela.jpeg">
+<h3>Canela</h3>
+<p>Caseiro</p>
+<button class="btn-ver" onclick="abrirProduto('canela','Canela')">Ver mais</button>
+</div>
+
+<div class="card" data-name="ugauga">
+<img src="img/ugauga.jpeg">
+<h3>Uga-uga</h3>
+<p>Caseiro</p>
+<button class="btn-ver" onclick="abrirProduto('ugauga','Uga-uga')">Ver mais</button>
+</div>
+
+<div class="card" data-name="beijinho">
+<img src="img/beijinho.jpeg">
+<h3>Beijinho</h3>
+<p>Caseiro</p>
+<button class="btn-ver" onclick="abrirProduto('beijinho','Beijinho')">Ver mais</button>
+</div>
+
+<div class="card" data-name="bambole">
+<img src="img/banbole.jpeg">
+<h3>Bambolê</h3>
+<p>Caseiro</p>
+<button class="btn-ver" onclick="abrirProduto('bambole','Bambolê')">Ver mais</button>
+</div>
+
+<div class="card" data-name="sasha">
+<img src="img/sasha.jpeg">
+<h3>Sasha</h3>
+<p>Caseiro</p>
+<button class="btn-ver" onclick="abrirProduto('sasha','Sasha')">Ver mais</button>
+</div>
+
+</div>
+
+<p id="noResult" style="display:none;">Produto não encontrado</p>
+
+</section>
+
+
+<!-- MODAL -->
+
+<div id="produtoModal" class="modal">
+
+<div class="modal-content">
+
+<span class="fechar" onclick="fecharProduto()">&times;</span>
+
+<h2 id="produtoTitulo"></h2>
+
+<p id="produtoDescricao"></p>
+
+</div>
+
 </div>
 
 
-<!-- PRODUTOS -->
+<!-- BOTÃO WHATSAPP -->
 
-<div class="produtos-container">
-
-<div class="produto">
-
-<img src="img/biscoito1.jpg">
-
-<h3>Biscoito Amanteigado</h3>
-
-<button onclick="verMais('d1')">Ver mais</button>
-
-<p id="d1" class="descricao">
-Biscoito amanteigado artesanal feito com ingredientes selecionados e muito carinho.
-</p>
-
-</div>
-
-
-<div class="produto">
-
-<img src="img/biscoito2.jpg">
-
-<h3>Biscoito de Chocolate</h3>
-
-<button onclick="verMais('d2')">Ver mais</button>
-
-<p id="d2" class="descricao">
-Delicioso biscoito de chocolate crocante por fora e macio por dentro.
-</p>
-
-</div>
-
-
-<div class="produto">
-
-<img src="img/biscoito3.jpg">
-
-<h3>Biscoito de Leite</h3>
-
-<button onclick="verMais('d3')">Ver mais</button>
-
-<p id="d3" class="descricao">
-Biscoito caseiro sabor leite perfeito para café da tarde.
-</p>
-
-</div>
-
-
-<div class="produto">
-
-<img src="img/biscoito4.jpg">
-
-<h3>Biscoito de Coco</h3>
-
-<button onclick="verMais('d4')">Ver mais</button>
-
-<p id="d4" class="descricao">
-Biscoito artesanal com coco natural e textura crocante.
-</p>
-
-</div>
-
-</div>
+<a href="https://wa.me/5531992767228" class="whatsapp-float" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
 
 
 <script>
 
-function verMais(id){
+const searchInput = document.getElementById("searchInput");
+const products = document.querySelectorAll(".card");
+const noResult = document.getElementById("noResult");
 
-var texto = document.getElementById(id);
+searchInput.addEventListener("keyup", () => {
 
-if(texto.style.display === "block"){
-texto.style.display = "none";
+let search = searchInput.value.toLowerCase();
+let visible = 0;
+
+products.forEach(card => {
+
+let name = card.getAttribute("data-name").toLowerCase();
+
+if(name.includes(search)){
+card.style.display = "block";
+visible++;
 }else{
-texto.style.display = "block";
+card.style.display = "none";
 }
+
+});
+
+noResult.style.display = visible === 0 ? "block" : "none";
+
+});
+
+
+const descricaoProdutos = {
+
+casadinho: "Biscoito amanteigado tradicional recheado com goiabada. Disponível em nossa loja física.",
+
+goiabada: "Casadinho delicioso com recheio de goiabada artesanal. Disponível em nossa loja física.",
+
+canela: "Biscoito crocante com sabor suave de canela. Disponível em nossa loja física.",
+
+ugauga: "Biscoito caseiro tradicional muito saboroso. Disponível em nossa loja física.",
+
+beijinho: "Biscoito doce com sabor delicado de coco. Disponível em nossa loja física.",
+
+bambole: "Biscoito crocante e leve perfeito para café. Disponível em nossa loja física.",
+
+sasha: "Biscoito amanteigado caseiro muito macio. Disponível em nossa loja física."
+
+};
+
+
+function abrirProduto(id,nome){
+
+document.getElementById("produtoModal").style.display = "flex";
+
+document.getElementById("produtoTitulo").innerText = nome;
+
+document.getElementById("produtoDescricao").innerText = descricaoProdutos[id];
+
+}
+
+function fecharProduto(){
+
+document.getElementById("produtoModal").style.display = "none";
 
 }
 

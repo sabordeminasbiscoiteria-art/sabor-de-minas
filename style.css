@@ -343,21 +343,28 @@ header{
 
 /* PC */
 @media (min-width:1024px){
+
   header{
-    flex-direction:row;
-    justify-content:space-between;
+    display:flex;
     align-items:center;
+    justify-content:center;
+    position:relative;
   }
 
-  .grid{
-    grid-template-columns:repeat(4,1fr);
+  .logo{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
   }
 
-  .hero-text h1{
-    font-size:42px;
+  .menu-topo{
+    position:absolute;
+    right:30px;
   }
 
-  .logo img{
-    height:60px;
+  .menu-btn{
+    position:absolute;
+    left:30px;
   }
+
 }

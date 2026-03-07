@@ -220,15 +220,6 @@ header{
 .btn-ver:hover{
   background:#a61f1f;
   
-.btn-preco {
-  background-color: #28a745; /* verde sólido */
-  color: white; /* texto branco */
-  border: none;
-  padding: 6px 12px;
-  margin-top: 5px;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: default; /* não clicável */
 }
 
 /* ================= MODAL ================= */
@@ -387,6 +378,7 @@ header{
 }
 
 }
+
 
 
 

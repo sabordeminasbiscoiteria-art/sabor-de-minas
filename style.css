@@ -13,14 +13,10 @@ font-family:'Poppins',sans-serif;
 background:#f8f6f3;
 color:#3e2f2f;
 overflow-x:hidden;
-
--webkit-user-select:none;
--moz-user-select:none;
--ms-user-select:none;
 user-select:none;
 }
 
-/* ================= BLOQUEAR IMAGENS ================= */
+/* ================= IMAGENS ================= */
 
 img{
 pointer-events:none;
@@ -33,30 +29,26 @@ border-radius:0 !important;
 
 header{
 display:flex;
-flex-direction:column;
 align-items:center;
-padding:20px;
+justify-content:space-between;
+padding:15px 25px;
 background:#f8f6f3;
-gap:12px;
+position:relative;
 }
-
-/* LOGO */
 
 .logo img{
 height:60px;
 }
 
-/* ================= MENU ================= */
+/* ================= MENU TOPO ================= */
 
-nav{
+.menu-topo{
 display:flex;
 gap:25px;
 align-items:center;
-justify-content:center;
-flex-wrap:wrap;
 }
 
-nav a{
+.menu-topo a{
 text-decoration:none;
 color:#4A2C1D;
 font-weight:600;
@@ -64,33 +56,52 @@ font-size:16px;
 transition:0.3s;
 }
 
-nav a:hover{
+.menu-topo a:hover{
 color:#C62828;
 }
 
-/* ================= BUSCA ================= */
+/* ================= BOTÃO MENU (☰) ================= */
 
-.search-box{
-display:flex;
-align-items:center;
-gap:8px;
-border:1px solid #ddd;
-border-radius:25px;
-padding:8px 15px;
+.menu-btn{
+font-size:28px;
+cursor:pointer;
+color:#4A2C1D;
+position:absolute;
+top:20px;
+left:15px;
+z-index:1001;
+}
+
+/* ================= MENU LATERAL ================= */
+
+.menu-lateral{
+position:fixed;
+top:0;
+left:-260px;
+width:260px;
+height:100%;
 background:white;
+box-shadow:2px 0 10px rgba(0,0,0,0.2);
+padding-top:60px;
+transition:0.3s;
+z-index:1400;
 }
 
-.search-box i{
-color:#888;
-font-size:14px;
+.menu-lateral a{
+display:block;
+padding:15px 25px;
+text-decoration:none;
+color:#4A2C1D;
+font-weight:600;
+border-bottom:1px solid #eee;
 }
 
-.search-box input{
-border:none;
-outline:none;
-font-size:14px;
-width:200px;
-background:transparent;
+.menu-lateral a:hover{
+background:#f5f5f5;
+}
+
+.menu-lateral.ativo{
+left:0;
 }
 
 /* ================= HERO ================= */
@@ -130,14 +141,6 @@ font-size:18px;
 margin-bottom:20px;
 }
 
-.experiencia{
-margin-top:10px;
-font-size:15px;
-opacity:0.9;
-}
-
-/* BOTÃO HERO */
-
 .hero-text button{
 background:linear-gradient(135deg,#C62828,#8E0000);
 color:white;
@@ -166,7 +169,7 @@ font-size:34px;
 margin-bottom:30px;
 }
 
-/* GRID */
+/* GRID PRODUTOS */
 
 .grid{
 display:grid;
@@ -183,9 +186,8 @@ padding:20px;
 background:white;
 padding:15px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
-transition:0.3s;
-width:100%;
 border-radius:10px;
+transition:0.3s;
 }
 
 .card:hover{
@@ -278,11 +280,7 @@ background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
 transform:translateY(-3px);
 }
 
-.contato-btn i{
-font-size:22px;
-}
-
-/* ================= BOTÃO WHATSAPP ================= */
+/* ================= BOTÃO WHATSAPP FIXO ================= */
 
 .whatsapp-float{
 position:fixed;
@@ -305,7 +303,6 @@ z-index:999;
 
 .whatsapp-float:hover{
 transform:scale(1.1);
-background:#1ebe5d;
 }
 
 /* ================= MODAL ================= */
@@ -331,17 +328,6 @@ max-width:400px;
 width:90%;
 text-align:center;
 position:relative;
-animation:aparecer 0.3s ease;
-}
-
-.modal-content h2{
-margin-bottom:15px;
-color:#4A2C1D;
-}
-
-.modal-content p{
-font-size:16px;
-line-height:1.5;
 }
 
 .fechar{
@@ -352,416 +338,18 @@ font-size:25px;
 cursor:pointer;
 }
 
-/* ANIMAÇÃO */
-
-@keyframes aparecer{
-from{
-transform:scale(0.8);
-opacity:0;
-}
-to{
-transform:scale(1);
-opacity:1;
-}
-}
-
-/* ================= RESPONSIVO ================= */
-
-@media (min-width:768px){
-
-.grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-}
-
-@media (min-width:1024px){
-
-.grid{
-grid-template-columns:repeat(3,1fr);
-max-width:1100px;
-}
-
-}
-
-@media (max-width:480px){
-
-.logo img{
-height:50px;
-}
-
-.hero-text h1{
-font-size:30px;
-}
-
-.grid{
-gap:15px;
-padding:10px;
-}
-
-}
-/* TOPO DO SITE */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #d32f2f;
-    padding: 10px 20px;
-}
-
-/* BOTÃO DO MENU LATERAL (3 risquinhos) */
-.menu-btn{
-position: absolute;
-left: 15px;
-top: 20px;
-font-size: 28px;
-cursor: pointer;
-z-index: 1001;
-}
-
-/* LOGO */
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: white;
-}
-
-/* MENU SUPERIOR */
-.menu-topo {
-    display: flex;
-    gap: 20px;
-}
-
-.menu-topo a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.menu-topo a:hover {
-    text-decoration: underline;
-}
-
-/* BARRA DE PESQUISA EMBAIXO */
-.pesquisa {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
-}
-
-/* MENU LATERAL */
-.menu-lateral {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background: #333;
-    transition: 0.3s;
-    padding-top: 60px;
-}
-
-.menu-lateral a {
-    display: block;
-    padding: 12px 20px;
-    color: white;
-    text-decoration: none;
-}
-
-.menu-lateral a:hover {
-    background: #444;
-}
-
-/* MENU ABERTO */
-.menu-lateral.ativo {
-    left: 0;
-}
-/* ================= MENU LATERAL ================= */
-
-/* BOTÃO 3 RISQUINHOS */
-
-.menu-toggle{
-position:absolute;
-left:20px;
-top:25px;
-font-size:28px;
-cursor:pointer;
-color:#4A2C1D;
-z-index:1500;
-}
-
-/* MENU LATERAL */
-
-.menu-lateral{
-position:fixed;
-top:0;
-left:-260px;
-width:260px;
-height:100%;
-background:#ffffff;
-box-shadow:2px 0 10px rgba(0,0,0,0.1);
-transition:0.3s;
-padding-top:80px;
-z-index:1400;
-}
-
-/* LINKS MENU */
-
-.menu-lateral a{
-display:block;
-padding:15px 25px;
-text-decoration:none;
-color:#4A2C1D;
-font-weight:600;
-border-bottom:1px solid #eee;
-transition:0.2s;
-}
-
-.menu-lateral a:hover{
-background:#f5f5f5;
-}
-
-/* MENU ABERTO */
-
-.menu-lateral.ativo{
-left:0;
-}
-.menu-toggle {
-    position: fixed;
-    top: 15px;
-    left: 15px; /* muda para right: 15px; se quiser no canto direito */
-    z-index: 1001;
-    background: #111;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.menu-toggle {
-    position: fixed !important;
-    top: 10px;
-    left: 10px;
-    z-index: 9999;
-}
-/* ================= RESET ================= */
-
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
-
-/* ================= BODY ================= */
-
-body{
-font-family:'Poppins',sans-serif;
-background:#f8f6f3;
-color:#3e2f2f;
-overflow-x:hidden;
-}
-
-/* ================= HEADER ================= */
-
-header{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:15px 25px;
-background:#f8f6f3;
-position:relative;
-}
-
-/* LOGO */
-
-.logo img{
-height:60px;
-}
-
-/* MENU NORMAL */
-.menu-topo{
-display:flex;
-gap:25px;
-align-items:center;
-}
-
-.menu-topo a{
-text-decoration:none;
-color:#4A2C1D;
-font-weight:600;
-font-size:16px;
-transition:0.3s;
-}
-
-.menu-topo a:hover{
-color:#C62828;
-}
-
-/* ================= MENU LATERAL ================= */
-
-.menu-lateral{
-position:fixed;
-top:0;
-left:-260px;
-width:260px;
-height:100%;
-background:white;
-box-shadow:2px 0 10px rgba(0,0,0,0.2);
-padding-top:60px;
-transition:0.3s;
-}
-
-.menu-lateral a{
-display:block;
-padding:15px 25px;
-text-decoration:none;
-color:#4A2C1D;
-font-weight:600;
-border-bottom:1px solid #eee;
-transition:0.2s;
-}
-
-.menu-lateral a:hover{
-background:#f5f5f5;
-}
-
-.menu-lateral.ativo{
-left:0;
-}
-
-/* ================= BOTÃO MENU LATERAL (☰) DENTRO DO MENU ================= */
-
-.menu-fechar{
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 28px;
-  cursor: pointer;
-  color: #4A2C1D;
-  z-index: 1001;
-}
-
-/* ================= MENU LATERAL ================= */
-.menu-lateral {
-  position: fixed;
-  top: 0;
-  left: -260px;
-  width: 260px;
-  height: 100%;
-  background: #ffffff;
-  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
-  padding-top: 60px;
-  transition: 0.3s;
-}
-
-.menu-lateral a {
-  display: block;
-  padding: 15px 25px;
-  text-decoration: none;
-  color: #4A2C1D;
-  font-weight: 600;
-  border-bottom: 1px solid #eee;
-  transition: 0.2s;
-}
-
-.menu-lateral a:hover {
-  background: #f5f5f5;
-}
-
-/* MENU LATERAL ABERTO */
-.menu-lateral.ativo {
-  left: 0;
-}
-
-/* BOTÃO 3 RISQUINHOS - MENU */
-.menu-btn {
-  font-size: 28px;
-  cursor: pointer;
-  color: #4A2C1D;
-  z-index: 1001;
-  position: absolute;
-  top: 20px;
-  left: 15px;
-}
-
-/* ================= HERO ================= */
-
-.hero{
-position:relative;
-min-height:85vh;
-background:url('img/beijinho.jpeg') center/cover no-repeat;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:40px 20px;
-}
-
-.hero::before{
-content:"";
-position:absolute;
-inset:0;
-background:rgba(0,0,0,0.45);
-}
-
-.hero-text{
-position:relative;
-color:white;
-max-width:600px;
-margin:auto;
-}
-
-.hero-text h1{
-font-size:42px;
-margin-bottom:15px;
-}
-
-.hero-text p{
-font-size:18px;
-margin-bottom:20px;
-}
-
-.hero-text button{
-background:linear-gradient(135deg,#C62828,#8E0000);
-color:white;
-border:none;
-padding:14px 45px;
-border-radius:40px;
-cursor:pointer;
-font-size:16px;
-font-weight:600;
-transition:0.3s;
-}
-
-.hero-text button:hover{
-transform:translateY(-3px);
-}
-
 /* ================= RESPONSIVO ================= */
 
 @media (max-width:768px){
 
 header{
 flex-direction:column;
-align-items:center;
 gap:10px;
 }
 
 .menu-topo{
-display:flex;
 justify-content:center;
-gap:15px;
 flex-wrap:wrap;
-}
-
-.menu-btn{
-font-size:28px;
-cursor:pointer;
-position: absolute;
-left:15px;
-top:20px;
 }
 
 .grid{
@@ -773,28 +361,14 @@ font-size:30px;
 }
 
 }
-/* AJUSTE SOMENTE PARA PC */
-@media (min-width: 1024px){
 
-  .produtos-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
+/* PC */
 
-  .produto-card{
-    width: 250px;
-  }
+@media (min-width:1024px){
 
-  header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .barra-pesquisa{
-    margin: 0 auto;
-  }
+.grid{
+grid-template-columns:repeat(3,1fr);
+max-width:1100px;
+}
 
 }

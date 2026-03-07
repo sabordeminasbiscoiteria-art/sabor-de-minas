@@ -2,16 +2,12 @@
 <html lang="pt-br">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Nossos Produtos</title>
+<title>Biscoitos Artesanais</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
 
 <body>
@@ -31,10 +27,8 @@
 
 </header>
 
-
 <section class="products">
-
-<h2>Nossos Biscoitos</h2>
+<h2>Biscoitos Artesanais</h2>
 
 <div class="grid">
 
@@ -74,7 +68,7 @@
 </div>
 
 <div class="card" data-name="bambole">
-<img src="img/banbole.jpeg" alt="Bambolê">
+<img src="img/bambole.jpeg" alt="Bambolê">
 <h3>Bambolê</h3>
 <p>Caseiro</p>
 <button class="btn-ver" onclick="abrirProduto('bambole','Bambolê')">Ver mais</button>
@@ -84,4 +78,71 @@
 <img src="img/sasha.jpeg" alt="Sasha">
 <h3>Sasha</h3>
 <p>Caseiro</p>
-<button class="btn-ver" onclick="abrirProduto('sasha','Sasha
+<button class="btn-ver" onclick="abrirProduto('sasha','Sasha')">Ver mais</button>
+</div>
+
+</div>
+
+<p id="noResult" style="display:none;">Produto não encontrado</p>
+
+</section>
+
+<!-- MODAL -->
+<div id="produtoModal" class="modal">
+<div class="modal-content">
+<span class="fechar" onclick="fecharProduto()">&times;</span>
+<h2 id="produtoTitulo"></h2>
+<p id="produtoDescricao"></p>
+</div>
+</div>
+
+<!-- BOTÃO WHATSAPP -->
+<a href="https://wa.me/5531992767228" class="whatsapp-float" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+const searchInput = document.getElementById("searchInput");
+const products = document.querySelectorAll(".card");
+const noResult = document.getElementById("noResult");
+
+searchInput.addEventListener("keyup", () => {
+  let search = searchInput.value.toLowerCase();
+  let visible = 0;
+
+  products.forEach(card => {
+    let name = card.getAttribute("data-name").toLowerCase();
+    if(name.includes(search)){
+      card.style.display = "block";
+      visible++;
+    }else{
+      card.style.display = "none";
+    }
+  });
+
+  noResult.style.display = visible === 0 ? "block" : "none";
+});
+
+const descricaoProdutos = {
+casadinho: "Biscoito amanteigado tradicional recheado com goiabada. Disponível em nossa loja física.",
+goiabada: "Casadinho delicioso com recheio de goiabada artesanal. Disponível em nossa loja física.",
+canela: "Biscoito crocante com sabor suave de canela. Disponível em nossa loja física.",
+ugauga: "Biscoito caseiro tradicional muito saboroso. Disponível em nossa loja física.",
+beijinho: "Biscoito doce com sabor delicado de coco. Disponível em nossa loja física.",
+bambole: "Biscoito crocante e leve perfeito para café. Disponível em nossa loja física.",
+sasha: "Biscoito amanteigado caseiro muito macio. Disponível em nossa loja física."
+};
+
+function abrirProduto(id,nome){
+  document.getElementById("produtoModal").style.display = "flex";
+  document.getElementById("produtoTitulo").innerText = nome;
+  document.getElementById("produtoDescricao").innerText = descricaoProdutos[id];
+}
+
+function fecharProduto(){
+  document.getElementById("produtoModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>

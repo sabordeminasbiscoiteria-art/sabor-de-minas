@@ -1,101 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nossos Produtos</title>
+<title>Produtos</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#f8f6f3;
+color:#3e2f2f;
+}
+
+/* LOGO */
+
+.logo{
+text-align:center;
+margin-top:20px;
+}
+
+.logo img{
+width:180px;
+}
+
+/* PRODUTOS */
+
+.produtos-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:30px;
+max-width:1100px;
+margin:auto;
+}
+
+/* CARD PRODUTO */
+
+.produto{
+background:white;
+border-radius:10px;
+padding:15px;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.produto img{
+width:100%;
+border-radius:8px;
+}
+
+/* TITULO */
+
+.produto h3{
+margin:10px 0;
+}
+
+/* BOTÃO */
+
+button{
+background:#8b5e3c;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:6px;
+cursor:pointer;
+margin-top:8px;
+}
+
+button:hover{
+background:#6e472c;
+}
+
+/* DESCRIÇÃO */
+
+.descricao{
+display:none;
+margin-top:10px;
+font-size:14px;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<header>
+<!-- LOGO -->
 
-<nav class="menu-topo">
-<a href="index.html">Início</a>
-<a href="produtos.html">Biscoitos</a>
-<a href="contato.html">Contato</a>
-</nav>
-
-<div class="search-box">
-<i class="fa fa-search"></i>
-<input type="text" id="searchInput" placeholder="Pesquisar produto...">
+<div class="logo">
+<img src="img/logo.png">
 </div>
 
-</header>
 
+<!-- PRODUTOS -->
 
-<section class="products">
+<div class="produtos-container">
 
-<h2>Nossos Biscoitos</h2>
+<div class="produto">
 
-<div class="grid">
+<img src="img/biscoito1.jpg">
 
-<div class="card" data-name="casadinho">
-<img src="img/casadinho.jpeg">
-<h3>Casadinho</h3>
-<p>Caseiro</p>
-<button class="btn-ver" onclick="abrirProduto('casadinho','Casadinho')">Ver mais</button>
-</div>
+<h3>Biscoito Amanteigado</h3>
 
-<div class="card" data-name="casadinho goiabada">
-<img src="img/casadinhoo.jpeg">
-<h3>Casadinho Goiabada</h3>
-<p>Caseiro</p>
-<button class="btn-ver" onclick="abrirProduto('goiabada','Casadinho Goiabada')">Ver mais</button>
-</div>
+<button onclick="verMais('d1')">Ver mais</button>
 
-<div class="card" data-name="canela">
-<img src="img/canela.jpeg">
-<h3>Canela</h3>
-<p>Caseiro</p>
-<button class="btn-ver" onclick="abrirProduto('canela','Canela')">Ver mais</button>
-</div>
-
-<div class="card" data-name="ugauga">
-<img src="img/ugauga.jpeg">
-<h3>Uga-uga</h3>
-<p>Caseiro</p>
-<button class="btn-ver" onclick="abrirProduto('ugauga','Uga-uga')">Ver mais</button>
-</div>
-
-<div class="card" data-name="beijinho">
-<img src="img/beijinho.jpeg">
-<h3>Beijinho</h3>
-<p>Caseiro</p>
-<button class="btn-ver" onclick="abrirProduto('beijinho','Beijinho')">Ver mais</button>
-</div>
-
-<div class="card" data-name="bambole">
-<img src="img/banbole.jpeg">
-<h3>Bambolê</h3>
-<p>Caseiro</p>
-<button class="btn-ver" onclick="abrirProduto('bambole','Bambolê')">Ver mais</button>
-</div>
-
-<div class="card" data-name="sasha">
-<img src="img/sasha.jpeg">
-<h3>Sasha</h3>
-<p>Caseiro</p>
-<button class="btn-ver" onclick="abrirProduto('sasha','Sasha')">Ver mais</button>
-</div>
+<p id="d1" class="descricao">
+Biscoito amanteigado artesanal feito com ingredientes selecionados e muito carinho.
+</p>
 
 </div>
 
-<p id="noResult" style="display:none;">Produto não encontrado</p>
 
-</section>
+<div class="produto">
+
+<img src="img/biscoito2.jpg">
+
+<h3>Biscoito de Chocolate</h3>
+
+<button onclick="verMais('d2')">Ver mais</button>
+
+<p id="d2" class="descricao">
+Delicioso biscoito de chocolate crocante por fora e macio por dentro.
+</p>
+
+</div>
 
 
-<!-- MODAL -->
+<div class="produto">
 
-<div id="produtoModal" class="modal">
+<img src="img/biscoito3.jpg">
 
-<div class="modal-content">
+<h3>Biscoito de Leite</h3>
+
+<button onclick="verMais('d3')">Ver mais</button>
+
+<p id="d3" class="descricao">
+Biscoito caseiro sabor leite perfeito para café da tarde.
+</p>
+
+</div>
+
+
+<div class="produto">
+
+<img src="img/biscoito4.jpg">
+
+<h3>Biscoito de Coco</h3>
+
+<button onclick="verMais('d4')">Ver mais</button>
+
+<p id="d4" class="descricao">
+Biscoito artesanal com coco natural e textura crocante.
+</p>
+
+</div>
+
+</div>
+
+
+<script>
+
+function verMais(id){
+
+var texto = document.getElementById(id);
+
+if(texto.style.display === "block"){
+texto.style.display = "none";
+}else{
+texto.style.display = "block";
+}
+
+}
+
+</script>
+
+</body>
+</html>

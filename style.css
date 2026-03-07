@@ -351,20 +351,22 @@ header{
     position:relative;
   }
 
-  .logo{
+  .menu-btn{
     position:absolute;
-    left:50%;
-    transform:translateX(-50%);
+    left:20px;
+  }
+
+  .logo{
+    text-align:center;
   }
 
   .menu-topo{
     position:absolute;
-    right:30px;
+    right:20px;
   }
 
-  .menu-btn{
-    position:absolute;
-    left:30px;
+  .grid{
+    grid-template-columns:repeat(4,1fr);
   }
 
 }

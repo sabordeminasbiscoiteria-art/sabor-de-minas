@@ -219,7 +219,8 @@ header{
 
 .btn-ver:hover{
   background:#a61f1f;
-{ 
+}
+
 .btn-preco{
   background:#25D366;
   color:white;
@@ -229,7 +230,8 @@ header{
   font-weight:bold;
   margin-top:8px;
   width:100%;
-  
+}
+
   .btn-preco{:hover{
   background:#25D366;
   
@@ -389,5 +391,6 @@ header{
 .hero{
   background-position:center center;
 }
+
 
 

@@ -15,9 +15,11 @@ color:#3e2f2f;
 overflow-x:hidden;
 }
 
-/* ================= BLOQUEAR IMAGENS ================= */
+/* ================= IMAGENS ================= */
 
 img{
+max-width:100%;
+height:auto;
 pointer-events:none;
 user-select:none;
 -webkit-user-drag:none;
@@ -39,6 +41,9 @@ position:relative;
 
 .logo img{
 height:60px;
+width:auto;
+display:block;
+margin:auto;
 }
 
 /* ================= MENU SUPERIOR ================= */
@@ -174,171 +179,4 @@ font-weight:600;
 /* ================= PRODUTOS ================= */
 
 .products{
-padding:60px 20px;
-text-align:center;
-}
-
-.products h2{
-font-size:34px;
-margin-bottom:30px;
-}
-
-/* GRID AUTOMÁTICO (DESTRAVA PRODUTOS) */
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-max-width:1200px;
-margin:auto;
-padding:20px;
-}
-
-/* CARD PRODUTO */
-
-.card{
-background:white;
-padding:15px;
-border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-text-align:center;
-width:100%;
-}
-
-/* IMAGEM QUADRADA */
-
-.card img{
-width:100%;
-aspect-ratio:1/1;
-object-fit:cover;
-}
-
-.card h3{
-margin:10px 0;
-}
-
-/* BOTÃO VER MAIS */
-
-.btn-ver{
-background:#C62828;
-color:white;
-border:none;
-padding:10px 18px;
-border-radius:6px;
-cursor:pointer;
-font-weight:bold;
-margin-top:10px;
-}
-
-.btn-ver:hover{
-background:#a61f1f;
-}
-
-/* ================= MODAL ================= */
-
-.modal{
-display:none;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.6);
-align-items:center;
-justify-content:center;
-z-index:2000;
-}
-
-.modal-content{
-background:white;
-padding:30px;
-border-radius:10px;
-max-width:400px;
-width:90%;
-text-align:center;
-position:relative;
-}
-
-.fechar{
-position:absolute;
-top:10px;
-right:15px;
-font-size:25px;
-cursor:pointer;
-}
-
-/* ================= CONTATO ================= */
-
-.contato{
-padding:60px 20px;
-text-align:center;
-}
-
-.contato h2{
-font-size:34px;
-margin-bottom:30px;
-}
-
-.contato-card{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:20px;
-max-width:400px;
-margin:auto;
-}
-
-.contato-btn{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:10px;
-padding:12px 25px;
-border-radius:12px;
-font-size:18px;
-font-weight:600;
-text-decoration:none;
-color:white;
-width:220px;
-}
-
-.whatsapp{
-background:#25D366;
-}
-
-.insta{
-background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-}
-
-/* ================= WHATSAPP FIXO ================= */
-
-.whatsapp-float{
-position:fixed;
-width:60px;
-height:60px;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-text-decoration:none;
-box-shadow:2px 2px 10px rgba(0,0,0,0.3);
-z-index:999;
-}
-
-/* ================= RESPONSIVO ================= */
-
-/* PC */
-
-@media (min-width:1024px){
-
-header{
-flex-direction:row;
-justify-content:space-between;
-}
-
-}
+padding:60

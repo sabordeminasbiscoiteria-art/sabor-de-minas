@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Salgadinhos</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+<nav class="menu-topo">
+<a href="index.html">Início</a>
+<a href="biscoitosartesanais.html">Biscoitos Artesanais</a>
+<a href="biscoitopolvilho.html">Biscoito de Polvilho</a>
+<a href="salgadinhos.html">Salgadinhos</a>
+<a href="contato.html">Contato</a>
+</nav>
+
+<div class="search-box">
+<i class="fa fa-search"></i>
+<input type="text" id="searchInput" placeholder="Pesquisar produto...">
+</div>
+
+</header>
+
+<section class="products">
+<h2>Salgadinhos</h2>
+
+<div class="grid">
+  
+  <div class="card" data-name="polvilho1">
+  <img src="img/biscoitopolvilho1.jpg" alt="Biscoito de polvilho tradicional">
+  <h3>Biscoito Tradicional</h3>
+  <p>Caseiro</p>
+  <button class="btn-ver" onclick="abrirProduto('polvilho1','Biscoito Tradicional')">Ver mais</button>
+</div>
+  
+</div>
+
+<p id="noResult" style="display:none;">Produto não encontrado</p>
+
+</section>
+
+<!-- MODAL -->
+<div id="produtoModal" class="modal">
+<div class="modal-content">
+<span class="fechar" onclick="fecharProduto()">&times;</span>
+<h2 id="produtoTitulo"></h2>
+<p id="produtoDescricao"></p>
+</div>
+</div>
+
+<!-- BOTÃO WHATSAPP -->
+<a href="https://wa.me/5531992767228" class="whatsapp-float" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+const searchInput = document.getElementById("searchInput");
+const products = document.querySelectorAll(".card");
+const noResult = document.getElementById("noResult");
+
+searchInput.addEventListener("keyup", () => {
+  let search = searchInput.value.toLowerCase();
+  let visible = 0;
+
+  products.forEach(card => {
+    let name = card.getAttribute("data-name").toLowerCase();
+    if(name.includes(search)){
+      card.style.display = "block";
+      visible++;
+    }else{
+      card.style.display = "none";
+    }
+  });
+
+  noResult.style.display = visible === 0 ? "block" : "none";
+});
+
+const descricaoProdutos = {
+  // Aqui você vai adicionar as descrições dos salgadinhos quando receber as fotos
+  // ex: coxinha1: "Coxinha de frango caseira"
+};
+
+function abrirProduto(id,nome){
+  document.getElementById("produtoModal").style.display = "flex";
+  document.getElementById("produtoTitulo").innerText = nome;
+  document.getElementById("produtoDescricao").innerText = descricaoProdutos[id];
+}
+
+function fecharProduto(){
+  document.getElementById("produtoModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>

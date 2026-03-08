@@ -237,7 +237,7 @@ header{
   cursor:default;
 }
 
-.btn-preco:hover{
+.btn-preco:{
   background:#25D366;
   border-radius: 0;
 }
@@ -396,6 +396,7 @@ header{
 .hero{
   background-position:center center;
 }
+
 
 
 

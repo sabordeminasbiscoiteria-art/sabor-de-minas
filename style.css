@@ -188,13 +188,15 @@ header{
 
 /* CARD PRODUTO */
 .card{
-  background:white;
-  padding:12px;
-  border-radius:0px;
-  box-shadow:0 6px 15px rgba(0,0,0,0.08);
-  text-align:center;
-  max-width:220px;
-  margin:auto;
+  background: white;
+  padding: 12px;
+  border-radius: 0px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  max-width: 220px;
+  margin: auto;
+  aspect-ratio: 1/1;
+
 }
 
 .card img{
@@ -393,6 +395,7 @@ header{
 .hero{
   background-position:center center;
 }
+
 
 
 

@@ -216,7 +216,7 @@ header{
   background: #e53935;
   color: white;
   text-decoration: none;
-  border-radius: 0;
+  background: #e53935;
   font-size: 14px;
 }
 
@@ -239,6 +239,7 @@ header{
 
 .btn-preco:hover{
   background:#25D366;
+  border-radius: 0;
 }
 
 /* ================= MODAL ================= */
@@ -395,6 +396,7 @@ header{
 .hero{
   background-position:center center;
 }
+
 
 
 

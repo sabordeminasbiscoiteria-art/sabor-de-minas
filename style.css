@@ -79,7 +79,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   height:100vh;
   background:white;
   box-shadow:2px 0 10px rgba(0,0,0,0.2);
-  padding-top:70px;
+  padding-top:20px;
   transition:0.3s;
   z-index:1000;
 
@@ -413,6 +413,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 .hero{
   background-position:center center;
 }
+
 
 
 

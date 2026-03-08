@@ -112,7 +112,9 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
 .menu-inferior{
-  margin-top:auto;
+margin-top:25px;
+border-top:1px solid #eee;
+padding-top:10px;
 }
 /* ================= BARRA DE PESQUISA ================= */
 .search-box{
@@ -413,6 +415,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 .hero{
   background-position:center center;
 }
+
 
 
 

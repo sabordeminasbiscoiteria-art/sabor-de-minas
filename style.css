@@ -95,6 +95,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 
 .menu-lateral a:hover{
   background:#f5f5f5;
+  
 }
 
 .menu-lateral.ativo{
@@ -408,6 +409,7 @@ color:#777;
 .hero{
   background-position:center center;
 }
+
 
 
 

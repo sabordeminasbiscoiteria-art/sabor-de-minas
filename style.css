@@ -99,6 +99,14 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 
 .menu-lateral.ativo{
   left:0;
+} 
+
+.titulo-categoria{
+padding:10px 25px;
+font-size:13px;
+font-weight:bold;
+color:#777;
+
 }
 
 /* ================= BARRA DE PESQUISA ================= */
@@ -400,6 +408,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 .hero{
   background-position:center center;
 }
+
 
 
 

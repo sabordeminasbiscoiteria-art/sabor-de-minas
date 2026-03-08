@@ -226,11 +226,11 @@ header{
 }
 
 .btn-preco{
+  display: inline-block;
   background: #6b3e26;
   color:white;
   border:none;
   padding:10px 18px;
-  border-radius:0px;
   font-weight:bold;
   margin-top:8px;
   width:100%;
@@ -397,6 +397,7 @@ header{
 .hero{
   background-position:center center;
 }
+
 
 
 

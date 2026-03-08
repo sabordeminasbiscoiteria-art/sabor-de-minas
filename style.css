@@ -100,18 +100,9 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 
 .menu-lateral.ativo{
   left:0;
+  
 } 
 
-.menu-lateral{
-display:flex;
-flex-direction:column;
-height:100%;
-}
-
-.menu-inferior{
-margin-top:auto;
-  
-}
 
 .titulo-categoria{
 padding:10px 25px;
@@ -420,6 +411,7 @@ color:#777;
 .hero{
   background-position:center center;
 }
+
 
 
 

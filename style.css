@@ -221,7 +221,7 @@ header{
 }
 
 .btn-ver:hover{
-  background: #a0522d;
+background: #ff0000;
 }
 
 .btn-preco{
@@ -394,6 +394,7 @@ header{
 .hero{
   background-position:center center;
 }
+
 
 
 

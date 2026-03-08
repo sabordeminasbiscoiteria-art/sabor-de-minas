@@ -198,7 +198,7 @@ header{
 }
 
 .card img{
-  width:220%;
+  width:100%;
   aspect-ratio:1/1;
   object-fit:cover;
 }
@@ -398,6 +398,7 @@ header{
 .hero{
   background-position:center center;
 }
+
 
 
 

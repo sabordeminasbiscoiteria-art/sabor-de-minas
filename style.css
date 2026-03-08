@@ -226,7 +226,7 @@ header{
 }
 
 .btn-preco{
-  background:#25D366;
+  background: #6b3e26;
   color:white;
   border:none;
   padding:10px 18px;
@@ -237,8 +237,9 @@ header{
   cursor:default;
 }
 
-.btn-preco:{
-  background:#25D366;
+.btn-preco{
+  background: #6b3e26;
+  color: white;
   border-radius: 0;
 }
 
@@ -396,6 +397,7 @@ header{
 .hero{
   background-position:center center;
 }
+
 
 
 

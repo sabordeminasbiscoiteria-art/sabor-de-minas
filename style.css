@@ -221,7 +221,6 @@ header{
   font-size: 14px;
   border:none;
   font-weight:bold;
-  border:none;
   cursor:default;
 }
 
@@ -401,6 +400,7 @@ header{
 .hero{
   background-position:center center;
 }
+
 
 
 

@@ -102,6 +102,17 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   left:0;
 } 
 
+.menu-lateral{
+display:flex;
+flex-direction:column;
+height:100%;
+}
+
+.menu-inferior{
+margin-top:auto;
+  
+}
+
 .titulo-categoria{
 padding:10px 25px;
 font-size:13px;
@@ -409,6 +420,7 @@ color:#777;
 .hero{
   background-position:center center;
 }
+
 
 
 

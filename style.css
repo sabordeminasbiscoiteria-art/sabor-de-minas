@@ -108,8 +108,20 @@ padding:10px 25px;
 font-size:13px;
 font-weight:bold;
 color:#777;
-
+  
 }
+
+.menu-lateral{
+display:flex;
+flex-direction:column;
+height:100%;
+  
+}
+
+.menu-inferior{
+margin-top:auto;
+}
+
 
 /* ================= BARRA DE PESQUISA ================= */
 .search-box{
@@ -410,6 +422,7 @@ color:#777;
 .hero{
   background-position:center center;
 }
+
 
 
 

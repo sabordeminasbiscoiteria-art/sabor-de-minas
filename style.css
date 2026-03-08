@@ -219,8 +219,10 @@ header{
   color: white;
   text-decoration: none;
   font-size: 14px;
+  border:none;
   font-weight:bold;
   border:none;
+  cursor:default;
 }
 
 .btn-ver{
@@ -399,6 +401,7 @@ header{
 .hero{
   background-position:center center;
 }
+
 
 
 

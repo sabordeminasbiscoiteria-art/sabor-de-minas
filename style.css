@@ -10,6 +10,15 @@ body{
   background:#f8f6f3;
   color:#333;
   overflow-x:hidden;
+  
+}
+
+  body{
+ -webkit-user-select:none;
+ -moz-user-select:none;
+ -ms-user-select:none;
+  user-select:none;
+    
 }
 
 /* ================= IMAGENS ================= */
@@ -415,6 +424,7 @@ padding-top:10px;
 .hero{
   background-position:center center;
 }
+
 
 
 

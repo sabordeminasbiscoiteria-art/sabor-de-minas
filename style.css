@@ -216,9 +216,8 @@ header{
   background: #d2691e;
   color: white;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 0;
   font-size: 14px;
-  transition: 0.3s;
 }
 
 .btn-ver:hover{
@@ -395,6 +394,7 @@ header{
 .hero{
   background-position:center center;
 }
+
 
 
 

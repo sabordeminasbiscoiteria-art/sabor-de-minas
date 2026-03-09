@@ -263,8 +263,9 @@ padding-top:10px;
 }
 
 .btn-preco{
-  background: #6b3e26;
-  color: white;
+  background: white;
+  color: #333;
+  border: 1px solid #ddd;
   border-radius: 0;
 }
 
@@ -446,6 +447,7 @@ padding: 4px 8px;
 .hero{
   background-position:center center;
 }
+
 
 
 

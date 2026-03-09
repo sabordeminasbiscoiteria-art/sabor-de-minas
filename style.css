@@ -213,9 +213,10 @@ object-fit:cover;
 border-radius:6px;
 }
 
-.produto h3{
-margin-top:8px;
-font-size:16px;
+.produto{
+padding:0;
+background:none;
+box-shadow:none;
 }
 
 /* ================= PRODUTOS (produtos.html) ================= */
@@ -488,6 +489,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

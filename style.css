@@ -455,7 +455,19 @@ position: relative;
     width:100%;
   }
 }
+/* ===== CELULAR ===== */
+@media (max-width:768px){
 
+.produtos{
+gap:2px;
+padding:0;
+}
+
+.produto img{
+height:140px;
+}
+
+}
 /* Tablet */
 @media (min-width:769px) and (max-width:1023px){
   .grid{
@@ -514,6 +526,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

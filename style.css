@@ -271,15 +271,19 @@ padding-top:10px;
 position: relative;
 }
 
-.selo{
-position: absolute;
-top: 8px;
-left: 8px;
-background: #e53935;
-color: white;
-font-size: 13px;
-font-weight: bold;
-padding: 4px 8px;
+.selo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e53935;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /* ================= MODAL ================= */
@@ -453,6 +457,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

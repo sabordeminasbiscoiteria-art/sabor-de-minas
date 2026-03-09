@@ -209,24 +209,23 @@ padding-top:10px;
 }
 
 /* CARD PRODUTO */
-.card{
+.card {
   background: white;
-  padding: 12px;
-  border-radius: 0px;
+  border-radius: 0;
   box-shadow: 0 6px 15px rgba(0,0,0,0.08);
   text-align: center;
   max-width: 260px;
   margin: auto;
-  overflow: hidden; /* garante que nada vaze do card */
-  position: relative; /* necessário para o selo sobre a imagem */
+  overflow: hidden;   /* impede que a imagem vaze do card */
+  padding: 0;         /* remove todo padding para a imagem preencher */
+  position: relative; /* necessário para selo funcionar */
 }
 
-/* Imagem ocupando todo o topo do card */
-.card img{
-  width: calc(100% + 24px); /* cobre o padding lateral do card */
-  margin: -12px 0 0 -12px;  /* “puxa” a imagem para cima e para os lados */
-  aspect-ratio:1/1;          /* mantém a imagem quadrada */
-  object-fit: cover;
+.card img {
+  width: 100vw;       /* ocupa 100% da largura da tela */
+  max-width: 260px;   /* não ultrapassa o card */
+  height: 260px;      /* define altura fixa ou pode usar aspect-ratio */
+  object-fit: cover;  /* cobre toda a área, sem distorcer */
   display: block;
 }
 
@@ -456,6 +455,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

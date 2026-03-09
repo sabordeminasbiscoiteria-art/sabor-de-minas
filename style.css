@@ -266,6 +266,14 @@ padding-top:10px;
   border-radius: 0;
 }
 
+.descricao{
+  font-size:18px;
+  color:#555;
+  text-align:center;
+  max-width:600px;
+  margin:15px auto 40px auto;
+  line-height:1.6;
+}
 /* ================= MODAL ================= */
 .modal{
   display:none;
@@ -420,6 +428,7 @@ padding-top:10px;
 .hero{
   background-position:center center;
 }
+
 
 
 

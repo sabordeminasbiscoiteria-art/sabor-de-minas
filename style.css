@@ -245,8 +245,10 @@ padding-top:10px;
 }
 
 .btn-ver{
-  background: #e53935;
-  border-radius: 0;
+  background: white;
+  color:#333;
+  border:1px solid #ddd;
+  border-radius:0;
 }
 
 .btn-preco{
@@ -444,6 +446,7 @@ padding: 4px 8px;
 .hero{
   background-position:center center;
 }
+
 
 
 

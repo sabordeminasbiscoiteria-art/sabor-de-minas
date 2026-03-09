@@ -274,6 +274,22 @@ padding-top:10px;
   margin:5px auto 10px auto;
   line-height:1.6;
 }
+
+.img-produto{
+position: relative;
+}
+
+.selo{
+position: absolute;
+top: 8px;
+left: 8px;
+background: #e53935;
+color: white;
+font-size: 13px;
+font-weight: bold;
+padding: 4px 8px;
+}
+
 /* ================= MODAL ================= */
 .modal{
   display:none;
@@ -428,6 +444,7 @@ padding-top:10px;
 .hero{
   background-position:center center;
 }
+
 
 
 

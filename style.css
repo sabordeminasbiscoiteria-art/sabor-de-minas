@@ -232,17 +232,6 @@ width:100%;
 height:110px;
 object-fit:cover;
 }
-/* ===================== */
-/* PC / TELAS MAIORES    */
-/* ===================== */
-
-@media (min-width:768px){
-
-.produto img{
-height:460px;
-}
-
-}
 
 /* ================= PRODUTOS (produtos.html) ================= */
 .products{
@@ -510,7 +499,17 @@ height:140px;
   background-position:center center;
   }
 }  
+/* ===================== */
+/* PC / TELAS MAIORES    */
+/* ===================== */
 
+@media (min-width:768px){
+
+.produto img{
+height:460px;
+}
+
+}
 /* ================= RODAPÉ ================= */
 
 .rodape{
@@ -526,6 +525,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

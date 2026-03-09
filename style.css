@@ -209,7 +209,7 @@ box-shadow:none;
 width:100%;
 height:90px;
 object-fit:cover;
-border-radius:6px;
+border-radius:0px;
 }
 /* ===================== */
 /* PC / TELAS MAIORES    */
@@ -493,6 +493,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

@@ -221,14 +221,12 @@ padding-top:10px;
   position: relative; /* necessário para selo funcionar */
 }
 
-.card img {
-  width: 100vw;       /* ocupa 100% da largura da tela */
-  max-width: 260px;   /* não ultrapassa o card */
-  height: 260px;      /* define altura fixa ou pode usar aspect-ratio */
-  object-fit: cover;  /* cobre toda a área, sem distorcer */
+.card img{
+  width: 100%;        /* ocupa toda a largura do card */
+  aspect-ratio: 1/1;  /* altura proporcional à largura */
+  object-fit: cover;  /* cobre toda a área sem distorcer */
   display: block;
 }
-
 .card h3{
   margin:10px 0;
 }
@@ -455,6 +453,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

@@ -176,15 +176,43 @@ padding-top:10px;
   margin-bottom:20px;
 }
 
-.hero-text button{
-  background:linear-gradient(135deg,#C62828,#8E0000);
-  color:white;
-  border:none;
-  padding:14px 45px;
-  border-radius:40px;
-  cursor:pointer;
-  font-size:16px;
-  font-weight:600;
+/* ===================== */
+/* VITRINE DE BISCOITOS  */
+/* ===================== */
+
+.vitrine{
+text-align:center;
+padding:20px 20px;
+background:#fff7f2;
+}
+
+.vitrine h2{
+font-size:24px;
+margin-bottom:15px;
+color:#5a2d0c;
+}
+
+.produtos{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.produto{
+background:white;
+padding:10px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.produto img{
+width:100%;
+border-radius:8px;
+}
+
+.produto h3{
+margin-top:8px;
+font-size:16px;
 }
 
 /* ================= PRODUTOS (produtos.html) ================= */
@@ -457,61 +485,6 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
-/* ===================== */
-/* VITRINE DE BISCOITOS  */
-/* ===================== */
-
-.vitrine{
-text-align:center;
-padding:40px 20px;
-background:#fff7f2;
-}
-
-.vitrine h2{
-font-size:24px;
-margin-bottom:25px;
-color:#5a2d0c;
-}
-
-.produtos{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:15px;
-}
-
-.produto{
-background:white;
-padding:10px;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
-}
-
-.produto img{
-width:100%;
-border-radius:8px;
-}
-
-.produto h3{
-margin-top:8px;
-font-size:16px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

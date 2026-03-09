@@ -448,12 +448,12 @@ position: relative;
 @media (max-width:768px){
 
 .produtos{
-gap:0px;
+gap:2px;
 padding:0;
 }
 
 .produto img{
-height:140px;
+height:160px;
 }
 
 }
@@ -525,6 +525,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

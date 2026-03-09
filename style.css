@@ -217,7 +217,7 @@ color:#000;
 .produtos{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:10px;
+gap:6px;
 padding:0 10px;
 }
 
@@ -515,6 +515,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

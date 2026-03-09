@@ -448,7 +448,7 @@ position: relative;
 @media (max-width:768px){
 
 .produtos{
-gap:2px;
+gap:0px;
 padding:0;
 }
 
@@ -525,6 +525,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

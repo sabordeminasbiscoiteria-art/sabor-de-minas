@@ -221,8 +221,9 @@ padding-top:10px;
 
 .card img{
   width:100%;
-  aspect-ratio:1/1;
+  aspect-ratio:1/1; /* largura igual à altura */
   object-fit:cover;
+  display:block;
 }
 
 .card h3{
@@ -451,6 +452,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

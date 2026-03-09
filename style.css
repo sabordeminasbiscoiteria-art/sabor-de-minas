@@ -228,7 +228,7 @@ box-shadow:none;
 }
 
 .produto img{
-width:100%;
+width:160%;
 height:110px;
 object-fit:cover;
 }
@@ -525,6 +525,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

@@ -217,13 +217,17 @@ padding-top:10px;
   text-align: center;
   max-width: 260px;
   margin: auto;
+  overflow: hidden; /* garante que nada vaze do card */
+  position: relative; /* necessário para o selo sobre a imagem */
 }
 
+/* Imagem ocupando todo o topo do card */
 .card img{
-  width:100%;
-  aspect-ratio:1/1; /* largura igual à altura */
-  object-fit:cover;
-  display:block;
+  width: calc(100% + 24px); /* cobre o padding lateral do card */
+  margin: -12px 0 0 -12px;  /* “puxa” a imagem para cima e para os lados */
+  aspect-ratio:1/1;          /* mantém a imagem quadrada */
+  object-fit: cover;
+  display: block;
 }
 
 .card h3{
@@ -452,6 +456,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

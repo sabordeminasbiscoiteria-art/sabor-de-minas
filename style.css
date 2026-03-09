@@ -194,8 +194,8 @@ color:#5a2d0c;
 
 .produtos{
 display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:10px;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
 }
 
 .produto{
@@ -485,6 +485,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

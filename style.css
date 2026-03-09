@@ -144,7 +144,7 @@ padding-top:10px;
 /* ================= HERO ================= */
 .hero{
   position:relative;
-  min-height:85vh;
+  min-height:60vh;
   background:url('img/beijinho.jpeg') center/cover no-repeat;
   display:flex;
   align-items:center;
@@ -485,6 +485,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

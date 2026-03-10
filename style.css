@@ -93,17 +93,6 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   font-size:16px;
   margin-bottom:20px;
 }
-/* ===== TÍTULO DA LOJA ===== */
-.nome-loja{
-  font-family: 'Playfair Display', serif; /* fonte chique */
-  font-size:32px;                          /* tamanho grande */
-  font-weight:700;                          /* negrito */
-  letter-spacing:1.5px;                     /* espaçamento entre letras */
-  color:#222;                            /* tom de marrom elegante */
-  text-align:center;
-  margin:10px 0;
-  text-shadow:1px 1px 3px rgba(0,0,0,0.3); /* sombra leve */
-}
 /* ================= SEPARADOR SOMENTE CELULAR ================= */
 @media (max-width: 768px){
   .menu-separador{
@@ -539,12 +528,6 @@ padding:0;
 
 .produto img{
 height:160px;
-}
-
-/* ESCONDE NO DESKTOP */
-@media (min-width: 769px){
-  .menu-separador{
-    display:none;             /* desaparece no desktop */
   }
 }
 /* Tablet */
@@ -622,6 +605,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

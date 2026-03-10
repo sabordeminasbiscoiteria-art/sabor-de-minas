@@ -169,7 +169,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
 .menu-lateral a:hover{
-  background:##f8f6f3;
+  background:#f8f6f3;
 }
 
 .titulo-categoria{
@@ -609,6 +609,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

@@ -316,8 +316,7 @@ body.home-page .menu-topo {
   font-size: 32px;
   margin-bottom: 25px;
   color: #333;
-  width: 100%;
-  text-align: center; /* garante que o título fique centralizado */
+  text-align: center; /* título centralizado */
 }
 
 .contato-card {
@@ -328,73 +327,24 @@ body.home-page .menu-topo {
   margin-bottom: 25px;
 }
 
-.contato-card .contato-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 12px 25px;
-  border-radius: 12px;
-  font-size: 18px;
-  font-weight: 600;
-  text-decoration: none;
-  color: white;
-  width: 220px;
-  transition: 0.3s;
-}
-
-.contato-card .whatsapp {
-  background: #25D366;  /* verde WhatsApp */
-}
-
-.contato-card .insta {
-  background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-}
-
-.contato-card .endereco {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #333;
-  line-height: 1.5;
-  text-align: center;    /* garante que o endereço fique centralizado */
-}
-
-/* ================= BOTÕES FLOUTANTES ================= */
-.icones {
+/* ================= WHATSAPP FLUTUANTE ================= */
+.whatsapp-float{
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  z-index: 9999;
-}
-
-.icones a {
   width: 60px;
   height: 60px;
+  bottom: 20px;
+  right: 20px; /* sempre à direita */
+  background: #25D366; /* verde do WhatsApp */
+  color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   font-size: 30px;
   text-decoration: none;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-  transition: 0.3s;
+  z-index: 999;
 }
-
-.icones a.whatsapp {
-  background: #25D366;
-}
-
-.icones a.insta {
-  background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-}
-
-.icones a:hover {
-  opacity: 0.85;
-  transform: scale(1.05);
 }
 
 /* ================= RESPONSIVO ================= */
@@ -584,6 +534,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

@@ -44,7 +44,16 @@ header{
   display:block;
   margin:auto;
 }
-
+/* ================= SEPARADOR SOMENTE TELA INICIAL ================= */
+.home-page header::after {
+  content: "";
+  display: block;
+  width: 60%;                /* largura do separador menor que 100% */
+  height: 8px;               /* altura do separador */
+  background: rgba(0,0,0,0.05); /* sombra discreta */
+  margin: 10px auto 0 auto;  /* centraliza o separador horizontalmente */
+  border-radius: 5px;        /* cantos levemente arredondados */
+}
 /* ================= HERO ================= */
 .hero{
   position:relative;
@@ -586,6 +595,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

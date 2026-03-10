@@ -106,6 +106,28 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   margin:10px 0;
   text-shadow:1px 1px 3px rgba(0,0,0,0.3); /* sombra leve */
 }
+/* ================= MENU TOPO ================= */
+.menu-topo{
+  display:flex;
+  justify-content:center; /* centraliza os links */
+  gap:25px;               /* espaçamento entre os links */
+  margin-top:10px;        /* distância da logo/título */
+  font-family: 'Arial', sans-serif;
+}
+
+.menu-topo a{
+  text-decoration:none;
+  color:#333;          /* marrom elegante */
+  font-weight:600;
+  padding:8px 12px;
+  border-radius:6px;
+  transition:0.3s;
+}
+
+.menu-topo a:hover{
+  background:#f1c49a;     /* leve destaque no hover */
+  color:white;
+}
 /* ================= MENU LATERAL ================= */
 .menu-btn{
   position:absolute;
@@ -569,6 +591,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

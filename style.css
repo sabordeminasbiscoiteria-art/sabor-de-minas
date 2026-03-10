@@ -303,6 +303,43 @@ body.home-page .menu-topo {
 }
 
 }
+/* ================= WHATSAPP E INSTAGRAM FLUTUANTES ================= */
+.whatsapp-float, 
+.insta-float {
+  position: fixed;
+  right: 20px;          /* fixa à direita da tela */
+  bottom: 20px;         /* distância inferior */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: 0.3s;
+}
+
+/* WhatsApp */
+.whatsapp-float {
+  background: #25D366; /* verde WhatsApp */
+  margin-bottom: 80px;  /* distancia do Instagram */
+}
+
+/* Instagram */
+.insta-float {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+/* Hover */
+.whatsapp-float:hover,
+.insta-float:hover {
+  opacity: 0.8;
+}
+
 /* RESPONSIVO */
 /* Celular */
 @media (max-width: 768px) {
@@ -477,6 +514,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

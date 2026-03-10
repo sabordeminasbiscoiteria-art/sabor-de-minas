@@ -124,7 +124,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
 .menu-topo a:hover{
-  background:#000;     /* leve destaque no hover */
+  background:#ffffff;     /* leve destaque no hover */
   color:white;
 }
 /* ================= MENU LATERAL ================= */
@@ -168,7 +168,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
 .menu-lateral a:hover{
-  background:#000;
+  background:#ffffff;
 }
 
 .titulo-categoria{
@@ -608,6 +608,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

@@ -44,7 +44,6 @@ header{
   display:block;
   margin:auto;
 }
-
 /* ================= HERO ================= */
 .hero{
   position:relative;
@@ -586,6 +585,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

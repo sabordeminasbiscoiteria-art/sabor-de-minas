@@ -298,16 +298,16 @@ width:160%;
 height:110px;
 object-fit:cover;
 }
-/* ===== TÍTULO DA VITRINE ===== */
+/* ===== TÍTULO SIMPLES DA VITRINE ===== */
 .vitrine h2{
-  font-family: 'Playfair Display', serif;  /* mantém elegante */
-  font-size:32px;                          /* tamanho destacado */
-  font-weight:700;                          /* negrito */
-  color:#222222;                            /* preto fosco puro */
+  font-family: Arial, sans-serif; /* fonte simples e limpa */
+  font-size:24px;                  /* tamanho destacado, mas não exagerado */
+  font-weight:600;                 /* negrito leve */
+  color:#222222;                   /* preto fosco elegante */
   text-align:center;
-  margin-bottom:20px;
-  letter-spacing:1px;                       /* leve espaçamento */
-  text-shadow:none;                          /* remove sombra para preto fosco puro */
+  margin-bottom:15px;
+  letter-spacing:0;                /* sem espaçamento extra */
+  text-shadow:none;                /* sem sombra */
 }
 
 /* ================= PRODUTOS (produtos.html) ================= */
@@ -609,6 +609,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

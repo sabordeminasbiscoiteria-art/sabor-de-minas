@@ -125,7 +125,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 
 .menu-topo a:hover{
   background:#f8f8f8;     /* leve destaque no hover */
-  color: rgba(255,255,255,0.8); /* branco levemente transparente */
+  color:111111; /* branco levemente transparente */
 }
 /* ================= MENU LATERAL ================= */
 .menu-btn{
@@ -608,6 +608,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

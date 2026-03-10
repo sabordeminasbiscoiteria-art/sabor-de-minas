@@ -326,6 +326,13 @@ body.home-page .menu-topo {
   gap: 15px;
   margin-bottom: 25px;
 }
+.contato-card .whatsapp {
+  background: #25D366;  /* verde WhatsApp */
+}
+
+.contato-card .insta {
+  background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+}
 
 /* ================= WHATSAPP FLUTUANTE ================= */
 .whatsapp-float{
@@ -534,6 +541,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

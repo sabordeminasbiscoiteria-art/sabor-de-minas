@@ -135,7 +135,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   left:20px;
   font-size:28px;
   cursor:pointer;
-  color:#222;
+  color:#f8f6f3;
   z-index:1001;
 }
 
@@ -169,14 +169,14 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
 .menu-lateral a:hover{
-  background:#111111;
+  background:##f8f6f3;
 }
 
 .titulo-categoria{
   padding:10px 25px;
   font-size:13px;
   font-weight:bold;
-  color:#777;
+  color:#f8f6f3;
 }
 
 .menu-inferior{
@@ -609,6 +609,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

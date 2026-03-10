@@ -104,13 +104,15 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   margin:10px 0;
   text-shadow:1px 1px 3px rgba(0,0,0,0.3); /* sombra leve */
 }
-/* ================= SEPARADOR SUAVE ENTRE MENU E NOME DA LOJA ================= */
+/* ================= SEPARADOR SUAVE FULL WIDTH ================= */
 .menu-separador{
-  width:100%; /* ocupa toda a largura da tela */
-  height:15px; /* altura do separador */
-  margin:10px 0; /* espaço acima e abaixo */
-  background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0)); 
-  /* sombra discreta, sem linha */
+  position: relative;
+  width: 100vw; /* 100% da tela inteira */
+  height: 15px; /* altura do separador */
+  margin: 0; /* sem margem para não “encostar” o separador nas laterais */
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(255,255,255,0)); 
+  /* branco suave transparente, sem linha dura */
 }
 
 /* ================= MENU TOPO ================= */ 
@@ -614,6 +616,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

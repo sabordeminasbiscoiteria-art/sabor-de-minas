@@ -304,16 +304,11 @@ body.home-page .menu-topo {
 
 }
 /* ================= CONTATO CENTRALIZADO ================= */
-.contato {
-  padding: 60px 20px;
-  text-align: center; /* centraliza todo o conteúdo */
-}
+.contato-centralizado {
+  text-align: center;   /* centraliza todo o conteúdo dentro do bloco */
+  margin: 0 auto;       /* centraliza o bloco horizontalmente */
+  display: inline-block; /* mantém a largura ajustada ao conteúdo */
 
-.contato h2,
-.contato p {
-  margin: 8px 0;
-  color: #333;
-  text-align: center; /* garante que o endereço fique centralizado */
 }
 
 /* ================= BOTOES CONTATO ================= */
@@ -553,6 +548,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

@@ -104,16 +104,17 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   margin:10px 0;
   text-shadow:1px 1px 3px rgba(0,0,0,0.3); /* sombra leve */
 }
-/* ================= SEPARADOR SUAVE FULL WIDTH ================= */
-.menu-separador{
-  position: relative;
-  width: 100vw; /* 100% da tela inteira */
-  height: 15px; /* altura do separador */
-  margin: 0; /* sem margem para não “encostar” o separador nas laterais */
-  left: 0;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(255,255,255,0)); 
-  /* branco suave transparente, sem linha dura */
-}
+/* ================= SEPARADOR SOMENTE CELULAR ================= */
+@media (max-width: 768px){
+  .menu-separador{
+    display:block;            /* aparece só no celular */
+    width:100vw;              /* ocupa toda a largura da tela */
+    height:15px;              /* altura do separador */
+    background: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(255,255,255,0)); 
+    margin:0;                 /* sem margem lateral */
+    position:relative;
+    left:0;
+  }
 
 /* ================= MENU TOPO ================= */ 
 .menu-topo{
@@ -540,6 +541,11 @@ padding:0;
 height:160px;
 }
 
+/* ESCONDE NO DESKTOP */
+@media (min-width: 769px){
+  .menu-separador{
+    display:none;             /* desaparece no desktop */
+  }
 }
 /* Tablet */
 @media (min-width:769px) and (max-width:1023px){
@@ -616,6 +622,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

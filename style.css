@@ -28,15 +28,14 @@ img{
 
 /* ================= HEADER GERAL ================= */
 header{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:10px;
-padding:20px;
-background:#f8f6f3;
-position:relative;
-
-box-shadow:0 3px 8px rgba(0,0,0,0.08);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+  padding:20px;
+  background:#f8f6f3;
+  position:relative;
+  box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
 .logo img{
@@ -45,6 +44,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   display:block;
   margin:auto;
 }
+
 /* ================= HERO ================= */
 .hero{
   position:relative;
@@ -70,16 +70,13 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   max-width:600px;
 }
 
-/* ===== TÍTULO ELEGANTE ===== */
 .hero-text h1{
-  font-family: Arial, sans-serif; /* volta para fonte padrão */
-  font-size:42px;                 /* tamanho grande para destaque */
-  font-weight:700;                /* negrito */
-  color:white;                    /* mantém branco sobre a imagem */
-  text-shadow:none;               /* remove sombra */
-  margin-bottom:15px;
-  line-height:1.2;
+  font-family: Arial, sans-serif; /* fonte padrão */
+  font-size:42px;
+  font-weight:700;
+  color:white;
   text-align:center;
+  margin-bottom:15px;
 }
 
 .hero-text .slogan{
@@ -92,19 +89,37 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 .hero-text p.experiencia{
   font-size:16px;
   margin-bottom:20px;
+}
+
+/* BOTÃO HERO */
+.hero button{
+  background:#e63946;
+  color:white;
+  border:none;
+  padding:12px 24px;
+  font-size:16px;
+  font-weight:600;
+  border-radius:6px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.hero button:hover{
+  background:#c1121f;
+}
 
 /* ================= MENU TOPO ================= */ 
 .menu-topo{
   display:flex;
-  justify-content:center; /* centraliza os links */
-  gap:25px;               /* espaçamento entre os links */
-  margin-top:10px;        /* distância da logo/título */
-  font-family: 'Arial', sans-serif;
+  justify-content:center;
+  gap:25px;
+  margin-top:10px;
+  font-family: Arial, sans-serif;
 }
 
 .menu-topo a{
   text-decoration:none;
-  color:#333333;          /* preto elegante */
+  color:#333333;          
   font-weight:600;
   padding:8px 12px;
   border-radius:6px;
@@ -112,9 +127,10 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
 .menu-topo a:hover{
-  background: rgba(255,255,255,0.2); /* branco clarinho transparente */
-  color: #111111;                     /* preto fosco suave no hover */
+  background: rgba(255,255,255,0.2);
+  color: #111111;
 }
+
 /* ================= MENU LATERAL ================= */
 .menu-btn{
   position:absolute;
@@ -137,7 +153,6 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   padding-top:60px;
   transition:0.3s;
   z-index:1000;
-
   display:flex;
   flex-direction:column;
 }
@@ -156,7 +171,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
 .menu-lateral a:hover{
-  background:#ffffff;
+  background:#f5f5f5;
 }
 
 .titulo-categoria{
@@ -167,10 +182,11 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
 .menu-inferior{
-margin-top:25px;
-border-top:1px solid #eee;
-padding-top:10px;
+  margin-top:25px;
+  border-top:1px solid #eee;
+  padding-top:10px;
 }
+
 /* ================= BARRA DE PESQUISA ================= */
 .search-box{
   display:flex;
@@ -191,304 +207,45 @@ padding-top:10px;
   width:200px;
 }
 
-/* ================= HERO ================= */
-.hero{
-  position:relative;
-  min-height:60vh;
-  background:url('img/beijinho.jpeg') center/cover no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:40px 20px;
-}
-
-.hero::before{
-content:"";
-position:absolute;
-inset:0;
-background:linear-gradient(
-rgba(0,0,0,0.45),
-rgba(0,0,0,0.65)
-);
-}
-
-.hero-text{
-  position:relative;
-  color:white;
-  max-width:600px;
-}
-
-.hero-text h1{
-  font-size:42px;
-  margin-bottom:15px;
-}
-
-.hero-text p{
-  font-size:18px;
-  margin-bottom:20px;
-}
-.hero-text p{
-  font-size:18px;
-  margin-bottom:20px;
-}
-
-/* BOTÃO DA HERO */
-
-.hero button{
-background:#e63946;
-color:white;
-border:none;
-padding:12px 24px;
-font-size:16px;
-font-weight:600;
-border-radius:6px;
-cursor:pointer;
-transition:0.3s;
-}
-
-.hero button:hover{
-background:#c1121f;
-}
-
-/* ===================== */
-/* VITRINE DE BISCOITOS  */
-/* ===================== */
-
+/* ================= VITRINE ================= */
 .vitrine{
-text-align:center;
-padding:20px 20px;
-background:#fff7f2;
+  text-align:center;
+  padding:20px 20px;
+  background:#fff7f2;
 }
 
 .vitrine h2{
-font-size:24px;
-margin-bottom:15px;
-color:#222;
+  font-family: Arial, sans-serif;
+  font-size:32px;
+  margin-bottom:15px;
+  color:#444444; /* preto fosco elegante */
+  font-weight:700;
+  text-align:center;
+  letter-spacing:1px;
 }
 
 .produtos{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:4px;
-padding:0 4px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  padding:0 10px;
 }
 
 .produto{
-padding:0;
-background:none;
-box-shadow:none;
+  padding:0;
+  background:none;
+  box-shadow:none;
 }
 
 .produto img{
-width:160%;
-height:110px;
-object-fit:cover;
-}
-/* ===== TÍTULO SIMPLES DA VITRINE ===== */
-.vitrine h2{
-  font-family: Arial, sans-serif; /* fonte simples e legível */
-  font-size:32px;                 /* tamanho destacado */
-  font-weight:700;                /* negrito */
-  color:#333333;                  /* preto elegante, mais escuro que o anterior */
-  text-align:center;
-  margin-bottom:20px;
-  letter-spacing:1px;             /* espaçamento leve */
-}
-/* ================= PRODUTOS (produtos.html) ================= */
-.products{
-  padding:40px 20px;
-  text-align:center;
-}
-
-.products h2{
-  font-size:32px;
-  margin-bottom:30px;
-}
-
-/* GRID AUTOMÁTICO */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:20px;
-  max-width:1200px;
-  margin:auto;
-  padding:20px;
-}
-
-/* CARD PRODUTO */
-.card {
-  background: white;
-  border-radius: 0;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-  text-align: center;
-  max-width: 260px;
-  margin: auto;
-  overflow: hidden;   /* impede que a imagem vaze do card */
-  padding: 0;         /* remove todo padding para a imagem preencher */
-  position: relative; /* necessário para selo funcionar */
-}
-
-.card img{
-  width: 100%;        /* ocupa toda a largura do card */
-  aspect-ratio: 1/1;  /* altura proporcional à largura */
-  object-fit: cover;  /* cobre toda a área sem distorcer */
-  display: block;
-}
-.card h3{
-  margin:10px 0;
-}
-
-.btn-ver{
-  display: inline-block;
-  margin-top: 8px;
-  padding: 10px 18px;
-  width: 100%;
-  border-radius: 0;
-  background: white;
-  color: #333;
-  text-decoration: none;
-  font-size: 14px;
-  border: 1px solid #ddd;
-  font-weight: bold;
-  cursor: default;
-}
-
-.btn-preco{
-  background:white;
-  color:#333;
-  border:1px solid #ddd;
-  padding:10px 18px;
-  font-weight:bold;
-  margin-top:8px;
   width:100%;
-  cursor:default;
-  border-radius:0;
-}
-
-.descricao{
-  font-size:18px;
-  color:#555;
-  text-align:center;
-  max-width:600px;
-  margin:5px auto 10px auto;
-  line-height:1.6;
-}
-
-.img-produto{
-position: relative;
-}
-
-.selo {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: #e53935;
-  color: white;
-  font-size: 13px;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-/* ================= MODAL ================= */
-.modal{
-  display:none;
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.6);
-  align-items:center;
-  justify-content:center;
-  z-index:2000;
-}
-
-.modal-content{
-  background:white;
-  padding:30px;
-  border-radius:10px;
-  max-width:400px;
-  width:90%;
-  text-align:center;
-  position:relative;
-}
-
-.fechar{
-  position:absolute;
-  top:10px;
-  right:15px;
-  font-size:25px;
-  cursor:pointer;
-}
-
-/* ================= CONTATO ================= */
-.contato{
-  padding:60px 20px;
-  text-align:center;
-}
-
-.contato h2{
-  font-size:34px;
-  margin-bottom:30px;
-}
-
-.contato-card{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:20px;
-  max-width:400px;
-  margin:auto;
-}
-
-.contato-btn{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  padding:12px 25px;
-  border-radius:12px;
-  font-size:18px;
-  font-weight:600;
-  text-decoration:none;
-  color:white;
-  width:220px;
-}
-
-.whatsapp{
-  background:#25D366;
-}
-
-.insta{
-  background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-}
-
-/* ================= WHATSAPP FIXO ================= */
-.whatsapp-float{
-  position:fixed;
-  width:60px;
-  height:60px;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:white;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:30px;
-  text-decoration:none;
-  box-shadow:2px 2px 10px rgba(0,0,0,0.3);
-  z-index:999;
+  height:200px;
+  object-fit:cover;
 }
 
 /* ================= RESPONSIVO ================= */
-/* Celular */
+
+/* CELULAR */
 @media (max-width:768px){
   .grid{
     grid-template-columns:repeat(2,1fr);
@@ -502,126 +259,63 @@ position: relative;
     font-size:28px;
   }
 
-  .search-box{
+  .vitrine h2{
+    font-size:24px;
+  }
+
+  .produtos{
+    gap:2px;
+    padding:0;
+  }
+
+  .produto img{
+    height:160px;
+  }
+
+  /* ================= SEPARADOR MENU NO CELULAR ================= */
+  header::after{
+    content:"";
+    display:block;
     width:100%;
+    height:8px; /* altura do separador */
+    background: rgba(255,255,255,0.2); /* branco clarinho translúcido */
+    margin-top:10px;
   }
 }
-/* ===== CELULAR ===== */
-@media (max-width:768px){
 
-.produtos{
-gap:2px;
-padding:0;
-}
-
-.produto img{
-height:160px;
-  }
-}
-/* Tablet */
+/* TABLET */
 @media (min-width:769px) and (max-width:1023px){
   .grid{
     grid-template-columns:repeat(3,1fr);
   }
 }
-/* ===== TÍTULO DA VITRINE NO CELULAR ===== */
-@media (max-width:768px){
-  .vitrine h2{
-    font-size:24px; /* menor no celular */
-    margin-bottom:15px; /* ajuste do espaçamento */
-  }
-}
 
 /* PC */
 @media (min-width:1024px){
-
   header{
-    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
     align-items:center;
-    justify-content:center;
-    position:relative;
-  }
-
-  .menu-btn{
-    position:absolute;
-    left:20px;
-  }
-
-  .logo{
-    text-align:center;
   }
 
   .menu-topo{
-    position:absolute;
-    right:20px;
+    position:static;
+    gap:25px;
+  }
+
+  .produtos{
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+  }
+
+  .produto img{
+    height:200px;
   }
 
   .grid{
     grid-template-columns:repeat(4,1fr);
   }
-
 }
-@media (min-width:1024px){
-
-.hero{
-  background-position:center center;
-  }
-}  
-/* ===================== */
-/* PC / TELAS MAIORES    */
-/* ===================== */
-
-@media (min-width:768px){
-
-.produto img{
-height:600px;
-}
-
-}
-/* ================= RODAPÉ ================= */
-
-.rodape{
-background:#f5f5f5;
-text-align:center;
-padding:30px 20px;
-margin-top:40px;
-font-size:14px;
-color:#555;
-border-top:1px solid #ddd;
-}
-
-.rodape p{
-margin:6px 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

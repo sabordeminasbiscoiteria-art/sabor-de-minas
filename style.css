@@ -130,6 +130,24 @@ header{
   background: rgba(255,255,255,0.2);
   color: #111111;
 }
+/* CENTRALIZAÇÃO NA TELA INICIAL */
+body.home-page header {
+  display: flex;
+  flex-direction: column; /* empilha logo, nome e menu */
+  align-items: center;    /* centraliza horizontalmente */
+  justify-content: center; /* centraliza verticalmente, se precisar */
+  gap: 10px;
+  padding: 20px;
+}
+
+body.home-page .logo {
+  text-align: center;
+}
+
+body.home-page .menu-topo {
+  justify-content: center; /* centraliza links do menu */
+  gap: 25px;
+}
 
 /* ================= MENU LATERAL ================= */
 .menu-btn{
@@ -316,6 +334,7 @@ header{
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

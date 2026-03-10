@@ -204,7 +204,130 @@ body.home-page .menu-topo {
   border-top:1px solid #eee;
   padding-top:10px;
 }
+/* ================= PRODUTOS ================= */
+.products {
+  padding: 40px 20px;
+  text-align: center;
+}
 
+.products h2 {
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333333; /* preto claro */
+}
+
+/* GRID RESPONSIVO */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+/* CARD PRODUTO */
+.card {
+  background: white;
+  border-radius: 0;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  overflow: hidden;   /* imagem não vaza do card */
+  position: relative; /* necessário para selo */
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1/1;  /* mantém proporção quadrada */
+  object-fit: cover;   /* cobre área do card */
+  display: block;
+}
+
+.card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card p {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* BOTÕES */
+.btn-ver, .btn-preco {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0;
+  cursor: pointer;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+}
+
+.btn-ver {
+  background: white;
+  color: #333;
+}
+
+.btn-preco {
+  background: white;
+  color: #333;
+}
+
+/* SELINHO QUADRADO */
+.img-produto {
+  position: relative;
+}
+
+.selo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e53935;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 3px;  /* quadradinho */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+}
+/* RESPONSIVO */
+/* Celular */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card img {
+    aspect-ratio: 1/1; /* mantém quadrado */
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* PC */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 /* ================= BARRA DE PESQUISA ================= */
 .search-box{
   display:flex;
@@ -354,6 +477,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

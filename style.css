@@ -116,16 +116,16 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 
 .menu-topo a{
   text-decoration:none;
-  color:#333;          /* marrom elegante */
+  color:#333;          /* preto elegante */
   font-weight:600;
   padding:8px 12px;
   border-radius:6px;
-  transition:0.3s;
+  transition:0.3s; 
 }
 
 .menu-topo a:hover{
   background:#f8f8f8;     /* leve destaque no hover */
-  color:white;
+  color: rgba(255,255,255,0.8); /* branco levemente transparente */
 }
 /* ================= MENU LATERAL ================= */
 .menu-btn{
@@ -608,6 +608,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

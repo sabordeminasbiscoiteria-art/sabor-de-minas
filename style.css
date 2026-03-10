@@ -303,7 +303,7 @@ object-fit:cover;
   font-family: Arial, sans-serif; /* fonte simples e limpa */
   font-size:24px;                  /* tamanho destacado, mas não exagerado */
   font-weight:600;                 /* negrito leve */
-  color:#222222;                   /* preto fosco elegante */
+  color:#444444;                   /* preto claro elegante */
   text-align:center;
   margin-bottom:15px;
   letter-spacing:0;                /* sem espaçamento extra */
@@ -609,6 +609,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

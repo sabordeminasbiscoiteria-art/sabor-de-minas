@@ -325,6 +325,20 @@ body.home-page .menu-topo {
   align-items: center;    /* centraliza horizontalmente */
   gap: 15px;
   margin-bottom: 25px;
+  
+}.contato-card .contato-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  width: 220px;
+  transition: 0.3s;
 }
 .contato-card .whatsapp {
   background: #25D366;  /* verde WhatsApp */
@@ -541,6 +555,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

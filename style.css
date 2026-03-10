@@ -105,11 +105,11 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   margin:10px 0;
   text-shadow:1px 1px 3px rgba(0,0,0,0.3); /* sombra leve */
 }
-/* ================= SEPARADOR SUAVE SEM LINHA ================= */
+/* ================= SEPARADOR SUAVE INFINITO ================= */
 .menu-separador{
-  width:100%;                       /* ocupa toda a largura */
-  height:20px;                      /* altura da “separação” */
-  margin:10px 0;                    /* espaço acima e abaixo */
+  width:100%; /* ocupa toda a largura da tela */
+  height:20px; /* altura da separação */
+  margin:10px 0; /* espaço acima e abaixo */
   background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0)); 
   /* sombra sutil de cima para baixo */
 }
@@ -615,6 +615,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

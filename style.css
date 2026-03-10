@@ -105,12 +105,13 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   margin:10px 0;
   text-shadow:1px 1px 3px rgba(0,0,0,0.3); /* sombra leve */
 }
-/* ===== SEPARADOR ENTRE MENU E TÍTULO ===== */
+/* ================= SEPARADOR SUTIL ================= */
 .menu-separador{
-  width:80%;                  /* largura da linha */
-  height:1px;                 /* espessura */
-  background:#ccc;            /* cinza claro elegante */
-  margin:15px auto;           /* centraliza e dá espaço */
+  width:80%;                             /* largura da linha */
+  height:2px;                            /* fininha, mas visível */
+  margin:15px auto;                      /* centralizada com espaço acima e abaixo */
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.15), rgba(0,0,0,0)); 
+  border-radius:2px;                     /* arredonda as pontas */
 }
 
 /* ================= MENU TOPO ================= */ 
@@ -616,6 +617,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

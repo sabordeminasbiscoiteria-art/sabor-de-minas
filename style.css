@@ -46,7 +46,6 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   margin:auto;
 }
 /* ================= HERO ================= */
-/* ================= HERO ================= */
 .hero{
   position:relative;
   min-height:60vh;
@@ -135,7 +134,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   left:20px;
   font-size:28px;
   cursor:pointer;
-  color:#f8f6f3;
+  color:#222222;
   z-index:1001;
 }
 
@@ -169,7 +168,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
 .menu-lateral a:hover{
-  background:#f8f6f3;
+  background:#555555;
 }
 
 .titulo-categoria{
@@ -609,6 +608,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

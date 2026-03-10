@@ -2,153 +2,130 @@
 <html lang="pt-br">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Biscoiteria Sabor de Minas</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="style.css">
 
-<title>Biscoiteria Sabor de Minas</title>
-
-<link rel="stylesheet" href="style.css">
-
-<!-- ICONES -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  <!-- ICONES -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body class="home-page">
 
-<header>
+  <!-- ================= HEADER ================= -->
+  <header>
 
-<!-- BOTÃO MENU LATERAL -->
-<div class="menu-btn" onclick="toggleMenu()">
-<i class="fa fa-bars"></i>
-</div>
+    <!-- BOTÃO MENU LATERAL -->
+    <div class="menu-btn" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
 
-<!-- LOGO -->
-<div class="logo">
-  <img src="img/logo.png" alt="Biscoiteria Sabor de Minas">
-  <h1 class="nome-loja">Biscoiteria Sabor De Minas</h1> <!-- NOME DA LOJA ABAIXO DA LOGO -->
-</div>
+    <!-- LOGO + NOME DA LOJA -->
+    <div class="logo">
+      <img src="img/logo.png" alt="Biscoiteria Sabor de Minas">
+      <h1 class="nome-loja">Biscoiteria Sabor De Minas</h1> <!-- NOME DA LOJA ABAIXO DA LOGO -->
+    </div>
 
-<!-- MENU NORMAL -->
-<nav class="menu-topo">
-<a href="index.html">Início</a>
-<a href="Biscoitosartesanais.html">Biscoitos</a>
-<a href="contato.html">Contato</a>
-</nav>
-  
-<!-- SEPARADOR -->
-<div class="menu-separador"></div>
-  
-</header>
-  
-<!-- BOTÃO RISQUINHO DENTRO DO MENU -->
-<!-- BOTÃO DO MENU -->
-<div class="menu-btn" onclick="toggleMenu()">
-<i class="fa fa-bars"></i>
-</div>
+    <!-- MENU NORMAL -->
+    <nav class="menu-topo">
+      <a href="index.html">Início</a>
+      <a href="Biscoitosartesanais.html">Biscoitos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
 
-<!-- MENU LATERAL -->
-<div id="menu-lateral" class="menu-lateral">
+    <!-- SEPARADOR -->
+    <div class="menu-separador"></div>
 
-<a href="index.html">Início</a>
+  </header>
 
-<p class="titulo-categoria">Categorias</p>
+  <!-- ================= MENU LATERAL ================= -->
+  <div id="menu-lateral" class="menu-lateral">
 
-<a href="Biscoitosartesanais.html">Biscoitos Artesanais</a>
-<a href="biscoitopolvilho.html">Biscoito Polvilho</a>
-<a href="salgadinho.html">Salgadinhos</a>
-  
-<div class="menu-inferior">  
-<a href="sobre.html">Sobre a Loja</a>
-<a href="contato.html">Contato</a>
-</div>
-  
-</div>
+    <a href="index.html">Início</a>
 
-<!-- HERO -->
-<section class="hero">
+    <p class="titulo-categoria">Categorias</p>
 
-<div class="hero-text">
+    <a href="Biscoitosartesanais.html">Biscoitos Artesanais</a>
+    <a href="biscoitopolvilho.html">Biscoito Polvilho</a>
+    <a href="salgadinho.html">Salgadinhos</a>
 
-<h1>Biscoitos Artesanais</h1>
+    <div class="menu-inferior">
+      <a href="sobre.html">Sobre a Loja</a>
+      <a href="contato.html">Contato</a>
+    </div>
 
-<p>O sabor que alegra seu dia</p>
+  </div>
 
-<p class="experiencia">
-Feitos com carinho desde 2015.
-Encomendas pelo WhatsApp.
-</p>
+  <!-- ================= HERO ================= -->
+  <section class="hero">
 
-<button onclick="window.location.href='Biscoitosartesanais.html'">
-Ver nossos biscoitos
-</button>
+    <div class="hero-text">
+      <h1>Biscoitos Artesanais</h1>
+      <p>O sabor que alegra seu dia</p>
+      <p class="experiencia">
+        Feitos com carinho desde 2015. Encomendas pelo WhatsApp.
+      </p>
+      <button onclick="window.location.href='Biscoitosartesanais.html'">
+        Ver nossos biscoitos
+      </button>
+    </div>
 
-</div>
+  </section>
 
-</section>
+  <!-- ================= VITRINE DE BISCOITOS ================= -->
+  <section class="vitrine">
+    <h2>Nossos Biscoitos Mais Vendidos 🍪</h2>
 
-<!-- VITRINE DE BISCOITOS -->
-<section class="vitrine">
+    <div class="produtos">
 
-<h2>Nossos Biscoitos Mais Vendidos 🍪</h2>
+      <div class="produto">
+        <img src="img/sasha.jpeg" alt="Biscoito amanteigado">
+        <h3></h3>
+      </div>
 
-<div class="produtos">
+      <div class="produto">
+        <img src="img/ugauga.jpeg" alt="Biscoito com goiabada">
+        <h3></h3>
+      </div>
 
-<div class="produto">
-<img src="img/sasha.jpeg" alt="Biscoito amanteigado">
-<h3></h3>
-</div>
+      <div class="produto">
+        <img src="img/casadinho.jpeg" alt="Biscoito casadinho">
+        <h3></h3>
+      </div>
 
-<div class="produto">
-<img src="img/ugauga.jpeg" alt="Biscoito com goiabada">
-<h3></h3>
-</div>
+    </div>
+  </section>
 
-<div class="produto">
-<img src="img/casadinho.jpeg" alt="Biscoito casadinho">
-<h3></h3>
-</div>
+  <!-- ================= BOTÃO WHATSAPP ================= -->
+  <a href="https://wa.me/5531992767228" class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
-</div>
+  <!-- ================= SCRIPTS ================= -->
+  <script>
+    function toggleMenu() {
+      let menu = document.getElementById("menu-lateral");
+      if (menu.classList.contains("ativo")) {
+        menu.classList.remove("ativo");
+      } else {
+        menu.classList.add("ativo");
+      }
+    }
+  </script>
 
-</section>
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="rodape">
+    <p><strong>Biscoiteria Sabor De Minas</strong></p>
+    <p>Biscoitos feitos com carinho e ingredientes selecionados.</p>
+    <p>📍 Belo Horizonte - MG</p>
+    <p>📱 WhatsApp: (31) 99276-7228</p>
+  </footer>
 
-<!-- BOTÃO WHATSAPP -->
-<a href="https://wa.me/5531992767228" class="whatsapp-float" target="_blank">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-
-
-<script>
-
-function toggleMenu(){
-let menu = document.getElementById("menu-lateral");
-
-if(menu.classList.contains("ativo")){
-menu.classList.remove("ativo");
-}else{
-menu.classList.add("ativo");
-}
-  
-}
-</script>
-  
-<footer class="rodape">
-
-<p><strong>Biscoiteria Sabor De Minas</strong></p>
-
-<p>Biscoitos feitos com carinho e ingredientes selecionados.</p>
-
-<p>📍 Belo Horizonte - MG</p>
-
-<p>📱 WhatsApp: (31) 99276-7228</p>
-  
 </body>
+
 </html>
-
-
-
 
 
 

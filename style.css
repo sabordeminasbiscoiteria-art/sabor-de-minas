@@ -303,50 +303,17 @@ body.home-page .menu-topo {
 }
 
 }
-/* ================= Fale Conosco CENTRALIZADO ================= */
-.fale-conosco {
-  text-align: center;           /* centraliza todo o conteúdo */
-  margin-top: 10px;             /* espaço abaixo da logo */
-  font-family: Arial, sans-serif;
+/* ================= CONTATO CENTRALIZADO ================= */
+.contato {
+  padding: 60px 20px;
+  text-align: center; /* centraliza todo o conteúdo */
+}
+
+.contato h2,
+.contato p {
+  margin: 8px 0;
   color: #333;
-}
-
-.fale-conosco p {
-  margin: 5px 0;
-  font-size: 16px;
-}
-
-.fale-conosco .contato-icones {
-  display: flex;
-  justify-content: center;      /* centraliza os ícones */
-  gap: 15px;                    /* espaçamento entre WhatsApp e Instagram */
-  margin-top: 8px;
-}
-
-.fale-conosco .contato-icones a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  transition: 0.3s;
-}
-
-.fale-conosco .contato-icones a.whatsapp {
-  background: #25D366;
-}
-
-.fale-conosco .contato-icones a.insta {
-  background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-}
-
-.fale-conosco .contato-icones a:hover {
-  opacity: 0.8;
-}
+  text-align: center; /* garante que o endereço fique centralizado */
 }
 
 /* ================= BOTOES CONTATO ================= */
@@ -586,6 +553,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

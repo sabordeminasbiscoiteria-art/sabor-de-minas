@@ -304,16 +304,27 @@ body.home-page .menu-topo {
 
 }
 /* ================= CONTATO CENTRALIZADO ================= */
-.contato-centralizado {
-  text-align: center;   /* centraliza todo o conteúdo dentro do bloco */
-  margin: 0 auto;       /* centraliza o bloco horizontalmente */
-  display: inline-block; /* mantém a largura ajustada ao conteúdo */
-
+.contato {
+  padding: 60px 20px;
+  text-align: center;  /* centraliza todo o conteúdo */
 }
 
-/* ================= BOTOES CONTATO ================= */
-.contato .contato-btn {
-  display: inline-flex;
+.contato h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.contato-card {
+  display: flex;
+  flex-direction: column; /* organiza verticalmente no celular */
+  align-items: center;    /* centraliza horizontalmente */
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.contato-card .contato-btn {
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -323,54 +334,74 @@ body.home-page .menu-topo {
   font-weight: 600;
   text-decoration: none;
   color: white;
-  margin: 10px 5px;
+  width: 220px;
+  transition: 0.3s;
 }
 
-.contato .whatsapp {
-  background: #25D366;
+.contato-card .whatsapp {
+  background: #25D366;  /* verde WhatsApp */
 }
 
-.contato .insta {
+.contato-card .insta {
   background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
 }
 
-/* ================= WHATSAPP FLUTUANTE ================= */
-.floating-buttons {
+.contato-card .endereco {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;    /* garante que o endereço fique centralizado */
+}
+
+/* ================= BOTÕES FLOUTANTES ================= */
+.icones {
   position: fixed;
-  top: 50%;               /* centraliza verticalmente */
-  right: 20px;             /* lado direito */
-  transform: translateY(-50%);
+  bottom: 20px;
+  right: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  z-index: 999;
+  z-index: 9999;
 }
 
-.floating-buttons a {
+.icones a {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
   font-size: 30px;
   text-decoration: none;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
   transition: 0.3s;
 }
 
-.floating-buttons .whatsapp-float {
+.icones a.whatsapp {
   background: #25D366;
-  color: white;
 }
 
-.floating-buttons .insta-float {
+.icones a.insta {
   background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-  color: white;
 }
 
-.floating-buttons a:hover {
-  opacity: 0.8;
+.icones a:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width:768px){
+  .contato-card {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .contato-card .contato-btn {
+    width: 80%;
+  }
 }
 }
 
@@ -548,6 +579,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

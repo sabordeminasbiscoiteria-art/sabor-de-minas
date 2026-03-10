@@ -106,6 +106,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   text-shadow:1px 1px 3px rgba(0,0,0,0.3); /* sombra leve */
 }
 /* ================= MENU TOPO ================= */
+/* MENU SUPERIOR */
 .menu-topo{
   display:flex;
   justify-content:center; /* centraliza os links */
@@ -116,7 +117,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 
 .menu-topo a{
   text-decoration:none;
-  color:#333;          /* preto elegante */
+  color:#333333;          /* preto elegante */
   font-weight:600;
   padding:8px 12px;
   border-radius:6px;
@@ -124,8 +125,8 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
 .menu-topo a:hover{
-  background:#f8f8f8;     /* leve destaque no hover */
-  color:111111; /* branco levemente transparente */
+  background: rgba(255,255,255,0.2); /* branco clarinho transparente */
+  color: #111111;                     /* preto fosco suave no hover */
 }
 /* ================= MENU LATERAL ================= */
 .menu-btn{
@@ -608,6 +609,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

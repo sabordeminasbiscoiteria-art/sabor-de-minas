@@ -540,6 +540,13 @@ height:160px;
     grid-template-columns:repeat(3,1fr);
   }
 }
+/* ===== TÍTULO DA VITRINE NO CELULAR ===== */
+@media (max-width:768px){
+  .vitrine h2{
+    font-size:24px; /* menor no celular */
+    margin-bottom:15px; /* ajuste do espaçamento */
+  }
+}
 
 /* PC */
 @media (min-width:1024px){
@@ -602,6 +609,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

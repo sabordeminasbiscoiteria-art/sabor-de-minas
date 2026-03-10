@@ -71,15 +71,15 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
 /* ===== TÍTULO ELEGANTE ===== */
+/* TITULO HERO NORMAL */
 .hero-text h1{
-  font-family: 'Playfair Display', serif; /* fonte chique */
-  font-size:48px;                         /* grande e destacado */
-  font-weight:700;
-  letter-spacing:2px;
-  color:white;
-  text-shadow:2px 2px 6px rgba(0,0,0,0.7); /* sombra elegante */
-  margin-bottom:10px;
-  line-height:1.1;
+  font-family: Arial, sans-serif; /* volta para fonte padrão */
+  font-size:42px;                 /* tamanho grande para destaque */
+  font-weight:700;                /* negrito */
+  color:white;                    /* mantém branco sobre a imagem */
+  text-shadow:none;               /* remove sombra */
+  margin-bottom:15px;
+  line-height:1.2;
   text-align:center;
 }
 
@@ -609,6 +609,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

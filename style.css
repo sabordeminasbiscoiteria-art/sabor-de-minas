@@ -306,18 +306,23 @@ body.home-page .menu-topo {
 /* ================= CONTATO CENTRALIZADO ================= */
 .contato {
   padding: 60px 20px;
-  text-align: center;  /* centraliza todo o conteúdo */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza todo o conteúdo horizontalmente */
+  text-align: center;  /* centraliza textos dentro da div */
 }
 
 .contato h2 {
   font-size: 32px;
   margin-bottom: 25px;
   color: #333;
+  width: 100%;
+  text-align: center; /* garante que o título fique centralizado */
 }
 
 .contato-card {
   display: flex;
-  flex-direction: column; /* organiza verticalmente no celular */
+  flex-direction: column; /* organiza verticalmente */
   align-items: center;    /* centraliza horizontalmente */
   gap: 15px;
   margin-bottom: 25px;
@@ -579,6 +584,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

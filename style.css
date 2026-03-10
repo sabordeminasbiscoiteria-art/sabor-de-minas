@@ -71,7 +71,6 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
 /* ===== TÍTULO ELEGANTE ===== */
-/* TITULO HERO NORMAL */
 .hero-text h1{
   font-family: Arial, sans-serif; /* volta para fonte padrão */
   font-size:42px;                 /* tamanho grande para destaque */
@@ -105,14 +104,13 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   margin:10px 0;
   text-shadow:1px 1px 3px rgba(0,0,0,0.3); /* sombra leve */
 }
-/* ================= SEPARADOR SUAVE FULL WIDTH ================= */
+/* ================= SEPARADOR SUAVE ENTRE MENU E NOME DA LOJA ================= */
 .menu-separador{
-  position: relative;
-  width: 100vw; /* 100% da largura da viewport */
-  height: 20px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0));
-  margin: 10px 0;
-  left: 0;
+  width:100%; /* ocupa toda a largura da tela */
+  height:15px; /* altura do separador */
+  margin:10px 0; /* espaço acima e abaixo */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0)); 
+  /* sombra discreta, sem linha */
 }
 
 /* ================= MENU TOPO ================= */ 
@@ -616,6 +614,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

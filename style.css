@@ -45,7 +45,53 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
   display:block;
   margin:auto;
 }
+/* ================= HERO ================= */
+.hero{
+  position:relative;
+  min-height:60vh;
+  background:url('img/beijinho.jpeg') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px 20px;
+}
 
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65));
+}
+
+.hero-text{
+  position:relative;
+  color:white;
+  max-width:600px;
+}
+
+/* ===== TÍTULO PROFISSIONAL ===== */
+.hero-text h1{
+  font-family: 'Playfair Display', serif; /* fonte elegante */
+  font-size:48px;                        /* grande para destaque */
+  font-weight:700;                        /* negrito */
+  letter-spacing:2px;                     /* espaçamento entre letras */
+  color:white;
+  text-shadow:1px 1px 4px rgba(0,0,0,0.6); /* sombra leve para destacar */
+  margin-bottom:10px;
+}
+
+.hero-text .slogan{
+  font-size:22px;
+  font-weight:500;
+  color:white;
+  margin-bottom:15px;
+}
+
+.hero-text p.experiencia{
+  font-size:16px;
+  margin-bottom:20px;
+}
 /* ================= MENU SUPERIOR ================= */
 .menu-topo{
   display:flex;
@@ -528,6 +574,7 @@ border-top:1px solid #ddd;
 .rodape p{
 margin:6px 0;
 }
+
 
 
 

@@ -104,7 +104,7 @@ header h1, header h2 { /* se tiver o nome da loja como título */
 
 .hero-text h1{
   font-family: Arial, sans-serif; /* fonte padrão */
-  font-size:42px;
+  font-size:32px;
   font-weight:700;
   color:white;
   text-align:center;
@@ -690,6 +690,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

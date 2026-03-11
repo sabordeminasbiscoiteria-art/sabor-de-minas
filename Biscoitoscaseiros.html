@@ -3,24 +3,25 @@
 
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Biscoitos Caseiros</title>
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
 
 <header>
 
-<nav class="search-box">
+<nav class="menu-topo">
 <a href="index.html">Início</a>
 <a href="biscoitopolvilho.html">Biscoitos Polvilhos</a>
 </nav>
 
-<div class="serch-box">
+<div class="search-box">
 <i class="fa fa-search"></i>
 <input type="text" id="searchInput" placeholder="Pesquisar produto...">
 </div>
@@ -28,6 +29,7 @@
 </header>
 
 <section class="products">
+
 <h2>Biscoitos Caseiros</h2>
 
 <p class="descricao">
@@ -100,7 +102,7 @@ Veja os preços e fale conosco para encomendar.
 <!-- BAMBOLÊ -->
 <div class="card" data-name="bambole">
 <div class="img-produto">
-<img src="img/banbole.jpeg" alt="Bambolê">
+<img src="img/bambole.jpeg" alt="Bambolê">
 <span class="selo">250g</span>
 </div>
 <h3>Bambolê</h3>
@@ -127,6 +129,7 @@ Veja os preços e fale conosco para encomendar.
 
 </section>
 
+
 <!-- MODAL -->
 <div id="produtoModal" class="modal">
 <div class="modal-content">
@@ -136,89 +139,92 @@ Veja os preços e fale conosco para encomendar.
 </div>
 </div>
 
+
 <!-- BOTÃO WHATSAPP -->
 <a href="https://wa.me/5531992767228" class="whatsapp-float" target="_blank">
 <i class="fa-brands fa-whatsapp"></i>
 </a>
 
+
 <script>
+
 const searchInput = document.getElementById("searchInput");
 const products = document.querySelectorAll(".card");
 const noResult = document.getElementById("noResult");
 
 searchInput.addEventListener("keyup", () => {
-  let search = searchInput.value.toLowerCase();
-  let visible = 0;
 
-  products.forEach(card => {
-    let name = card.getAttribute("data-name").toLowerCase();
-    if(name.includes(search)){
-      card.style.display = "block";
-      visible++;
-    }else{
-      card.style.display = "none";
-    }
-  });
+let search = searchInput.value.toLowerCase();
+let visible = 0;
 
-  noResult.style.display = visible === 0 ? "block" : "none";
+products.forEach(card => {
+
+let name = card.getAttribute("data-name").toLowerCase();
+
+if(name.includes(search)){
+card.style.display = "block";
+visible++;
+}else{
+card.style.display = "none";
+}
+
+});
+
+noResult.style.display = visible === 0 ? "block" : "none";
+
 });
 
 const descricaoProdutos = {
-casadinho: "Biscoito creme de avelã.Disponível em nossa loja física.",
-goiabada: "Casadinho com recheio de goiabada artesanal.Disponível em nossa loja física.",
-canela: "Biscoito crocante com sabor suave de canela.Disponível em nossa loja física.",
-ugauga: "Biscoito caseiro tradicional muito saboroso.Disponível em nossa loja física.",
-beijinho: "Biscoito doce com recheio goiabada.Disponível em nossa loja física.",
-bambole: "Biscoito crocante e leve perfeito para café.Disponível em nossa loja física.",
-sasha: "Biscoito amanteigado com chocolate.Disponível em nossa loja física."
+
+casadinho:"Biscoito creme de avelã. Disponível em nossa loja física.",
+
+goiabada:"Casadinho com recheio de goiabada artesanal. Disponível em nossa loja física.",
+
+canela:"Biscoito crocante com sabor suave de canela. Disponível em nossa loja física.",
+
+ugauga:"Biscoito caseiro tradicional muito saboroso. Disponível em nossa loja física.",
+
+beijinho:"Biscoito doce com recheio de goiabada. Disponível em nossa loja física.",
+
+bambole:"Biscoito crocante e leve perfeito para café. Disponível em nossa loja física.",
+
+sasha:"Biscoito amanteigado com chocolate. Disponível em nossa loja física."
+
 };
 
 function abrirProduto(id,nome){
-  document.getElementById("produtoModal").style.display = "flex";
-  document.getElementById("produtoTitulo").innerText = nome;
-  document.getElementById("produtoDescricao").innerText = descricaoProdutos[id];
+
+document.getElementById("produtoModal").style.display="flex";
+
+document.getElementById("produtoTitulo").innerText=nome;
+
+document.getElementById("produtoDescricao").innerText=descricaoProdutos[id];
+
 }
 
 function fecharProduto(){
-  document.getElementById("produtoModal").style.display = "none";
+
+document.getElementById("produtoModal").style.display="none";
+
 }
+
 </script>
-  
+
+
 <footer class="rodape">
-  <p><strong>Biscoiteria Sabor De Minas</strong></p>
-  <p>Biscoitos feitos com carinho e ingredientes selecionados.</p>
-  <p>📍 Belo Horizonte - MG</p>
-  <p>📱 WhatsApp: (31) 99276-7228</p>
-</footer> 
-  
+
+<p><strong>Biscoiteria Sabor De Minas</strong></p>
+
+<p>Biscoitos feitos com carinho e ingredientes selecionados.</p>
+
+<p>📍 Belo Horizonte - MG</p>
+
+<p>📱 WhatsApp: (31) 99276-7228</p>
+
+</footer>
+
 </body>
-  
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

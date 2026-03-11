@@ -55,28 +55,28 @@ header h1, header h2 { /* se tiver o nome da loja como título */
   font-size: 24px;
   color: #333;
 }
-/* ================= MENU SIMPLES FIXO NO CANTO ================= */
+/* ================= MENU SIMPLES ================= */
 .menu-topo {
-  position: absolute;   /* fixa o menu no canto */
-  top: 5px;            /* distância do topo */
-  right: 20px;          /* distância da direita */
   display: flex;
-  gap: 15px;            /* espaço entre os links */
-  font-size: 14px;      /* tamanho do texto */
-  z-index: 1000;        /* sobre outros elementos */
+  gap: 15px;
+  font-size: 14px;
+  z-index: 1000;
+  position: static; /* no PC, menu dentro do fluxo */
+  margin-top: 20px; /* espaço normal abaixo da logo */
 }
 
 .menu-topo a {
   text-decoration: none;
-  color: #333;          /* cor do texto do menu */
+  color: #333;
   font-weight: bold;
   padding: 5px 10px;
   transition: all 0.3s ease;
 }
 
 .menu-topo a:hover {
-  color: #e53935;       /* cor ao passar o mouse */
+  color: #e53935;
 }
+
 /* ================= HERO ================= */
 .hero{
   position:relative;
@@ -644,6 +644,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

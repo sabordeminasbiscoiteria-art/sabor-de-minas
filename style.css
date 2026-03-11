@@ -577,7 +577,20 @@ body.home-page .menu-topo {
     height:200px;
   }
 }
+/* Ajuste da logo e nome da loja só no celular */
+@media (max-width: 768px) {
+  header {
+    padding-top: 80px; /* aumenta o espaço do topo */
+  }
 
+  header .logo img {
+    margin-top: 20px; /* afasta a logo do menu */
+  }
+
+  header h1, header h2 { 
+    margin-top: 10px; /* espaço entre logo e nome da loja */
+  }
+}
 /* ================= RODAPÉ CENTRALIZADO ================= */
 .rodape {
   background: #f5f5f5;       /* mesma cor do fundo do rodapé */
@@ -631,6 +644,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

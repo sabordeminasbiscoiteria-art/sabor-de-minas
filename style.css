@@ -26,6 +26,69 @@ img{
   -webkit-user-drag:none;
 }
 
+/* ================= HEADER GERAL ================= */
+header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 40px;
+  background:#f8f6f3;
+  position:relative;
+  box-shadow:0 3px 8px rgba(0,0,0,0.08);
+}
+
+/* LOGO + NOME */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-left:10px;
+}
+
+.logo img{
+  height:50px;
+  width:auto;
+}
+
+header h1{
+  margin:0;
+  font-size:26px;
+  color:#333;
+}
+
+/* MENU */
+.menu-topo{
+  margin-left:auto;
+}
+/* ===== TOPO DO SITE ===== */
+
+.topo{
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:10px;
+}
+
+/* MENU */
+.menu-topo{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:10px;
+}
+
+/* LINKS */
+.menu-topo a{
+text-decoration:none;
+color:#333;
+font-weight:bold;
+font-size:16px;
+padding:5px 10px;
+}
+
+.menu-topo a:hover{
+color:#e53935;
+}
 /* ===== PESQUISA ===== */
 
 .pesquisa{
@@ -53,41 +116,6 @@ img{
   font-size:16px;
   color:#666;
 }
-
-/* ===== HEADER PRODUTOS ===== */
-
-.topo-produtos{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:10px;
-padding:10px 15px;
-}
-
-/* MENU */
-.topo-produtos .menu-topo{
-display:flex;
-gap:15px;
-font-size:16px;
-}
-
-/* BARRA DE PESQUISA */
-.topo-produtos .search-box{
-display:flex;
-align-items:center;
-border:1px solid #ccc;
-border-radius:20px;
-padding:5px 10px;
-width:200px;
-}
-
-.topo-produtos .search-box input{
-border:none;
-outline:none;
-font-size:14px;
-width:100%;
-}
-
 /* ===== RESPONSIVO PARA PC ===== */
 
 @media (min-width: 768px){
@@ -705,6 +733,7 @@ grid-template-columns:repeat(4,1fr);
 }
 
 }
+
 
 
 

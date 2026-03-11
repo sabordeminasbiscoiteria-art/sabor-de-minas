@@ -555,7 +555,6 @@ body.home-page .menu-topo {
   text-align:center;
   letter-spacing:0.5px;
 }
-
 .produtos{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -691,6 +690,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

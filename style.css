@@ -607,21 +607,7 @@ color:#e53935;
     height:200px;
   }
 }
-/* Ajuste da logo e nome da loja só no celular */
-@media (max-width: 768px) {
-  header {
-    padding-top: 80px; /* aumenta o espaço do topo */
-  }
 
-  header .logo img {
-    margin-top: 55px; /* afasta a logo do menu */
-  }
-
-  header h1, header h2 { 
-    margin-top: 10px; /* espaço entre logo e nome da loja */
-  }
-}
-  
 /* TABLET */
 @media (min-width:769px) and (max-width:1023px){
   .grid{
@@ -655,6 +641,7 @@ color:#e53935;
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

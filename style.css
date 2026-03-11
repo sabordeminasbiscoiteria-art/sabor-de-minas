@@ -52,7 +52,7 @@ header .menu-topo {
 header h1, header h2 { /* se tiver o nome da loja como título */
   margin-top: 10px;   /* espaço entre logo e título */
   text-align: center;
-  font-size: 32px;
+  font-size: 20px;
   color: #333;
 }
 /* ================= MENU SIMPLES FIXO NO CANTO ================= */
@@ -690,6 +690,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

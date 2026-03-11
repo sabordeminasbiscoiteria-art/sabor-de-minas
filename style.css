@@ -151,28 +151,6 @@ font-size:14px;
 width:100%;
 }
 
-/* ===== RESPONSIVO ===== */
-
-@media (max-width:768px){
-
-.topo-produtos{
-flex-wrap:nowrap;
-}
-
-.topo-produtos .menu-topo{
-font-size:14px;
-gap:10px;
-}
-
-.topo-produtos .search-box{
-width:150px;
-}
-
-.topo-produtos .search-box input{
-font-size:12px;
-}
-
-}
 /* ===== RESPONSIVO PARA PC ===== */
 
 @media (min-width: 768px){
@@ -790,6 +768,7 @@ grid-template-columns:repeat(4,1fr);
 }
 
 }
+
 
 
 

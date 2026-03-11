@@ -51,15 +51,10 @@ font-size:20px;
 margin:0;
 }
 /* MENU */
-
 .menu-topo{
 display:flex;
 gap:20px;
-}
-.menu-topo{
-display:flex;
-gap:20px;
-margin-left:auto;
+margin-right:auto;
 }
 
 .menu-topo a{
@@ -710,6 +705,7 @@ grid-template-columns:repeat(4,1fr);
 }
 
 }
+
 
 
 

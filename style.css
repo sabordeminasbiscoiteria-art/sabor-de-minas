@@ -117,25 +117,38 @@ color:#e53935;
   color:#666;
 }
 
-/* ===== MENU + PESQUISA APENAS NAS PÁGINAS DE PRODUTOS ===== */
+/* ===== HEADER PRODUTOS ===== */
 
-.pagina-produtos .topo{
+.topo-produtos{
 display:flex;
 align-items:center;
 justify-content:space-between;
 gap:10px;
-flex-wrap:wrap;
+padding:10px 15px;
 }
 
-.pagina-produtos .menu-topo{
+/* menu */
+.topo-produtos .menu-topo{
 display:flex;
 gap:15px;
 font-size:16px;
 }
 
-.pagina-produtos .pesquisa{
-width:40%;
-margin:0;
+/* pesquisa */
+.topo-produtos .search-box{
+display:flex;
+align-items:center;
+border:1px solid #ccc;
+border-radius:20px;
+padding:5px 10px;
+width:45%; /* ajuda no celular */
+}
+
+.topo-produtos .search-box input{
+border:none;
+outline:none;
+font-size:14px;
+width:100%;
 }
 /* ===== RESPONSIVO PARA PC ===== */
 
@@ -722,6 +735,7 @@ font-size:16px;
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

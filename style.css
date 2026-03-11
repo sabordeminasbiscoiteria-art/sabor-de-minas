@@ -228,7 +228,7 @@ body.home-page .menu-topo {
   left:20px;
   font-size:28px;
   cursor:pointer;
-  color:#222222;
+  color:#333333;
   z-index:1001;
 }
 
@@ -690,6 +690,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

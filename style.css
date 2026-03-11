@@ -83,7 +83,7 @@ header h1, header h2 { /* se tiver o nome da loja como título */
   font-size: 24px;
   color: #333;
 }
-/* ================= MENU SIMPLES  ================= */
+/* ================= MENU SIMPLES FIXO NO CANTO ================= */
 .menu-topo {
   position: absolute;   /* fixa o menu no canto */
   top: 5px;            /* distância do topo */
@@ -672,6 +672,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

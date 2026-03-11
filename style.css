@@ -25,52 +25,32 @@ img{
   user-select:none;
   -webkit-user-drag:none;
 }
-/* Imagem do Beijinho */
-.card[data-name="beijinho"] .img-produto img {
-  width: 100%;
-  height: auto; /* ou 500px se quiser altura fixa */
-  object-fit: cover;
-}
+
 /* ================= HEADER GERAL ================= */
-header {
+header{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 60px 20px 20px 20px; /* espaço acima da logo e menu */
+  padding: 60px 20px 20px 20px; /* topo maior para afastar do menu */
   background: #f8f6f3;
   position: relative;
   box-shadow: 0 3px 8px rgba(0,0,0,0.08);
 }
 
 header .menu-topo {
-  margin-top: 20px; /* espaço entre logo e menu */
-  display: flex;
-  gap: 15px;
+  margin-top: 20px; /* aumenta o espaço entre logo e menu */
 }
 
-.menu-topo a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  padding: 5px 10px;
-  transition: all 0.3s ease;
-}
-
-.menu-topo a:hover {
-  color: #e53935;
-}
-
-.logo img {
+.logo img{
   height: 60px;
   width: auto;
   display: block;
   margin: auto;
 }
 
-header h1,
-header h2 { /* caso tenha o nome da loja como título */
-  margin-top: 10px;
+header h1, header h2 { /* se tiver o nome da loja como título */
+  margin-top: 10px;   /* espaço entre logo e título */
   text-align: center;
   font-size: 24px;
   color: #333;
@@ -96,7 +76,7 @@ header h2 { /* caso tenha o nome da loja como título */
 
 .menu-topo a:hover {
   color: #e53935;       /* cor ao passar o mouse */
-
+}
 /* ================= HERO ================= */
 .hero{
   position:relative;
@@ -160,6 +140,46 @@ header h2 { /* caso tenha o nome da loja como título */
   background:#b93838;
 }
 
+/* ================= MENU TOPO ================= */ 
+.menu-topo{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  margin-top:10px;
+  font-family: Arial, sans-serif;
+}
+
+.menu-topo a{
+  text-decoration:none;
+  color:#333333;          
+  font-weight:600;
+  padding:8px 12px;
+  border-radius:6px;
+  transition:0.3s; 
+}
+
+.menu-topo a:hover{
+  background: rgba(255,255,255,0.2);
+  color: #111111;
+}
+/* CENTRALIZAÇÃO NA TELA INICIAL */
+body.home-page header {
+  display: flex;
+  flex-direction: column; /* empilha logo, nome e menu */
+  align-items: center;    /* centraliza horizontalmente */
+  justify-content: center; /* centraliza verticalmente, se precisar */
+  gap: 10px;
+  padding: 20px;
+}
+
+body.home-page .logo {
+  text-align: center;
+}
+
+body.home-page .menu-topo {
+  justify-content: center; /* centraliza links do menu */
+  gap: 25px;
+}
 /* ================= MENU TOPO ================= */ 
 .menu-topo{
   display:flex;
@@ -664,6 +684,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

@@ -476,7 +476,7 @@ body.home-page .menu-topo {
 .vitrine h2{
   font-family: Arial, sans-serif;
   font-size:32px;
-  margin-bottom:15px;
+  margin:30px 0;
   color:#444444;
   font-weight:700;
   text-align:center;
@@ -585,6 +585,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

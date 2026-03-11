@@ -58,7 +58,7 @@ header h1, header h2 { /* se tiver o nome da loja como título */
 /* ================= MENU SIMPLES FIXO NO CANTO ================= */
 .menu-topo {
   position: absolute;   /* fixa o menu no canto */
-  top: 20px;            /* distância do topo */
+  top: 10px;            /* distância do topo */
   right: 20px;          /* distância da direita */
   display: flex;
   gap: 15px;            /* espaço entre os links */
@@ -644,6 +644,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

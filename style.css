@@ -116,18 +116,26 @@ color:#e53935;
   font-size:16px;
   color:#666;
 }
-.menu-topo{
+/* ===== MENU + PESQUISA APENAS NAS PÁGINAS DE PRODUTOS ===== */
+
+.pagina-produtos .topo{
 display:flex;
-justify-content:center;
-gap:25px;
-font-size:18px;
-font-weight:600;
-margin-bottom:10px;
+align-items:center;
+justify-content:space-between;
+gap:10px;
+flex-wrap:wrap;
 }
 
-.menu-topo a{
-text-decoration:none;
-color:#333;
+.pagina-produtos .menu-topo{
+display:flex;
+gap:15px;
+font-size:16px;
+}
+
+.pagina-produtos .pesquisa{
+width:40%;
+margin:0;
+}
 }
 /* ===== RESPONSIVO PARA PC ===== */
 
@@ -714,6 +722,7 @@ font-size:16px;
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

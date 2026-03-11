@@ -58,25 +58,24 @@ header h1, header h2 { /* se tiver o nome da loja como título */
 /* ===== TOPO DO SITE ===== */
 
 .topo{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  padding:10px;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:10px;
 }
 
-/* LOGO */
-.logo{
-  font-size:22px;
-  font-weight:bold;
-  margin-bottom:5px;
-}
-
-/* MENU */
 .menu-topo{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  font-size:16px;
+display:flex;
+justify-content:center;
+gap:25px;
+margin-bottom:15px;
+}
+
+.menu-topo a{
+text-decoration:none;
+color:#333;
+font-weight:bold;
+font-size:16px;
 }
 
 .menu-topo a{
@@ -657,6 +656,7 @@ header h1, header h2 { /* se tiver o nome da loja como título */
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

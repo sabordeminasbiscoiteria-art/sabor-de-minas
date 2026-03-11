@@ -470,7 +470,7 @@ body.home-page .menu-topo {
 .vitrine{
   text-align:center;
   padding:20px 0; /* remove espaço lateral */
-  background:#fff7f2;
+  background:#ffffff;
 }
 
 .vitrine h2{
@@ -598,6 +598,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

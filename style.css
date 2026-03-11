@@ -27,7 +27,6 @@ img{
 }
 
 /* ================= HEADER GERAL ================= */
-/* ================= HEADER GERAL ================= */
 header{
   display: flex;
   flex-direction: column;
@@ -37,6 +36,10 @@ header{
   background: #f8f6f3;
   position: relative;
   box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+header .menu-topo {
+  margin-top: 20px; /* aumenta o espaço entre logo e menu */
 }
 
 .logo img{
@@ -628,6 +631,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

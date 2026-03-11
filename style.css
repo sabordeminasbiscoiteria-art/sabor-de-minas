@@ -584,7 +584,7 @@ body.home-page .menu-topo {
   }
 
   header .logo img {
-    margin-top: 30px; /* afasta a logo do menu */
+    margin-top: 40px; /* afasta a logo do menu */
   }
 
   header h1, header h2 { 
@@ -644,6 +644,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

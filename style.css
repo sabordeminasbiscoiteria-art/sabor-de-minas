@@ -640,7 +640,6 @@ font-size:12px;
 }
 
 /* ================= RESPONSIVO ================= */
-
 /* CELULAR */
 @media (max-width:768px){
   .grid{
@@ -726,7 +725,6 @@ font-size:16px;
 
 }
  /* ===== CELULAR ===== */
-
 @media (max-width:768px){
 
 .topo-produtos{
@@ -761,6 +759,38 @@ padding:4px;
     grid-template-columns:repeat(3,1fr);
   }
 }
+  /* ===== AJUSTE TOPO DAS PÁGINAS ===== */
+
+@media (max-width:768px){
+
+.topo-produtos{
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:nowrap;
+gap:6px;
+padding:10px 15px;
+}
+
+.topo-produtos .menu-topo{
+display:flex;
+gap:10px;
+font-size:14px;
+}
+
+.topo-produtos .search-box{
+display:flex;
+align-items:center;
+width:140px;
+}
+
+.topo-produtos .search-box input{
+width:100%;
+font-size:12px;
+padding:4px;
+}
+
+}
 
 /* PC */
 @media (min-width:1024px){
@@ -788,6 +818,7 @@ padding:4px;
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

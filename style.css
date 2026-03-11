@@ -50,11 +50,11 @@ height:auto;
 font-size:20px;
 margin:0;
 }
-/* MENU */
 .menu-topo{
 display:flex;
 gap:20px;
-margin-right:auto;
+justify-content:center;
+flex:1;
 }
 
 .menu-topo a{
@@ -714,6 +714,7 @@ width:100%;
 }
 
 }
+
 
 
 

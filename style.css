@@ -505,7 +505,7 @@ body.home-page .menu-topo {
   display:inline-block;
   margin-top:25px;
   padding:10px 25px;
-  background:#444444;
+  background:#c97e22;
   color:white;
   text-decoration:none;
   font-weight:600;
@@ -594,6 +594,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

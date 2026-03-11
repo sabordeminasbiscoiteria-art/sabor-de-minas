@@ -636,26 +636,17 @@ body.home-page .menu-topo {
     margin-top: 10px; /* espaço entre logo e nome da loja */
   }
 }
-/* ================= RODAPÉ CENTRALIZADO ================= */
+  
+/* RODAPÉ CENTRALIZADO */
 .rodape {
-  background: #f5f5f5;       /* mesma cor do fundo do rodapé */
-  text-align: center;         /* centraliza todo o texto */
-  padding: 30px 20px;         /* espaço interno */
-  margin-top: 40px;
-  font-size: 14px;
-  color: #555;
-  border-top: 1px solid #ddd;
-  width: 100%;                /* ocupa toda a largura da tela */
-  box-sizing: border-box;     /* garante padding correto */
-  display: flex;              /* flex para alinhar conteúdo */
-  flex-direction: column;     
-  align-items: center;        /* centraliza horizontalmente */
-  justify-content: center;    /* centraliza verticalmente */
+  text-align: center;       /* centraliza o texto */
+  padding: 20px;            /* espaço interno */
+  background: #f8f6f3;      /* mesma cor do header, se quiser */
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.05); /* sombra suave opcional */
+  width: 100%;              /* ocupa toda a largura da tela */
+  margin: 0 auto;           /* centraliza horizontalmente */
+  clear: both;              /* evita que elementos flutuantes influenciem */
 }
-.rodape p {
-  margin: 6px 0;              /* mantém espaçamento entre linhas */
-}
-
 /* TABLET */
 @media (min-width:769px) and (max-width:1023px){
   .grid{
@@ -689,6 +680,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

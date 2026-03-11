@@ -181,12 +181,14 @@ body.home-page .menu-topo {
   gap: 25px;
 }
 /* ================= MENU TOPO ================= */ 
-.menu-topo{
-  display:flex;
-  justify-content:center;
-  gap:25px;
-  margin-top:10px;
-  font-family: Arial, sans-serif;
+.menu-topo {
+  position: relative;
+  top: 5px;
+  display: flex;
+  justify-content: center; /* centraliza */
+  gap: 15px;
+  font-size: 16px;
+  z-index: 1000;
 }
 
 .menu-topo a{
@@ -690,6 +692,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

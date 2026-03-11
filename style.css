@@ -53,8 +53,7 @@ margin:0;
 .menu-topo{
 display:flex;
 gap:20px;
-justify-content:center;
-flex:1;
+margin-right:auto;
 }
 
 .menu-topo a{
@@ -715,6 +714,7 @@ width:100%;
 }
 
 }
+
 
 
 

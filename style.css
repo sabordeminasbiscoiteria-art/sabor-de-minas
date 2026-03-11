@@ -501,18 +501,7 @@ body.home-page .menu-topo {
   height:500px;
   object-fit:cover;
 }
-body{
-  margin:0;
-  padding:0;
-}
 
-.vitrine{
-  width:100%;
-  height:60vh; /* altura adaptável à tela */
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
 /* ================= RESPONSIVO ================= */
 
 /* CELULAR */
@@ -596,6 +585,7 @@ body{
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

@@ -62,7 +62,7 @@ header h1, header h2 { /* se tiver o nome da loja como título */
   right: 20px;          /* distância da direita */
   display: flex;
   gap: 15px;            /* espaço entre os links */
-  font-size: 20px;      /* tamanho do texto */
+  font-size: 16px;      /* tamanho do texto */
   z-index: 1000;        /* sobre outros elementos */
 }
 
@@ -690,6 +690,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

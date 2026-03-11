@@ -55,27 +55,55 @@ header h1, header h2 { /* se tiver o nome da loja como título */
   font-size: 24px;
   color: #333;
 }
-/* ================= MENU SIMPLES ================= */
-.menu-topo {
+header{
   display: flex;
-  gap: 15px;
-  font-size: 14px;
-  z-index: 1000;
-  position: static; /* no PC, menu dentro do fluxo */
-  margin-top: 20px; /* espaço normal abaixo da logo */
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 60px 20px 20px 20px; /* topo maior para afastar do menu */
+  background: #f8f6f3;
+  position: relative;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+header .menu-topo {
+  margin-top: 20px; /* aumenta o espaço entre logo e menu */
+}
+
+.logo img{
+  height: 60px;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+
+header h1, header h2 { /* se tiver o nome da loja como título */
+  margin-top: 10px;   /* espaço entre logo e título */
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+/* ================= MENU SIMPLES  ================= */
+.menu-topo {
+  position: absolute;   /* fixa o menu no canto */
+  top: 5px;            /* distância do topo */
+  right: 20px;          /* distância da direita */
+  display: flex;
+  gap: 15px;            /* espaço entre os links */
+  font-size: 14px;      /* tamanho do texto */
+  z-index: 1000;        /* sobre outros elementos */
 }
 
 .menu-topo a {
   text-decoration: none;
-  color: #333;
+  color: #333;          /* cor do texto do menu */
   font-weight: bold;
   padding: 5px 10px;
   transition: all 0.3s ease;
 }
 
 .menu-topo a:hover {
-  color: #e53935;
-}
+  color: #e53935;       /* cor ao passar o mouse */
 
 /* ================= HERO ================= */
 .hero{
@@ -644,6 +672,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

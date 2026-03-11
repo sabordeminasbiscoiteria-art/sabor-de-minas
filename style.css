@@ -555,6 +555,12 @@ body.home-page .menu-topo {
   text-align:center;
   letter-spacing:0.5px;
 }
+.vitrine {
+  flex: 1;                 /* faz crescer até o rodapé */
+  background: #ffffff;
+  text-align: center;
+  padding: 20px 20px 0 20px; /* topo 20px, bottom 0 */
+}
 
 .produtos{
   display:grid;
@@ -691,6 +697,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

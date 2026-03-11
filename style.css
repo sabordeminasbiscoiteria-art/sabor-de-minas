@@ -501,7 +501,15 @@ body.home-page .menu-topo {
   height:500px;
   object-fit:cover;
 }
-
+.btn-vitrine{
+  display:inline-block;
+  margin-top:25px;
+  padding:10px 25px;
+  background:#444444;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+}
 /* ================= RESPONSIVO ================= */
 
 /* CELULAR */
@@ -586,6 +594,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

@@ -32,7 +32,7 @@ header{
   flex-wrap:wrap;
   align-items:center;
   justify-content:center;
-  gap:10px;
+  gap:5px;
   padding:10px 20px;
   background:#f8f6f3;
   position:relative;
@@ -55,8 +55,8 @@ header h1{
   color:#333;
 }
 .logo{
-  width:100%;
   display:flex;
+  align-items:center;
   justify-content:center;
 }
 
@@ -642,6 +642,7 @@ color:#e53935;
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

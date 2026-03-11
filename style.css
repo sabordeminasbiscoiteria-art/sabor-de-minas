@@ -39,7 +39,7 @@ header{
 }
 
 header .menu-topo {
-  margin-top: 25px; /* aumenta o espaço entre logo e menu */
+  margin-top: -30px; /* aumenta o espaço entre logo e menu */
 }
 
 .logo img{
@@ -644,6 +644,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

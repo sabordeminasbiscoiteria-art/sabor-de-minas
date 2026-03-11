@@ -505,10 +505,13 @@ body.home-page .menu-topo {
   display:inline-block;
   margin-top:25px;
   padding:10px 25px;
-  background:#b93838;
+  background:#d64545;
   color:white;
   text-decoration:none;
   font-weight:600;
+}
+.btn-vitrine:hover{
+  background:#b93838;
 }
 /* ================= RESPONSIVO ================= */
 
@@ -594,6 +597,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

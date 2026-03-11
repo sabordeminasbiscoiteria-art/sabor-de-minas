@@ -26,97 +26,54 @@ img{
   -webkit-user-drag:none;
 }
 
-/* ================= HEADER GERAL ================= */
-header{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:10px 40px;
-  background:#f8f6f3;
-  position:relative;
-  box-shadow:0 3px 8px rgba(0,0,0,0.08);
-}
+/* ===== HEADER PRODUTOS ===== */
 
-/* LOGO + NOME */
-.logo{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  margin-left:10px;
-}
-
-.logo img{
-  height:50px;
-  width:auto;
-}
-
-header h1{
-  margin:0;
-  font-size:26px;
-  color:#333;
-}
-
-/* MENU */
-.menu-topo{
-  margin-left:auto;
-}
-/* ===== TOPO DO SITE ===== */
-
-.topo{
+.topo-produtos{
 display:flex;
-flex-direction:column;
 align-items:center;
-padding:10px;
+justify-content:space-between;
+padding:10px 15px;
+background:#f5f5f5;
 }
 
 /* MENU */
+
 .menu-topo{
 display:flex;
-justify-content:center;
-gap:25px;
-margin-top:10px;
+gap:20px;
 }
 
-/* LINKS */
 .menu-topo a{
 text-decoration:none;
 color:#333;
-font-weight:bold;
 font-size:16px;
-padding:5px 10px;
+font-weight:600;
 }
 
-.menu-topo a:hover{
-color:#e53935;
-}
-/* ===== PESQUISA ===== */
+/* ===== BARRA DE PESQUISA ===== */
 
-.pesquisa{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  margin:15px auto;
-  width:90%;
-  position:relative;
+.search-box{
+display:flex;
+align-items:center;
+border:1px solid #ccc;
+border-radius:20px;
+padding:6px 10px;
+width:200px;
+background:white;
 }
 
-.pesquisa input{
-  width:100%;
-  padding:10px 40px;
-  border-radius:20px;
-  border:1px solid #ccc;
-  font-size:16px;
+.search-box i{
+color:#666;
+margin-right:6px;
 }
 
-/* Ícone da lupa */
-.pesquisa::before{
-  content:"🔍";
-  position:absolute;
-  left:15px;
-  font-size:16px;
-  color:#666;
+.search-box input{
+border:none;
+outline:none;
+font-size:14px;
+width:100%;
+background:transparent;
 }
-
 /* ===== HEADER PRODUTOS ===== */
 
 .topo-produtos{
@@ -768,6 +725,7 @@ grid-template-columns:repeat(4,1fr);
 }
 
 }
+
 
 
 

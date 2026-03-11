@@ -604,9 +604,10 @@ body.home-page .menu-topo {
   }
 
  .vitrine h2{
-    font-size:24px;   /* diminui o título no celular */
-    padding:0 15px;   /* cria espaço nas laterais */
-  }
+    font-size:24px;      /* tamanho menor no celular */
+    padding:0 15px;      /* espaço nas laterais */
+    margin-bottom:5px;   /* diminui o espaço abaixo do título */
+}
 
   .produtos{
     gap:2px;
@@ -684,6 +685,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

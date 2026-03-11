@@ -43,6 +43,11 @@ header{
   display:block;
   margin:auto;
 }
+.menu-topo{
+  position:absolute;
+  right:20px;
+  top:20px;
+}
 /* ================= HERO ================= */
 .hero{
   position:relative;
@@ -597,6 +602,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

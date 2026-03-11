@@ -702,7 +702,7 @@ font-size:16px;
 }
 
 }
-  /* ===== AJUSTE PARA CELULAR ===== */
+ /* ===== CELULAR ===== */
 
 @media (max-width:768px){
 
@@ -711,44 +711,28 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 flex-wrap:nowrap;
-gap:8px;
+gap:6px;
 }
 
-.topo-produtos .menu-topo{
-font-size:14px;
+.menu-topo{
+display:flex;
 gap:10px;
+font-size:14px;
 }
 
-.topo-produtos .search-box{
-width:50%;
-padding:4px 8px;
+.search-box{
+display:flex;
+align-items:center;
+width:140px;
 }
 
-.topo-produtos .search-box input{
-font-size:13px;
-}
-
-}
-
-/* ===== CELULAR PEQUENO ===== */
-
-@media (max-width:480px){
-
-.topo-produtos .menu-topo{
+.search-box input{
+width:100%;
 font-size:12px;
-gap:8px;
-}
-
-.topo-produtos .search-box{
-width:55%;
-}
-
-.topo-produtos .search-box input{
-font-size:12px;
+padding:4px;
 }
 
 }
-/* TABLET */
 @media (min-width:769px) and (max-width:1023px){
   .grid{
     grid-template-columns:repeat(3,1fr);
@@ -781,6 +765,7 @@ font-size:12px;
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

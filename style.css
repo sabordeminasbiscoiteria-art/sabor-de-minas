@@ -710,7 +710,7 @@ font-size:16px;
 display:flex;
 align-items:center;
 justify-content:space-between;
-flex-wrap:nowrap; /* não deixa quebrar linha */
+flex-wrap:nowrap;
 gap:8px;
 }
 
@@ -726,6 +726,25 @@ padding:4px 8px;
 
 .topo-produtos .search-box input{
 font-size:13px;
+}
+
+}
+
+/* ===== CELULAR PEQUENO ===== */
+
+@media (max-width:480px){
+
+.topo-produtos .menu-topo{
+font-size:12px;
+gap:8px;
+}
+
+.topo-produtos .search-box{
+width:55%;
+}
+
+.topo-produtos .search-box input{
+font-size:12px;
 }
 
 }
@@ -762,6 +781,7 @@ font-size:13px;
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

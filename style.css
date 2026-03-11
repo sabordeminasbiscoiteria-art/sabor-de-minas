@@ -55,27 +55,74 @@ header h1, header h2 { /* se tiver o nome da loja como título */
   font-size: 36px;
   color: #333;
 }
-/* ================= MENU SIMPLES FIXO NO CANTO ================= */
-.menu-topo {
-  position: absolute;   /* fixa o menu no canto */
-  top: 5px;            /* distância do topo */
-  right: 20px;          /* distância da direita */
-  display: flex;
-  gap: 15px;            /* espaço entre os links */
-  font-size: 16px;      /* tamanho do texto */
-  z-index: 1000;        /* sobre outros elementos */
+/* ===== TOPO DO SITE ===== */
+
+.topo{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:10px;
 }
 
-.menu-topo a {
-  text-decoration: none;
-  color: #333;          /* cor do texto do menu */
-  font-weight: bold;
-  padding: 5px 10px;
-  transition: all 0.3s ease;
+/* LOGO */
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  margin-bottom:5px;
 }
 
-.menu-topo a:hover {
-  color: #e53935;       /* cor ao passar o mouse */
+/* MENU */
+.menu-topo{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  font-size:16px;
+}
+
+.menu-topo a{
+  text-decoration:none;
+  color:#333;
+  font-weight:bold;
+  padding:5px 10px;
+}
+
+.menu-topo a:hover{
+  color:#e53935;
+}
+
+/* ===== PESQUISA ===== */
+
+.pesquisa{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  margin:15px auto;
+  width:90%;
+}
+
+.pesquisa input{
+  flex:1;
+  padding:10px;
+  border-radius:20px;
+  border:1px solid #ccc;
+}
+
+/* ===== RESPONSIVO PARA PC ===== */
+
+@media (min-width: 768px){
+
+.topo{
+  flex-direction:row;
+  justify-content:space-between;
+  max-width:1000px;
+  margin:auto;
+}
+
+.menu-topo{
+  justify-content:flex-end;
+}
+
 }
 /* ================= HERO ================= */
 .hero{
@@ -140,90 +187,6 @@ header h1, header h2 { /* se tiver o nome da loja como título */
   background:#b93838;
 }
 
-/* ================= MENU TOPO ================= */ 
-.menu-topo {
-  position: relative;
-  top: 5px;
-  display: flex;
-  justify-content: center; /* centraliza */
-  gap: 15px;
-  font-size: 16px;
-  z-index: 1000;
-}
-
-.menu-topo a{
-  text-decoration:none;
-  color:#333333;          
-  font-weight:600;
-  padding:8px 12px;
-  border-radius:6px;
-  transition:0.3s; 
-}
-
-.menu-topo a:hover{
-  background: rgba(255,255,255,0.2);
-  color: #111111;
-}
-/* CENTRALIZAÇÃO NA TELA INICIAL */
-body.home-page header {
-  display: flex;
-  flex-direction: column; /* empilha logo, nome e menu */
-  align-items: center;    /* centraliza horizontalmente */
-  justify-content: center; /* centraliza verticalmente, se precisar */
-  gap: 10px;
-  padding: 20px;
-}
-
-body.home-page .logo {
-  text-align: center;
-}
-
-body.home-page .menu-topo {
-  justify-content: center; /* centraliza links do menu */
-  gap: 25px;
-}
-/* ================= MENU TOPO ================= */ 
-.menu-topo {
-  position: relative;
-  top: 5px;
-  display: flex;
-  justify-content: center; /* centraliza */
-  gap: 15px;
-  font-size: 16px;
-  z-index: 1000;
-}
-
-.menu-topo a{
-  text-decoration:none;
-  color:#333333;          
-  font-weight:600;
-  padding:8px 12px;
-  border-radius:6px;
-  transition:0.3s; 
-}
-
-.menu-topo a:hover{
-  background: rgba(255,255,255,0.2);
-  color: #111111;
-}
-/* CENTRALIZAÇÃO NA TELA INICIAL */
-body.home-page header {
-  display: flex;
-  flex-direction: column; /* empilha logo, nome e menu */
-  align-items: center;    /* centraliza horizontalmente */
-  justify-content: center; /* centraliza verticalmente, se precisar */
-  gap: 10px;
-  padding: 20px;
-}
-
-body.home-page .logo {
-  text-align: center;
-}
-
-body.home-page .menu-topo {
-  justify-content: center; /* centraliza links do menu */
-  gap: 25px;
-}
 
 /* ================= MENU LATERAL ================= */
 .menu-btn{
@@ -694,6 +657,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

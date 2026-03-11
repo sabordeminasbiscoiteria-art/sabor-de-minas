@@ -518,8 +518,9 @@ body.home-page .menu-topo {
     font-size:28px;
   }
 
-  .vitrine h2{
-    font-size:24px;
+ .vitrine h2{
+    font-size:24px;   /* diminui o título no celular */
+    padding:0 15px;   /* cria espaço nas laterais */
   }
 
   .produtos{
@@ -585,6 +586,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

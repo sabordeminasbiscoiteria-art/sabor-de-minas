@@ -95,18 +95,40 @@ color:#e53935;
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:8px;
   margin:15px auto;
   width:90%;
+  position:relative;
 }
 
 .pesquisa input{
-  flex:1;
-  padding:10px;
+  width:100%;
+  padding:10px 40px;
   border-radius:20px;
   border:1px solid #ccc;
+  font-size:16px;
 }
 
+/* Ícone da lupa */
+.pesquisa::before{
+  content:"🔍";
+  position:absolute;
+  left:15px;
+  font-size:16px;
+  color:#666;
+}
+.menu-topo{
+display:flex;
+justify-content:center;
+gap:25px;
+font-size:18px;
+font-weight:600;
+margin-bottom:10px;
+}
+
+.menu-topo a{
+text-decoration:none;
+color:#333;
+}
 /* ===== RESPONSIVO PARA PC ===== */
 
 @media (min-width: 768px){
@@ -651,6 +673,14 @@ font-size:14px;
 }
 
 }
+  @media (max-width:480px){
+
+.menu-topo{
+gap:15px;
+font-size:16px;
+}
+
+}
 /* TABLET */
 @media (min-width:769px) and (max-width:1023px){
   .grid{
@@ -684,6 +714,7 @@ font-size:14px;
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

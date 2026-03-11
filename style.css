@@ -578,13 +578,14 @@ body.home-page .menu-topo {
   }
 
   .produto img{
-    height:200px;
+    height:400px;
   }
 
   .grid{
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

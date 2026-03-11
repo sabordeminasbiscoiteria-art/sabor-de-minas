@@ -634,6 +634,23 @@ margin-top:5px;
 }
 
 }
+  /*celular menor*/
+  @media (max-width:480px){
+
+header h1{
+font-size:18px;
+}
+
+.logo img{
+height:40px;
+}
+
+.menu-topo{
+gap:12px;
+font-size:14px;
+}
+
+}
 /* TABLET */
 @media (min-width:769px) and (max-width:1023px){
   .grid{
@@ -667,6 +684,7 @@ margin-top:5px;
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

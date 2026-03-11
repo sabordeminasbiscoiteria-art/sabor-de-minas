@@ -116,6 +116,7 @@ color:#e53935;
   font-size:16px;
   color:#666;
 }
+
 /* ===== MENU + PESQUISA APENAS NAS PÁGINAS DE PRODUTOS ===== */
 
 .pagina-produtos .topo{
@@ -135,7 +136,6 @@ font-size:16px;
 .pagina-produtos .pesquisa{
 width:40%;
 margin:0;
-}
 }
 /* ===== RESPONSIVO PARA PC ===== */
 
@@ -722,6 +722,7 @@ font-size:16px;
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

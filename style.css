@@ -50,7 +50,7 @@ header .menu-topo {
 }
 
 header h1, header h2 { /* se tiver o nome da loja como título */
-  margin-top: 10px;   /* espaço entre logo e título */
+  margin-top: 5px;   /* espaço entre logo e título */
   text-align: center;
   font-size: 24px;
   color: #333;
@@ -644,6 +644,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

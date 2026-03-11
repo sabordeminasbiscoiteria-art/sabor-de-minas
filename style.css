@@ -141,14 +141,12 @@ header h1, header h2 { /* se tiver o nome da loja como título */
 }
 
 /* ================= MENU TOPO ================= */ 
-.menu-topo {
-  position: relative;
-  top: 5px;
-  display: flex;
-  justify-content: center; /* centraliza */
-  gap: 15px;
-  font-size: 16px;
-  z-index: 1000;
+.menu-topo{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  margin-top:10px;
+  font-family: Arial, sans-serif;
 }
 
 .menu-topo a{
@@ -694,6 +692,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

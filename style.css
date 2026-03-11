@@ -29,9 +29,8 @@ img{
 /* ================= HEADER GERAL ================= */
 header{
   display:flex;
-  flex-direction:column;
   align-items:center;
-  gap:10px;
+  justify-content:space-between;
   padding:20px;
   background:#f8f6f3;
   position:relative;
@@ -598,6 +597,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

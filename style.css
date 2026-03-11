@@ -64,31 +64,26 @@ align-items:center;
 padding:10px;
 }
 
+/* MENU */
 .menu-topo{
 display:flex;
 justify-content:center;
 gap:25px;
-margin-bottom:15px;
+margin-top:10px;
 }
 
+/* LINKS */
 .menu-topo a{
 text-decoration:none;
 color:#333;
 font-weight:bold;
 font-size:16px;
-}
-
-.menu-topo a{
-  text-decoration:none;
-  color:#333;
-  font-weight:bold;
-  padding:5px 10px;
+padding:5px 10px;
 }
 
 .menu-topo a:hover{
-  color:#e53935;
+color:#e53935;
 }
-
 /* ===== PESQUISA ===== */
 
 .pesquisa{
@@ -656,6 +651,7 @@ font-size:16px;
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

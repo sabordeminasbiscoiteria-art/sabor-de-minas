@@ -486,7 +486,7 @@ body.home-page .menu-topo {
 .produtos{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:10px;
+  gap:12px;
   padding:0; /* remove espaço lateral */
 }
 
@@ -585,6 +585,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

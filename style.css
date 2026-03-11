@@ -680,6 +680,16 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+/* RODAPÉ CENTRALIZADO */
+.rodape {
+  text-align: center;       /* centraliza o texto */
+  padding: 20px;            /* espaço interno */
+  background: #f8f6f3;      /* mesma cor do header, se quiser */
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.05); /* sombra suave opcional */
+  width: 100%;              /* ocupa toda a largura da tela */
+  margin: 0 auto;           /* centraliza horizontalmente */
+  clear: both;              /* evita que elementos flutuantes influenciem */
+}
 
 
 

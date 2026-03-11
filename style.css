@@ -603,11 +603,15 @@ body.home-page .menu-topo {
     font-size:28px;
   }
 
- .vitrine h2{
-    font-size:24px;      /* tamanho menor no celular */
-    padding:10px 15px;      /* espaço nas laterais */
-    margin-bottom:5px;   /* diminui o espaço abaixo do título */
-}
+ @media (max-width:768px){
+  .vitrine{
+    padding:10px 15px; /* topo menor, laterais ajustadas */
+  }
+
+  .vitrine h2{
+    font-size:24px;
+    margin-bottom:5px; /* título mais próximo da vitrine */
+  }
 
   .produtos{
     gap:2px;
@@ -685,6 +689,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

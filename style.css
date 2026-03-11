@@ -89,12 +89,12 @@ font-size:14px;
 background:transparent;
 }
 /* ===== RESPONSIVO PARA PC ===== */
-
 @media (min-width: 768px){
 
 .topo{
   flex-direction:row;
   justify-content:space-between;
+  align-items:center;
   max-width:1000px;
   margin:auto;
 }
@@ -102,6 +102,7 @@ background:transparent;
 .menu-topo{
   justify-content:flex-end;
 }
+
 
 }
 /* ================= HERO ================= */
@@ -714,6 +715,7 @@ width:100%;
 }
 
 }
+
 
 
 

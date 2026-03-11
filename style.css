@@ -584,11 +584,11 @@ body.home-page .menu-topo {
   }
 
   header .logo img {
-    margin-top: -30px; /* afasta a logo do menu */
+    margin-top: 20px; /* afasta a logo do menu */
   }
 
   header h1, header h2 { 
-    margin-top: 10px; /* espaço entre logo e nome da loja */
+    margin-top: 20px; /* espaço entre logo e nome da loja */
   }
 }
 /* ================= RODAPÉ CENTRALIZADO ================= */
@@ -644,6 +644,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

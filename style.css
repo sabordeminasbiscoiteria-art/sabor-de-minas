@@ -27,58 +27,45 @@ img{
 }
 
 /* ================= HEADER GERAL ================= */
-header{
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 60px 20px 20px 20px; /* topo maior para afastar do menu */
+  padding: 60px 20px 20px 20px; /* espaço acima da logo e menu */
   background: #f8f6f3;
   position: relative;
   box-shadow: 0 3px 8px rgba(0,0,0,0.08);
 }
 
 header .menu-topo {
-  margin-top: 20px; /* aumenta o espaço entre logo e menu */
+  margin-top: 20px; /* espaço entre logo e menu */
+  display: flex;
+  gap: 15px;
 }
 
-.logo img{
-  height: 60px;
-  width: auto;
-  display: block;
-  margin: auto;
-}
-
-header h1, header h2 { /* se tiver o nome da loja como título */
-  margin-top: 10px;   /* espaço entre logo e título */
-  text-align: center;
-  font-size: 24px;
+.menu-topo a {
+  text-decoration: none;
   color: #333;
-}
-header{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 60px 20px 20px 20px; /* topo maior para afastar do menu */
-  background: #f8f6f3;
-  position: relative;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
 }
 
-header .menu-topo {
-  margin-top: 20px; /* aumenta o espaço entre logo e menu */
+.menu-topo a:hover {
+  color: #e53935;
 }
 
-.logo img{
+.logo img {
   height: 60px;
   width: auto;
   display: block;
   margin: auto;
 }
 
-header h1, header h2 { /* se tiver o nome da loja como título */
-  margin-top: 10px;   /* espaço entre logo e título */
+header h1,
+header h2 { /* caso tenha o nome da loja como título */
+  margin-top: 10px;
   text-align: center;
   font-size: 24px;
   color: #333;
@@ -672,6 +659,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

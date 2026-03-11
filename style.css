@@ -550,7 +550,7 @@ body.home-page .menu-topo {
   font-family: Arial, sans-serif;
   font-size:32px;
   margin:30px 0;
-  color:#444444;
+  color:#333333;
   font-weight:700;
   text-align:center;
   letter-spacing:0.5px;
@@ -690,6 +690,7 @@ body.home-page .menu-topo {
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 
 
 

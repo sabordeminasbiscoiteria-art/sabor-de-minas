@@ -241,9 +241,13 @@ main {
 .produtos{
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  gap:20px;
-  padding:20px;
+  gap:15px;
+  padding:40px 20px 20px 20px;
   justify-items:center;
+}
+
+.produtos{
+  margin-top:80px;
 }
 
 .card-produto{
@@ -460,6 +464,7 @@ main {
 }
 
 }
+
 
 
 

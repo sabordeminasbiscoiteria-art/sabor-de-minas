@@ -195,7 +195,17 @@ main {
 .vitrine::-webkit-scrollbar {
   display: none;
 }
+/* ================= ESPAÇAMENTO ENTRE SEÇÕES ================= */
 
+/* Espaço abaixo do banner principal (destaque) */
+.destaque {
+  margin-bottom: 40px;  /* aumenta o espaço entre o banner e a vitrine */
+}
+
+/* Espaço acima do rodapé */
+.rodape {
+  margin-top: 40px;    /* deixa espaço entre a última vitrine e o rodapé */
+}
 /* ================= RODAPÉ ================= */
 .rodape {
   background: #333;
@@ -337,4 +347,5 @@ main {
     margin-left: 0;
   }
 }
+
 

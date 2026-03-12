@@ -1,4 +1,4 @@
-Vai ficar /* ================= RESET ================= */
+/* ================= RESET ================= */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,12 +14,12 @@ Vai ficar /* ================= RESET ================= */
   background: #fff;
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* por padrão esquerda */
+  justify-content: flex-start;
   padding: 10px 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 100;
-  flex-wrap: wrap;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 /* Logo e nome da loja */
@@ -31,6 +31,7 @@ Vai ficar /* ================= RESET ================= */
 
 .logo {
   height: 40px;
+  margin-left: 50px; /* espaço para hamburger */
 }
 
 .nome-loja {
@@ -40,12 +41,12 @@ Vai ficar /* ================= RESET ================= */
   margin-left: 10px;
 }
 
-/* Wrapper para menu simples + barra de pesquisa lado a lado */
+/* Wrapper que mantém menu simples + pesquisa lado a lado */
 .menu-search-wrapper {
   display: flex;
   align-items: center;
   gap: 10px;
-  flex-wrap: nowrap;
+  flex-shrink: 0;
 }
 
 /* Menu simples */
@@ -69,29 +70,34 @@ Vai ficar /* ================= RESET ================= */
 }
 
 /* Barra de pesquisa */
+.search-box {
+  flex-shrink: 0;
+}
+
 .search-box input {
   padding: 4px 8px;
-  width: 100px;
+  width: 150px; /* PC */
+  max-width: 200px;
 }
 
 /* ================= MENU LATERAL ================= */
 .menu-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px; /* antes da logo */
   font-size: 28px;
-  padding: 8px;
+  padding: 10px;
   cursor: pointer;
   color: #333;
   background: transparent;
   border: none;
   z-index: 102;
-  position: absolute;
-  top: 8px;
-  left: 8px; /* botão antes da logo */
 }
 
 .menu-lateral {
   position: fixed;
   top: 0;
-  left: -260px;
+  left: -260px; /* escondido inicialmente */
   width: 260px;
   height: 100vh;
   background: #fff;
@@ -104,7 +110,7 @@ Vai ficar /* ================= RESET ================= */
 }
 
 .menu-lateral.ativo {
-  left: 0;
+  left: 0; /* desliza para aparecer do lado do hamburger */
 }
 
 .menu-lateral a {
@@ -216,42 +222,39 @@ main {
   height: 25px;
 }
 
-/* ================= RESPONSIVO PC/TABLET ================= */
-@media screen and (min-width: 769px) {
-  /* Menu simples + barra de pesquisa no canto direito */
-  .menu-search-wrapper {
-    justify-content: flex-end;
-    gap: 20px;
-    width: 100%;
+/* ================= RESPONSIVO ================= */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .search-box input {
+    width: 130px;
   }
 
-  .nav-links {
-    justify-content: flex-end;
-    gap: 15px;
+  .vitrine-img {
+    width: 200px;
+    height: 200px;
   }
 
-  .search-box {
-    margin-left: 0;
+  .destaque {
+    height: 350px;
   }
 
-  .menu-btn {
-    top: 10px;
-    left: 10px;
+  .destaque .descricao {
+    font-size: 18px;
   }
 }
 
-/* ================= RESPONSIVO CELULAR ================= */
+/* Celular grande e médio */
 @media screen and (max-width: 768px) {
-  /* Empilha se não couber */
   .menu-search-wrapper {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* empilha se não couber */
     justify-content: center;
   }
 
   .nav-links {
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
   }
 
   .search-box input {
@@ -262,16 +265,30 @@ main {
   .menu-lateral {
     width: 200px;
   }
-}
 
-@media screen and (max-width: 480px) {
-  .search-box input {
-    width: 100px;
+  .vitrine-img {
+    width: 150px;
+    height: 150px;
   }
 
+  .destaque {
+    height: 300px;
+  }
+
+  .destaque .descricao {
+    font-size: 16px;
+  }
+}
+
+/* Celular pequeno */
+@media screen and (max-width: 480px) {
   .nav-links {
     gap: 6px;
     font-size: 12px;
+  }
+
+  .search-box input {
+    width: 100px;
   }
 
   .vitrine-img {
@@ -288,20 +305,15 @@ main {
   }
 
   .logo {
-    height: 40px;
+    height: 35px;
   }
 
   .nome-loja {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .menu-btn {
     top: 8px;
     left: 8px;
   }
-
-  .menu-lateral {
-    width: 180px;
-  }
 }
- 

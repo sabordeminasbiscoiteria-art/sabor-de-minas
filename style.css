@@ -348,4 +348,11 @@ main {
   }
 }
 
+@media screen and (min-width: 1025px) {
+  .destaque {
+    background-size: 90%;       /* diminui o zoom da imagem */
+    background-position: center; /* mantém centralizada */
+    height: 400px;              /* altura que já tinha */
+  }
+}
 

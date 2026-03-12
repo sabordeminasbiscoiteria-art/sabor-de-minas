@@ -258,7 +258,7 @@ main {
   overflow:hidden;
   text-align:center;
   width:100%;
-  max-width:200px;
+  max-width:100px;
   box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
@@ -465,6 +465,7 @@ main {
 }
 
 }
+
 
 
 

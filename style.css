@@ -43,17 +43,18 @@ img{
   align-items:center;
   gap:10px;
 }
-.logo img.logo-img{
-  width:40px;
-  height:40px;
-  border-radius:50%;
-  object-fit:cover;
+.logo img.logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
-.logo h1{
-  font-size:16px;
-  font-weight:bold;
-  color:#333;
-  white-space:nowrap;
+
+.logo h1 {
+  font-size: 16px;      /* reduz tamanho da loja */
+  font-weight: bold;
+  white-space: nowrap;
+  color: #333;
 }
 
 /* MENU TOPO */
@@ -501,5 +502,6 @@ img{
     height:500px;
   }
 }
+
 
 

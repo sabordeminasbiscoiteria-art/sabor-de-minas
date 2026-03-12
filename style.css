@@ -162,7 +162,33 @@ header {
   border-top: 1px solid #eee;
   padding-top: 10px;
 }
+/* ===== Ajuste para mostrar menu lateral no PC ===== */
+@media screen and (min-width: 769px) {
+  .menu-lateral {
+    position: relative;   /* deixa visível no PC */
+    left: 0;              /* já aberto */
+    height: auto;         /* ajusta à altura do conteúdo */
+    transition: none;     /* sem animação no PC */
+  }
+}
 
+/* ===== Ajuste para celular (mantém menu deslizante) ===== */
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    display: block;       /* mostra botão de abrir menu */
+  }
+
+  .menu-lateral {
+    position: fixed;
+    left: -260px;         /* escondido */
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .menu-lateral.ativo {
+    left: 0;              /* abre ao clicar no botão */
+  }
+}
 /* ================= HERO ================= */
 .hero {
   position: relative;
@@ -347,6 +373,7 @@ header {
   color: #555;
   border-top: 1px solid #ddd;
 }
+
 
 
 

@@ -304,6 +304,32 @@ header {
   .logo img.logo-img { width: 35px; height: 35px; }
   .logo h1 { font-size: 14px; }
 }
+/* ================= RESPONSIVO - CELULAR ================= */
+@media (max-width: 480px) {
+  header {
+    display: flex;
+    justify-content: space-between; /* logo na esquerda, lupa na direita */
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  .logo {
+    gap: 8px; /* mantém a distância entre imagem e nome */
+  }
+
+  .logo img {
+    width: 30px;  /* tamanho da logo */
+    height: 30px;
+  }
+
+  .logo h1 {
+    font-size: 12px;
+  }
+
+  .search-box {
+    margin-left: 0; /* remove afastamento da logo */
+  }
+}
 /* ================= RODAPÉ ================= */
 .rodape {
   background: #f5f5f5;
@@ -313,6 +339,7 @@ header {
   color: #555;
   border-top: 1px solid #ddd;
 }
+
 
 
 

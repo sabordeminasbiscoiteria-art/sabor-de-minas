@@ -1,120 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biscoiteria Sabor de Minas</title>
-
   <link rel="stylesheet" href="style.css">
-
-  <!-- ICONES -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+<body>
 
-<body class="home-page">
+<!-- ================= MENU FIXO ================= -->
+<header class="header-fixo">
+  <div class="logo-nome">
+    <img src="logo.png" alt="Logo da Biscoiteria Sabor de Minas" class="logo">
+    <span class="nome-loja">Biscoiteria Sabor de Minas</span>
+  </div>
+  <div class="search-box">
+    <input type="text" placeholder="Pesquisar...">
+  </div>
+</header>
 
-  <!-- ================= HEADER ================= -->
-  <header class="header-padrao">
+<!-- ================= MENU LATERAL CELULAR ================= -->
+<div class="menu-btn" id="menuBtn">&#9776;</div> <!-- abrir menu -->
+<div class="menu-lateral" id="menuLateral">
+  <div class="menu-close" id="menuClose">&#9776;</div> <!-- fechar menu -->
+  <a href="#">Início</a>
+  <a href="#">Produtos</a>
+  <a href="#">Sobre</a>
+  <a href="#">Contato</a>
+</div>
 
-    <!-- Logo e nome da loja -->
-    <div class="logo">
-      <img src="img/logo.png" alt="Biscoiteria Sabor de Minas" class="logo-img">
-      <h1>Biscoiteria Sabor de Minas</h1>
-    </div>
+<!-- ================= CONTEÚDO PRINCIPAL ================= -->
+<main>
+  <!-- Foto do beijinho grande -->
+  <section class="destaque">
+    <img src="beijinho.jpeg" alt="Beijinho Grande" class="beijinho-grande">
+    <p class="descricao">
+      Biscoitos caseiros, o sabor que alegra o seu dia. Feitos com carinho desde 2015. Encomendas pelo WhatsApp.
+    </p>
+    <button class="btn-ver">Ver nossos biscoitos</button>
+  </section>
 
-    <!-- Menu -->
-    <nav class="menu-topo">
-      <a href="index.html">Início</a>
-      <a href="Biscoitoscaseiros.html">Biscoitos Caseiros</a>
-      <a href="contato.html">Contato</a>
-    </nav>
+  <!-- Vitrine com 3 fotos -->
+  <section class="vitrine">
+    <img src="sasha.jpeg" alt="Sasha" class="vitrine-img">
+    <img src="ugauga.jpeg" alt="Ugauga" class="vitrine-img">
+    <img src="casadinho.jpeg" alt="Casadinho" class="vitrine-img">
+  </section>
+</main>
 
-    <!-- Barra de pesquisa -->
-    <div class="search-box">
-      <i class="fas fa-search"></i>
-      <input type="text" placeholder="Pesquisar...">
-    </div>
-
-    <!-- Botão menu lateral para celular -->
-    <div class="menu-btn" onclick="toggleMenu()">
-      <i class="fa fa-bars"></i>
-    </div>
-
-  </header>
-
-  <!-- ================= MENU LATERAL ================= -->
-  <div id="menu-lateral" class="menu-lateral">
-    <a href="index.html">Início</a>
-
-    <p class="titulo-categoria">Categorias</p>
-    <a href="Biscoitoscaseiros.html">Biscoitos Caseiros</a>
-    <a href="biscoitopolvilho.html">Biscoito Polvilho</a>
-    <a href="salgadinho.html">Salgadinhos</a>
-    <a href="Suspiros.html">Suspiros</a>
-
-    <div class="menu-inferior">
-      <a href="sobre.html">Sobre a Loja</a>
-      <a href="contato.html">Contato</a>
+<!-- ================= RODAPÉ ================= -->
+<footer class="rodape">
+  <div class="rodape-conteudo">
+    <p>&copy; 2026 Biscoiteria Sabor de Minas. Todos os direitos reservados.</p>
+    <p>Contato: <a href="tel:+559999999999">WhatsApp</a> | <a href="mailto:contato@sabordeminas.com.br">Email</a></p>
+    <div class="redes-sociais">
+      <a href="#"><img src="icon-facebook.png" alt="Facebook" class="icone-social"></a>
+      <a href="#"><img src="icon-instagram.png" alt="Instagram" class="icone-social"></a>
+      <a href="#"><img src="icon-whatsapp.png" alt="WhatsApp" class="icone-social"></a>
     </div>
   </div>
+</footer>
 
-  <!-- ================= HERO ================= -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Biscoitos Caseiros</h1>
-      <p>O sabor que alegra seu dia</p>
-      <p class="experiencia">
-        Feitos com carinho desde 2015. Encomendas pelo WhatsApp.
-      </p>
-      <button onclick="window.location.href='Biscoitoscaseiros.html'">
-        Ver nossos biscoitos
-      </button>
-    </div>
-  </section>
-
-  <!-- ================= VITRINE ================= -->
-  <section class="vitrine">
-    <h2>Nossos Biscoitos Mais Vendidos 🍪</h2>
-
-    <div class="produtos">
-      <div class="produto">
-        <img src="img/sasha.jpeg" alt="Sasha">
-      </div>
-      <div class="produto">
-        <img src="img/ugauga.jpeg" alt="Ugauga">
-      </div>
-      <div class="produto">
-        <img src="img/casadinho.jpeg" alt="Casadinho Avelã">
-      </div>
-    </div>
-
-    <a href="Biscoitoscaseiros.html" class="btn-vitrine">Ver mais</a>
-  </section>
-
-  <!-- ================= BOTÃO WHATSAPP ================= -->
-  <a href="https://wa.me/5531992767228" class="whatsapp-float" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-
-  <!-- ================= SCRIPTS ================= -->
-  <script>
-    function toggleMenu() {
-      let menu = document.getElementById("menu-lateral");
-      menu.classList.toggle("ativo");
-    }
-  </script>
-
-  <!-- ================= RODAPÉ ================= -->
-  <footer class="rodape">
-    <p><strong>Biscoiteria Sabor de Minas</strong></p>
-    <p>Biscoitos feitos com carinho e ingredientes selecionados.</p>
-    <p>📍 Belo Horizonte - MG</p>
-    <p>📱 WhatsApp: (31) 99276-7228</p>
-  </footer>
-
+<script src="script.js"></script>
 </body>
-
 </html>
 
 

@@ -310,23 +310,26 @@ main {
   }
 }
 
-/* ================= FONTES MANUSCRITAS E MAIS FINAS ================= */
+/* ================= TÍTULO PROFISSIONAL ================= */
 .nome-loja {
-  font-family: 'Dancing Script', cursive;
-  font-weight: 400;   /* mais fino */
-  font-size: 22px;
-  margin-left: 10px;
-  white-space: nowrap;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;      /* forte, sério e legível */
+  font-size: 20px;       /* tamanho adequado para destaque sem exagero */
   color: #333;
-}
-/* Título profissional */
-.nome-loja {
-  font-family: 'Great Vibes', cursive;
-  font-weight: 400;       /* elegante e fino */
-  font-size: 32px;        /* grande para destaque */
-  color: #333;            /* cor escura para contraste */
   margin-left: 10px;
   white-space: nowrap;
-  letter-spacing: 1px;    /* sutil para afinar visualmente */
 }
 
+/* ================= MENU SIMPLES ================= */
+.nav-links a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;      /* leve mas visível */
+  font-size: 14px;       /* tamanho confortável */
+  color: #111;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  color: #28a745;        /* efeito de hover discreto e elegante */
+}

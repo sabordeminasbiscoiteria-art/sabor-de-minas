@@ -109,7 +109,50 @@
 .menu-close {
   align-self: flex-start;
 }
+.menu-btn, .menu-close {
+  font-size: 28px;
+  padding: 15px;
+  cursor: pointer;
+  color: #333;
+  z-index: 101;
+}
 
+/* Menu lateral */
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: -260px; /* fechado por padrão */
+  width: 260px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  padding-top: 60px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.menu-lateral.ativo {
+  left: 0; /* abre o menu */
+}
+
+.menu-lateral a {
+  display: block;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-lateral a:hover {
+  background: #f5f5f5;
+}
+
+.menu-close {
+  align-self: flex-start;
+}
 /* ================= CONTEÚDO PRINCIPAL ================= */
 main {
   margin-top: 120px; /* espaço para o header fixo */
@@ -252,3 +295,4 @@ main {
     font-size: 14px;
   }
 }
+

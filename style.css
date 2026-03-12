@@ -309,3 +309,30 @@ main {
     width: 200px;
   }
 }
+
+/* ================= FONTES MANUSCRITAS E MAIS FINAS ================= */
+.nome-loja {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;   /* mais fino */
+  font-size: 22px;
+  margin-left: 10px;
+  white-space: nowrap;
+  color: #333;
+}
+
+.nav-links a {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;   /* mais fino */
+  font-size: 16px;
+  color: #111;
+  text-decoration: none;
+  padding: 5px 8px;
+}
+
+.nav-links a:hover {
+  color: #28a745;
+}
+
+.nav-links a, .nome-loja {
+  letter-spacing: 0.5px;  /* opcional para afinar visualmente */
+}

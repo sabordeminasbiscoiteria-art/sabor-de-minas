@@ -320,13 +320,13 @@ header {
 }
 
 @media (max-width: 768px){
-  .grid { grid-template-columns: repeat(2,1fr); } /* 2 produtos lado a lado no tablet/celular maior */
+  .grid { grid-template-columns: repeat(2,1fr); } /* 2 produtos lado a lado */
   .logo img.logo-img { width: 35px; height: 35px; }
   .logo h1 { font-size: 14px; }
 }
 
 @media (max-width: 480px){
-  .grid { grid-template-columns: 1fr; } /* 1 produto por linha no celular pequeno */
+  .grid { grid-template-columns: 1fr; } /* 1 produto por linha */
   .logo img.logo-img { width: 30px; height: 30px; }
   .logo h1 { font-size: 12px; }
 }

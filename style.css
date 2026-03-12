@@ -211,6 +211,7 @@ header {
   background: #b93838;
 }
 
+
 /* ================= PRODUTOS ================= */
 .products {
   padding: 40px 20px;
@@ -224,9 +225,15 @@ header {
   color: #333;
 }
 
+.products .descricao {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* várias colunas no PC */
   gap: 20px;
   max-width: 1200px;
   margin: auto;
@@ -239,6 +246,7 @@ header {
   text-align: center;
   overflow: hidden;
   position: relative;
+  border-radius: 8px;
 }
 
 .card img {
@@ -269,10 +277,11 @@ header {
   border: 1px solid #ddd;
   cursor: pointer;
   margin-bottom: 5px;
+  border-radius: 4px;
 }
 
 .btn-ver { background: white; color: #333; }
-.btn-preco { background: white; color: #333; }
+.btn-preco { background: #e0f2f1; color: #333; border: 1px solid #b2dfdb; }
 
 /* SELINHO */
 .img-produto { position: relative; }
@@ -289,28 +298,14 @@ header {
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   text-transform: uppercase;
 }
-/* GRID PRODUTOS */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* vários produtos lado a lado no PC */
-  gap: 20px;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 10px;
+
+/* ================= RESPONSIVO ================= */
+/* Tablet / Celular maior */
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: repeat(2, 1fr); } /* 2 produtos lado a lado */
 }
 
-/* RESPONSIVO PARA CELULAR */
-@media (max-width: 768px) {  /* tablets e celulares */
-  .grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 produtos por linha */
-  }
-}
-
-@media (max-width: 480px) {  /* celulares menores */
-  .grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 produtos por linha também */
-  }
-}
+/
 /* ================= WHATSAPP ================= */
 .whatsapp-float {
   position: fixed;
@@ -383,6 +378,7 @@ header {
     font-size: 16px;
   }
 }
+
 
 
 

@@ -94,38 +94,63 @@
   background: #f5f5f5;
 }
 
-/* ================= CONTEÚDO PRINCIPAL ================= */
-main {
-  margin-top: 120px;
-  padding: 0 20px;
-}
-
+/* ================= DESTAQUE COM FUNDO ================= */
 .destaque {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.beijinho-grande {
-  max-width: 500px;
+  position: relative;
   width: 100%;
-  display: block;
-  margin: 0 auto 20px auto;
+  height: 500px; /* altura do banner, ajusta conforme precisar */
+  background: url('beijinho.jpeg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.descricao {
-  margin: 10px 0;
-  font-size: 16px;
-  color: #333;
+.destaque-overlay {
+  text-align: center;
+  color: #fff;
+  background: rgba(0,0,0,0.4); /* leve sombra escura para destacar texto */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.destaque-overlay h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.destaque-overlay p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .btn-ver {
-  padding: 10px 20px;
+  padding: 12px 25px;
   background: #28a745;
   color: #fff;
   border: none;
   cursor: pointer;
   font-size: 16px;
   border-radius: 5px;
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+  .destaque {
+    height: 400px;
+  }
+
+  .destaque-overlay h1 {
+    font-size: 28px;
+  }
+
+  .destaque-overlay p {
+    font-size: 16px;
+  }
+
+  .btn-ver {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 }
 
 /* ================= VITRINE ================= */
@@ -181,3 +206,4 @@ main {
     margin: 0 auto;
   }
 }
+

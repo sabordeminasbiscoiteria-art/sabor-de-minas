@@ -104,7 +104,13 @@
   min-width: 100px;
   max-width: 200px;
 }
-
+/* Wrapper que deixa menu + pesquisa lado a lado */
+.menu-search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
 /* ================= MENU LATERAL ================= */
 .menu-btn {
   position: absolute;
@@ -390,4 +396,5 @@ main {
     width: 200px;
   }
 }
+
 

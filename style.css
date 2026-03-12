@@ -326,14 +326,31 @@ img {
   .search-box input { width: 100px; }
 }
 
-/* ================= AJUSTE HEADER NO PC ================= */
 @media (min-width: 1025px) {
-  .header-padrao { justify-content: flex-start; gap: 50px; }
-  .menu-topo { display: flex; margin-left: auto; }
-  .search-box { width: 220px; }
+  .header-padrao {
+    justify-content: flex-start;
+    gap: 50px;
+  }
+
+  .menu-topo {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .search-box {
+    width: 220px;
+  }
+
+  /* tamanho da logo no PC */
+  .logo img.logo-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo h1 {
+    font-size: 16px;
+  }
 }
-
-
 
 
 

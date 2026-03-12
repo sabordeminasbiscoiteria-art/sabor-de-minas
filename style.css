@@ -237,12 +237,11 @@ main {
   height: 25px;
 }
 /* ================= CARDS DE PRODUTOS ================= */
-.produtos-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* padrão PC: 4 por linha */
-  gap: 15px;
-  padding: 20px;
-  justify-items: center;
+.produtos{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  padding:20px;
 }
 
 .card-produto {
@@ -409,35 +408,21 @@ main {
   }
 }
 
-/* ================= RESPONSIVO ================= */
+/* ================= RESPONSIVO CELULAR ================= */
+@media (max-width:768px){
 
-/* Tablet: 3 cards por linha */
-@media screen and (max-width: 1023px) and (min-width: 769px) {
-  .produtos-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.produtos{
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
 }
 
-/* Celular médio/grande: 2 cards por linha */
-@media screen and (max-width: 768px) and (min-width: 481px) {
-  .produtos-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.card-produto{
+  max-width:100%;
 }
 
-/* Celular pequeno: 2 cards por linha */
-@media screen and (max-width: 480px) {
-  .produtos-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.card-produto img{
+  height:140px;
+  object-fit:cover;
+}
 
-  .selo-gramas {
-    font-size: 12px;
-    padding: 3px 6px;
-  }
-
-  .btn-card {
-    padding: 6px 0;
-    font-size: 12px;
-  }
 }

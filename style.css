@@ -93,7 +93,7 @@ header {
   font-size: 14px;
   background: transparent;
 }
-/* Barra de pesquisa - Desktop */
+/* ================= BARRA DE PESQUISA - DESKTOP ================= */
 .search-box {
   width: 200px;  /* diminui a barra no PC */
 }
@@ -102,7 +102,7 @@ header {
   width: 100%;   /* ocupa toda a largura da barra */
 }
 
-/* Botão hamburger */
+/* ================= BOTÕES HAMBURGER ================= */
 .menu-btn, .menu-close {
   font-size: 28px;
   padding: 15px;
@@ -111,12 +111,14 @@ header {
   z-index: 101;
 }
 
-/* Alinha o botão dentro do menu */
+/* Botão interno do menu lateral */
 .menu-close {
-  align-self: flex-start; /* no canto superior do menu */
+  position: absolute;  /* posiciona dentro do menu lateral */
+  top: 15px;
+  right: 15px;        /* canto superior direito do menu lateral */
 }
 
-/* Menu lateral */
+/* ================= MENU LATERAL ================= */
 .menu-lateral {
   position: fixed;
   top: 0;
@@ -132,10 +134,12 @@ header {
   z-index: 100;
 }
 
+/* Menu aberto */
 .menu-lateral.ativo {
-  left: 0;            /* abre o menu */
+  left: 0;
 }
 
+/* Links do menu */
 .menu-lateral a {
   display: block;
   padding: 15px 25px;
@@ -149,10 +153,10 @@ header {
   background: #f5f5f5;
 }
 
-/* Ajuste responsivo opcional */
+/* ================= RESPONSIVO ================= */
 @media screen and (max-width: 768px) {
   .menu-lateral {
-    width: 220px; /* menor no celular se quiser */
+    width: 220px; /* menor no celular */
   }
 }
 /* ================= HERO ================= */
@@ -339,6 +343,7 @@ header {
   color: #555;
   border-top: 1px solid #ddd;
 }
+
 
 
 

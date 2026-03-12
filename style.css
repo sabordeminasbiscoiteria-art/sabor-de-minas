@@ -51,9 +51,9 @@ font-size:20px;
 margin:0;
 }
 .menu-topo{
-display:flex;
-gap:20px;
-margin-right:auto;
+  display:flex;
+  gap:20px;
+  margin-left: 40px; /* afasta do logo */
 }
 
 .menu-topo a{
@@ -713,6 +713,7 @@ width:100%;
 }
 
 }
+
 
 
 

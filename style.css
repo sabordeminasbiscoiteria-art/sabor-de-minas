@@ -103,6 +103,26 @@ header {
 }
 
 /* ================= MENU LATERAL ================= */
+/* ===== Menu lateral padrão ===== */
+.menu-lateral {
+  position: relative; /* não fixa no PC */
+  top: 0;
+  left: 0;           /* já fica visível */
+  width: 260px;
+  height: auto;       /* ajusta à altura do conteúdo */
+  background: white;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  transition: none;   /* sem animação no PC */
+  z-index: 100;
+}
+
+/* ===== Apenas no celular ===== */
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    display: block; /* aparece o botão de abrir menu */
 .menu-btn {
   display: none; /* aparece só no celular */
   position: absolute;
@@ -333,6 +353,24 @@ header {
     font-size: 12px;  /* diminui o texto da loja */
   }
 }
+ /* ===== Apenas no celular ===== */
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    display: block; /* aparece o botão de abrir menu */
+  }
+
+  .menu-lateral {
+    position: fixed;
+    left: -260px;  /* fora da tela */
+    height: 100vh;
+    transition: 0.3s;
+    z-index: 100;
+  }
+
+  .menu-lateral.ativo {
+    left: 0;      /* abre ao clicar no botão */
+  }
+}   
 /* ================= RODAPÉ ================= */
 .rodape {
   background: #f5f5f5;
@@ -342,6 +380,7 @@ header {
   color: #555;
   border-top: 1px solid #ddd;
 }
+
 
 
 

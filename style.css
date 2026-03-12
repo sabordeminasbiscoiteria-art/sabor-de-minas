@@ -50,11 +50,10 @@ height:auto;
 font-size:20px;
 margin:0;
 }
-/* Página inicial: menu no canto direito */
-.menu-topo.home {
+.menu-topo{
   display:flex;
   gap:20px;
-  margin-left:auto;  /* empurra o menu pro canto direito */
+  margin-left:0;  /* remove qualquer afastamento da logo */
 }
 .menu-topo a{
 text-decoration:none;
@@ -713,6 +712,7 @@ width:100%;
 }
 
 }
+
 
 
 

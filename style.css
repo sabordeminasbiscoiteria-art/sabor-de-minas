@@ -14,12 +14,12 @@
   background: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
+  justify-content: flex-start; /* alinhamento à esquerda */
+  padding: 10px 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 100;
-  gap: 15px;
-  flex-wrap: wrap;
+  gap: 10px;
+  flex-wrap: nowrap; /* NÃO empilha os itens */
 }
 
 .logo-nome {
@@ -29,17 +29,51 @@
 }
 
 .logo {
-  height: 50px;
-  margin-left: 50px; /* espaço para o botão hamburger */
+  height: 40px;        /* menor no celular */
+  margin-left: 50px;   /* espaço para o hamburger */
 }
 
 .nome-loja {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
   margin-left: 10px;
   white-space: nowrap;
 }
 
+/* Menu simples horizontal ao lado da logo */
+.nav-links {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+
+.nav-links a {
+  padding: 4px 8px;
+}
+
+/* Barra de pesquisa ao lado do menu simples */
+.search-box {
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+
+.search-box input {
+  width: 100px;
+  padding: 4px 8px;
+}
+
+/* Botão hamburger */
+.menu-btn {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 28px;
+  padding: 10px;
+  cursor: pointer;
+  color: #333;
+  z-index: 102;
+}
 /* ================= MENU SIMPLES ================= */
 .nav-links {
   display: flex;
@@ -356,3 +390,4 @@ main {
     width: 200px;
   }
 }
+

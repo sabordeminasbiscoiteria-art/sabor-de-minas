@@ -103,10 +103,6 @@ header {
 }
 
 /* ================= MENU LATERAL ================= */
-/* ===== Apenas no celular ===== */
-@media screen and (max-width: 768px) {
-  .menu-btn {
-    display: block; /* aparece o botão de abrir menu */
 .menu-btn {
   display: none; /* aparece só no celular */
   position: absolute;
@@ -121,11 +117,11 @@ header {
 .menu-lateral {
   position: fixed;
   top: 0;
-  left: -260px;
+  left: -260px;       /* escondido inicialmente */
   width: 260px;
   height: 100vh;
   background: white;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
   padding-top: 60px;
   transition: 0.3s;
   z-index: 100;
@@ -134,7 +130,7 @@ header {
 }
 
 .menu-lateral.ativo {
-  left: 0;
+  left: 0;            /* abre ao clicar no botão */
 }
 
 .menu-lateral a {
@@ -162,10 +158,11 @@ header {
   border-top: 1px solid #eee;
   padding-top: 10px;
 }
+
 /* ===== Ajuste para mostrar menu lateral no PC ===== */
 @media screen and (min-width: 769px) {
   .menu-lateral {
-    position: relative;   /* deixa visível no PC */
+    position: relative;   /* visível no PC */
     left: 0;              /* já aberto */
     height: auto;         /* ajusta à altura do conteúdo */
     transition: none;     /* sem animação no PC */
@@ -175,7 +172,7 @@ header {
 /* ===== Ajuste para celular (mantém menu deslizante) ===== */
 @media screen and (max-width: 768px) {
   .menu-btn {
-    display: block;       /* mostra botão de abrir menu */
+    display: block;       /* mostra botão no celular */
   }
 
   .menu-lateral {
@@ -373,6 +370,7 @@ header {
   color: #555;
   border-top: 1px solid #ddd;
 }
+
 
 
 

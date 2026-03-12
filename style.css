@@ -89,7 +89,7 @@ header {
 .search-box input {
   border: none;
   outline: none;
-  width: 100px;
+  width: 60px;
   font-size: 14px;
   background: transparent;
 }
@@ -334,6 +334,7 @@ header {
   color: #555;
   border-top: 1px solid #ddd;
 }
+
 
 
 

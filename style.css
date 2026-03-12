@@ -319,20 +319,14 @@ main {
   white-space: nowrap;
   color: #333;
 }
-
-.nav-links a {
-  font-family: 'Dancing Script', cursive;
-  font-weight: 400;   /* mais fino */
-  font-size: 16px;
-  color: #111;
-  text-decoration: none;
-  padding: 5px 8px;
+/* Título profissional */
+.nome-loja {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;       /* elegante e fino */
+  font-size: 32px;        /* grande para destaque */
+  color: #333;            /* cor escura para contraste */
+  margin-left: 10px;
+  white-space: nowrap;
+  letter-spacing: 1px;    /* sutil para afinar visualmente */
 }
 
-.nav-links a:hover {
-  color: #28a745;
-}
-
-.nav-links a, .nome-loja {
-  letter-spacing: 0.5px;  /* opcional para afinar visualmente */
-}

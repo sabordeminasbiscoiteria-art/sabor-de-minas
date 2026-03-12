@@ -44,7 +44,7 @@ img {
 }
 
 .logo img.logo-img {
-  width: 40px;
+  width: 20 px;
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
@@ -231,7 +231,7 @@ img {
 }
 
 .card img {
-  width: 50%;
+  width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
 }
@@ -332,6 +332,7 @@ img {
   .menu-topo { display: flex; margin-left: auto; }
   .search-box { width: 220px; }
 }
+
 
 
 

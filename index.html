@@ -15,53 +15,52 @@
 <body class="home-page">
 
   <!-- ================= HEADER ================= -->
-  <header>
+  <header class="header-padrao">
 
-    <!-- BOTÃO MENU LATERAL -->
-    <div class="menu-btn" onclick="toggleMenu()">
-      <i class="fa fa-bars"></i>
-    </div>
-
-    <!-- LOGO + NOME DA LOJA -->
+    <!-- Logo e nome da loja -->
     <div class="logo">
-      <img src="img/logo.png" alt="Biscoiteria Sabor de Minas">
-      <h1 class="nome-loja">Biscoiteria Sabor De Minas</h1> <!-- NOME DA LOJA ABAIXO DA LOGO -->
+      <img src="img/logo.png" alt="Biscoiteria Sabor de Minas" class="logo-img">
+      <h1>Biscoiteria Sabor de Minas</h1>
     </div>
 
-    <!-- MENU NORMAL -->
+    <!-- Menu -->
     <nav class="menu-topo">
       <a href="index.html">Início</a>
-      <a href="Biscoitoscaseiros.html">Biscoitos Caseiro</a>
+      <a href="Biscoitoscaseiros.html">Biscoitos Caseiros</a>
       <a href="contato.html">Contato</a>
     </nav>
 
-    <!-- SEPARADOR SUAVE ENTRE MENU E NOME DA LOJA -->
-  <div class="menu-separador"></div>
+    <!-- Barra de pesquisa -->
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Pesquisar...">
+    </div>
+
+    <!-- Botão menu lateral para celular -->
+    <div class="menu-btn" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
 
   </header>
 
   <!-- ================= MENU LATERAL ================= -->
   <div id="menu-lateral" class="menu-lateral">
-
     <a href="index.html">Início</a>
 
     <p class="titulo-categoria">Categorias</p>
-
     <a href="Biscoitoscaseiros.html">Biscoitos Caseiros</a>
-    <a href="biscoitopolvilho.html">Biscoito Polvilhos</a>
+    <a href="biscoitopolvilho.html">Biscoito Polvilho</a>
     <a href="salgadinho.html">Salgadinhos</a>
     <a href="Suspiros.html">Suspiros</a>
-    
+
     <div class="menu-inferior">
-    <a href="sobre.html">Sobre a Loja</a>
+      <a href="sobre.html">Sobre a Loja</a>
       <a href="contato.html">Contato</a>
     </div>
-
   </div>
 
   <!-- ================= HERO ================= -->
   <section class="hero">
-
     <div class="hero-text">
       <h1>Biscoitos Caseiros</h1>
       <p>O sabor que alegra seu dia</p>
@@ -72,30 +71,26 @@
         Ver nossos biscoitos
       </button>
     </div>
-
   </section>
 
- <section class="vitrine">
+  <!-- ================= VITRINE ================= -->
+  <section class="vitrine">
+    <h2>Nossos Biscoitos Mais Vendidos 🍪</h2>
 
-  <h2>Nossos Biscoitos Mais Vendidos 🍪</h2>
-
-  <div class="produtos">
-    <div class="produto">
-      <img src="img/sasha.jpeg" alt="sasha">
+    <div class="produtos">
+      <div class="produto">
+        <img src="img/sasha.jpeg" alt="Sasha">
+      </div>
+      <div class="produto">
+        <img src="img/ugauga.jpeg" alt="Ugauga">
+      </div>
+      <div class="produto">
+        <img src="img/casadinho.jpeg" alt="Casadinho Avelã">
+      </div>
     </div>
 
-    <div class="produto">
-      <img src="img/ugauga.jpeg" alt="Ugauga">
-    </div>
-
-    <div class="produto">
-      <img src="img/casadinho.jpeg" alt="casadinho avelã">
-    </div>
-  </div>
-
-  <a href="Biscoitoscaseiros.html" class="btn-vitrine">Ver mais</a>
-
-</section>
+    <a href="Biscoitoscaseiros.html" class="btn-vitrine">Ver mais</a>
+  </section>
 
   <!-- ================= BOTÃO WHATSAPP ================= -->
   <a href="https://wa.me/5531992767228" class="whatsapp-float" target="_blank">
@@ -106,17 +101,13 @@
   <script>
     function toggleMenu() {
       let menu = document.getElementById("menu-lateral");
-      if (menu.classList.contains("ativo")) {
-        menu.classList.remove("ativo");
-      } else {
-        menu.classList.add("ativo");
-      }
+      menu.classList.toggle("ativo");
     }
   </script>
 
   <!-- ================= RODAPÉ ================= -->
   <footer class="rodape">
-    <p><strong>Biscoiteria Sabor De Minas</strong></p>
+    <p><strong>Biscoiteria Sabor de Minas</strong></p>
     <p>Biscoitos feitos com carinho e ingredientes selecionados.</p>
     <p>📍 Belo Horizonte - MG</p>
     <p>📱 WhatsApp: (31) 99276-7228</p>
@@ -125,38 +116,6 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

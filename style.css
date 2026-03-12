@@ -258,7 +258,7 @@ main {
   overflow:hidden;
   text-align:center;
   width:100%;
-  max-width:100px;
+  max-width:200px;
   box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
@@ -356,6 +356,23 @@ main {
   .destaque .descricao {
     font-size: 18px;
   }
+}
+
+@media (max-width:768px){
+
+.produtos{
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+}
+
+.card-produto{
+  max-width:150px;
+}
+
+.card-produto img{
+  height:110px;
+}
+
 }
 
 /* Celular grande e médio */
@@ -465,6 +482,7 @@ main {
 }
 
 }
+
 
 
 

@@ -102,27 +102,29 @@ header {
   width: 100%;   /* ocupa toda a largura da barra */
 }
 
-/* Botão hamburger fora do menu (3 risquinhos) */
+/* Header (logo + hamburger) */
+header {
+  position: relative;  /* garante que os elementos internos sejam relativos ao header */
+  z-index: 100;        /* abaixo do botão se necessário */
+}
+
+/* Botão hamburger sobre a logo */
 .menu-btn {
-  position: absolute;  /* fica sobre a logo */
-  top: 0;              /* alinhado ao topo do header */
-  left: 0;             /* no canto da logo */
+  position: absolute;
+  top: 0;
+  left: 0;
   font-size: 28px;
   padding: 15px;
   cursor: pointer;
   color: #333;
-  z-index: 200;        /* acima da logo */
+  z-index: 200;        /* acima da logo, mas não cobre o resto da página */
 }
 
-/* Botão interno dentro do menu lateral (fecha o menu) */
-.menu-close {
-  position: absolute;
-  top: 15px;
-  right: 15px;        /* canto superior direito do menu lateral */
-  font-size: 28px;
-  padding: 15px;
-  cursor: pointer;
-  color: #333
+/* Imagem do beijinho grande */
+.beijinho-grande {
+  position: relative;   /* garante que fique acima do background, mas abaixo do hamburger se necessário */
+  z-index: 50;          /* abaixo do botão hamburger */
+}
 
 /* ================= MENU LATERAL ================= */
 .menu-lateral {
@@ -349,6 +351,7 @@ header {
   color: #555;
   border-top: 1px solid #ddd;
 }
+
 
 
 

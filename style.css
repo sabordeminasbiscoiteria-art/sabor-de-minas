@@ -320,16 +320,15 @@ main {
 /* ================= RESPONSIVO PC/TABLET ================= */
 @media screen and (min-width: 769px) {
   .menu-search-wrapper {
-    justify-content: flex-end; /* menu simples + pesquisa vão para a direita */
-    gap: 20px;                 /* espaço entre menu e pesquisa */
+    margin-left: auto;      /* empurra para a direita */
+    gap: 20px;              /* espaço entre menu e pesquisa */
   }
 
   .nav-links {
-    justify-content: flex-end;  /* mantém links à direita */
     gap: 15px;
   }
 
   .search-box {
-    margin-left: 0;             /* remove margem que empurra para o lado */
+    margin-left: 0;
   }
 }

@@ -735,6 +735,31 @@ width:100%;
 }
 
 }
+/* ================= AJUSTE HEADER NO PC ================= */
+@media (min-width: 1024px) {
+  .header-padrao {
+    justify-content: flex-start;  /* mantém logo e nome à esquerda */
+    gap: 50px;                     /* distância do menu */
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;                     /* distância entre logo e nome */
+  }
+
+  .logo img {
+    width: 40px;                   /* tamanho da logo */
+    height: 40px;
+  }
+
+  .menu-topo {
+    margin-left: auto;             /* joga o menu pro canto direito */
+  }
+
+  .search-box {
+    width: 220px;                  /*
 
 
 

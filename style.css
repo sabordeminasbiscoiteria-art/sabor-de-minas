@@ -301,6 +301,22 @@ main {
   color:#111;
   border:1px solid #ccc;
 }
+/* ================= TABLET ================= */
+
+@media (max-width:1024px){
+
+.produtos{
+  grid-template-columns:repeat(3,1fr);
+}
+
+.card-produto{
+  max-width:180px;
+}
+
+}
+
+
+/* ================= CELULAR ================= */
 
 @media (max-width:768px){
 
@@ -319,19 +335,7 @@ main {
 }
 
 }
-/* ================= TABLET ================= */
 
-@media (max-width:1024px){
-
-.produtos{
-  grid-template-columns:repeat(3,1fr);
-}
-
-.card-produto{
-  max-width:180px;
-}
-
-}
 
 /* ================= RESPONSIVO ================= */
 
@@ -462,6 +466,7 @@ main {
 }
 
 }
+
 
 
 

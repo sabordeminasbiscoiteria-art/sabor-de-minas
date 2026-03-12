@@ -102,22 +102,105 @@ header {
   width: 100%;   /* ocupa toda a largura da barra */
 }
 
-/* Header (logo + hamburger) */
+/* ================= HEADER ================= */
 header {
-  position: relative;  /* garante que os elementos internos sejam relativos ao header */
-  z-index: 100;        /* abaixo do botão se necessário */
+  position: relative;  /* referência para o botão hamburger */
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 100;
 }
 
-/* Botão hamburger sobre a logo */
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Barra de pesquisa */
+.search-box {
+  margin-left: auto;
+  width: 200px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 5px 10px;
+}
+
+/* ================= BOTÕES HAMBURGER ================= */
+/* Botão fora do menu (abre o menu) */
 .menu-btn {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 0;  /* sobre a logo */
   font-size: 28px;
   padding: 15px;
   cursor: pointer;
   color: #333;
-  z-index: 200;        /* acima da logo, mas não cobre o resto da página */
+  z-index: 200;  /* acima da logo */
+}
+
+/* Botão dentro do menu (fecha o menu) */
+.menu-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 28px;
+  padding: 15px;
+  cursor: pointer;
+  color: #333;
+  z-index: 101;
+}
+
+/* ================= MENU LATERAL ================= */
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: -260px;       /* fechado por padrão */
+  width: 260px;
+  height: 100vh;
+  background: white;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  padding-top: 60px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  z-index: 150; /* abaixo do botão interno, acima da página */
+}
+
+.menu-lateral.ativo {
+  left: 0;
+}
+
+.menu-lateral a {
+  display: block;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-lateral a:hover {
+  background: #f5f5f5;
+}
+
+/* ================= IMAGEM DO BEIJINHO ================= */
+.beijinho-grande {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  z-index: 50;  /* abaixo do menu e do botão hamburger */
+}
+
+/* ================= RESPONSIVO ================= */
+@media screen and (max-width: 768px) {
+  .menu-lateral {
+    width: 220px;
+  }
 }
 
 /* Imagem do beijinho grande */
@@ -351,6 +434,7 @@ header {
   color: #555;
   border-top: 1px solid #ddd;
 }
+
 
 
 

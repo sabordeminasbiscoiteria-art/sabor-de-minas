@@ -6,18 +6,20 @@
   font-family: Arial, sans-serif;
 }
 
-/* ================= MENU FIXO ================= */
+/* ================= HEADER FIXO ================= */
 .header-fixo {
   position: fixed;
   top: 0;
   width: 100%;
   background: #fff;
-  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 100;
+  flex-wrap: wrap; /* permite quebrar linha no celular */
+  gap: 20px;
 }
 
 .logo-nome {
@@ -35,9 +37,50 @@
   font-weight: bold;
 }
 
+/* MENU SIMPLES */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  color: #28a745;
+}
+
+/* BARRA DE PESQUISA */
 .search-box input {
   padding: 5px 10px;
-  width: 200px;
+  width: 180px;
+}
+
+/* ================= RESPONSIVO ================= */
+@media screen and (max-width: 768px) {
+  .header-fixo {
+    flex-direction: column; /* empilha elementos verticalmente */
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column; /* menu simples fica abaixo da logo */
+    gap: 5px;
+    width: 100%;
+  }
+
+  .search-box {
+    width: 100%;
+    margin-top: 10px; /* espaço abaixo do menu */
+  }
+
+  .search-box input {
+    width: 100%;
+  }
 }
 /* ================= MENU SIMPLES ================= */
 .nav-links {
@@ -231,6 +274,7 @@
     margin: 0 auto;
   }
 }
+
 
 
 

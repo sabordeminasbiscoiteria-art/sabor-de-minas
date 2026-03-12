@@ -324,45 +324,25 @@ header {
   color: #555;
   border-top: 1px solid #ddd;
 }
-
 /* ================= RESPONSIVO ================= */
 @media (max-width: 1024px) {
   .menu-btn { display: block; }
   .menu-topo { display: none; }
 }
 
-@media (max-width: 480px) {
-  .grid { grid-template-columns: 1fr; }
-  .logo img { width: 30px; height: 30px; }
+@media (max-width: 768px){
+  .grid { grid-template-columns: repeat(2,1fr); } /* 2 produtos lado a lado no tablet/celular maior */
+  .logo img.logo-img { width: 35px; height: 35px; }
+  .logo h1 { font-size: 14px; }
+}
+
+@media (max-width: 480px){
+  .grid { grid-template-columns: 1fr; } /* 1 produto por linha no celular pequeno */
+  .logo img.logo-img { width: 30px; height: 30px; }
   .logo h1 { font-size: 12px; }
-  .search-box input { width: 100px; }
 }
 
-@media (min-width: 1025px) {
-  .header-padrao {
-    justify-content: flex-start;
-    gap: 50px;
-  }
 
-  .menu-topo {
-    display: flex;
-    margin-left: auto;
-  }
-
-  .search-box {
-    width: 220px;
-  }
-
-  /* tamanho da logo no PC */
-  .logo img.logo-img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .logo h1 {
-    font-size: 16px;
-  }
-}
 
 
 

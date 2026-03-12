@@ -339,19 +339,27 @@ main {
   }
 }
 
+/* ================= CELULAR ================= */
+
 @media (max-width:768px){
 
 .produtos{
   grid-template-columns:repeat(2,1fr);
-  gap:10px;
+  gap:8px;
+  padding:10px;
 }
 
 .card-produto{
-  max-width:130px;
+  max-width:120px;
 }
 
 .card-produto img{
-  height:100px;
+  height:90px;
+}
+
+.btn-card{
+  font-size:12px;
+  padding:6px 0;
 }
 
 }
@@ -463,6 +471,7 @@ main {
 }
 
 }
+
 
 
 

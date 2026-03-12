@@ -8,48 +8,51 @@
 </head>
 <body>
 
-<!-- ================= MENU FIXO ================= -->
+<!-- ================= HEADER FIXO ================= -->
 <header class="header-fixo">
   <div class="logo-nome">
     <img src="img/logo.png" alt="Logo da Biscoiteria Sabor de Minas" class="logo">
     <span class="nome-loja">Biscoiteria Sabor de Minas</span>
   </div>
 
-  <div class="search-box">
-    <input type="text" placeholder="Pesquisar...">
-  </div>
-
-  <!-- ======== MENU SIMPLES COM LINKS ======== -->
+  <!-- MENU SIMPLES -->
   <nav class="nav-links">
     <a href="inicio.html">Início</a>
     <a href="produtos.html">Produtos</a>
     <a href="contato.html">Contato</a>
   </nav>
+
+  <div class="search-box">
+    <input type="text" placeholder="Pesquisar...">
+  </div>
 </header>
 
 <!-- ================= MENU LATERAL CELULAR ================= -->
-<div class="menu-btn" id="menuBtn">&#9776;</div> <!-- abrir menu -->
+<div class="menu-btn" id="menuBtn">&#9776;</div> <!-- botão abrir -->
 <div class="menu-lateral" id="menuLateral">
- <div class="menu-close" id="menuClose">&times;</div> <!-- fechar menu -->
-  <a href="#">Início</a>
-  <a href="#">Produtos</a>
-  <a href="#">Sobre</a>
-  <a href="#">Contato</a>
+  <div class="menu-close" id="menuClose">&times;</div> <!-- botão fechar -->
+  <a href="inicio.html">Início</a>
+  <a href="produtos.html">Produtos</a>
+  <a href="sobre.html">Sobre</a>
+  <a href="contato.html">Contato</a>
 </div>
 
 <!-- ================= CONTEÚDO PRINCIPAL ================= -->
-<section class="destaque">
-  <div class="destaque-overlay">
-    <h1>Biscoitos caseiros</h1>
-    <p>O sabor que alegra o seu dia. Feitos com carinho desde 2015. Encomendas pelo WhatsApp.</p>
+<main>
+  <!-- Banner do beijinho -->
+  <section class="destaque">
+    <p class="descricao">
+      Biscoitos caseiros, o sabor que alegra o seu dia.<br>
+      Feitos com carinho desde 2015. Encomendas pelo WhatsApp.
+    </p>
     <button class="btn-ver">Ver nossos biscoitos</button>
-  </div>
-</section>
+  </section>
+
   <!-- Vitrine com 3 fotos -->
   <section class="vitrine">
-    <img src=img/sasha.jpeg alt="Sasha" class="vitrine-img">
-    <img src=img/ugauga.jpeg alt="Ugauga" class="vitrine-img">
-    <img src=img/casadinho.jpeg alt="Casadinho" class="vitrine-img">
+    <img src="img/sasha.jpeg" alt="Sasha" class="vitrine-img">
+    <img src="img/ugauga.jpeg" alt="Ugauga" class="vitrine-img">
+    <img src="img/casadinho.jpeg" alt="Casadinho" class="vitrine-img">
   </section>
 </main>
 
@@ -59,47 +62,27 @@
     <p>&copy; 2026 Biscoiteria Sabor de Minas. Todos os direitos reservados.</p>
     <p>Contato: <a href="tel:+559999999999">WhatsApp</a> | <a href="mailto:contato@sabordeminas.com.br">Email</a></p>
     <div class="redes-sociais">
-      <a href="#"><img src="icon-facebook.png" alt="Facebook" class="icone-social"></a>
-      <a href="#"><img src="icon-instagram.png" alt="Instagram" class="icone-social"></a>
-      <a href="#"><img src="icon-whatsapp.png" alt="WhatsApp" class="icone-social"></a>
+      <a href="#"><img src="img/icon-facebook.png" alt="Facebook" class="icone-social"></a>
+      <a href="#"><img src="img/icon-instagram.png" alt="Instagram" class="icone-social"></a>
+      <a href="#"><img src="img/icon-whatsapp.png" alt="WhatsApp" class="icone-social"></a>
     </div>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const menuLateral = document.getElementById('menuLateral');
+  const menuClose = document.getElementById('menuClose');
+
+  menuBtn.addEventListener('click', () => {
+    menuLateral.classList.add('ativo');
+  });
+
+  menuClose.addEventListener('click', () => {
+    menuLateral.classList.remove('ativo');
+  });
+</script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

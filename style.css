@@ -238,11 +238,11 @@ main {
 }
 /* ================= CARDS DE PRODUTOS ================= */
 .produtos-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* PC: 4 cards */
   gap: 20px;
-  flex-wrap: wrap;
   padding: 20px;
+  justify-items: center;
 }
 
 .card-produto {
@@ -251,7 +251,8 @@ main {
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
@@ -390,6 +391,7 @@ main {
     left: 8px;
   }
 }
+
 /* ================= RESPONSIVO PC/TABLET ================= */
 @media screen and (min-width: 769px) {
   .menu-search-wrapper {
@@ -406,9 +408,22 @@ main {
   }
 }
 /* ================= RESPONSIVO ================= */
-@media screen and (max-width: 768px) {
-  .card-produto {
-    width: 180px;
+
+/* Tablet: 3 cards por linha */
+@media screen and (max-width: 1023px) and (min-width: 769px) {
+  .produtos-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card-produto img {
+    height: 200px;
+  }
+}
+
+/* Celular médio/grande: 2 cards por linha */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .produtos-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .card-produto img {
@@ -416,9 +431,10 @@ main {
   }
 }
 
+/* Celular pequeno: 2 cards por linha também */
 @media screen and (max-width: 480px) {
-  .card-produto {
-    width: 150px;
+  .produtos-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .card-produto img {
@@ -435,9 +451,3 @@ main {
     font-size: 12px;
   }
 }
-
-
-
-
-
-

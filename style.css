@@ -18,13 +18,13 @@
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 100;
-  flex-wrap: wrap; /* permite quebrar linha no celular */
-  gap: 20px;
+  gap: 15px;
 }
 
 .logo-nome {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .logo {
@@ -33,14 +33,16 @@
 }
 
 .nome-loja {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 /* MENU SIMPLES */
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  flex-shrink: 1;
 }
 
 .nav-links a {
@@ -48,6 +50,7 @@
   color: #111;
   font-weight: 600;
   padding: 5px 10px;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -57,29 +60,37 @@
 /* BARRA DE PESQUISA */
 .search-box input {
   padding: 5px 10px;
-  width: 180px;
+  width: 150px; /* tamanho padrão no PC */
+  min-width: 100px;
+  max-width: 200px;
 }
 
 /* ================= RESPONSIVO ================= */
 @media screen and (max-width: 768px) {
-  .header-fixo {
-    flex-direction: column; /* empilha elementos verticalmente */
-    align-items: flex-start;
+  .search-box input {
+    width: 120px; /* reduz a barra no tablet/celular */
   }
 
   .nav-links {
-    flex-direction: column; /* menu simples fica abaixo da logo */
-    gap: 5px;
-    width: 100%;
+    gap: 10px; /* menos espaço entre os links */
   }
 
-  .search-box {
-    width: 100%;
-    margin-top: 10px; /* espaço abaixo do menu */
+  .nome-loja {
+    font-size: 16px; /* diminui a fonte da loja */
   }
+}
 
+@media screen and (max-width: 480px) {
   .search-box input {
-    width: 100%;
+    width: 100px; /* barra ainda menor no celular pequeno */
+  }
+
+  .nav-links {
+    gap: 8px;
+  }
+
+  .nome-loja {
+    font-size: 14px;
   }
 }
 /* ================= MENU SIMPLES ================= */
@@ -274,6 +285,7 @@
     margin: 0 auto;
   }
 }
+
 
 
 

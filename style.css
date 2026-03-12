@@ -26,65 +26,88 @@ img{
   -webkit-user-drag:none;
 }
 
-/* ===== HEADER ===== */
-
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:10px 60px; /* aumenta o espaço das laterais */
-background:#f5f5f5;
-width:100%;
+/* Header padrão */
+.header-padrao{
+  display:flex;
+  justify-content:space-between;  /* separa logo, menu e pesquisa */
+  align-items:center;
+  padding:10px 20px;
+  width:100%;
+  background:#f5f5f5;
+  box-sizing:border-box;
 }
-/* LOGO */
+
+/* Logo e nome */
 .logo{
-display:flex;
-align-items:center;
+  display:flex;
+  align-items:center;
+  gap:8px;
 }
-
-.logo img{
-width:40px;
-height:auto;
+.logo img.logo-img{
+  width:40px;         /* logo pequena e circular */
+  height:40px;
+  border-radius:50%;  
+  object-fit:cover;
 }
 .logo h1{
-font-size:20px;
-margin:0;
+  font-size:16px;      /* reduz o tamanho para caber no celular */
+  font-weight:bold;
+  white-space:nowrap;  /* não quebra linha */
+  color:#333;
 }
+
+/* Menu no canto direito */
 .menu-topo{
   display:flex;
-  gap:20px;
-  margin-left: 40px; /* afasta do logo */
+  gap:15px;
+  margin-left:auto;    /* empurra pro canto direito */
 }
 .menu-topo a{
-text-decoration:none;
-color:#333;
-font-weight:600;
-font-size:16px;
+  text-decoration:none;
+  color:#333;
+  font-weight:600;
+  font-size:14px;
 }
 
+/* Barra de pesquisa */
 .search-box{
-display:flex;
-align-items:center;
-background:white;
-border:1px solid #ccc;
-border-radius:25px;
-padding:6px 12px;
-width:220px;
-margin-left:auto;
-margin-top:2px;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  border:1px solid #ddd;
+  border-radius:25px;
+  padding:5px 10px;
+  background:white;
+  margin-left:15px;    /* separa do menu */
 }
-
-.search-box i{
-color:#666;
-margin-right:6px;
-}
-
 .search-box input{
-border:none;
-outline:none;
-width:100%;
-font-size:14px;
-background:transparent;
+  border:none;
+  outline:none;
+  width:150px;          /* reduz para caber no celular */
+  font-size:12px;
+  background:transparent;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width:480px){
+  .header-padrao{
+    padding:8px 10px;
+  }
+  .logo img.logo-img{
+    width:30px;
+    height:30px;
+  }
+  .logo h1{
+    font-size:14px;
+  }
+  .menu-topo a{
+    font-size:12px;
+    gap:10px;
+  }
+  .search-box input{
+    width:100px;
+    font-size:12px;
+  }
 }
 /* ===== RESPONSIVO PARA PC ===== */
 @media (min-width: 768px){
@@ -712,6 +735,7 @@ width:100%;
 }
 
 }
+
 
 
 

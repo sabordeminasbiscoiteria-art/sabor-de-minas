@@ -340,7 +340,6 @@ main {
 }
 
 /* ================= CELULAR ================= */
-
 @media (max-width:768px){
 
 .produtos{
@@ -350,19 +349,20 @@ main {
 }
 
 .card-produto{
-  max-width:120px;
+  max-width:100px;
 }
 
 .card-produto img{
-  height:90px;
+  height:75px;
 }
 
 .btn-card{
-  font-size:12px;
-  padding:6px 0;
+  font-size:11px;
+  padding:5px 0;
 }
 
 }
+
 
 /* Celular grande e médio */
 @media screen and (max-width: 768px) {
@@ -471,6 +471,7 @@ main {
 }
 
 }
+
 
 
 

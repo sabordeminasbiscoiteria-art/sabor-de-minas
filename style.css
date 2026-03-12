@@ -239,9 +239,10 @@ main {
 /* ================= CARDS DE PRODUTOS ================= */
 .produtos{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
   gap:20px;
   padding:20px;
+  justify-items:center;
 }
 
 .card-produto {
@@ -408,20 +409,19 @@ main {
   }
 }
 
-/* ================= RESPONSIVO CELULAR ================= */
 @media (max-width:768px){
 
 .produtos{
   grid-template-columns:repeat(2,1fr);
-  gap:12px;
+  gap:14px;
 }
 
 .card-produto{
-  max-width:100%;
+  max-width:180px;
 }
 
 .card-produto img{
-  height:140px;
+  height:130px;
   object-fit:cover;
 }
 

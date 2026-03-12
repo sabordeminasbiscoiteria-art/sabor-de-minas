@@ -76,33 +76,40 @@
   z-index: 101;
 }
 
-/* Botão hamburger fixo no canto superior direito */
+/* Botão hamburger */
 .menu-btn {
-  position: fixed;
+  position: absolute;
   top: 15px;
-  right: 15px;
+  left: 70px; /* próximo da logo, ajuste conforme o tamanho da logo */
+  font-size: 28px;
+  padding: 10px;
+  cursor: pointer;
+  color: #333;
+  z-index: 101;
 }
 
 /* Menu lateral */
 .menu-lateral {
   position: fixed;
   top: 0;
-  left: -260px;       /* fechado por padrão */
+  left: 0;         /* começa escondido no lado da logo */
   width: 260px;
   height: 100vh;
   background: #fff;
   box-shadow: 2px 0 10px rgba(0,0,0,0.2);
   padding-top: 60px;
-  transition: 0.3s;
+  transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
   z-index: 100;
+  transform: translateX(-260px); /* escondido fora da tela */
 }
 
 .menu-lateral.ativo {
-  left: 0;            /* abre o menu */
+  transform: translateX(0);  /* desliza para dentro, ficando ao lado da logo */
 }
 
+/* Links do menu lateral */
 .menu-lateral a {
   display: block;
   padding: 15px 25px;
@@ -119,6 +126,10 @@
 /* Botão fechar dentro do menu lateral */
 .menu-close {
   align-self: flex-start;
+  font-size: 28px;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #333;
 }
 
 /* ================= CONTEÚDO PRINCIPAL ================= */
@@ -266,3 +277,4 @@ main {
     right: 8px;
   }
 }
+

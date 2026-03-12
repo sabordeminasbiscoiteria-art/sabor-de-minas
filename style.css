@@ -301,7 +301,7 @@ header {
 }
 
 @media (max-width: 480px){
-  .grid { grid-template-columns: 1fr; } /* 1 produto por linha */
+  .grid { grid-template-columns: repeat(2,1fr); } /* 2 produtos lado a lado no celular pequeno */
   .logo img.logo-img { width: 35px; height: 35px; }
   .logo h1 { font-size: 14px; }
 }
@@ -314,6 +314,7 @@ header {
   color: #555;
   border-top: 1px solid #ddd;
 }
+
 
 
 

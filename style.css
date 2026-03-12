@@ -53,9 +53,9 @@ margin:0;
 .menu-topo{
   display:flex;
   gap:20px;
-  margin-left:0;  /* remove qualquer afastamento da logo */
+  margin-left:0;   /* sem afastamento */
+  padding-left:0;  /* remove qualquer padding também, se tiver */
 }
-
 .menu-topo a{
 text-decoration:none;
 color:#333;
@@ -713,6 +713,7 @@ width:100%;
 }
 
 }
+
 
 
 

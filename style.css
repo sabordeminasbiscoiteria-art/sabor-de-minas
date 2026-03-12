@@ -347,13 +347,7 @@ main {
     margin-left: 0;
   }
 }
-@media screen and (min-width: 1025px) {
-  .destaque {
-    background-size: 90%;       /* diminui o zoom da imagem */
-    background-position: top center; /* mostra mais a parte de cima */
-    height: 400px;              /* mantém altura normal */
-  }
-}
+
 
 
 

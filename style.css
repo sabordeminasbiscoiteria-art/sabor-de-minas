@@ -80,7 +80,6 @@ header {
   border-radius: 25px;
   padding: 5px 10px;
   background: white;
-  width: 40px;
   margin-left: 15px;
 }
 
@@ -306,14 +305,6 @@ header {
   .logo h1 { font-size: 14px; }
 }
 @media (max-width: 480px) {
-  header {
-    justify-content: space-between; /* deixa logo à esquerda e barra à direita */
-  }
-
-  .logo h1 {
-    font-size: 12px;  /* diminui o texto da loja */
-  }
-
   .search-box {
     width: 40%;       /* largura da barra no celular */
     margin-left: 0;   /* tira o espaço extra à esquerda */
@@ -321,6 +312,14 @@ header {
 
   .search-box input {
     width: 100%;      /* ocupa toda a largura da barra */
+  }
+
+  header {
+    justify-content: space-between; /* deixa logo à esquerda e barra à direita */
+  }
+
+  .logo h1 {
+    font-size: 12px;  /* diminui o texto da loja */
   }
 }
 /* ================= RODAPÉ ================= */
@@ -332,6 +331,7 @@ header {
   color: #555;
   border-top: 1px solid #ddd;
 }
+
 
 
 

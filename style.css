@@ -174,21 +174,26 @@ main {
   background-color: #1e7e34;
 }
 
-/* Vitrine */
 .vitrine {
   display: flex;
   justify-content: center;
   gap: 15px;
-  flex-wrap: wrap;
-  margin: 40px 0;
-  padding: 0 20px;
+  flex-wrap: nowrap;    /* impede quebra das imagens */
+  overflow-x: auto;     /* permite rolagem horizontal no celular */
+  padding: 0 10px;
 }
 
 .vitrine-img {
-  width: 250px;
+  width: 250px;         /* mantém o tamanho da imagem do PC */
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
+  flex-shrink: 0;       /* impede que as imagens encolham */
+}
+
+/* Opcional: esconder barra de rolagem no celular para ficar mais limpo */
+.vitrine::-webkit-scrollbar {
+  display: none;
 }
 
 /* ================= RODAPÉ ================= */
@@ -332,3 +337,4 @@ main {
     margin-left: 0;
   }
 }
+

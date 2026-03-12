@@ -14,14 +14,15 @@
   background: #fff;
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* alinhamento à esquerda */
-  padding: 10px 15px;
+  justify-content: flex-start;
+  padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 100;
   gap: 10px;
-  flex-wrap: nowrap; /* NÃO empilha os itens */
+  flex-wrap: wrap;
 }
 
+/* Logo e nome da loja */
 .logo-nome {
   display: flex;
   align-items: center;
@@ -29,63 +30,30 @@
 }
 
 .logo {
-  height: 40px;        /* menor no celular */
-  margin-left: 50px;   /* espaço para o hamburger */
+  height: 50px;
+  margin-left: 50px; /* espaço para o hamburger */
 }
 
 .nome-loja {
-  font-size: 16px;
+  font-size: 18px;
   margin-left: 10px;
+  font-weight: bold;
   white-space: nowrap;
 }
 
-/* Menu simples horizontal ao lado da logo */
-.nav-links {
-  display: flex;
-  gap: 8px;
-  font-size: 14px;
-  margin-left: 10px;
-  flex-shrink: 0;
-}
-
-.nav-links a {
-  padding: 4px 8px;
-}
-
-/* Barra de pesquisa ao lado do menu simples */
-.search-box {
-  margin-left: 10px;
-  flex-shrink: 0;
-}
-
-.search-box input {
-  width: 100px;
-  padding: 4px 8px;
-}
-
-/* Botão hamburger */
-.menu-btn {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  font-size: 28px;
-  padding: 10px;
-  cursor: pointer;
-  color: #333;
-  z-index: 102;
-}
-/* Wrapper que deixa menu + pesquisa lado a lado */
+/* ================= WRAPPER MENU + PESQUISA ================= */
 .menu-search-wrapper {
   display: flex;
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
 }
+
 /* ================= MENU SIMPLES ================= */
 .nav-links {
   display: flex;
   gap: 15px;
-  flex-shrink: 1;
+  flex-shrink: 0;
 }
 
 .nav-links a {
@@ -101,10 +69,6 @@
 }
 
 /* ================= BARRA DE PESQUISA ================= */
-.search-box {
-  margin-left: auto;
-}
-
 .search-box input {
   padding: 5px 10px;
   width: 150px;
@@ -142,7 +106,7 @@
 }
 
 .menu-lateral.ativo {
-  left: 0; /* desliza para aparecer do lado do hamburger */
+  left: 0; /* desliza para aparecer */
 }
 
 .menu-lateral a {
@@ -279,13 +243,12 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin-top: 10px; /* abaixo da logo */
+    margin-top: 10px;
     gap: 10px;
   }
 
   .search-box input {
     width: 120px;
-    margin-top: 5px;
   }
 
   .vitrine-img {
@@ -299,6 +262,16 @@ main {
 
   .destaque .descricao {
     font-size: 16px;
+  }
+
+  /* Hamburger */
+  .menu-btn {
+    top: 8px;
+    left: 8px;
+  }
+
+  .menu-lateral {
+    width: 220px;
   }
 }
 
@@ -332,71 +305,7 @@ main {
     font-size: 16px;
   }
 
-  .menu-btn {
-    top: 8px;
-    left: 8px;
-  }
-
   .menu-lateral {
     width: 200px;
   }
 }
-/* ================= RESPONSIVO CELULAR ================= */
-@media screen and (max-width: 768px) {
-  /* Container do header */
-  .header-fixo {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 10px;
-    padding: 10px 15px;
-  }
-
-  /* Logo menor */
-  .logo {
-    height: 40px;
-    margin-left: 50px; /* mantém espaço para o hamburger */
-  }
-
-  /* Nome da loja */
-  .nome-loja {
-    font-size: 16px;
-  }
-
-  
-  /* Menu simples menor e horizontal */
-  .nav-links {
-    flex-wrap: nowrap;          /* não empilha */
-    justify-content: flex-start; /* alinha ao lado da logo */
-    gap: 8px;
-    font-size: 14px;            /* diminui fonte */
-  }
-
-  .nav-links a {
-    padding: 4px 8px;           /* diminui padding */
-  }
-
-  /* Barra de pesquisa do lado do menu simples */
-  .search-box {
-    margin-left: 10px;
-    flex-shrink: 0;
-  }
-
-  .search-box input {
-    width: 100px;               /* barra menor */
-    padding: 4px 8px;
-  }
-
-  /* Hamburger */
-  .menu-btn {
-    top: 8px;
-    left: 8px;
-  }
-
-  /* Menu lateral */
-  .menu-lateral {
-    width: 200px;
-  }
-}
-
-
-

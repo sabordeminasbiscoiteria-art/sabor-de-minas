@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 10px 20px;
+  padding: 10px 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 100;
   gap: 10px;
@@ -30,18 +30,18 @@
 }
 
 .logo {
-  height: 50px;
-  margin-left: 50px; /* espaço para o hamburger */
+  height: 40px;
+  margin-left: 50px; /* espaço para hamburger */
 }
 
 .nome-loja {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   font-size: 18px;
   margin-left: 10px;
-  font-weight: bold;
-  white-space: nowrap;
 }
 
-/* ================= WRAPPER MENU + PESQUISA ================= */
+/* Wrapper que mantém menu simples + pesquisa lado a lado */
 .menu-search-wrapper {
   display: flex;
   align-items: center;
@@ -49,30 +49,34 @@
   flex-shrink: 0;
 }
 
-/* ================= MENU SIMPLES ================= */
+/* Menu simples */
 .nav-links {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   flex-shrink: 0;
 }
 
 .nav-links a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
   text-decoration: none;
   color: #111;
-  font-weight: 600;
-  padding: 5px 10px;
-  white-space: nowrap;
+  padding: 4px 8px;
 }
 
 .nav-links a:hover {
   color: #28a745;
 }
 
-/* ================= BARRA DE PESQUISA ================= */
+/* Barra de pesquisa */
+.search-box {
+  flex-shrink: 0;
+}
+
 .search-box input {
-  padding: 5px 10px;
-  width: 150px;
-  min-width: 100px;
+  padding: 4px 8px;
+  width: 150px; /* PC */
   max-width: 200px;
 }
 
@@ -85,9 +89,9 @@
   padding: 10px;
   cursor: pointer;
   color: #333;
-  z-index: 102;
   background: transparent;
   border: none;
+  z-index: 102;
 }
 
 .menu-lateral {
@@ -106,7 +110,7 @@
 }
 
 .menu-lateral.ativo {
-  left: 0; /* desliza para aparecer */
+  left: 0; /* desliza para aparecer do lado do hamburger */
 }
 
 .menu-lateral a {
@@ -219,6 +223,8 @@ main {
 }
 
 /* ================= RESPONSIVO ================= */
+
+/* Tablet */
 @media screen and (max-width: 1024px) {
   .search-box input {
     width: 130px;
@@ -238,17 +244,26 @@ main {
   }
 }
 
+/* Celular grande e médio */
 @media screen and (max-width: 768px) {
-  .nav-links {
-    flex-wrap: wrap;
+  .menu-search-wrapper {
+    flex-wrap: wrap; /* empilha se não couber */
     justify-content: center;
-    width: 100%;
-    margin-top: 10px;
-    gap: 10px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
   }
 
   .search-box input {
     width: 120px;
+    margin-top: 5px;
+  }
+
+  .menu-lateral {
+    width: 200px;
   }
 
   .vitrine-img {
@@ -263,21 +278,13 @@ main {
   .destaque .descricao {
     font-size: 16px;
   }
-
-  /* Hamburger */
-  .menu-btn {
-    top: 8px;
-    left: 8px;
-  }
-
-  .menu-lateral {
-    width: 220px;
-  }
 }
 
+/* Celular pequeno */
 @media screen and (max-width: 480px) {
   .nav-links {
-    gap: 8px;
+    gap: 6px;
+    font-size: 12px;
   }
 
   .search-box input {
@@ -298,38 +305,15 @@ main {
   }
 
   .logo {
-    height: 40px;
+    height: 35px;
   }
 
   .nome-loja {
-    font-size: 16px;
+    font-size: 14px;
   }
 
-  .menu-lateral {
-    width: 200px;
+  .menu-btn {
+    top: 8px;
+    left: 8px;
   }
-}
-
-/* ================= TÍTULO PROFISSIONAL ================= */
-.nome-loja {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;      /* forte, sério e legível */
-  font-size: 20px;       /* tamanho adequado para destaque sem exagero */
-  color: #333;
-  margin-left: 10px;
-  white-space: nowrap;
-}
-
-/* ================= MENU SIMPLES ================= */
-.nav-links a {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;      /* leve mas visível */
-  font-size: 14px;       /* tamanho confortável */
-  color: #111;
-  text-decoration: none;
-  padding: 5px 10px;
-}
-
-.nav-links a:hover {
-  color: #28a745;        /* efeito de hover discreto e elegante */
 }

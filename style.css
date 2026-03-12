@@ -300,3 +300,59 @@ main {
     width: 200px;
   }
 }
+/* ================= RESPONSIVO CELULAR ================= */
+@media screen and (max-width: 768px) {
+  /* Container do header */
+  .header-fixo {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+
+  /* Logo menor */
+  .logo {
+    height: 40px;
+    margin-left: 50px; /* mantém espaço para o hamburger */
+  }
+
+  /* Nome da loja */
+  .nome-loja {
+    font-size: 16px;
+  }
+
+  
+  /* Menu simples menor e horizontal */
+  .nav-links {
+    flex-wrap: nowrap;          /* não empilha */
+    justify-content: flex-start; /* alinha ao lado da logo */
+    gap: 8px;
+    font-size: 14px;            /* diminui fonte */
+  }
+
+  .nav-links a {
+    padding: 4px 8px;           /* diminui padding */
+  }
+
+  /* Barra de pesquisa do lado do menu simples */
+  .search-box {
+    margin-left: 10px;
+    flex-shrink: 0;
+  }
+
+  .search-box input {
+    width: 100px;               /* barra menor */
+    padding: 4px 8px;
+  }
+
+  /* Hamburger */
+  .menu-btn {
+    top: 8px;
+    left: 8px;
+  }
+
+  /* Menu lateral */
+  .menu-lateral {
+    width: 200px;
+  }
+}

@@ -36,38 +36,28 @@ img {
   z-index: 100;
 }
 
-/* Logo + nome */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+/* ================= LOGO NO PC ================= */
+@media (min-width: 1025px) {
+  header .logo img.logo-img {
+    width: 30px;   /* diminui a logo no PC */
+    height: 30px;
+  }
+  
+  header .logo h1 {
+    font-size: 16px;  /* tamanho do texto da loja */
+  }
 
-.logo img.logo-img {
-  width: 40px;      /* tamanho no PC */
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+  /* garante que o menu normal apareça */
+  header .menu-topo {
+    display: flex;
+    margin-left: auto;
+  }
 
-.logo h1 {
-  font-size: 16px;   /* tamanho no PC */
-  font-weight: bold;
-  white-space: nowrap;
-  color: #333;
+  /* garante que os 3 risquinhos apareçam */
+  .menu-btn {
+    display: block;
+  }
 }
-
-/* Responsivo */
-@media (max-width:768px){
-  .logo img.logo-img { width: 35px; height: 35px; }
-  .logo h1 { font-size: 14px; }
-}
-
-@media (max-width:480px){
-  .logo img.logo-img { width: 30px; height: 30px; }
-  .logo h1 { font-size: 12px; }
-}
-
 /* Menu topo */
 .menu-topo {
   display: flex;
@@ -362,6 +352,7 @@ img {
     font-size: 16px;
   }
 }
+
 
 
 

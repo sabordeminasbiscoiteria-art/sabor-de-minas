@@ -314,12 +314,12 @@ header {
   }
 
   .search-box {
-    width: 60%;       /* largura da barra no celular */
+    width: 40%;       /* largura da barra no celular */
     margin-left: 0;   /* tira o espaço extra à esquerda */
   }
 
   .search-box input {
-    width: 100%;      /* ocupa toda a largura da barra */
+    width: 40%;      /* ocupa toda a largura da barra */
   }
 }
 /* ================= RODAPÉ ================= */
@@ -331,6 +331,7 @@ header {
   color: #555;
   border-top: 1px solid #ddd;
 }
+
 
 
 

@@ -103,8 +103,10 @@ header {
 }
 
 /* ================= MENU LATERAL ================= */
+
+/* Botão hamburger (3 risquinhos) */
 .menu-btn {
-  display: none; /* aparece só no celular */
+  display: block; /* sempre visível para abrir o menu */
   position: absolute;
   top: 15px;
   left: 15px;
@@ -114,10 +116,11 @@ header {
   z-index: 101;
 }
 
+/* Menu lateral */
 .menu-lateral {
   position: fixed;
   top: 0;
-  left: -260px;       /* escondido inicialmente */
+  left: -260px;       /* fechado por padrão */
   width: 260px;
   height: 100vh;
   background: white;
@@ -129,10 +132,12 @@ header {
   flex-direction: column;
 }
 
+/* Menu aberto ao clicar no botão */
 .menu-lateral.ativo {
-  left: 0;            /* abre ao clicar no botão */
+  left: 0;
 }
 
+/* Links do menu */
 .menu-lateral a {
   display: block;
   padding: 15px 25px;
@@ -146,6 +151,7 @@ header {
   background: #f5f5f5;
 }
 
+/* Título de categoria */
 .titulo-categoria {
   padding: 10px 25px;
   font-size: 13px;
@@ -153,37 +159,17 @@ header {
   color: #222;
 }
 
+/* Parte inferior do menu */
 .menu-inferior {
   margin-top: 25px;
   border-top: 1px solid #eee;
   padding-top: 10px;
 }
 
-/* ===== Ajuste para mostrar menu lateral no PC ===== */
-@media screen and (min-width: 769px) {
-  .menu-lateral {
-    position: relative;   /* visível no PC */
-    left: 0;              /* já aberto */
-    height: auto;         /* ajusta à altura do conteúdo */
-    transition: none;     /* sem animação no PC */
-  }
-}
-
-/* ===== Ajuste para celular (mantém menu deslizante) ===== */
+/* ===== Responsivo: apenas ajuste no tamanho do menu ===== */
 @media screen and (max-width: 768px) {
-  .menu-btn {
-    display: block;       /* mostra botão no celular */
-  }
-
   .menu-lateral {
-    position: fixed;
-    left: -260px;         /* escondido */
-    height: 100vh;
-    transition: 0.3s;
-  }
-
-  .menu-lateral.ativo {
-    left: 0;              /* abre ao clicar no botão */
+    width: 220px; /* opcional: menu menor no celular */
   }
 }
 /* ================= HERO ================= */
@@ -370,6 +356,7 @@ header {
   color: #555;
   border-top: 1px solid #ddd;
 }
+
 
 
 

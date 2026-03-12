@@ -3,161 +3,71 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body {
   font-family: Arial, sans-serif;
-  background: #f8f6f3;
-  color: #333;
-  overflow-x: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  pointer-events: none;
-  user-select: none;
-  -webkit-user-drag: none;
-}
-
-/* ================= HEADER PADRÃO ================= */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+/* ================= MENU FIXO ================= */
+.header-fixo {
+  position: fixed;
+  top: 0;
   width: 100%;
-  background: #f5f5f5;
-  position: relative;
-  z-index: 100;
-}
-
-/* Logo + nome */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.logo img.logo-img {
-  width: 30px;      /* tamanho do PC */
-  height: 30px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.logo h1 {
-  font-size: 16px;   /* texto da loja */
-  font-weight: bold;
-  white-space: nowrap;
-  color: #333;
-}
-
-/* Menu topo */
-.menu-topo {
-  display: flex;
-  gap: 15px;
-  margin-left: auto;
-}
-
-.menu-topo a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-/* Barra de pesquisa */
-.search-box {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  border: 1px solid #ddd;
-  border-radius: 25px;
-  padding: 5px 10px;
-  background: white;
-  margin-left: 15px;
-}
-.search-box {
-  width: 60%;  /* agora ocupa 60% da tela */
-}
-
-.search-box input {
-  border: none;
-  outline: none;
-  width: 100px;
-  font-size: 14px;
-  background: transparent;
-}
-/* ================= BARRA DE PESQUISA - DESKTOP ================= */
-.search-box {
-  width: 200px;  /* diminui a barra no PC */
-}
-
-.search-box input {
-  width: 100%;   /* ocupa toda a largura da barra */
-}
-
-/* ================= HEADER ================= */
-header {
-  position: relative;  /* referência para o botão hamburger */
-  display: flex;
-  align-items: center;
+  background: #fff;
   padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 100;
 }
 
-/* Logo */
+.logo-nome {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  font-size: 24px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.nome-loja {
+  font-size: 20px;
   font-weight: bold;
 }
 
-/* Barra de pesquisa */
-.search-box {
-  margin-left: auto;
+.search-box input {
+  padding: 5px 10px;
   width: 200px;
 }
 
-.search-box input {
-  width: 100%;
-  padding: 5px 10px;
-}
-
 /* ================= BOTÕES HAMBURGER ================= */
-/* Botão fora do menu (abre o menu) */
-.menu-btn {
-  position: absolute;
-  top: 10px;
-  left: 0;  /* sobre a logo */
+.menu-btn, .menu-close {
   font-size: 28px;
   padding: 15px;
   cursor: pointer;
   color: #333;
-  z-index: 200;  /* acima da logo */
+  z-index: 200;
 }
 
-/* Botão dentro do menu (fecha o menu) */
+/* Hamburger fora (abre menu lateral) */
+.menu-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+}
+
+/* Hamburger dentro do menu (fecha menu lateral) */
 .menu-close {
   position: absolute;
   top: 15px;
   right: 15px;
-  font-size: 28px;
-  padding: 15px;
-  cursor: pointer;
-  color: #333;
-  z-index: 101;
 }
 
 /* ================= MENU LATERAL ================= */
 .menu-lateral {
   position: fixed;
   top: 0;
-  left: -260px;       /* fechado por padrão */
+  left: -260px;       /* fechado inicialmente */
   width: 260px;
   height: 100vh;
   background: white;
@@ -166,7 +76,7 @@ header {
   transition: 0.3s;
   display: flex;
   flex-direction: column;
-  z-index: 150; /* abaixo do botão interno, acima da página */
+  z-index: 150;
 }
 
 .menu-lateral.ativo {
@@ -186,261 +96,62 @@ header {
   background: #f5f5f5;
 }
 
-/* ================= IMAGEM DO BEIJINHO ================= */
+/* ================= CONTEÚDO PRINCIPAL ================= */
+main {
+  margin-top: 120px; /* espaço para header fixo */
+  padding: 0 20px;
+}
+
+.destaque {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .beijinho-grande {
-  width: 100%;
   max-width: 500px;
+  width: 100%;
   display: block;
-  margin: 20px auto;
-  position: relative;
-  z-index: 50;  /* abaixo do menu e do botão hamburger */
+  margin: 0 auto 20px auto;
 }
 
-/* ================= RESPONSIVO ================= */
-@media screen and (max-width: 768px) {
-  .menu-lateral {
-    width: 220px;
-  }
-}
-
-/* Imagem do beijinho grande */
-.beijinho-grande {
-  position: relative;   /* garante que fique acima do background, mas abaixo do hamburger se necessário */
-  z-index: 50;          /* abaixo do botão hamburger */
-}
-
-/* ================= MENU LATERAL ================= */
-.menu-lateral {
-  position: fixed;
-  top: 0;
-  left: -260px;       /* fechado por padrão */
-  width: 260px;
-  height: 100vh;
-  background: white;
-  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
-  padding-top: 60px;
-  transition: 0.3s;
-  display: flex;
-  flex-direction: column;
-  z-index: 100;
-}
-
-/* Menu aberto */
-.menu-lateral.ativo {
-  left: 0;
-}
-
-/* Links do menu */
-.menu-lateral a {
-  display: block;
-  padding: 15px 25px;
-  text-decoration: none;
-  color: #111;
-  font-weight: 600;
-  border-bottom: 1px solid #eee;
-}
-
-.menu-lateral a:hover {
-  background: #f5f5f5;
-}
-
-/* ================= RESPONSIVO ================= */
-@media screen and (max-width: 768px) {
-  .menu-lateral {
-    width: 220px; /* menor no celular */
-  }
-}
-/* ================= HERO ================= */
-.hero {
-  position: relative;
-  min-height: 60vh;
-  background: url('img/beijinho.jpeg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65));
-}
-
-.hero-text {
-  position: relative;
-  color: white;
-  max-width: 600px;
-}
-
-.hero-text h1 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.hero-text p.experiencia {
+.descricao {
+  margin: 10px 0;
   font-size: 16px;
-  margin-bottom: 20px;
+  color: #333;
 }
 
-.hero button {
-  background: #d64545;
-  color: white;
+.btn-ver {
+  padding: 10px 20px;
+  background: #28a745;
+  color: #fff;
   border: none;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 6px;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-.hero button:hover {
-  background: #b93838;
-}
-
-
-/* ================= PRODUTOS ================= */
-.products {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.products h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #333;
-}
-
-.products .descricao {
   font-size: 16px;
-  color: #555;
-  margin-bottom: 30px;
+  border-radius: 5px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* PC: 4 produtos lado a lado */
+/* ================= VITRINE ================= */
+.vitrine {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   gap: 20px;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 10px;
+  margin-bottom: 40px;
 }
 
-.card {
-  background: white;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-  border-radius: 8px;
+.vitrine-img {
+  width: 30%;
+  max-width: 200px;
+  border-radius: 10px;
 }
 
-.card img {
-  width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-}
-
-.card h3 {
-  margin: 10px 0 5px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
-}
-
-.card p {
-  margin: 0 0 8px;
-  font-size: 14px;
-  color: #555;
-}
-
-.btn-ver, .btn-preco {
-  display: inline-block;
-  width: 100%;
-  padding: 10px 0;
-  font-size: 14px;
-  font-weight: bold;
-  border: 1px solid #ddd;
-  cursor: pointer;
-  margin-bottom: 5px;
-  border-radius: 4px;
-}
-
-.btn-ver { background: white; color: #333; }
-.btn-preco { background: #e0f2f1; color: #333; border: 1px solid #b2dfdb; }
-
-/* SELINHO */
-.img-produto { position: relative; }
-.selo {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: #e53935;
-  color: white;
-  font-size: 13px;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 3px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  text-transform: uppercase;
-}
 /* ================= RESPONSIVO ================= */
-@media (max-width: 1024px) {
-  .menu-btn { display: block; }
-  .menu-topo { display: none; }
-}
-
-@media (max-width: 768px){
-  .grid { grid-template-columns: repeat(2,1fr); } /* 2 produtos lado a lado */
-  .logo img.logo-img { width: 50px; height: 50px; }
-  .logo h1 { font-size: 16px; }
-}
-
-@media (max-width: 480px){
-  .grid { grid-template-columns: repeat(2,1fr); } /* 2 produtos lado a lado no celular pequeno */
-  .logo img.logo-img { width: 35px; height: 35px; }
-  .logo h1 { font-size: 14px; }
-}
-@media (max-width: 480px) {
-  .search-box {
-    width: 40%;       /* largura da barra no celular */
-    margin-left: 0;   /* tira o espaço extra à esquerda */
-  }
-
-  .search-box input {
-    width: 100%;      /* ocupa toda a largura da barra */
-  }
-
-  header {
-    justify-content: space-between; /* deixa logo à esquerda e barra à direita */
-  }
-
-  .logo h1 {
-    font-size: 12px;  /* diminui o texto da loja */
+@media screen and (max-width: 768px) {
+  .vitrine-img {
+    width: 80%;
+    margin: 0 auto;
   }
 }
-
-/* ================= RODAPÉ ================= */
-.rodape {
-  background: #f5f5f5;
-  text-align: center;
-  padding: 30px 20px;
-  font-size: 14px;
-  color: #555;
-  border-top: 1px solid #ddd;
-}
-
-
-
-
-
-
-
 
 
 

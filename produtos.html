@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biscoiteria Sabor de Minas</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<!-- Header fixo -->
+<!-- HEADER + MENU LATERAL (igual ao site principal) -->
 <header class="header-fixo">
   <div class="logo-nome">
     <img src="img/logo.png" alt="Logo" class="logo">
     <span class="nome-loja">Biscoiteria Sabor de Minas</span>
   </div>
 
-  <!-- WRAPPER PARA MENU + BARRA DE PESQUISA -->
   <div class="menu-search-wrapper">
     <nav class="nav-links">
       <a href="inicio.html">Início</a>
@@ -26,3 +15,50 @@
       <input type="text" placeholder="Pesquisar...">
     </div>
   </div>
+
+  <div class="menu-btn" id="menuBtn">&#9776;</div>
+</header>
+
+<div class="menu-lateral" id="menuLateral">
+  <div class="menu-close" id="menuClose">&times;</div>
+  <a href="inicio.html">Início</a>
+  <a href="produtos.html">Produtos</a>
+  <a href="sobre.html">Sobre</a>
+  <a href="contato.html">Contato</a>
+</div>
+
+<!-- CARDS DE PRODUTOS -->
+<section class="produtos-container">
+  <div class="card-produto">
+    <div class="selo-gramas">250g</div>
+    <img src="img/sasha.jpeg" alt="Sasha">
+    <button class="btn-card btn-ver">Ver mais</button>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+  <div class="card-produto">
+    <div class="selo-gramas">250g</div>
+    <img src="img/ugauga.jpeg" alt="Ugauga">
+    <button class="btn-card btn-ver">Ver mais</button>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+  <div class="card-produto">
+    <div class="selo-gramas">250g</div>
+    <img src="img/casadinho.jpeg" alt="Casadinho">
+    <button class="btn-card btn-ver">Ver mais</button>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+</section>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const menuLateral = document.getElementById('menuLateral');
+  const menuClose = document.getElementById('menuClose');
+
+  menuBtn.addEventListener('click', () => menuLateral.classList.add('ativo'));
+  menuClose.addEventListener('click', () => menuLateral.classList.remove('ativo'));
+</script>
+
+</body>
+</html>

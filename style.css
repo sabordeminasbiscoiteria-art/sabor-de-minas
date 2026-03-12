@@ -287,7 +287,6 @@ header {
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   text-transform: uppercase;
 }
-
 /* ================= RESPONSIVO ================= */
 @media (max-width: 1024px) {
   .menu-btn { display: block; }
@@ -314,6 +313,7 @@ header {
   color: #555;
   border-top: 1px solid #ddd;
 }
+
 
 
 

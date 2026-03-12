@@ -44,17 +44,28 @@ img {
 }
 
 .logo img.logo-img {
-  width: 20px;   /* sem espaço */
+  width: 40px;      /* tamanho no PC */
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .logo h1 {
-  font-size: 16px;
+  font-size: 16px;   /* tamanho no PC */
   font-weight: bold;
   white-space: nowrap;
   color: #333;
+}
+
+/* Responsivo */
+@media (max-width:768px){
+  .logo img.logo-img { width: 35px; height: 35px; }
+  .logo h1 { font-size: 14px; }
+}
+
+@media (max-width:480px){
+  .logo img.logo-img { width: 30px; height: 30px; }
+  .logo h1 { font-size: 12px; }
 }
 
 /* Menu topo */
@@ -351,6 +362,7 @@ img {
     font-size: 16px;
   }
 }
+
 
 
 

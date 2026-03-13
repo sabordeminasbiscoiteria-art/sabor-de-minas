@@ -268,27 +268,7 @@ main {
   object-fit:cover;
   display:block;
 }
-.descricao{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.75);
-  color:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:10px;
-  font-size:13px;
-  opacity:0;
-  transition:0.3s;
-}
 
-.descricao.ativa{
-  opacity:1;
-}
 .selo-gramas{
   position:absolute;
   top:10px;
@@ -321,6 +301,30 @@ main {
   background:#fff;
   color:#111;
   border:1px solid #ccc;
+}
+/* ================= DESCRIÇÃO ================= */
+.descricao{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.75);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:10px;
+  font-size:13px;
+  opacity:0;
+  transition:0.3s;
+  pointer-events:none; /* evita bloquear os botões */
+}
+
+.descricao.ativa{
+  opacity:1;
+  pointer-events:auto;
 }
 /* ================= TABLET ================= */
 
@@ -473,6 +477,7 @@ main {
     margin-left: 0;
   }
 }
+
 
 
 

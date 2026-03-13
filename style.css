@@ -240,7 +240,7 @@ main {
 .produtos{
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  gap:25px;
+  gap:15px;
   padding:20px;
   justify-items:center;
   max-width:1000px;
@@ -445,6 +445,7 @@ main {
     margin-left: 0;
   }
 }
+
 
 
 

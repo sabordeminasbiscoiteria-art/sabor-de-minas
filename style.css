@@ -278,7 +278,12 @@ main {
   object-fit:cover;
   display:block;
 }
-
+.nome-produto{
+  font-size:16px;
+  font-weight:600;
+  text-align:center;
+  margin:8px 0;
+}
 .selo-gramas{
   position:absolute;
   top:10px;

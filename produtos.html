@@ -44,10 +44,19 @@
 <section class="produtos">
   <div class="card-produto">
     <div class="selo-gramas">250g</div>
+
     <img src="img/sasha.jpeg" alt="Sasha">
+
     <button class="btn-card btn-ver">Ver mais</button>
+
+    <div class="descricao">
+      Biscoito amanteigado crocante feito com receita tradicional mineira.
+    </div>
+
     <button class="btn-card btn-preco">R$10,99</button>
   </div>
+
+</section>
 
   <div class="card-produto">
     <div class="selo-gramas">250g</div>
@@ -136,6 +145,27 @@
   menuBtn.addEventListener('click', () => menuLateral.classList.add('ativo'));
   menuClose.addEventListener('click', () => menuLateral.classList.remove('ativo'));
 </script>
+  
+<script>
 
+const botoes = document.querySelectorAll(".btn-ver");
+
+botoes.forEach(botao => {
+  botao.addEventListener("click", function(){
+
+    const card = this.parentElement;
+    const descricao = card.querySelector(".descricao");
+
+    if(descricao.style.display === "block"){
+      descricao.style.display = "none";
+    }else{
+      descricao.style.display = "block";
+    }
+
+  });
+});
+
+</script>
+  
 </body>
 </html>

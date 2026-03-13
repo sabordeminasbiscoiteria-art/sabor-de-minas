@@ -70,15 +70,6 @@
 }
 
 /* Barra de pesquisa */
-.search-box {
-  flex-shrink: 0;
-}
-
-.search-box input {
-  padding: 4px 8px;
-  width: 150px; /* PC */
-  max-width: 200px;
-}
 .pesquisa{
   display:flex;
   align-items:center;
@@ -86,10 +77,13 @@
 
 .search-box{
   position:relative;
+  flex-shrink:0;
 }
 
 .search-box input{
-  padding:8px 8px 8px 32px;
+  padding:8px 8px 8px 32px; /* espaço da lupa */
+  width:150px; /* PC */
+  max-width:200px;
   border:1px solid #ccc;
   font-family:'Poppins', sans-serif;
 }
@@ -100,6 +94,7 @@
   top:50%;
   transform:translateY(-50%);
 }
+
 .icone-lupa svg{
   width:18px;
   height:18px;

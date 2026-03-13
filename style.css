@@ -99,8 +99,11 @@
   left:10px;
   top:50%;
   transform:translateY(-50%);
-  display:flex;
-  align-items:center;
+}
+.icone-lupa svg{
+  width:18px;
+  height:18px;
+  display:block;
 }
 /* ================= MENU LATERAL ================= */
 .menu-btn {

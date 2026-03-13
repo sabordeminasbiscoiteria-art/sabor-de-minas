@@ -87,7 +87,7 @@
 .icone-lupa{
   position:absolute;
   left:10px;
-  top:50%;
+  top:48%;
   transform:translateY(-50%);
   display:flex;
   align-items:center;

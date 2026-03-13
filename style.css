@@ -240,7 +240,7 @@ main {
 .produtos{
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  gap:15px;
+  gap:25px;
   padding:20px;
   justify-items:center;
   max-width:1000px;
@@ -263,7 +263,7 @@ main {
 }
 
 .card-produto img{
-  width:110%;
+  width:130%;
   height:110px;
   object-fit:cover;
 }
@@ -324,7 +324,7 @@ main {
 }
 
 .card-produto{
-  width:120px;
+  width:130px;
 }
 
 .card-produto img{
@@ -445,6 +445,7 @@ main {
     margin-left: 0;
   }
 }
+
 
 
 

@@ -84,20 +84,13 @@
   align-items:center;
 }
 
-.search-box{
-  position:relative;
-}
-
-.search-box input{
-  padding-left:30px; /* espaço para a lupa */
-}
-
 .icone-lupa{
   position:absolute;
-  left:8px;
+  left:10px;
   top:50%;
   transform:translateY(-50%);
-  font-size:14px;
+  display:flex;
+  align-items:center;
 }
 /* ================= MENU LATERAL ================= */
 .menu-btn {

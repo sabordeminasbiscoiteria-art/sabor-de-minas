@@ -129,7 +129,17 @@ botoes.forEach(botao => {
     descricao.classList.toggle("ativa");
   });
 });
+  
 </script>
-
+document.addEventListener("click", function(e){
+  const ativa = document.querySelectorAll(".descricao.ativa");
+  ativa.forEach(d=>{
+    // Se o clique não for no botão ou na própria descrição
+    if(!d.contains(e.target) && !d.parentElement.querySelector(".btn-ver").contains(e.target)){
+      d.classList.remove("ativa");
+    }
+  });
+});
+  
 </body>
 </html>

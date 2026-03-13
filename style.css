@@ -263,7 +263,7 @@ main {
 }
 
 .card-produto img{
-  width:120%;
+  width:100%;
   height:110px;
   object-fit:cover;
 }
@@ -324,7 +324,7 @@ main {
 }
 
 .card-produto{
-  width:120px;
+  width:100px;
 }
 
 .card-produto img{
@@ -445,6 +445,7 @@ main {
     margin-left: 0;
   }
 }
+
 
 
 

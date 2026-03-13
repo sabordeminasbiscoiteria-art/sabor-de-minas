@@ -1,4 +1,4 @@
-/* ================= RESET ================= */
+ /* ================= RESET ================= */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -208,14 +208,14 @@ main {
 }
 /* ================= RODAPÉ ================= */
 .rodape {
-  background: #f8f6f3;
+  background: #f1ece6;
   color: #fff;
   padding: 20px;
   text-align: center;
 }
 
 .rodape a {
-  color: #28a745;
+  color: #5a3e36;
   text-decoration: none;
 }
 

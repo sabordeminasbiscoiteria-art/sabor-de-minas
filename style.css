@@ -268,7 +268,23 @@ main {
   object-fit:cover;
   display:block;
 }
-
+.descricao{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:10px;
+  font-size:13px;
+  opacity:0;
+  transition:0.3s;
+}
 .selo-gramas{
   position:absolute;
   top:10px;
@@ -453,6 +469,7 @@ main {
     margin-left: 0;
   }
 }
+
 
 
 

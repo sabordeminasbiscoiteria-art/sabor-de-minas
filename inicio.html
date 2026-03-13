@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biscoiteria Sabor de Minas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header fixo -->
+<header class="header-fixo">
+  <div class="logo-nome">
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <span class="nome-loja">Biscoiteria Sabor de Minas</span>
+  </div>
+
+  <!-- WRAPPER PARA MENU + BARRA DE PESQUISA -->
+  <div class="menu-search-wrapper">
+    <nav class="nav-links">
+      <a href="inicio.html">Início</a>
+    </nav>
+    <div class="search-box">
+      <input type="text" placeholder="Pesquisar...">
+    </div>
+  </div>
+
+  <!-- Botão Hamburger -->
+  <div class="menu-btn" id="menuBtn">&#9776;</div>
+</header>
+
+<!-- Menu lateral -->
+<div class="menu-lateral" id="menuLateral">
+  <div class="menu-close" id="menuClose">&times;</div>
+  <a href="inicio.html">Início</a>
+  <a href="produtos.html">Produtos</a>
+  <a href="sobre.html">Sobre</a>
+  <a href="contato.html">Contato</a>
+</div>
+<!-- ================= CONTEÚDO PRINCIPAL ================= -->
+<main>
+  <!-- Banner do beijinho -->
+  <section class="destaque">
+    <p class="descricao">
+      Biscoitos caseiros, o sabor que alegra o seu dia.<br>
+      Feitos com carinho desde 2015. Encomendas pelo WhatsApp.
+    </p>
+    <button class="btn-ver">Ver nossos biscoitos</button>
+  </section>
+
+  <!-- Vitrine com 3 fotos -->
+  <section class="vitrine">
+    <img src="img/sasha.jpeg" alt="Sasha" class="vitrine-img">
+    <img src="img/ugauga.jpeg" alt="Ugauga" class="vitrine-img">
+    <img src="img/casadinho.jpeg" alt="Casadinho" class="vitrine-img">
+  </section>
+</main>
+
+<!-- ================= RODAPÉ ================= -->
+<footer class="rodape">
+  <div class="rodape-conteudo">
+    <p>&copy; 2026 Biscoiteria Sabor de Minas. Todos os direitos reservados.</p>
+    <p>Contato: <a href="tel:+559999999999">WhatsApp</a> | <a href="mailto:contato@sabordeminas.com.br">Email</a></p>
+    <div class="redes-sociais">
+      <a href="#"><img src="img/icon-facebook.png" alt="Facebook" class="icone-social"></a>
+      <a href="#"><img src="img/icon-instagram.png" alt="Instagram" class="icone-social"></a>
+      <a href="#"><img src="img/icon-whatsapp.png" alt="WhatsApp" class="icone-social"></a>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const menuLateral = document.getElementById('menuLateral');
+  const menuClose = document.getElementById('menuClose');
+
+  menuBtn.addEventListener('click', () => {
+    menuLateral.classList.add('ativo');
+  });
+
+  menuClose.addEventListener('click', () => {
+    menuLateral.classList.remove('ativo');
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
 

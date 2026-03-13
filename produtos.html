@@ -45,61 +45,109 @@
 
   <div class="card-produto">
     <div class="selo-gramas">250g</div>
-    <img src="img/sasha.jpeg" alt="Biscoito Sasha">
+    <img src="img/sasha.jpeg" alt="Biscoito Sasha" class="card-img">
     <div class="descricao">
       Biscoito amanteigado crocante feito com receita tradicional mineira.
     </div>
-    <button class="btn-card btn-ver">Ver mais</button>
     <button class="btn-card btn-preco">R$10,99</button>
   </div>
 
   <div class="card-produto">
     <div class="selo-gramas">250g</div>
-    <img src="img/ugauga.jpeg" alt="Biscoito Ugauga">
+    <img src="img/ugauga.jpeg" alt="Biscoito Ugauga" class="card-img">
     <div class="descricao">
       Biscoito artesanal crocante perfeito para acompanhar café.
     </div>
-    <button class="btn-card btn-ver">Ver mais</button>
     <button class="btn-card btn-preco">R$10,99</button>
   </div>
 
   <div class="card-produto">
     <div class="selo-gramas">250g</div>
-    <img src="img/casadinho.jpeg" alt="Casadinho">
+    <img src="img/casadinho.jpeg" alt="Casadinho" class="card-img">
     <div class="descricao">
       Casadinho tradicional com recheio doce e massa amanteigada.
     </div>
-    <button class="btn-card btn-ver">Ver mais</button>
     <button class="btn-card btn-preco">R$10,99</button>
   </div>
 
-  <div class="card-produto">
+   <div class="card-produto">
     <div class="selo-gramas">250g</div>
-    <img src="img/sasha.jpeg" alt="Biscoito Sasha">
+    <img src="img/sasha.jpeg" alt="Biscoito Sasha" class="card-img">
     <div class="descricao">
       Biscoito amanteigado crocante feito com receita tradicional mineira.
     </div>
-    <button class="btn-card btn-ver">Ver mais</button>
     <button class="btn-card btn-preco">R$10,99</button>
   </div>
 
   <div class="card-produto">
     <div class="selo-gramas">250g</div>
-    <img src="img/ugauga.jpeg" alt="Biscoito Ugauga">
+    <img src="img/ugauga.jpeg" alt="Biscoito Ugauga" class="card-img">
     <div class="descricao">
       Biscoito artesanal crocante perfeito para acompanhar café.
     </div>
-    <button class="btn-card btn-ver">Ver mais</button>
     <button class="btn-card btn-preco">R$10,99</button>
   </div>
 
   <div class="card-produto">
     <div class="selo-gramas">250g</div>
-    <img src="img/casadinho.jpeg" alt="Casadinho">
+    <img src="img/casadinho.jpeg" alt="Casadinho" class="card-img">
     <div class="descricao">
       Casadinho tradicional com recheio doce e massa amanteigada.
     </div>
-    <button class="btn-card btn-ver">Ver mais</button>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+   <div class="card-produto">
+    <div class="selo-gramas">250g</div>
+    <img src="img/sasha.jpeg" alt="Biscoito Sasha" class="card-img">
+    <div class="descricao">
+      Biscoito amanteigado crocante feito com receita tradicional mineira.
+    </div>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+  <div class="card-produto">
+    <div class="selo-gramas">250g</div>
+    <img src="img/ugauga.jpeg" alt="Biscoito Ugauga" class="card-img">
+    <div class="descricao">
+      Biscoito artesanal crocante perfeito para acompanhar café.
+    </div>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+  <div class="card-produto">
+    <div class="selo-gramas">250g</div>
+    <img src="img/casadinho.jpeg" alt="Casadinho" class="card-img">
+    <div class="descricao">
+      Casadinho tradicional com recheio doce e massa amanteigada.
+    </div>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+   <div class="card-produto">
+    <div class="selo-gramas">250g</div>
+    <img src="img/sasha.jpeg" alt="Biscoito Sasha" class="card-img">
+    <div class="descricao">
+      Biscoito amanteigado crocante feito com receita tradicional mineira.
+    </div>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+  <div class="card-produto">
+    <div class="selo-gramas">250g</div>
+    <img src="img/ugauga.jpeg" alt="Biscoito Ugauga" class="card-img">
+    <div class="descricao">
+      Biscoito artesanal crocante perfeito para acompanhar café.
+    </div>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+  <div class="card-produto">
+    <div class="selo-gramas">250g</div>
+    <img src="img/casadinho.jpeg" alt="Casadinho" class="card-img">
+    <div class="descricao">
+      Casadinho tradicional com recheio doce e massa amanteigada.
+    </div>
     <button class="btn-card btn-preco">R$10,99</button>
   </div>
 
@@ -121,25 +169,13 @@ menuClose.addEventListener("click", () => {
 
 <!-- SCRIPT DESCRIÇÃO -->
 <script>
-const botoes = document.querySelectorAll(".btn-ver");
-botoes.forEach(botao => {
-  botao.addEventListener("click", function() {
+const imagens = document.querySelectorAll(".card-img");
+
+imagens.forEach(img => {
+  img.addEventListener("click", function(){
     const card = this.parentElement;
     const descricao = card.querySelector(".descricao");
     descricao.classList.toggle("ativa");
   });
 });
-  
 </script>
-document.addEventListener("click", function(e){
-  const ativa = document.querySelectorAll(".descricao.ativa");
-  ativa.forEach(d=>{
-    // Se o clique não for no botão ou na própria descrição
-    if(!d.contains(e.target) && !d.parentElement.querySelector(".btn-ver").contains(e.target)){
-      d.classList.remove("ativa");
-    }
-  });
-});
-  
-</body>
-</html>

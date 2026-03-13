@@ -341,6 +341,23 @@ main {
 }
 
 }
+@media (max-width:768px){
+
+.produtos{
+  grid-template-columns:repeat(2,120px);
+  justify-content:center;
+  gap:10px;
+}
+
+.card-produto{
+  width:130px;
+}
+
+.card-produto img{
+  height:140px;   /* aumenta a foto só no celular */
+}
+
+}
 /* ================= RESPONSIVO ================= */
 
 /* Tablet */
@@ -452,6 +469,7 @@ main {
     margin-left: 0;
   }
 }
+
 
 
 

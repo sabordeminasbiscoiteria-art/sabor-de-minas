@@ -144,19 +144,17 @@
   
 <script>
 
+<script>
+
 const botoes = document.querySelectorAll(".btn-ver");
 
-botoes.forEach(botao => {
-  botao.addEventListener("click", function(){
+botoes.forEach(botao=>{
+  botao.addEventListener("click",function(){
 
     const card = this.parentElement;
     const descricao = card.querySelector(".descricao");
 
-    if(descricao.style.display === "block"){
-      descricao.style.display = "none";
-    }else{
-      descricao.style.display = "block";
-    }
+    descricao.classList.toggle("ativa");
 
   });
 });

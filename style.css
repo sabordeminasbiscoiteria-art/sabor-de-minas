@@ -133,7 +133,17 @@
   cursor: pointer;
   color: #333;
 }
+.menu-lateral{
+  font-family:'Poppins', sans-serif;
+}
 
+.menu-lateral a{
+  font-family:'Poppins', sans-serif;
+  font-weight:500;
+  font-size:16px;
+  color:#5a3e36;
+  text-decoration:none;
+}
 /* ================= CONTEÚDO PRINCIPAL ================= */
 main {
   margin-top: 120px; /* espaço para o header fixo */

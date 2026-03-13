@@ -42,7 +42,7 @@
 
 <!-- SEÇÃO DE PRODUTOS -->
 <section class="produtos">
-
+  <div id="sem-produto">Produto não encontrado</div>
   <div class="card-produto" data-descricao="Biscoito amanteigado crocante feito com receita tradicional mineira.">
     <div class="selo-gramas">250g</div>
     <img src="img/sasha.jpeg" alt="Biscoito Sasha" class="card-img">
@@ -167,6 +167,33 @@ mensagem.addEventListener("click", () => {
   mensagem.style.display = "none";
 });
 </script>
+  
+<script>
+const searchInput = document.getElementById("searchInput");
+const cards = document.querySelectorAll(".card-produto");
+const semProduto = document.getElementById("sem-produto");
 
+searchInput.addEventListener("input", () => {
+  const query = searchInput.value.toLowerCase();
+  let encontrou = false;
+
+  cards.forEach(card => {
+    const nome = card.querySelector("img").alt.toLowerCase();
+    if (nome.includes(query)) {
+      card.style.display = "block"; // mostra o card
+      encontrou = true;
+    } else {
+      card.style.display = "none";  // esconde o card
+    }
+  });
+
+  if (!encontrou) {
+    semProduto.style.display = "block"; // mostra a mensagem
+  } else {
+    semProduto.style.display = "none";  // esconde a mensagem
+  }
+});
+</script>
+  
 </body>
 </html>

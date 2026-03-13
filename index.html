@@ -23,7 +23,7 @@
       <a href="contato.html">Contato</a>
     </nav>
     <div class="search-box">
-      <input type="text" placeholder="Pesquisar...">
+      <input type="text" id="inputPesquisa" placeholder="Pesquisar...">
     </div>
   </div>
 
@@ -39,6 +39,7 @@
   <a href="sobre.html">Sobre</a>
   <a href="contato.html">Contato</a>
 </div>
+
 <!-- ================= CONTEÚDO PRINCIPAL ================= -->
 <main>
   <!-- Banner do beijinho -->
@@ -56,13 +57,42 @@
     <img src="img/ugauga.jpeg" alt="Ugauga" class="vitrine-img">
     <img src="img/casadinho.jpeg" alt="Casadinho" class="vitrine-img">
   </section>
+
+  <!-- SEÇÃO DE PRODUTOS -->
+  <section class="produtos">
+    <div id="sem-produto">Produto não encontrado</div>
+
+    <div class="card-produto" data-descricao="Biscoito amanteigado crocante feito com receita tradicional mineira.">
+      <div class="selo-gramas">250g</div>
+      <img src="img/sasha.jpeg" alt="Biscoito Sasha" class="card-img">
+      <button class="btn-card btn-ver">Ver mais</button>
+      <button class="btn-card btn-preco">R$10,99</button>
+    </div>
+
+    <div class="card-produto" data-descricao="Biscoito artesanal crocante perfeito para acompanhar café.">
+      <div class="selo-gramas">250g</div>
+      <img src="img/ugauga.jpeg" alt="Biscoito Ugauga" class="card-img">
+      <button class="btn-card btn-ver">Ver mais</button>
+      <button class="btn-card btn-preco">R$10,99</button>
+    </div>
+
+    <div class="card-produto" data-descricao="Casadinho tradicional com recheio doce e massa amanteigada.">
+      <div class="selo-gramas">250g</div>
+      <img src="img/casadinho.jpeg" alt="Casadinho" class="card-img">
+      <button class="btn-card btn-ver">Ver mais</button>
+      <button class="btn-card btn-preco">R$10,99</button>
+    </div>
+  </section>
+
+  <!-- Mensagem Ver Mais -->
+  <div id="mensagem"></div>
 </main>
 
 <!-- ================= RODAPÉ ================= -->
 <footer class="rodape">
   <div class="rodape-conteudo">
     <p>&copy; 2026 Biscoiteria Sabor de Minas. Todos os direitos reservados.</p>
-    <p>Contato: <a href="tel:+559999999999">WhatsApp</a> | <a href="mailto:contato@sabordeminas.com.br">Email</a></p>
+    <p>Contato: <a href="tel:+553192767228">WhatsApp</a> | <a href="mailto:contato@sabordeminas.com.br">Email</a></p>
     <div class="redes-sociais">
       <a href="#"><img src="img/icon-facebook.png" alt="Facebook" class="icone-social"></a>
       <a href="#"><img src="img/icon-instagram.png" alt="Instagram" class="icone-social"></a>
@@ -71,8 +101,12 @@
   </div>
 </footer>
 
+<!-- ================= WHATSAPP FLUTUANTE ================= -->
+<a href="https://wa.me/553192767228" target="_blank" class="whatsapp-flutuante">&#128222;</a>
+
 <!-- ================= JAVASCRIPT ================= -->
 <script>
+  // MENU LATERAL
   const menuBtn = document.getElementById('menuBtn');
   const menuLateral = document.getElementById('menuLateral');
   const menuClose = document.getElementById('menuClose');
@@ -84,20 +118,52 @@
   menuClose.addEventListener('click', () => {
     menuLateral.classList.remove('ativo');
   });
+
+  // VER MAIS TOGGLE
+  const botoes = document.querySelectorAll(".btn-ver");
+  const mensagem = document.getElementById("mensagem");
+
+  botoes.forEach(botao => {
+    botao.addEventListener("click", () => {
+      const card = botao.parentElement;
+      const texto = card.getAttribute("data-descricao");
+
+      if (mensagem.style.display === "block" && mensagem.textContent === texto) {
+        mensagem.style.display = "none";
+      } else {
+        mensagem.textContent = texto;
+        mensagem.style.display = "block";
+      }
+    });
+  });
+
+  // CLICAR NA MENSAGEM PARA FECHAR
+  mensagem.addEventListener("click", () => {
+    mensagem.style.display = "none";
+  });
+
+  // PESQUISA DE PRODUTOS
+  const inputPesquisa = document.getElementById("inputPesquisa");
+  const cards = document.querySelectorAll(".card-produto");
+  const semProduto = document.getElementById("sem-produto");
+
+  inputPesquisa.addEventListener("input", () => {
+    const valor = inputPesquisa.value.toLowerCase();
+    let achou = false;
+
+    cards.forEach(card => {
+      const nome = card.querySelector("img").alt.toLowerCase();
+      if (nome.includes(valor)) {
+        card.style.display = "block";
+        achou = true;
+      } else {
+        card.style.display = "none";
+      }
+    });
+
+    semProduto.style.display = achou ? "none" : "block";
+  });
 </script>
-  
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-

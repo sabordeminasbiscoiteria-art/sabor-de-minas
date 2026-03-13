@@ -142,21 +142,26 @@ menuBtn.addEventListener("click", () => menuLateral.classList.add("ativo"));
 menuClose.addEventListener("click", () => menuLateral.classList.remove("ativo"));
 </script>
 
-<!-- SCRIPT VER MAIS -->
 <script>
+// VER MAIS TOGGLE
 const botoes = document.querySelectorAll(".btn-ver");
 const mensagem = document.getElementById("mensagem");
 
 botoes.forEach(botao => {
   botao.addEventListener("click", () => {
-    const card = botao.parentElement; // pega o card do botão
-    const texto = card.getAttribute("data-descricao"); // pega a descrição
-    mensagem.textContent = texto;
-    mensagem.style.display = "block"; // mostra a mensagem
+    const card = botao.parentElement;
+    const texto = card.getAttribute("data-descricao");
+
+    if (mensagem.style.display === "block" && mensagem.textContent === texto) {
+      mensagem.style.display = "none";
+    } else {
+      mensagem.textContent = texto;
+      mensagem.style.display = "block";
+    }
   });
 });
 
-// Clicar na mensagem para esconder
+// CLICAR NA MENSAGEM PARA FECHAR
 mensagem.addEventListener("click", () => {
   mensagem.style.display = "none";
 });

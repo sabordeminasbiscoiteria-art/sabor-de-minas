@@ -79,7 +79,23 @@
   width: 150px; /* PC */
   max-width: 200px;
 }
+.pesquisa{
+  display:flex;
+  align-items:center;
+}
 
+.pesquisa input{
+  padding:8px;
+  border:1px solid #ccc;
+  font-family:'Poppins', sans-serif;
+}
+
+.btn-pesquisa{
+  padding:8px 10px;
+  border:1px solid #ccc;
+  background:#fff;
+  cursor:pointer;
+}
 /* ================= MENU LATERAL ================= */
 .menu-btn {
   position: absolute;

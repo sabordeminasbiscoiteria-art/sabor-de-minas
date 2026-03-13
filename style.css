@@ -97,6 +97,17 @@
   width:18px;
   height:18px;
 }
+.pesquisa {
+  position: relative;
+}
+
+.pesquisa i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+}
 /* ================= MENU LATERAL ================= */
 .menu-btn {
   position: absolute;

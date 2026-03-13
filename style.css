@@ -297,7 +297,7 @@ main {
   margin:10px auto;
   padding:10px 0; /* altura média */
   border:none;
-  border-radius:5px;
+  border-radius:0px;
   font-weight:600;
   font-size:15px; /* texto um pouco maior */
   cursor:pointer;

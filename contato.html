@@ -83,27 +83,37 @@
     </a>
 </div>
 
-<script>
-  // Scripts para o menu lateral (se precisar)
-  function abrirMenu() {
-    document.getElementById("menu-lateral").classList.add("ativo");
-  }
-
-  function fecharMenu() {
-    document.getElementById("menu-lateral").classList.remove("ativo");
-  }
-</script>
-  
+<!-- ================= RODAPÉ ================= -->
 <footer class="rodape">
-  <p><strong>Biscoiteria Sabor De Minas</strong></p>
-  <p>Biscoitos feitos com carinho e ingredientes selecionados.</p>
-  <p>📍 Belo Horizonte - MG</p>
-  <p>📱 WhatsApp: (31) 99276-7228</p>
-</footer> <!-- observe a barra / -->
-  
+  <div class="rodape-conteudo">
+    <p>&copy; 2026 Biscoiteria Sabor de Minas. Todos os direitos reservados.</p>
+    <p>Contato: <a href="tel:+559999999999">WhatsApp</a> | <a href="mailto:contato@sabordeminas.com.br">Email</a></p>
+    <div class="redes-sociais">
+      <a href="#"><img src="img/icon-facebook.png" alt="Facebook" class="icone-social"></a>
+      <a href="#"><img src="img/icon-instagram.png" alt="Instagram" class="icone-social"></a>
+      <a href="#"><img src="img/icon-whatsapp.png" alt="WhatsApp" class="icone-social"></a>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const menuLateral = document.getElementById('menuLateral');
+  const menuClose = document.getElementById('menuClose');
+
+  menuBtn.addEventListener('click', () => {
+    menuLateral.classList.add('ativo');
+  });
+
+  menuClose.addEventListener('click', () => {
+    menuLateral.classList.remove('ativo');
+  });
+</script>
+
 </body>
-  
 </html>
+
 
 
 

@@ -295,10 +295,11 @@ main {
   display:block;
   width:calc(100% - 20px);
   margin:10px auto;
-  padding:8px 0;
+  padding:14px 0; /* aumenta a altura do botão */
   border:none;
   border-radius:5px;
   font-weight:600;
+  font-size:16px; /* aumenta o texto */
   cursor:pointer;
 }
 

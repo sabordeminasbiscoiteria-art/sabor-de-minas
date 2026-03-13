@@ -24,7 +24,7 @@
     </nav>
 
     <div class="search-box">
-      <input type="text" placeholder="Pesquisar...">
+    <input type="text" id="inputPesquisa" placeholder="Pesquisar">
     </div>
   </div>
 
@@ -189,32 +189,33 @@ mensagem.addEventListener("click", () => {
 });
 </script>
   
-<script>
-const searchInput = document.getElementById("searchInput");
-const cards = document.querySelectorAll(".card-produto");
-const semProduto = document.getElementById("sem-produto");
+  <script>
+  // PESQUISA DE PRODUTOS
+  const inputPesquisa = document.getElementById("inputPesquisa");
+  const cards = document.querySelectorAll(".card-produto");
+  const semProduto = document.getElementById("sem-produto");
 
-searchInput.addEventListener("input", () => {
-  const query = searchInput.value.toLowerCase();
-  let encontrou = false;
+  if (inputPesquisa) {
+    inputPesquisa.addEventListener("input", () => {
+      const valor = inputPesquisa.value.toLowerCase();
+      let achou = false;
 
-  cards.forEach(card => {
-    const nome = card.querySelector("img").alt.toLowerCase();
-    if (nome.includes(query)) {
-      card.style.display = "block"; // mostra o card
-      encontrou = true;
-    } else {
-      card.style.display = "none";  // esconde o card
-    }
-  });
+      cards.forEach(card => {
+        const nome = card.querySelector("img").alt.toLowerCase();
 
-  if (!encontrou) {
-    semProduto.style.display = "block"; // mostra a mensagem
-  } else {
-    semProduto.style.display = "none";  // esconde a mensagem
+        if (nome.includes(valor)) {
+          card.style.display = "block";
+          achou = true;
+        } else {
+          card.style.display = "none";
+        }
+      });
+
+      if (semProduto) {
+        semProduto.style.display = achou ? "none" : "block";
+      }
+    });
   }
-});
 </script>
-  
 </body>
 </html>

@@ -84,17 +84,20 @@
   align-items:center;
 }
 
-.pesquisa input{
-  padding:8px;
-  border:1px solid #ccc;
-  font-family:'Poppins', sans-serif;
+.search-box{
+  position:relative;
 }
 
-.btn-pesquisa{
-  padding:8px 10px;
-  border:1px solid #ccc;
-  background:#fff;
-  cursor:pointer;
+.search-box input{
+  padding-left:30px; /* espaço para a lupa */
+}
+
+.icone-lupa{
+  position:absolute;
+  left:8px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:14px;
 }
 /* ================= MENU LATERAL ================= */
 .menu-btn {

@@ -340,7 +340,7 @@ main {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25d366; /* cor verde do WhatsApp */
+  background-color: #25d366; /* verde WhatsApp */
   color: #fff;
   width: 60px;
   height: 60px;
@@ -509,6 +509,7 @@ main {
     margin-left: 0;
   }
 }
+
 
 
 

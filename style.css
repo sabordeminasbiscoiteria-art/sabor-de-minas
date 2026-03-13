@@ -81,18 +81,20 @@
 }
 
 .search-box input{
-  padding:8px 8px 8px 32px; /* espaço da lupa */
-  width:150px; /* PC */
+  padding:8px 8px 8px 32px;
+  width:150px;
   max-width:200px;
   border:1px solid #ccc;
   font-family:'Poppins', sans-serif;
+  position:relative;
+  z-index:1;
 }
-
 .icone-lupa{
   position:absolute;
   left:10px;
   top:50%;
   transform:translateY(-50%);
+  z-index:2; /* faz a lupa aparecer na frente */
 }
 
 .icone-lupa svg{

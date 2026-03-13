@@ -84,6 +84,16 @@
   align-items:center;
 }
 
+.search-box{
+  position:relative;
+}
+
+.search-box input{
+  padding:8px 8px 8px 32px;
+  border:1px solid #ccc;
+  font-family:'Poppins', sans-serif;
+}
+
 .icone-lupa{
   position:absolute;
   left:10px;

@@ -358,30 +358,7 @@ main {
 .whatsapp-flutuante:hover {
   transform: scale(1.1);
 }
-/* ================= WHATSAPP FLUTUANTE ================= */
-.whatsapp-flutuante {
-  position: fixed;         /* fica fixo na tela */
-  bottom: 20px;            /* distância do rodapé */
-  right: 20px;             /* distância da lateral direita */
-  width: 60px;             /* tamanho do círculo */
-  height: 60px;
-  background-color: #25d366; /* verde WhatsApp */
-  color: #fff;             /* cor do texto/ícone */
-  border-radius: 50%;      /* círculo perfeito */
-  display: flex;           /* centraliza o conteúdo */
-  justify-content: center;
-  align-items: center;
-  font-size: 28px;         /* tamanho do ícone/texto */
-  text-decoration: none;   /* sem sublinhado */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* sombra */
-  z-index: 9999;           /* acima de tudo */
-  transition: transform 0.3s; /* efeito hover */
-  cursor: pointer;         /* mostra que é clicável */
-}
 
-.whatsapp-flutuante:hover {
-  transform: scale(1.1);   /* aumenta ao passar o mouse */
-}
 /* ================= TABLET ================= */
 
 @media (max-width:1024px){
@@ -533,6 +510,7 @@ main {
     margin-left: 0;
   }
 }
+
 
 
 

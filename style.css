@@ -77,7 +77,7 @@
 }
 
 .search-box input{
-  padding:8px 8px 8px 34px; /* espaço da lupa */
+  padding:8px 8px 8px 34px;
   width:150px;
   max-width:200px;
   border:1px solid #ccc;
@@ -87,26 +87,13 @@
 .icone-lupa{
   position:absolute;
   left:10px;
-  top:48%;
+  top:50%;
   transform:translateY(-50%);
-  display:flex;
-  align-items:center;
 }
 
 .icone-lupa svg{
   width:18px;
   height:18px;
-}
-.pesquisa {
-  position: relative;
-}
-
-.pesquisa i {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #777;
 }
 /* ================= MENU LATERAL ================= */
 .menu-btn {

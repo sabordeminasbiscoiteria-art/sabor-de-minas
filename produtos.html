@@ -51,6 +51,9 @@
     </div>
     <button class="btn-card btn-ver">Ver mais</button>
     <button class="btn-card btn-preco">R$10,99</button>
+     </div>
+    <!-- Mensagem flutuante -->
+   <div id="mensagem"></div>
   </div>
 
   <div class="card-produto">
@@ -119,15 +122,23 @@ menuClose.addEventListener("click", () => {
 });
 </script>
 
-<!-- SCRIPT DESCRIÇÃO -->
 <script>
-const botoes = document.querySelectorAll(".btn-ver");
-botoes.forEach(botao => {
-  botao.addEventListener("click", function() {
-    const card = this.parentElement;
-    const descricao = card.querySelector(".descricao");
-    descricao.classList.toggle("ativa");
+const imagens = document.querySelectorAll(".card-img");
+const mensagem = document.getElementById("mensagem");
+
+// Mostrar mensagem ao clicar na imagem
+imagens.forEach(img => {
+  img.addEventListener("click", () => {
+    const card = img.parentElement;
+    const texto = card.getAttribute("data-descricao");
+    mensagem.textContent = texto;
+    mensagem.style.display = "block";
   });
+});
+
+// Clicar na mensagem para esconder
+mensagem.addEventListener("click", () => {
+  mensagem.style.display = "none";
 });
 </script>
 

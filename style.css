@@ -321,32 +321,7 @@ main {
 .produtos{
   grid-template-columns:repeat(2,120px);
   justify-content:center;
-  gap:20px;
-}
-
-.card-produto{
-  width:130px;
-}
-
-.card-produto img{
-  height:110px;
-}
-
-}
-
-@media (max-width:768px){
-
-.produtos{
-  margin-top:110px;
-}
-
-}
-@media (max-width:768px){
-
-.produtos{
-  grid-template-columns:repeat(2,120px);
-  justify-content:center;
-  gap:10px;
+  gap:25px;
 }
 
 .card-produto{
@@ -358,6 +333,15 @@ main {
 }
 
 }
+
+@media (max-width:768px){
+
+.produtos{
+  margin-top:110px;
+}
+
+}
+
 /* ================= RESPONSIVO ================= */
 
 /* Tablet */
@@ -469,6 +453,7 @@ main {
     margin-left: 0;
   }
 }
+
 
 
 

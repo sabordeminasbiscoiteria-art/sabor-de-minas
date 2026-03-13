@@ -334,6 +334,30 @@ main {
   font-size: 16px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* sombra leve */
 }
+
+/* WhatsApp flutuante */
+.whatsapp-flutuante {
+  position: fixed;
+  bottom: 20px;        /* distância da parte inferior */
+  right: 20px;         /* distância da lateral direita */
+  z-index: 9999;
+  width: 60px;         /* tamanho do ícone */
+  height: 60px;
+  border-radius: 50%;  /* botão redondo */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.whatsapp-flutuante img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.whatsapp-flutuante:hover {
+  transform: scale(1.1); /* efeito ao passar o mouse */
+}
 /* ================= TABLET ================= */
 
 @media (max-width:1024px){
@@ -485,6 +509,7 @@ main {
     margin-left: 0;
   }
 }
+
 
 
 

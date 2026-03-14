@@ -95,7 +95,25 @@
   width:18px;
   height:18px;
 }
-
+/* ================= MENSAGEM PRODUTO NÃO ENCONTRADO ================= */
+#sem-produto {
+  display: none;               /* começa escondida */
+  text-align: center;
+  color: #111;                 /* texto escuro */
+  background-color: #fff;      /* fundo branco */
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 15px auto;
+  max-width: 300px;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* sombra leve */
+}
+#sem-produto{
+  font-family: 'Poppins', sans-serif;
+  font-size:18px;
+  text-align:center;
+  margin-top:20px;
 /* ================= MENU LATERAL ================= */
 .menu-btn {
   position: absolute;
@@ -360,26 +378,7 @@ main {
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   cursor: pointer;            /* indica que dá pra clicar para fechar */
 }
-/* ================= MENSAGEM PRODUTO NÃO ENCONTRADO ================= */
-#sem-produto {
-  display: none;               /* começa escondida */
-  text-align: center;
-  color: #111;                 /* texto escuro */
-  background-color: #fff;      /* fundo branco */
-  padding: 10px 15px;
-  border-radius: 5px;
-  margin: 15px auto;
-  max-width: 300px;
-  font-weight: 600;
-  font-size: 16px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* sombra leve */
-}
-#sem-produto{
-  font-family: 'Poppins', sans-serif;
-  font-size:18px;
-  text-align:center;
-  margin-top:20px;
-}
+
 /* ================= WHATSAPP FLUTUANTE ================= */
 
 .whatsapp-float{

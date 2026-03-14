@@ -786,9 +786,10 @@ color:#444;
 .vitrine{
   margin-top: 5px;
 }
+
 .produto .btn-ver-mais{
   display:inline-block;
-  width:100px;      /* todos ficam iguais */
+  width:100px;      /* todos iguais */
   padding:6px 0;
   background:#1f8f4e;
   color:white;
@@ -797,8 +798,8 @@ color:#444;
   font-family:'Poppins', sans-serif;
   font-size:13px;
   text-align:center;
+  margin-top:8px;
 }
-
 .container-ver-mais{
   text-align:center;
 }
@@ -884,7 +885,7 @@ color:#444;
 }
 .produto .btn-ver-mais{
   display:inline-block;
-  width:100px;      /* todos ficam iguais */
+  width:100px;      /* todos iguais */
   padding:6px 0;
   background:#1f8f4e;
   color:white;
@@ -893,6 +894,7 @@ color:#444;
   font-family:'Poppins', sans-serif;
   font-size:13px;
   text-align:center;
+  margin-top:8px;
 }
 
 .container-ver-mais{

@@ -374,17 +374,17 @@ main {
   font-weight:600;
   font-size:14px;
 }
-
 .btn-card{
   display:block;
   width:calc(100% - 20px);
-  margin:10px auto;
-  padding:10px 0; /* altura média */
+  margin:8px auto;
+  padding:8px 0;
   border:none;
-  border-radius:0px;
+  border-radius:6px;
   font-weight:600;
-  font-size:15px; /* texto um pouco maior */
+  font-size:14px;
   cursor:pointer;
+  font-family:'Poppins', sans-serif;
 }
 
 .btn-ver{

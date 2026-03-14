@@ -693,15 +693,16 @@ color:#444;
   max-width: 260px;
   margin-top: 5px;
 }
+ 
   .menu-lateral {
     width: 200px;
   }
 
-  .produto{
+  .vitrine produto{
   min-width:160px;
 }
 
-.produto-img{
+.vitrine produto-img{
   height:140px;
 }
 
@@ -729,11 +730,12 @@ color:#444;
   width: 100%;
   max-width: 220px;
 }
- .produto{
+ 
+ .produto vitrine{
   min-width:140px;
 }
 
-.produto-img{
+.produto vitrine-img{
   height:120px;
 }
 

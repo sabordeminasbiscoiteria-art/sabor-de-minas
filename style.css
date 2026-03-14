@@ -775,35 +775,47 @@ color:#444;
   border-radius:10px;
 }
 
-/* ================= VITRINE CELULAR AJUSTADA ================= */
-@media screen and (max-width:768px){
+/* ===== VITRINE CELULAR 3 PRODUTOS ===== */
+@media (max-width:768px){
 
   .vitrine{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 6px;
+    gap: 8px;
     padding: 8px;
   }
 
   .produto{
     width: 100%;
+    min-width: 0; /* MUITO IMPORTANTE */
     padding: 4px;
     box-sizing: border-box;
   }
 
   .produto-img{
     width: 100%;
-    height: 110px; /* um pouco menor para caber melhor */
+    height: 90px; /* menor para caber 3 */
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 6px;
   }
 
   .produto h3{
-    font-size: 11px;
-    text-align: center;
+    font-size: 10px;
     line-height: 1.2;
-    min-height: 26px;
-    margin-top: 4px;
+    margin: 3px 0;
+  }
+
+  .produto p{
+    font-size: 10px;
+  }
+
+  .produto .preco{
+    font-size: 11px;
+  }
+
+  .produto .btn{
+    font-size: 10px;
+    padding: 4px;
   }
 
 }

@@ -792,7 +792,7 @@ color:#444;
   margin:20px auto;
   padding:10px;
   text-align:center;
-  background:#8b5e3c;
+  background:#25D366; /* verde */
   color:white;
   text-decoration:none;
   border-radius:8px;
@@ -802,7 +802,7 @@ color:#444;
 }
 
 .btn-ver-mais:hover{
-  background:#6f472d;
+  background:#1ebe5d; /* verde mais escuro */
 }
 /* ===== VITRINE CELULAR 3 PRODUTOS ===== */
 @media (max-width:768px){
@@ -890,7 +890,7 @@ color:#444;
   margin:20px auto;
   padding:10px;
   text-align:center;
-  background:#8b5e3c;
+  background:#25D366; /* verde */
   color:white;
   text-decoration:none;
   border-radius:8px;
@@ -900,7 +900,7 @@ color:#444;
 }
 
 .btn-ver-mais:hover{
-  background:#6f472d;
+  background:#1ebe5d; /* verde mais escuro */
 }
 /* ================= RESPONSIVO PC/TABLET ================= */
 @media screen and (min-width: 769px) {

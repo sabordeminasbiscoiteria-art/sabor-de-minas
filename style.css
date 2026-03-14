@@ -819,13 +819,33 @@ color:#444;
   }
 
 }
-
 .titulo-vitrine{
-  font-size:20px;
-  font-weight:bold;
-  text-align:center;
-  margin:20px 0 10px 0;
-  color:#5a3e2b;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  color: #5a3e2b;
+  margin: 30px 0 20px 0;
+  position: relative;
+}
+
+/* linhas laterais */
+.titulo-vitrine::before,
+.titulo-vitrine::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 25%;
+  height: 2px;
+  background: #e0d6cf;
+}
+
+.titulo-vitrine::before{
+  left: 0;
+}
+
+.titulo-vitrine::after{
+  right: 0;
 }
 /* ================= RESPONSIVO PC/TABLET ================= */
 @media screen and (min-width: 769px) {

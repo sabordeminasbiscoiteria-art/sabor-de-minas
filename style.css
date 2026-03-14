@@ -725,6 +725,16 @@ color:#444;
   }
 }
 
+@media (max-width: 768px){
+  .pesquisa{
+    flex:1;
+  }
+
+  .pesquisa input{
+    width:100%;
+    max-width:100%;
+  }
+}
 
 
 

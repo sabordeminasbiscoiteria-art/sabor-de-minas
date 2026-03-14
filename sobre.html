@@ -59,3 +59,32 @@
   <a href="sobre.html">Sobre</a>
   <a href="contato.html">Contato</a>
 </div>
+  
+<!-- SCRIPT MENU -->
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menuLateral = document.getElementById("menuLateral");
+const menuClose = document.getElementById("menuClose");
+
+menuBtn.addEventListener("click", () => menuLateral.classList.add("ativo"));
+menuClose.addEventListener("click", () => menuLateral.classList.remove("ativo"));
+</script>
+
+<script>
+// VER MAIS TOGGLE
+const botoes = document.querySelectorAll(".btn-ver");
+const mensagem = document.getElementById("mensagem");
+
+botoes.forEach(botao => {
+  botao.addEventListener("click", () => {
+    const card = botao.parentElement;
+    const texto = card.getAttribute("data-descricao");
+
+    if (mensagem.style.display === "block" && mensagem.textContent === texto) {
+      mensagem.style.display = "none";
+    } else {
+      mensagem.textContent = texto;
+      mensagem.style.display = "block";
+    }
+  });
+});

@@ -745,51 +745,6 @@ color:#444;
     left: 8px;
   }
 }
-/* ================= VITRINE - CELULAR GRANDE E MÉDIO ================= */
-@media screen and (max-width: 768px) {
-
-  .produto{
-    min-width:45%;
-  }
-
-  .produto-img{
-    height:140px;
-  }
-
-}
-
-/* ================= VITRINE - CELULAR PEQUENO ================= */
-@media screen and (max-width: 480px) {
-
-  .produto{
-    min-width:48%;
-  }
-
-  .produto-img{
-    height:120px;
-  }
-
-}
-/* ================= VITRINE - CELULAR (2 PRODUTOS POR LINHA) ================= */
-@media screen and (max-width: 768px){
-
-  .vitrine{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-    justify-content:center;
-  }
-
-  .produto{
-    width:calc(50% - 12px);
-    min-width:0;
-  }
-
-  .produto-img{
-    height:130px;
-  }
-
-}
 /* ================= VITRINE PC ================= */
 .vitrine{
   display:flex;
@@ -818,6 +773,37 @@ color:#444;
   height:170px;
   object-fit:cover;
   border-radius:10px;
+}
+
+/* ================= NOME DOS PRODUTOS ================= */
+.produto h3{
+  font-size:16px;
+  min-height:45px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  line-height:1.2;
+  word-break:break-word;
+}
+
+/* ================= VITRINE CELULAR (2 PRODUTOS POR LINHA) ================= */
+@media screen and (max-width:768px){
+
+  .vitrine{
+    gap:12px;
+    padding:20px 10px;
+  }
+
+  .produto{
+    width:calc(50% - 12px);
+    padding:10px;
+  }
+
+  .produto-img{
+    height:130px;
+  }
+
 }
 /* ================= RESPONSIVO PC/TABLET ================= */
 @media screen and (min-width: 769px) {

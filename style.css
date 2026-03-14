@@ -781,8 +781,11 @@ color:#444;
   font-weight: 600;
   text-align: center;
   color: #5a3e2b;
-  margin: 15px 0 5px 0; /* espaço menor */
-  position: relative;
+  margin: 10px 0 5px 0;
+}
+
+.vitrine{
+  margin-top: 5px;
 }
 
 /* ===== VITRINE CELULAR 3 PRODUTOS ===== */

@@ -214,31 +214,47 @@ main {
   background-color: #1e7e34;
 }
 
+/* ================= VITRINE ================= */
+
 .vitrine {
   display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: nowrap;    /* impede quebra das imagens */
-  overflow-x: auto;     /* permite rolagem horizontal no celular */
-  padding: 0 10px;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: nowrap;          /* mantém em linha */
+  overflow-x: auto;           /* rolagem no celular */
+  padding: 20px;
+  scroll-behavior: smooth;
 }
 
 .vitrine-img {
-  width: 250px;         /* mantém o tamanho da imagem do PC */
+  width: 250px;
   height: 250px;
   object-fit: cover;
-  border-radius: 10px;
-  flex-shrink: 0;       /* impede que as imagens encolham */
+  border-radius: 12px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
 
-/* Opcional: esconder barra de rolagem no celular para ficar mais limpo */
+/* efeito ao passar o mouse ou dedo */
+.vitrine-img:hover {
+  transform: scale(1.05);
+}
+
+/* esconder barra de rolagem para ficar mais limpo */
 .vitrine::-webkit-scrollbar {
   display: none;
 }
-.btn-ver{
-  display:inline-block;
-  text-decoration:none;
-  color:white; /* ou a cor que seu botão usa */
+
+/* botão ver mais */
+.btn-ver {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #8b5e3c;
+  padding: 8px 15px;
+  border-radius: 6px;
+  margin-top: 8px;
 }
 /* ================= ESPAÇAMENTO ENTRE SEÇÕES ================= */
 

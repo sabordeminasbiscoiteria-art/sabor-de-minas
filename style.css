@@ -770,6 +770,26 @@ color:#444;
   }
 
 }
+/* ================= VITRINE - CELULAR (2 PRODUTOS POR LINHA) ================= */
+@media screen and (max-width: 768px){
+
+  .vitrine{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:center;
+  }
+
+  .produto{
+    width:calc(50% - 12px);
+    min-width:0;
+  }
+
+  .produto-img{
+    height:130px;
+  }
+
+}
 /* ================= VITRINE PC ================= */
 .vitrine{
   display:flex;

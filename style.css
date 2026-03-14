@@ -779,30 +779,31 @@ color:#444;
 @media screen and (max-width:768px){
 
   .vitrine{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:6px;
-    padding:10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    padding: 8px;
   }
 
   .produto{
-    width:100%;
-    padding:5px;
+    width: 100%;
+    padding: 4px;
+    box-sizing: border-box;
   }
 
   .produto-img{
-    width:100%;
-    height:120px;   /* deixa a imagem mais alta */
-    object-fit:cover;
-    border-radius:8px;
+    width: 100%;
+    height: 110px; /* um pouco menor para caber melhor */
+    object-fit: cover;
+    border-radius: 8px;
   }
 
   .produto h3{
-    font-size:11px;
-    text-align:center;
-    line-height:1.2;
-    min-height:26px;
-    margin-top:4px;
+    font-size: 11px;
+    text-align: center;
+    line-height: 1.2;
+    min-height: 26px;
+    margin-top: 4px;
   }
 
 }

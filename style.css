@@ -774,13 +774,14 @@ color:#444;
   object-fit:cover;
   border-radius:10px;
 }
+
 .titulo-vitrine{
   font-family: 'Poppins', sans-serif;
   font-size: 22px;
   font-weight: 600;
   text-align: center;
   color: #5a3e2b;
-  margin: 15px 0 10px 0; /* espaço menor */
+  margin: 15px 0 5px 0; /* espaço menor */
   position: relative;
 }
 

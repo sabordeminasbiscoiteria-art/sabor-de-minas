@@ -761,17 +761,11 @@ color:#444;
 /* ================= NOME DOS PRODUTOS - VITRINE ================= */
 .produto h3{
   font-size:18px;
-  min-height:48px; /* mantém todos alinhados */
+  min-height:45px; /* mantém todos com a mesma altura */
   display:flex;
   align-items:center;
   justify-content:center;
   text-align:center;
-  line-height:1.2;
-}
-
-/* nomes maiores ficam um pouco menores */
-.produto h3{
-  word-break: break-word;
 }
 /* ================= VITRINE - CELULAR PEQUENO ================= */
 @media screen and (max-width: 480px) {

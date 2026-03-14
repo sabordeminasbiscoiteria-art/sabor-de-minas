@@ -1,188 +1,241 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Biscoiteria Sabor de Minas - Biscoitos Caseiros</title>
-
+<title>Biscoiteria Sabor de Minas</title>
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
 
-<body class="produtos-page">
+<body>
 
-<!-- ================= HEADER ================= -->
-<header class="header-padrao">
-
-  <!-- BOTÃO MENU LATERAL -->
-  <div class="menu-btn" onclick="toggleMenu()">
-    <i class="fa fa-bars"></i>
+<!-- HEADER -->
+<header class="header-fixo">
+  <div class="logo-nome">
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <span class="nome-loja">Biscoiteria Sabor de Minas</span>
   </div>
 
-  <!-- LOGO + NOME DA LOJA -->
-  <div class="logo">
-    <img src="img/logo.png" alt="Biscoiteria Sabor de Minas" class="logo-img">
-    <h1 class="nome-loja">Biscoiteria Sabor De Minas</h1>
-  </div>
+   <!-- WRAPPER PARA MENU + BARRA DE PESQUISA -->
+<div class="menu-search-wrapper">
 
-  <!-- MENU NORMAL -->
-  <nav class="menu-topo">
+  <nav class="nav-links">
     <a href="index.html">Início</a>
-    <a href="biscoitopolvilho.html">Biscoitos Polvilhos</a>
+    <a href="produtos.html">Produtos</a>
     <a href="contato.html">Contato</a>
   </nav>
 
-  <!-- BARRA DE PESQUISA -->
   <div class="search-box">
-    <i class="fa fa-search"></i>
-    <input type="text" id="searchInput" placeholder="Pesquisar produto...">
+    <span class="icone-lupa">
+      <svg viewBox="0 0 24 24" width="16" height="16">
+        <path fill="#666" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 
+        6.5 6.5 0 109.5 16a6.471 6.471 0 004.23-1.57l.27.28v.79l5 
+        4.99L20.49 19l-4.99-5zM9.5 
+        14C7.01 14 5 11.99 5 
+        9.5S7.01 5 9.5 5 14 
+        7.01 14 9.5 11.99 14 
+        9.5 14z"/>
+      </svg>
+    </span>
+      
+      
+   <input type="text" id="inputPesquisa" placeholder="Pesquisar">
+    </div>
+    
   </div>
-
+      
+  <div class="menu-btn" id="menuBtn">&#9776;</div>
 </header>
 
-<!-- ================= MENU LATERAL ================= -->
-<div id="menu-lateral" class="menu-lateral">
+<!-- Menu lateral -->
+<div class="menu-lateral" id="menuLateral">
+  <div class="menu-close" id="menuClose">&times;</div>
   <a href="index.html">Início</a>
-
-  <p class="titulo-categoria">Categorias</p>
-  <a href="Biscoitoscaseiros.html">Biscoitos Caseiros</a>
-  <a href="biscoitopolvilho.html">Biscoito Polvilhos</a>
-  <a href="salgadinho.html">Salgadinhos</a>
+  <a href="produtos.html">Produtos</a>
+  <a href="Biscoitoscaseiros.html">Biscoito Caseiros</a>
+  <a href="biscoitopolvilho.html">Biscoitos De Polvilho</a>
   <a href="Suspiros.html">Suspiros</a>
-
-  <div class="menu-inferior">
-    <a href="sobre.html">Sobre a Loja</a>
-    <a href="contato.html">Contato</a>
-  </div>
+  <a href="salgadinho.html">Salgadinhos</a>
+  <a href="sobre.html">Sobre</a>
+  <a href="contato.html">Contato</a>
 </div>
 
-<!-- ================= PRODUTOS ================= -->
-<section class="products">
-  <h2>Biscoitos Caseiros</h2>
-  <p class="descricao">
-    Confira nossos biscoitos artesanais feitos com ingredientes selecionados.
-    Veja os preços e fale conosco para encomendar.
-  </p>
-
-  <div class="grid">
-
-    <!-- CASADINHO -->
-    <div class="card" data-name="casadinho">
-      <div class="img-produto">
-        <img src="img/casadinho.jpeg" alt="Casadinho" class="logo-img">
-        <span class="selo">250g</span>
-      </div>
-      <h3>Casadinho</h3>
-      <p>Caseiro</p>
-      <button class="btn-ver" onclick="abrirProduto('casadinho','Casadinho avelã')">Ver mais</button>
-      <button class="btn-preco">R$10,99</button>
-    </div>
-
-    <!-- CASADINHO GOIABADA -->
-    <div class="card" data-name="casadinho goiabada">
-      <div class="img-produto">
-        <img src="img/casadinhoo.jpeg" alt="Casadinho Goiabada" class="logo-img">
-        <span class="selo">250g</span>
-      </div>
-      <h3>Casadinho</h3>
-      <p>Caseiro</p>
-      <button class="btn-ver" onclick="abrirProduto('goiabada','Casadinho Goiabada')">Ver mais</button>
-      <button class="btn-preco">R$10,99</button>
-    </div>
-
-    <!-- CANELA -->
-    <div class="card" data-name="canela">
-      <div class="img-produto">
-        <img src="img/canela.jpeg" alt="Canela" class="logo-img">
-        <span class="selo">250g</span>
-      </div>
-      <h3>Canela</h3>
-      <p>Caseiro</p>
-      <button class="btn-ver" onclick="abrirProduto('canela','Canela')">Ver mais</button>
-      <button class="btn-preco">R$10,99</button>
-    </div>
-
-    <!-- UGA UGA -->
-    <div class="card" data-name="ugauga">
-      <div class="img-produto">
-        <img src="img/ugauga.jpeg" alt="Uga-uga" class="logo-img">
-        <span class="selo">250g</span>
-      </div>
-      <h3>Uga-uga</h3>
-      <p>Caseiro</p>
-      <button class="btn-ver" onclick="abrirProduto('ugauga','Uga-uga')">Ver mais</button>
-      <button class="btn-preco">R$10,99</button>
-    </div>
-
-    <!-- BEIJINHO -->
-    <div class="card" data-name="beijinho">
-      <div class="img-produto">
-        <img src="img/beijinho.jpeg" alt="Beijinho" class="logo-img">
-        <span class="selo">250g</span>
-      </div>
-      <h3>Beijinho</h3>
-      <p>Caseiro</p>
-      <button class="btn-ver" onclick="abrirProduto('beijinho','Beijinho')">Ver mais</button>
-      <button class="btn-preco">R$10,99</button>
-    </div>
-
-    <!-- BAMBOLÊ -->
-    <div class="card" data-name="bambole">
-      <div class="img-produto">
-        <img src="img/banbole.jpeg" alt="Bambolê" class="logo-img">
-        <span class="selo">250g</span>
-      </div>
-      <h3>Bambolê</h3>
-      <p>Caseiro</p>
-      <button class="btn-ver" onclick="abrirProduto('bambole','Bambolê')">Ver mais</button>
-      <button class="btn-preco">R$10,99</button>
-    </div>
-
-    <!-- SASHA -->
-    <div class="card" data-name="sasha">
-      <div class="img-produto">
-        <img src="img/sasha.jpeg" alt="Sasha" class="logo-img">
-        <span class="selo">250g</span>
-      </div>
-      <h3>Sasha</h3>
-      <p>Caseiro</p>
-      <button class="btn-ver" onclick="abrirProduto('sasha','Sasha')">Ver mais</button>
-      <button class="btn-preco">R$10,99</button>
-    </div>
-
+<!-- SEÇÃO DE PRODUTOS -->
+<section class="produtos"> 
+  <div id="sem-produto">Produto não encontrado</div>
+  
+  <div class="card-produto" data-descricao="Biscoito amanteigado crocante feito com receita tradicional mineira.">
+    <div class="selo-gramas">250g</div>
+    <img src="img/sasha.jpeg" alt="Biscoito Sasha" class="card-img">
+    <h3 class="nome-produto">Biscoito Sasha</h3>
+    <button class="btn-card btn-ver">Ver mais</button>
+    <button class="btn-card btn-preco">R$10,99</button>
+    <div id="mensagem"></div>
   </div>
 
-  <p id="noResult" style="display:none;">Produto não encontrado</p>
+  <div class="card-produto" data-descricao="Biscoito artesanal crocante perfeito para acompanhar café.">
+    <div class="selo-gramas">250g</div>
+    <img src="img/ugauga.jpeg" alt="Biscoito Ugauga" class="card-img">
+     <h3 class="nome-produto">Biscoito Ugauga</h3>
+    <button class="btn-card btn-ver">Ver mais</button>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+  <div class="card-produto" data-descricao="Casadinho tradicional com recheio doce e massa amanteigada.">
+    <div class="selo-gramas">250g</div>
+    <img src="img/casadinho.jpeg" alt="Casadinho" class="card-img">
+     <h3 class="nome-produto">Casadinho De Avelã</h3>
+    <button class="btn-card btn-ver">Ver mais</button>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+  <div class="card-produto" data-descricao="Biscoito amanteigado crocante feito com receita tradicional mineira.">
+    <div class="selo-gramas">250g</div>
+    <img src="img/casadinhoo.jpeg" alt="casadinho" class="card-img">
+     <h3 class="nome-produto">Casadinho Tradicional</h3>
+    <button class="btn-card btn-ver">Ver mais</button>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+  <div class="card-produto" data-descricao="Biscoito artesanal crocante perfeito para acompanhar café.">
+    <div class="selo-gramas">250g</div>
+    <img src="img/banbole.jpeg" alt="banbole" class="card-img">
+     <h3 class="nome-produto">Biscoito Bambolê</h3>
+    <button class="btn-card btn-ver">Ver mais</button>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+  <div class="card-produto" data-descricao="Casadinho tradicional com recheio doce e massa amanteigada.">
+    <div class="selo-gramas">250g</div>
+    <img src="img/canela.jpeg" alt="Canela" class="card-img">
+     <h3 class="nome-produto">Biscoito de Canela</h3>
+    <button class="btn-card btn-ver">Ver mais</button>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+   <div class="card-produto" data-descricao="Biscoito amanteigado crocante feito com receita tradicional mineira.">
+    <div class="selo-gramas">250g</div>
+    <img src="img/sasha.jpeg" alt="Biscoito Sasha" class="card-img">
+    <button class="btn-card btn-ver">Ver mais</button>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+  <div class="card-produto" data-descricao="Biscoito artesanal crocante perfeito para acompanhar café.">
+    <div class="selo-gramas">250g</div>
+    <img src="img/ugauga.jpeg" alt="Biscoito Ugauga" class="card-img">
+    <button class="btn-card btn-ver">Ver mais</button>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+  <div class="card-produto" data-descricao="Casadinho tradicional com recheio doce e massa amanteigada.">
+    <div class="selo-gramas">250g</div>
+    <img src="img/casadinho.jpeg" alt="Casadinho" class="card-img">
+    <button class="btn-card btn-ver">Ver mais</button>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+  <div class="card-produto" data-descricao="Biscoito amanteigado crocante feito com receita tradicional mineira.">
+    <div class="selo-gramas">250g</div>
+    <img src="img/sasha.jpeg" alt="Biscoito Sasha" class="card-img">
+    <button class="btn-card btn-ver">Ver mais</button>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+  <div class="card-produto" data-descricao="Biscoito artesanal crocante perfeito para acompanhar café.">
+    <div class="selo-gramas">250g</div>
+    <img src="img/ugauga.jpeg" alt="Biscoito Ugauga" class="card-img">
+    <button class="btn-card btn-ver">Ver mais</button>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
+  <div class="card-produto" data-descricao="Casadinho tradicional com recheio doce e massa amanteigada.">
+    <div class="selo-gramas">250g</div>
+    <img src="img/casadinho.jpeg" alt="Casadinho" class="card-img">
+    <button class="btn-card btn-ver">Ver mais</button>
+    <button class="btn-card btn-preco">R$10,99</button>
+  </div>
+
 </section>
+</main>
 
-<!-- ================= SCRIPTS ================= -->
+<!-- ================= RODAPÉ ================= -->
+<footer class="rodape">
+  <div class="rodape-conteudo">
+    <p>&copy; 2026 Biscoiteria Sabor de Minas. Todos os direitos reservados.</p>
+    <p>Contato: <a href="tel:+559999999999">WhatsApp</a> | <a href="mailto:contato@sabordeminas.com.br">Email</a></p>
+    <div class="redes-sociais">
+      <a href="#"><img src="img/icon-facebook.png" alt="Facebook" class="icone-social"></a>
+      <a href="#"><img src="img/icon-instagram.png" alt="Instagram" class="icone-social"></a>
+      <a href="#"><img src="img/icon-whatsapp.png" alt="WhatsApp" class="icone-social"></a>
+    </div>
+  </div>
+</footer>
+  
+<!-- Mensagem flutuante -->
+<div id="mensagem"></div>
+
+<!-- SCRIPT MENU -->
 <script>
-function toggleMenu() {
-  document.getElementById("menu-lateral").classList.toggle("ativo");
-}
+const menuBtn = document.getElementById("menuBtn");
+const menuLateral = document.getElementById("menuLateral");
+const menuClose = document.getElementById("menuClose");
 
-const descricaoProdutos = {
-  casadinho:"Biscoito creme de avelã. Disponível em nossa loja física.",
-  goiabada:"Casadinho com recheio de goiabada artesanal. Disponível em nossa loja física.",
-  canela:"Biscoito crocante com sabor suave de canela. Disponível em nossa loja física.",
-  ugauga:"Biscoito caseiro tradicional muito saboroso. Disponível em nossa loja física.",
-  beijinho:"Biscoito doce com recheio de goiabada. Disponível em nossa loja física.",
-  bambole:"Biscoito crocante e leve perfeito para café. Disponível em nossa loja física.",
-  sasha:"Biscoito amanteigado com chocolate. Disponível em nossa loja física."
-};
-
-function abrirProduto(id,nome){
-  document.getElementById("produtoModal").style.display="flex";
-  document.getElementById("produtoTitulo").innerText = nome;
-  document.getElementById("produtoDescricao").innerText = descricaoProdutos[id];
-}
-
-function fecharProduto(){
-  document.getElementById("produtoModal").style.display="none";
-}
+menuBtn.addEventListener("click", () => menuLateral.classList.add("ativo"));
+menuClose.addEventListener("click", () => menuLateral.classList.remove("ativo"));
 </script>
 
+<script>
+// VER MAIS TOGGLE
+const botoes = document.querySelectorAll(".btn-ver");
+const mensagem = document.getElementById("mensagem");
+
+botoes.forEach(botao => {
+  botao.addEventListener("click", () => {
+    const card = botao.parentElement;
+    const texto = card.getAttribute("data-descricao");
+
+    if (mensagem.style.display === "block" && mensagem.textContent === texto) {
+      mensagem.style.display = "none";
+    } else {
+      mensagem.textContent = texto;
+      mensagem.style.display = "block";
+    }
+  });
+});
+
+// CLICAR NA MENSAGEM PARA FECHAR
+mensagem.addEventListener("click", () => {
+  mensagem.style.display = "none";
+});
+</script>
+  
+  <script>
+  // PESQUISA DE PRODUTOS
+  const inputPesquisa = document.getElementById("inputPesquisa");
+  const cards = document.querySelectorAll(".card-produto");
+  const semProduto = document.getElementById("sem-produto");
+
+  if (inputPesquisa) {
+    inputPesquisa.addEventListener("input", () => {
+      const valor = inputPesquisa.value.toLowerCase();
+      let achou = false;
+
+      cards.forEach(card => {
+        const nome = card.querySelector("img").alt.toLowerCase();
+
+        if (nome.includes(valor)) {
+          card.style.display = "block";
+          achou = true;
+        } else {
+          card.style.display = "none";
+        }
+      });
+
+      if (semProduto) {
+        semProduto.style.display = achou ? "none" : "block";
+      }
+    });
+  }
+</script>
 </body>
 </html>

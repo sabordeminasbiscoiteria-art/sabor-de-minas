@@ -235,6 +235,11 @@ main {
 .vitrine::-webkit-scrollbar {
   display: none;
 }
+.btn-ver{
+  display:inline-block;
+  text-decoration:none;
+  color:white; /* ou a cor que seu botão usa */
+}
 /* ================= ESPAÇAMENTO ENTRE SEÇÕES ================= */
 
 /* Espaço abaixo do banner principal (destaque) */

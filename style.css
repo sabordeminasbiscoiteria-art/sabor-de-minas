@@ -176,7 +176,7 @@
 }
 /* ================= CONTEÚDO PRINCIPAL ================= */
 main {
-  margin-top: 120px; /* espaço para o header fixo */
+  margin-top: 0px; /* espaço para o header fixo */
 }
 
 /* Banner do beijinho */

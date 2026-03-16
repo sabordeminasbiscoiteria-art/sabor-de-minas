@@ -141,28 +141,6 @@
     menuLateral.classList.remove('ativo');
   });
 
-  // VER MAIS TOGGLE
-  const botoes = document.querySelectorAll(".btn-ver");
-  const mensagem = document.getElementById("mensagem");
-
-  botoes.forEach(botao => {
-    botao.addEventListener("click", () => {
-      const card = botao.parentElement;
-      const texto = card.getAttribute("data-descricao");
-
-      if (mensagem.style.display === "block" && mensagem.textContent === texto) {
-        mensagem.style.display = "none";
-      } else {
-        mensagem.textContent = texto;
-        mensagem.style.display = "block";
-      }
-    });
-  });
-
-  // CLICAR NA MENSAGEM PARA FECHAR
-  mensagem.addEventListener("click", () => {
-    mensagem.style.display = "none";
-  });
 
   // PESQUISA DE PRODUTOS
   const inputPesquisa = document.getElementById("inputPesquisa");

@@ -421,6 +421,12 @@ font-size: 18px;
 font-weight: 600;
 margin: 20px 0;
 }
+.descricao-produto{
+font-size:14px;
+color:#555;
+margin:8px 0;
+text-align:center;
+}
 /* ================= MENSAGEM VER MAIS ================= */
 #mensagem {
   display: none;              /* começa escondida */

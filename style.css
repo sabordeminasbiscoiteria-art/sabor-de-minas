@@ -671,13 +671,6 @@ color:#444;
 
 }
 
-@media (max-width:768px){
-
-.produtos{
-  margin-top:50px;
-}
-
-}
 .pedido-whatsapp{
 display: none;
 }
@@ -692,6 +685,15 @@ font-weight: 600;
 margin: 20px 0;
 }
 }
+
+@media (max-width:768px){
+
+.produtos{
+  margin-top:50px;
+}
+
+}
+
 /* ================= RESPONSIVO ================= */
 
 /* Tablet */

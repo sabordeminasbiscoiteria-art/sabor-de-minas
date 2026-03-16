@@ -671,21 +671,6 @@ color:#444;
 
 }
 
-.pedido-whatsapp{
-display: none;
-}
-
-@media (max-width: 768px){
-.pedido-whatsapp{
-display: block;
-text-align: center;
-font-family: 'Poppins', sans-serif;
-font-size: 16px;
-font-weight: 600;
-margin: 20px 0;
-}
-}
-
 @media (max-width:768px){
 
 .produtos{

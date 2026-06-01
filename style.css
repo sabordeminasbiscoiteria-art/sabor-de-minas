@@ -1142,7 +1142,21 @@ color:#444;
   }
 
 }
+.btn-voltar{
+  display:inline-block;
+  margin:20px;
+  padding:10px 16px;
+  background:#28a745;
+  color:#fff;
+  text-decoration:none;
+  border-radius:8px;
+  font-family:'Poppins', sans-serif;
+  font-weight:500;
+}
 
+.btn-voltar:hover{
+  opacity:.9;
+}
 
 
 

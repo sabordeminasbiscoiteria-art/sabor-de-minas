@@ -364,12 +364,6 @@ main {
   display:block;
 }
 .nome-produto{
-  font-size:16px;
-  font-weight:600;
-  text-align:center;
-  margin:8px 0;
-}
-.nome-produto{
   font-family:'Poppins', sans-serif;
   font-size:15px;
   font-weight:500;

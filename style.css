@@ -973,7 +973,27 @@ color:#444;
   }
 
 }
+.galeria-produto{
+    max-width:600px;
+    margin:auto;
+}
 
+.foto-principal{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:10px;
+}
+
+.miniaturas{
+    display:flex;
+    gap:10px;
+}
+
+.miniaturas img{
+    width:50%;
+    border-radius:10px;
+    cursor:pointer;
+}
 
 
 

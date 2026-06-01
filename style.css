@@ -472,6 +472,22 @@ main {
   color: white;
   font-size: 34px;
 }
+.whatsapp-float{
+  text-decoration: none;
+  outline: none;
+}
+
+.whatsapp-float i{
+  color: white;
+  text-decoration: none;
+}
+
+.whatsapp-float:focus,
+.whatsapp-float:active,
+.whatsapp-float:visited{
+  text-decoration: none;
+  outline: none;
+}
 /* ================= CONTATO ================= */
 
 .contato{

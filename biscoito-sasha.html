@@ -12,7 +12,6 @@
 
 <body>
 
-<!-- HEADER -->
 <header class="header-fixo">
   <div class="logo-nome">
     <img src="img/logo.png" alt="Logo" class="logo">
@@ -20,52 +19,58 @@
   </div>
 </header>
 
-<!-- PRODUTO -->
 <main>
 
-  <section class="produto-detalhe">
+<section class="produto-detalhe">
 
-    <!-- GALERIA -->
-    <div class="galeria">
+  <!-- GALERIA -->
+  <div class="galeria">
 
-      <img src="img/sasha.jpeg"
-           alt="Biscoito Sasha"
-           class="foto-principal">
+    <img
+      src="img/sasha.jpeg"
+      alt="Biscoito Sasha"
+      class="foto-principal"
+      id="fotoPrincipal">
 
-      <div class="miniaturas">
-        <img src="img/sasha.jpeg" alt="Biscoito Sasha">
-        <img src="img/sasha.jpeg" alt="Biscoito Sasha">
-      </div>
-
+    <div class="miniaturas">
+      <img src="img/sasha2.jpeg" alt="Foto do produto" class="miniatura">
+      <img src="img/sasha3.jpeg" alt="Tabela nutricional" class="miniatura">
     </div>
 
-    <!-- INFORMAÇÕES -->
-    <div class="info-produto">
+  </div>
 
-      <h1>Biscoito Sasha</h1>
+  <!-- INFORMAÇÕES -->
+  <div class="info-produto">
 
-      <p class="preco">R$ 10,99</p>
+    <h1>Biscoito Sasha</h1>
 
-      <p>
-        Delicioso biscoito artesanal produzido com receita tradicional
-        mineira. Crocante, saboroso e perfeito para acompanhar um café.
-      </p>
+    <p class="preco">R$ 10,99</p>
 
-      <br>
+    <p>
+      Delicioso biscoito artesanal produzido com receita tradicional
+      mineira. Crocante, saboroso e perfeito para acompanhar um café.
+    </p>
 
-      <a href="https://wa.me/553192767228?text=Olá,%20quero%20comprar%20o%20Biscoito%20Sasha"
-         class="btn-whatsapp"
-         target="_blank">
-         📲 Pedir pelo WhatsApp
-      </a>
+    <br>
 
-    </div>
+    <a href="https://wa.me/553192767228?text=Olá,%20quero%20comprar%20o%20Biscoito%20Sasha"
+       class="btn-whatsapp"
+       target="_blank">
+       📲 Pedir pelo WhatsApp
+    </a>
 
-  </section>
+  </div>
+
+</section>
+
+<!-- MODAL -->
+<div id="modalImagem" class="modal-imagem">
+  <span class="fechar">&times;</span>
+  <img id="imagemAmpliada" alt="Imagem ampliada">
+</div>
 
 </main>
 
-<!-- RODAPÉ -->
 <footer class="rodape">
 
   <p>© 2026 Biscoiteria Sabor de Minas. Todos os direitos reservados.</p>
@@ -85,30 +90,60 @@
     </a>
 
   </div>
-  
+
+</footer>
+
 <script>
-const foto = document.getElementById("fotoPrincipal");
+
+const fotoPrincipal = document.getElementById("fotoPrincipal");
+const miniaturas = document.querySelectorAll(".miniatura");
+
 const modal = document.getElementById("modalImagem");
-const ampliada = document.getElementById("imagemAmpliada");
+const imagemAmpliada = document.getElementById("imagemAmpliada");
 const fechar = document.querySelector(".fechar");
 
-foto.addEventListener("click", () => {
-    ampliada.src = foto.src;
-    modal.style.display = "flex";
+/* Troca foto principal */
+
+miniaturas.forEach(miniatura => {
+
+  miniatura.addEventListener("click", () => {
+
+    fotoPrincipal.src = miniatura.src;
+
+  });
+
 });
+
+/* Amplia imagem */
+
+fotoPrincipal.addEventListener("click", () => {
+
+  imagemAmpliada.src = fotoPrincipal.src;
+  modal.style.display = "flex";
+
+});
+
+/* Fecha no X */
 
 fechar.addEventListener("click", () => {
-    modal.style.display = "none";
+
+  modal.style.display = "none";
+
 });
 
+/* Fecha clicando fora */
+
 modal.addEventListener("click", (e) => {
-    if(e.target === modal){
-        modal.style.display = "none";
-    }
+
+  if (e.target === modal) {
+
+    modal.style.display = "none";
+
+  }
+
 });
+
 </script>
-  
-</footer>
 
 </body>
 </html>

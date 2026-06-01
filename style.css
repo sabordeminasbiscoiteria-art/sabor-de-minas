@@ -1135,7 +1135,13 @@ color:#444;
   font-size:40px;
   cursor:pointer;
 }
+@media (max-width:768px){
 
+  .produto-detalhe{
+    margin-top: 60px;
+  }
+
+}
 
 
 

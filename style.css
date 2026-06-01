@@ -757,13 +757,13 @@ color:#444;
     font-size: 12px;
   }
 
- .search-box {
-  flex: 1;
+.search-box {
+  flex: 0;
 }
 
 .search-box input {
-  width: 100%;
-  max-width: 220px;
+  width: 140px;
+  max-width: 140px;
 }
  
   .destaque {

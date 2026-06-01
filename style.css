@@ -472,6 +472,18 @@ main {
   text-decoration: none !important;
   border: none !important;
 }
+.whatsapp-float i{
+  color: #fff;
+  font-size: 34px;
+  line-height: 1;
+  display: block;
+}
+
+.whatsapp-float *,
+.whatsapp-float *::before{
+  text-decoration: none !important;
+  border: none !important;
+}
 /* ================= CONTATO ================= */
 
 .contato{

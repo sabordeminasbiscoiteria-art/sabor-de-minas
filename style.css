@@ -715,8 +715,9 @@ color:#444;
 
 /* Celular grande e médio */
 @media screen and (max-width: 768px) {
+
   .menu-search-wrapper {
-    flex-wrap: wrap; /* empilha se não couber */
+    flex-wrap: nowrap;
     justify-content: center;
   }
 
@@ -725,6 +726,8 @@ color:#444;
     flex-wrap: wrap;
     gap: 8px;
   }
+
+}
 
 .search-box {
   flex: 0;

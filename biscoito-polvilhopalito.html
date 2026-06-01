@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biscoito Polvilho Palito | Biscoiteria Sabor de Minas</title>
 
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header-fixo">
+  <div class="logo-nome">
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <span class="nome-loja">Biscoiteria Sabor de Minas</span>
+  </div>
+</header>
+
+<main>
+<a href="#" class="btn-voltar" onclick="history.back()">
+  ← Voltar
+</a>
+<section class="produto-detalhe">
+
+  <!-- GALERIA -->
+  <div class="galeria">
+
+    <img
+      src="img/polvilhopalito.jpeg"
+      alt="Biscoito Polvilho Palito"
+      class="foto-principal"
+      id="fotoPrincipal">
+
+    <div class="miniaturas">
+      <img src="img/polvilhopalito.jpeg" alt="Foto do produto" class="miniatura">
+      <img src="img/polvilhopalito.jpeg" alt="Tabela nutricional" class="miniatura">
+    </div>
+
+  </div>
+
+  <!-- INFORMAÇÕES -->
+  <div class="info-produto">
+
+    <h1>Biscoito Polvilho palito</h1>
+
+    <p class="preco">R$ 10,99</p>
+
+    <p>
+      Delicioso biscoito artesanal produzido com receita tradicional
+      mineira. Crocante, saboroso e perfeito para acompanhar um café.
+    </p>
+
+    <br>
+
+    <a href="https://wa.me/553192767228?text=Olá,%20quero%20comprar%20o%20Biscoito%20Sasha"
+       class="btn-whatsapp"
+       target="_blank">
+       📲 Pedir pelo WhatsApp
+    </a>
+
+  </div>
+
+</section>
+
+<!-- MODAL -->
+<div id="modalImagem" class="modal-imagem">
+  <span class="fechar">&times;</span>
+  <img id="imagemAmpliada" alt="Imagem ampliada">
+</div>
+
+</main>
+
+<footer class="rodape">
+
+  <p>© 2026 Biscoiteria Sabor de Minas. Todos os direitos reservados.</p>
+
+  <div class="redes">
+
+    <a href="https://instagram.com/biscoiteriasabordeminas" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://wa.me/553192767228" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="mailto:contato@sabordeminas.com.br">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+
+  </div>
+
+</footer>
+
+<script>
+
+const fotoPrincipal = document.getElementById("fotoPrincipal");
+const miniaturas = document.querySelectorAll(".miniatura");
+
+const modal = document.getElementById("modalImagem");
+const imagemAmpliada = document.getElementById("imagemAmpliada");
+const fechar = document.querySelector(".fechar");
+
+/* Miniaturas */
+
+miniaturas.forEach(miniatura => {
+
+  miniatura.addEventListener("click", () => {
+
+    fotoPrincipal.src = miniatura.src;
+
+    imagemAmpliada.src = miniatura.src;
+    modal.style.display = "flex";
+
+  });
+
+});
+
+/* Abre a foto principal */
+
+fotoPrincipal.addEventListener("click", () => {
+
+  imagemAmpliada.src = fotoPrincipal.src;
+  modal.style.display = "flex";
+
+});
+
+/* Fecha no X */
+
+fechar.addEventListener("click", () => {
+
+  modal.style.display = "none";
+
+});
+
+/* Fecha clicando fora */
+
+modal.addEventListener("click", (e) => {
+
+  if (e.target === modal) {
+
+    modal.style.display = "none";
+
+  }
+
+});
+
+/* Fecha com ESC */
+
+document.addEventListener("keydown", (e) => {
+
+  if (e.key === "Escape") {
+
+    modal.style.display = "none";
+
+  }
+
+});
+
+</script>

@@ -89,7 +89,7 @@ body{
 .search-box input,
 .search-box input::placeholder {
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .icone-lupa{

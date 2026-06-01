@@ -655,19 +655,19 @@ color:#444;
 
 @media (max-width:768px){
 
-.produtos{
-  grid-template-columns:repeat(2,120px);
-  justify-content:center;
-  gap:25px;
-}
+  .produtos{
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+  }
 
-.card-produto{
-  width:130px;
-}
+  .card-produto{
+    max-width:180px;
+    width:100%;
+  }
 
-.card-produto img{
-  height:140px;   /* aumenta a foto só no celular */
-}
+  .card-produto img{
+    height:120px;
+  }
 
 }
 

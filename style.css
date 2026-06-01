@@ -275,11 +275,12 @@ main {
   color:#777;
 }
 
-.preco{
+.produto .preco{
   display:block;
   font-weight:600;
   margin:5px 0;
-  color:#5a3e36;
+  color:#111;
+  font-family:'Poppins', sans-serif;
 }
 
 .btn-ver{

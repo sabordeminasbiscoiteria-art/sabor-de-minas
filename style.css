@@ -727,18 +727,18 @@ color:#444;
     gap: 8px;
   }
 
-}
+  .search-box {
+    flex: 0;
+  }
 
-.search-box {
-  flex: 0;
-}
+  .search-box input {
+    width: 150px;
+    max-width: 150px;
+    margin-top: 0;
+    height: 36px;
+  }
 
-.search-box input {
-  width: 150px;
-  max-width: 150px;
-  margin-top: 0;
 }
-
   .menu-lateral {
     width: 200px;
   }

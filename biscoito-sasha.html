@@ -102,15 +102,16 @@ const modal = document.getElementById("modalImagem");
 const imagemAmpliada = document.getElementById("imagemAmpliada");
 const fechar = document.querySelector(".fechar");
 
-/* Troca foto principal */
+/* Abre também as miniaturas */
 
 miniaturas.forEach(miniatura => {
 
   miniatura.addEventListener("click", () => {
-    fotoPrincipal.src = miniatura.src;
-  });
 
-});
+    imagemAmpliada.src = miniatura.src;
+    modal.style.display = "flex";
+
+  });
 
 /* Abre a foto principal */
 

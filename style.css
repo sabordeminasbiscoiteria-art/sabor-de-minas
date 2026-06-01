@@ -421,7 +421,7 @@ main {
   font-size:18px;
   font-weight:600;
   color:#333;
-  margin:10px 0 20px 0;
+  margin:20px 0;
 }
 /* ================= MENSAGEM VER MAIS ================= */
 #mensagem {
@@ -942,7 +942,13 @@ color:#444;
   }
 }
 
+@media (max-width:768px){
 
+  .pedido-whatsapp{
+    margin-top:40px;
+  }
+
+}
 
 
 

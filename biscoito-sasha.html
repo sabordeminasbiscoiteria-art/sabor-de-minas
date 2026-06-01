@@ -102,16 +102,20 @@ const modal = document.getElementById("modalImagem");
 const imagemAmpliada = document.getElementById("imagemAmpliada");
 const fechar = document.querySelector(".fechar");
 
-/* Abre também as miniaturas */
+/* Miniaturas */
 
 miniaturas.forEach(miniatura => {
 
   miniatura.addEventListener("click", () => {
 
+    fotoPrincipal.src = miniatura.src;
+
     imagemAmpliada.src = miniatura.src;
     modal.style.display = "flex";
 
   });
+
+});
 
 /* Abre a foto principal */
 
@@ -119,19 +123,6 @@ fotoPrincipal.addEventListener("click", () => {
 
   imagemAmpliada.src = fotoPrincipal.src;
   modal.style.display = "flex";
-
-});
-
-/* Abre também as miniaturas */
-
-miniaturas.forEach(miniatura => {
-
-  miniatura.addEventListener("dblclick", () => {
-
-    imagemAmpliada.src = miniatura.src;
-    modal.style.display = "flex";
-
-  });
 
 });
 

@@ -107,19 +107,30 @@ const fechar = document.querySelector(".fechar");
 miniaturas.forEach(miniatura => {
 
   miniatura.addEventListener("click", () => {
-
     fotoPrincipal.src = miniatura.src;
-
   });
 
 });
 
-/* Amplia imagem */
+/* Abre a foto principal */
 
 fotoPrincipal.addEventListener("click", () => {
 
   imagemAmpliada.src = fotoPrincipal.src;
   modal.style.display = "flex";
+
+});
+
+/* Abre também as miniaturas */
+
+miniaturas.forEach(miniatura => {
+
+  miniatura.addEventListener("dblclick", () => {
+
+    imagemAmpliada.src = miniatura.src;
+    modal.style.display = "flex";
+
+  });
 
 });
 
@@ -143,7 +154,16 @@ modal.addEventListener("click", (e) => {
 
 });
 
-</script>
+/* Fecha com ESC */
 
-</body>
-</html>
+document.addEventListener("keydown", (e) => {
+
+  if (e.key === "Escape") {
+
+    modal.style.display = "none";
+
+  }
+
+});
+
+</script>

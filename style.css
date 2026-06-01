@@ -458,35 +458,19 @@ main {
   align-items: center;
   justify-content: center;
 
+  text-decoration: none !important;
+
   box-shadow: 0 8px 25px rgba(37,211,102,.35);
 
   transition: all .3s ease;
   z-index: 9999;
 }
 
-.whatsapp-float:hover{
-  transform: translateY(-3px);
-}
-
 .whatsapp-float i{
   color: white;
   font-size: 34px;
-}
-.whatsapp-float{
-  text-decoration: none;
-  outline: none;
-}
-
-.whatsapp-float i{
-  color: white;
-  text-decoration: none;
-}
-
-.whatsapp-float:focus,
-.whatsapp-float:active,
-.whatsapp-float:visited{
-  text-decoration: none;
-  outline: none;
+  text-decoration: none !important;
+  border: none !important;
 }
 /* ================= CONTATO ================= */
 

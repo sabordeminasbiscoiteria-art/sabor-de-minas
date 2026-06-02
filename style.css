@@ -701,6 +701,7 @@ color:#444;
   }
 
 }
+/* ================= CELULAR ================= */
 
 @media (max-width:768px){
 
@@ -711,7 +712,7 @@ color:#444;
   }
 
   .card-produto{
-    max-width:115px;
+    max-width:100px;
     width:100%;
   }
 

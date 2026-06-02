@@ -23,7 +23,6 @@ body{
   gap: 10px;
   flex-wrap: wrap;
 }
-
 /* Logo e nome da loja */
 .logo-nome {
   display: flex;

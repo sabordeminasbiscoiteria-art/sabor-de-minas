@@ -419,6 +419,22 @@ main {
   font-size:14px;
   cursor:pointer;
 }
+/* botões */
+.btn-card{
+  display:block;
+  width:calc(100% - 16px);
+  margin:8px auto;
+
+  padding:6px 0;
+
+  border:none;
+  border-radius:8px;
+
+  font-weight:600;
+  font-size:12px;
+
+  cursor:pointer;
+}
 
 .btn-ver{
   background:#28a745;
@@ -432,6 +448,7 @@ main {
   border:1px solid #ccc;
   font-family:'Poppins', sans-serif;
 }
+  
 .pedido-whatsapp{
   text-align:center;
   font-family:'Poppins', sans-serif;

@@ -416,19 +416,29 @@ main {
 .btn-card{
   display:block;
   width:calc(100% - 16px);
-  margin:8px auto;
 
-  padding:6px 0;
+  margin:8px auto;
+  padding:10px 0;
+
+  background:#28a745;
+  color:#fff;
 
   border:none;
   border-radius:8px;
 
+  font-family:'Poppins', sans-serif;
+  font-size:14px;
   font-weight:600;
-  font-size:12px;
 
-  cursor:pointer;
+  text-decoration:none;
+  text-align:center;
+
+  transition:.3s;
 }
 
+.btn-card:hover{
+  background:#1e7e34;
+}
 .btn-ver{
   background:#28a745;
   color:#fff;

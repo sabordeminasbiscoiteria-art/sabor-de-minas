@@ -214,12 +214,16 @@ main {
 }
 .btn-ver{
   display:inline-block;
-  background:#8b5e3c;
+  background:#28a745;
   color:white;
   text-decoration:none;
   padding:7px 14px;
   border-radius:6px;
   margin-top:5px;
+}
+
+.destaque .btn-ver:hover{
+  background:#1e7e34;
 }
 .destaque .descricao {
   font-size: 20px;

@@ -379,22 +379,19 @@ main {
 }
 .nome-produto{
   font-family:'Poppins', sans-serif;
-  font-size:12px;
+  font-size:11px;
   font-weight:600;
   color:#333;
 
-  height:32px;
-
+  height:40px; /* altura fixa */
   display:flex;
   align-items:center;
   justify-content:center;
 
-  text-align:center;
   line-height:1.1;
-
-  padding:0 4px;
-  margin:5px 0;
+  padding:0 2px;
 }
+
 .selo-gramas{
   position:absolute;
   top:10px;

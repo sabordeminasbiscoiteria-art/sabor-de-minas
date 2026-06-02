@@ -116,6 +116,16 @@
 
 </script>
   
+  <!-- SCRIPT MENU -->
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const menuLateral = document.getElementById("menuLateral");
+const menuClose = document.getElementById("menuClose");
+
+menuBtn.addEventListener("click", () => menuLateral.classList.add("ativo"));
+menuClose.addEventListener("click", () => menuLateral.classList.remove("ativo"));
+</script>
+  
   <script>
   // PESQUISA DE PRODUTOS
   const inputPesquisa = document.getElementById("inputPesquisa");

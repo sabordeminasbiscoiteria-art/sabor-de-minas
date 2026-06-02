@@ -702,9 +702,9 @@ color:#444;
 @media (max-width:768px){
 
   .produtos{
-  grid-template-columns: repeat(3, 110px);
-  gap:10px;
-   margin-top:50px;
+    grid-template-columns: repeat(3, 110px);
+    gap:10px;
+    margin-top:50px;
   }
 
   .card-produto{
@@ -720,6 +720,11 @@ color:#444;
     width:75px;
     font-size:11px;
     padding:4px 0;
+  }
+
+  /* SOMENTE PARA A PÁGINA PRODUTOS */
+  .produtos-geral .card-produto{
+    max-width:100px;
   }
 
 }

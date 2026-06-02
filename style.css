@@ -440,9 +440,13 @@ main {
   background:#1e7e34;
 }
 .btn-ver{
-  background:#28a745;
-  color:#fff;
-  font-family:'Poppins', sans-serif;
+  display:inline-block;
+  background:#8b5e3c;
+  color:white;
+  text-decoration:none;
+  padding:7px 14px;
+  border-radius:6px;
+  margin-top:5px;
 }
 
 .btn-preco{

@@ -722,6 +722,19 @@ color:#444;
   }
 
 }
+
+/* ================= PC ================= */
+@media (min-width: 1025px){
+
+  .card-produto{
+    max-width: 220px;
+  }
+
+  .card-produto img{
+    height: 180px;
+  }
+
+}
 /* ================= RESPONSIVO ================= */
 
 /* Tablet */

@@ -415,32 +415,26 @@ main {
   font-size:14px;
 }
 
-/* botões */
 .btn-card{
-  display:block;
-  width:calc(100% - 16px);
+  display:inline-block;
+  background:#8b5e3c;
+  color:white;
+  text-decoration:none;
 
-  margin:8px auto;
-  padding:10px 0;
+  padding:7px 14px;
+  border-radius:6px;
 
-  background:#28a745;
-  color:#fff;
-
-  border:none;
-  border-radius:8px;
+  margin-top:5px;
 
   font-family:'Poppins', sans-serif;
   font-size:14px;
-  font-weight:600;
-
-  text-decoration:none;
-  text-align:center;
+  font-weight:500;
 
   transition:.3s;
 }
 
 .btn-card:hover{
-  background:#1e7e34;
+  background:#6f482d;
 }
 .btn-ver{
   display:inline-block;

@@ -270,12 +270,12 @@ main {
   text-align:center !important;
 }
 .titulo-vitrine{
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 38px;
-  font-weight: 700;
-  margin: 30px 0;
-  width: 100%;
+  text-align:center;
+  font-family:'Poppins', sans-serif;
+  font-size:24px;
+  font-weight:700;
+  margin:25px 0;
+  width:100%;
 }
 .produto p{
   font-size:14px;

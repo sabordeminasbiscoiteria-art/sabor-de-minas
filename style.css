@@ -436,15 +436,6 @@ main {
 .btn-card:hover{
   background:#6f482d;
 }
-.btn-ver{
-  display:inline-block;
-  background:#1e7e34;
-  color:white;
-  text-decoration:none;
-  padding:7px 14px;
-  border-radius:6px;
-  margin-top:5px;
-}
 
 .btn-preco{
   background:#fff;

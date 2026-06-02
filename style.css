@@ -727,11 +727,11 @@ color:#444;
 @media (min-width: 1025px){
 
   .card-produto{
-    max-width: 220px;
+    max-width: 115px;
   }
 
   .card-produto img{
-    height: 180px;
+    height: 85px;
   }
 
 }

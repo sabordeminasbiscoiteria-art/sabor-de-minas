@@ -689,10 +689,15 @@ color:#444;
 
   .produtos{
     grid-template-columns:repeat(3,1fr);
+    gap:16px;
   }
 
   .card-produto{
-    max-width:115px;
+    max-width:170px;
+  }
+
+  .card-produto img{
+    height:120px;
   }
 
 }

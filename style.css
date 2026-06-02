@@ -222,6 +222,10 @@ main {
   margin-top:5px;
 }
 
+.destaque .btn-ver:hover{
+  background:#1e7e34;
+}
+
 .destaque .descricao {
   font-size: 20px;
   margin-bottom: 20px;

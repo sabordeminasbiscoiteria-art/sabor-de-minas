@@ -407,18 +407,7 @@ main {
   font-weight:600;
   font-size:14px;
 }
-/* botões */
-.btn-card{
-  display:block;
-  width:calc(100% - 20px);
-  margin:8px auto;
-  padding:8px 0;
-  border:none;
-  border-radius:0px;
-  font-weight:600;
-  font-size:14px;
-  cursor:pointer;
-}
+
 /* botões */
 .btn-card{
   display:block;

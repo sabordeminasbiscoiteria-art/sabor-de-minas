@@ -339,8 +339,6 @@ main {
   color: #25D366;
 }
 /* ================= CARDS DE PRODUTOS ================= */
-@media (max-width:768px){
- 
 .produtos{
   display:grid;
   grid-template-columns:repeat(4,1fr);
@@ -355,6 +353,8 @@ main {
   margin-top:50px;
 }
 
+@media (max-width:768px){
+ 
 .card-produto{
   position:relative;
   background:#fff;

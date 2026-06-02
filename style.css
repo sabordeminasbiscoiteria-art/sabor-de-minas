@@ -417,7 +417,7 @@ main {
 
 .btn-card{
   display:inline-block;
-  background:#1e7e34;
+  background:#4caf50;
   color:white;
   text-decoration:none;
 
@@ -434,7 +434,7 @@ main {
 }
 
 .btn-card:hover{
-  background:#1e7e34;
+ background:#4caf50;
 }
 
 .btn-preco{

@@ -212,21 +212,19 @@ main {
   object-fit:cover;
   display:block;
 }
-
+.btn-ver{
+  display:inline-block;
+  background:#8b5e3c;
+  color:white;
+  text-decoration:none;
+  padding:7px 14px;
+  border-radius:6px;
+  margin-top:5px;
+}
 .destaque .descricao {
   font-size: 20px;
   margin-bottom: 20px;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-}
-
-.destaque .btn-ver {
-  padding: 10px 20px;
-  border: none;
-  background-color: #28a745;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
 .destaque .btn-ver:hover {

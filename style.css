@@ -214,7 +214,7 @@ main {
 }
 .btn-ver{
   display:inline-block;
-  background:#28a745;
+  background:##1e7e34;
   color:white;
   text-decoration:none;
   padding:7px 14px;
@@ -222,9 +222,6 @@ main {
   margin-top:5px;
 }
 
-.destaque .btn-ver:hover{
-  background:#1e7e34;
-}
 .destaque .descricao {
   font-size: 20px;
   margin-bottom: 20px;

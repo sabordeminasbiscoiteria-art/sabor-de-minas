@@ -719,7 +719,7 @@ color:#444;
   }
 
   .card-produto{
-    max-width:100px;
+    max-width:125px;
     width:100%;
   }
 
@@ -730,7 +730,7 @@ color:#444;
   .btn-card{
     width:75px;
     font-size:11px;
-    padding:4px 0;
+    padding:4px 10;
   }
 
   /* SOMENTE PARA A PÁGINA PRODUTOS */

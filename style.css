@@ -1557,3 +1557,14 @@ main {
 .btn-voltar i{
   font-size:13px;
 }
+@media (max-width:768px){
+
+  .nome-loja{
+    font-size:12px;
+  }
+
+  .logo{
+    height:30px;
+  }
+
+}

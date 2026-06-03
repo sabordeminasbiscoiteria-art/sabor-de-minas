@@ -452,7 +452,7 @@ main {
   line-height:1.2;
 }
 
-/* ================= SELO (GRAMAS) ================= */
+/* ================= SELO ================= */
 
 .selo-gramas{
   position:absolute;
@@ -482,16 +482,16 @@ main {
   color:#111;
 }
 
-/* ================= BOTÃO ================= */
+/* ================= BOTÃO CARD ================= */
 
 .btn-card{
   display:inline-block;
 
   margin-top:6px;
-  padding:7px 0;
+  padding:8px 0;
   width:90%;
 
-  background:#4caf50;
+  background:#28a745;
   color:#fff;
 
   border-radius:6px;
@@ -505,19 +505,8 @@ main {
 }
 
 .btn-card:hover{
-  background:#3e9b41;
-}
-/* Texto acima dos produtos */
-
-.pedido-whatsapp{
-  margin-top:10px;
-
-  text-align:center;
-
-  font-family:'Poppins', sans-serif;
-  font-size:18px;
-  font-weight:600;
-  color:#333;
+  background:#218838;
+  transform:translateY(-2px);
 }
 /* ================= WHATSAPP FLUTUANTE ================= */
 

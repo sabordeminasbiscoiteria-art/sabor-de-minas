@@ -921,6 +921,8 @@ main {
 }
 /* ================= VITRINE ================= */
 
+/* Container */
+
 .vitrine{
   display:flex;
   justify-content:center;
@@ -929,67 +931,94 @@ main {
   padding:20px;
 }
 
+/* Card */
+
 .produto{
   width:260px;
-  background:#fff;
-  border-radius:14px;
-  padding:15px;
-  text-align:center;
-  box-shadow:0 5px 15px rgba(0,0,0,.08);
-  transition:.3s;
 
   display:flex;
   flex-direction:column;
   align-items:center;
+
+  padding:15px;
+
+  background:#fff;
+  border-radius:14px;
+
+  text-align:center;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+  transition:.3s;
 }
 
 .produto:hover{
   transform:translateY(-5px);
 }
 
+/* Imagem */
+
 .produto-img{
   width:100%;
   height:180px;
+
   object-fit:cover;
+
   border-radius:10px;
 }
 
+/* Título */
+
 .produto h3{
   width:100%;
-  font-size:16px;
-  font-weight:600;
-  line-height:1.2;
-  text-align:center;
-  margin:10px auto;
   min-height:48px;
 
   display:flex;
-  justify-content:center;
   align-items:center;
+  justify-content:center;
+
+  margin:10px auto;
+
+  font-size:16px;
+  font-weight:600;
+  line-height:1.2;
+
+  text-align:center;
 }
+
+/* Descrição */
 
 .produto p{
   font-size:14px;
   color:#666;
 }
 
+/* Preço */
+
 .produto .preco{
+  margin:10px 0;
+
   font-size:22px;
   font-weight:600;
-  margin:10px 0;
 }
+
+/* Botão */
 
 .produto .btn-ver-mais{
   display:inline-block;
+
   width:120px;
+  margin-top:8px;
   padding:10px 0;
+
   background:#28a745;
   color:#fff;
-  text-decoration:none;
+
   border-radius:8px;
-  font-size:14px;
+
+  text-decoration:none;
   text-align:center;
-  margin-top:8px;
+  font-size:14px;
 }
 
 /* ================= TABLET ================= */

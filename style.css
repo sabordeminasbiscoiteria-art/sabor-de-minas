@@ -1556,13 +1556,12 @@ main {
 /* ================= LOGO + NOME ================= */
 
 .logo-nome{
-  width:100%;
-
   display:flex;
   justify-content:center;
   align-items:center;
 
   gap:8px;
+  width:auto;
 }
 
 .logo{
@@ -1591,12 +1590,4 @@ main {
   }
 
 }
-@media (max-width: 1024px) {
-  .header-fixo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 20px;
-  }
-}
+

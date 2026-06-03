@@ -236,76 +236,113 @@ main {
   background-color: #4caf50;
 }
 
-/* ================= VITRINE DE PRODUTOS ================= */
+/* ================= VITRINE ================= */
 
 .vitrine{
   display:flex;
   gap:20px;
   overflow-x:auto;
   padding:20px;
+  scroll-behavior:smooth;
 }
 
+/* remove scrollbar */
+.vitrine::-webkit-scrollbar{
+  display:none;
+}
+
+/* ================= CARD DA VITRINE ================= */
+
 .produto{
-  background:white;
+  background:#fff;
   border-radius:14px;
-  padding:12px;
+
   min-width:200px;
-  text-align:center;
-  box-shadow:0 6px 14px rgba(0,0,0,0.1);
   flex-shrink:0;
-  transition:0.3s;
+
+  padding:12px;
+  text-align:center;
+
+  box-shadow:0 6px 14px rgba(0,0,0,.1);
+
+  transition:.3s;
 }
 
 .produto:hover{
-  transform:translateY(-6px);
+  transform:translateY(-5px);
 }
+
+/* ================= IMAGEM ================= */
 
 .produto-img{
   width:100%;
-  height:180px;
+  height:160px;
   object-fit:cover;
   border-radius:10px;
 }
 
+/* ================= TÍTULO ================= */
+
 .produto h3{
-  font-size:16px;
-  margin:10px 0 3px;
-  text-align:center !important;
+  font-size:15px;
+  margin:10px 0 5px;
+  font-weight:600;
+  color:#333;
 }
+
+/* ================= DESCRIÇÃO ================= */
+
+.produto p{
+  font-size:13px;
+  color:#777;
+  margin:0;
+}
+
+/* ================= PREÇO ================= */
+
+.produto .preco{
+  display:block;
+  font-weight:700;
+  font-size:16px;
+  color:#111;
+
+  margin:6px 0;
+}
+
+/* ================= BOTÃO VITRINE ================= */
+
+.btn-ver{
+  display:inline-block;
+
+  background:#4caf50;
+  color:#fff;
+  text-decoration:none;
+
+  padding:8px 14px;
+  border-radius:6px;
+
+  margin-top:6px;
+
+  font-size:14px;
+  font-weight:500;
+
+  transition:.3s;
+}
+
+.btn-ver:hover{
+  background:#3e9b41;
+  transform:translateY(-2px);
+}
+
+/* ================= TÍTULO VITRINE ================= */
 
 .titulo-vitrine{
   text-align:center;
   font-family:'Poppins', sans-serif;
   font-size:24px;
   font-weight:700;
+
   margin:25px 0;
-  width:100%;
-}
-.produto p{
-  font-size:14px;
-  color:#777;
-}
-
-.produto .preco{
-  display:block;
-  font-weight:600;
-  margin:5px 0;
-  color:#111;
-  font-family:'Poppins', sans-serif;
-}
-
-.btn-ver{
-  display:inline-block;
-  background:#4caf50;
-  color:white;
-  text-decoration:none;
-  padding:7px 14px;
-  border-radius:6px;
-  margin-top:5px;
-}
-
-.vitrine::-webkit-scrollbar{
-  display:none;
 }
 /* ================= ESPAÇAMENTO ENTRE SEÇÕES ================= */
 

@@ -1572,22 +1572,20 @@ main {
   font-size:18px;
   font-weight:600;
 }
-/* ================= CELULAR ================= */
-
 @media (max-width:768px){
 
   .btn-voltar{
     left:5px;
-    padding:4px 8px;
-    font-size:11px;
+    padding:3px 6px;
+    font-size:10px;
   }
 
   .logo{
-    height:24px;
+    height:28px;
   }
 
   .nome-loja{
-    font-size:10px;
+    font-size:13px;
   }
 
 }

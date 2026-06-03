@@ -1528,10 +1528,10 @@ main {
   top:50%;
   transform:translateY(-50%);
 
-  display:inline-flex;
+  display:flex;
   align-items:center;
 
-  padding:6px 12px;
+  padding:5px 10px;
 
   background:#fff;
   color:#333;
@@ -1542,16 +1542,35 @@ main {
   text-decoration:none;
 
   font-family:'Poppins', sans-serif;
-  font-size:13px;
+  font-size:12px;
   font-weight:500;
 
   box-shadow:0 2px 8px rgba(0,0,0,.08);
 
-  transition:.3s;
+  z-index:10;
 }
 
-.btn-voltar:hover{
-  box-shadow:0 6px 15px rgba(0,0,0,.12);
+/* ================= LOGO + NOME ================= */
+
+.logo-nome{
+  width:100%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  gap:8px;
+}
+
+.logo{
+  height:32px;
+  margin:0;
+}
+
+.nome-loja{
+  font-family:'Poppins', sans-serif;
+  font-size:18px;
+  font-weight:600;
 }
 
 /* ================= CELULAR ================= */
@@ -1560,18 +1579,16 @@ main {
 
   .btn-voltar{
     left:5px;
-    padding:5px 8px;
+    padding:4px 8px;
     font-size:11px;
   }
 
   .logo{
-    height:28px;
-    margin-left:0;
+    height:24px;
   }
 
   .nome-loja{
-    font-size:11px;
-    margin-left:5px;
+    font-size:10px;
   }
 
 }

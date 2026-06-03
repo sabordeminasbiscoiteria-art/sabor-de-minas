@@ -681,28 +681,44 @@ main {
   border:0;
 }
 
-/* ===== RESPONSIVO ===== */
+/* ================= CONTATO RESPONSIVO ================= */
 
 @media (max-width:768px){
 
-.contato h2{
-  font-size:26px;
+  .contato h2{
+    font-size:26px;
+  }
+
+  .contato-card{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .mapa iframe{
+    height:250px;
+  }
+
+}
+/* ================= PC ================= */
+
+@media (min-width:1025px){
+
+  .card-produto{
+    max-width:200px;
+  }
+
+  .card-produto img{
+    height:160px;
+  }
+
 }
 
-.contato-card{
-  flex-direction:column;
-  gap:15px;
-}
-
-.mapa iframe{
-  height:250px;
-}
-
-}
 
 /* ================= TABLET ================= */
 
 @media (max-width:1024px){
+
+  /* Cards */
 
   .produtos{
     grid-template-columns:repeat(3,1fr);
@@ -717,18 +733,47 @@ main {
     height:150px;
   }
 
+  /* Pesquisa */
+
+  .search-box input{
+    width:130px;
+  }
+
+  /* Banner */
+
+  .destaque{
+    height:400px;
+  }
+
+  .destaque .descricao{
+    font-size:18px;
+  }
+
+  /* Vitrine */
+
+  .vitrine-img{
+    width:200px;
+    height:200px;
+  }
+
 }
+
+
+/* ================= CELULAR ================= */
+
 @media (max-width:768px){
 
+  /* Produtos */
+
   .produtos{
-    grid-template-columns: repeat(3, 110px);
+    grid-template-columns:repeat(3,110px);
     gap:10px;
     margin-top:15px;
   }
 
   .card-produto{
-    max-width:100px;
     width:100%;
+    max-width:100px;
   }
 
   .card-produto img{
@@ -745,11 +790,6 @@ main {
     padding:4px 0;
   }
 
-  .search-box input{
-    width:130px;
-    font-size:12px;
-  }
-
   .produtos-geral .card-produto{
     max-width:100px;
   }
@@ -758,79 +798,89 @@ main {
     margin:40px 0 10px;
   }
 
-}
-/* ================= PC ================= */
-@media (min-width: 1025px){
+  /* Menu */
 
-  .card-produto{
-    max-width: 200px;
+  .menu-search-wrapper{
+    flex-wrap:nowrap;
+    justify-content:center;
   }
 
-  .card-produto img{
-    height: 160px;
+  .nav-links{
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:8px;
   }
 
-}
-/* ================= RESPONSIVO ================= */
-
-/* Tablet */
-@media screen and (max-width: 1024px) {
-  .search-box input {
-    width: 130px;
+  .menu-lateral{
+    width:200px;
   }
 
-  .vitrine-img {
-    width: 200px;
-    height: 200px;
+  /* Pesquisa */
+
+  .search-box{
+    flex:0;
   }
 
-  .destaque {
-    height: 400px;
+  .search-box input{
+    width:150px;
+    max-width:150px;
+    height:34px;
+    margin-top:0;
+    font-size:12px;
   }
 
-  .destaque .descricao {
-    font-size: 18px;
-  }
-}
+  /* Banner */
 
-/* Celular grande e médio */
-@media screen and (max-width: 768px) {
-
-  .menu-search-wrapper {
-    flex-wrap: nowrap;
-    justify-content: center;
+  .destaque{
+    height:300px;
   }
 
-  .nav-links {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .search-box {
-    flex: 0;
-  }
-
-  .search-box input {
-    width: 150px;
-    max-width: 150px;
-    margin-top: 0;
-    height: 34px;
+  .destaque .descricao{
+    font-size:16px;
   }
 
 }
-  .menu-lateral {
-    width: 200px;
-  }
 
 
-  .destaque {
-    height: 300px;
+/* ================= CELULAR PEQUENO ================= */
+
+@media (max-width:480px){
+
+  .nav-links{
+    gap:6px;
+    font-size:12px;
   }
 
-  .destaque .descricao {
-    font-size: 16px;
+  .search-box{
+    flex:0;
   }
+
+  .search-box input{
+    width:140px;
+    max-width:140px;
+  }
+
+  .destaque{
+    height:250px;
+  }
+
+  .destaque .descricao{
+    font-size:13px;
+  }
+
+  .logo{
+    height:35px;
+  }
+
+  .nome-loja{
+    font-size:14px;
+  }
+
+  .menu-btn{
+    top:8px;
+    left:8px;
+  }
+
 }
 /* Celular pequeno */
 @media screen and (max-width: 480px) {

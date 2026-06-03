@@ -1520,27 +1520,29 @@ main {
 
   cursor:pointer;
 }
-
 /* ================= BOTÃO VOLTAR ================= */
+
 .btn-voltar{
   position:absolute;
-  left:15px;
+  left:10px;
+  top:50%;
+  transform:translateY(-50%);
 
   display:inline-flex;
   align-items:center;
 
-  padding:8px 14px;
+  padding:6px 12px;
 
   background:#fff;
   color:#333;
 
   border:1px solid #ddd;
-  border-radius:10px;
+  border-radius:8px;
 
   text-decoration:none;
 
   font-family:'Poppins', sans-serif;
-  font-size:14px;
+  font-size:13px;
   font-weight:500;
 
   box-shadow:0 2px 8px rgba(0,0,0,.08);
@@ -1549,36 +1551,27 @@ main {
 }
 
 .btn-voltar:hover{
-  transform:translateY(-2px);
   box-shadow:0 6px 15px rgba(0,0,0,.12);
 }
 
-@media (max-width:768px){
+/* ================= CELULAR ================= */
 
-  .nome-loja{
-    font-size:12px;
-  }
-
-  .logo{
-    height:30px;
-  }
-
-}
 @media (max-width:768px){
 
   .btn-voltar{
-    top: 8px;
-    left: 10px;
-    padding: 6px 12px;
-    font-size: 13px;
-  }
-
-  .nome-loja{
-    font-size: 12px;
+    left:5px;
+    padding:5px 8px;
+    font-size:11px;
   }
 
   .logo{
-    height: 30px;
+    height:28px;
+    margin-left:0;
+  }
+
+  .nome-loja{
+    font-size:11px;
+    margin-left:5px;
   }
 
 }

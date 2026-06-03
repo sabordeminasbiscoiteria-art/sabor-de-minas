@@ -352,27 +352,24 @@ main {
 .redes a:hover{
   color:#25D366;
 }
-/* ================= CARDS DE PRODUTOS ================= */
-
-/* Grade de produtos */
+/* ================= GRID DE PRODUTOS ================= */
 
 .produtos{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(auto-fit, minmax(130px, 1fr));
   gap:15px;
   padding:20px;
-  justify-items:center;
   max-width:1000px;
-  margin:auto;
-  margin-top:50px;
+  margin:50px auto 0;
+  justify-items:center;
 }
 
-/* Card */
+/* ================= CARD ================= */
 
 .card-produto{
   position:relative;
   width:100%;
-  max-width:125px;
+  max-width:140px;
 
   background:#fff;
   border-radius:14px;
@@ -380,40 +377,45 @@ main {
 
   text-align:center;
 
-  padding-bottom:8px;
+  padding-bottom:10px;
 
   box-shadow:0 2px 8px rgba(0,0,0,.08);
-
   transition:.3s;
 }
 
+.card-produto:hover{
+  transform:translateY(-4px);
+}
+
+/* ================= IMAGEM ================= */
+
 .card-produto img{
   width:100%;
-  height:85px;
+  height:90px;
   object-fit:cover;
   display:block;
 }
 
-/* Nome do produto */
+/* ================= NOME ================= */
 
 .nome-produto{
-  height:40px;
+  min-height:40px;
 
   display:flex;
   align-items:center;
   justify-content:center;
 
-  padding:0 2px;
+  padding:0 4px;
 
   font-family:'Poppins', sans-serif;
-  font-size:11px;
+  font-size:12px;
   font-weight:600;
   color:#333;
 
-  line-height:1.1;
+  line-height:1.2;
 }
 
-/* Selo de peso */
+/* ================= SELO (GRAMAS) ================= */
 
 .selo-gramas{
   position:absolute;
@@ -423,32 +425,34 @@ main {
   background:#fff;
   color:#111;
 
-  padding:4px 8px;
+  padding:3px 7px;
   border-radius:5px;
 
-  font-size:11px;
+  font-size:10px;
   font-weight:600;
+
+  box-shadow:0 1px 4px rgba(0,0,0,.1);
 }
 
-/* Preço */
+/* ================= PREÇO ================= */
 
 .preco-card{
-  margin-top:4px;
-  margin-bottom:8px;
+  margin:6px 0;
 
   font-family:'Poppins', sans-serif;
-  font-size:16px;
+  font-size:15px;
   font-weight:600;
   color:#111;
 }
 
-/* Botões */
+/* ================= BOTÃO ================= */
 
 .btn-card{
   display:inline-block;
 
-  margin-top:5px;
-  padding:7px 32px;
+  margin-top:6px;
+  padding:7px 0;
+  width:90%;
 
   background:#4caf50;
   color:#fff;
@@ -457,23 +461,15 @@ main {
   text-decoration:none;
 
   font-family:Arial, sans-serif;
-  font-size:14px;
+  font-size:13px;
   font-weight:500;
 
   transition:.3s;
 }
 
 .btn-card:hover{
-  background:#4caf50;
+  background:#3e9b41;
 }
-
-.btn-preco{
-  background:#fff;
-  color:#111;
-  border:1px solid #ccc;
-  font-family:'Poppins', sans-serif;
-}
-
 /* Texto acima dos produtos */
 
 .pedido-whatsapp{

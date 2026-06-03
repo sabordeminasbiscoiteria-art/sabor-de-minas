@@ -1330,3 +1330,215 @@ main {
   border-radius:10px;
   text-decoration:none;
 }
+/* ================= MENU PC / TABLET ================= */
+
+@media (min-width:769px){
+
+  .menu-search-wrapper{
+    margin-left:auto;
+    gap:20px;
+  }
+
+  .nav-links{
+    gap:15px;
+  }
+
+  .search-box{
+    margin-left:0;
+  }
+
+}
+
+/* ================= PÁGINA DO PRODUTO ================= */
+
+.produto-detalhe{
+  max-width:1200px;
+  margin:20px auto 60px;
+  padding:0 20px;
+
+  display:flex;
+  gap:60px;
+  align-items:flex-start;
+}
+
+.galeria{
+  width:500px;
+}
+
+.foto-principal{
+  width:100%;
+  height:420px;
+
+  object-fit:cover;
+
+  border-radius:15px;
+
+  box-shadow:0 5px 20px rgba(0,0,0,.12);
+}
+
+.miniaturas{
+  display:flex;
+  gap:12px;
+  margin-top:15px;
+}
+
+.miniaturas img{
+  width:90px;
+  height:90px;
+
+  object-fit:cover;
+
+  border-radius:10px;
+
+  cursor:pointer;
+
+  border:2px solid transparent;
+
+  transition:.3s;
+}
+
+.miniaturas img:hover{
+  border-color:#28a745;
+  transform:scale(1.05);
+}
+
+.info-produto{
+  flex:1;
+  padding-top:20px;
+}
+
+.info-produto h1{
+  font-size:38px;
+  color:#333;
+  margin-bottom:15px;
+}
+
+.preco{
+  font-size:32px;
+  font-weight:700;
+  color:#28a745;
+  margin-bottom:20px;
+}
+
+.info-produto p{
+  font-size:17px;
+  line-height:1.8;
+  color:#555;
+}
+
+.btn-whatsapp{
+  display:inline-block;
+  margin-top:25px;
+
+  padding:14px 28px;
+
+  background:#25D366;
+  color:#fff;
+
+  border-radius:10px;
+
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* ================= RESPONSIVO PRODUTO ================= */
+
+@media (max-width:768px){
+
+  .produto-detalhe{
+    flex-direction:column;
+    gap:25px;
+  }
+
+  .galeria{
+    width:100%;
+  }
+
+  .foto-principal{
+    height:280px;
+  }
+
+  .info-produto h1{
+    font-size:28px;
+  }
+
+  .preco{
+    font-size:26px;
+  }
+
+}
+
+/* ================= MODAL DE IMAGEM ================= */
+
+.modal-imagem{
+  display:none;
+  position:fixed;
+
+  top:0;
+  left:0;
+
+  width:100%;
+  height:100%;
+
+  background:rgba(0,0,0,.9);
+
+  justify-content:center;
+  align-items:center;
+
+  z-index:99999;
+}
+
+.modal-imagem img,
+#imagemAmpliada{
+  max-width:90%;
+  max-height:90%;
+  border-radius:10px;
+}
+
+.fechar{
+  position:absolute;
+  top:20px;
+  right:30px;
+
+  color:#fff;
+  font-size:40px;
+
+  cursor:pointer;
+}
+
+/* ================= BOTÃO VOLTAR ================= */
+
+.btn-voltar{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  margin:0 20px 10px;
+  padding:10px 16px;
+
+  background:#fff;
+  color:#333;
+
+  border:1px solid #ddd;
+  border-radius:10px;
+
+  text-decoration:none;
+
+  font-family:'Poppins', sans-serif;
+  font-size:14px;
+  font-weight:500;
+
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+  transition:.3s;
+}
+
+.btn-voltar:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 15px rgba(0,0,0,.12);
+  border-color:#bbb;
+}
+
+.btn-voltar i{
+  font-size:13px;
+}

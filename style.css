@@ -1550,7 +1550,7 @@ main {
 /* ================= BOTÃO VOLTAR ================= */
 .btn-voltar{
   position:absolute;
-  left: -15px;
+  left:0;
   top:50%;
   transform:translateY(-50%);
 
@@ -1575,20 +1575,16 @@ main {
 
   z-index:10;
 }
-.btn-voltar:hover,
-.btn-voltar:focus,
-.btn-voltar:active{
-  transform: translateY(-50%);
-}
 /* ================= LOGO + NOME ================= */
 
 .logo-nome{
+  width:100%;
+
   display:flex;
   justify-content:center;
   align-items:center;
 
   gap:8px;
-  width:auto;
 }
 
 .logo{
@@ -1617,4 +1613,3 @@ main {
   }
 
 }
-

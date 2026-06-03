@@ -319,35 +319,38 @@ main {
   margin-top: 50px;    /* deixa espaço entre a última vitrine e o rodapé */
 }
 /* ================= RODAPÉ ================= */
-.rodape {
-  background: #f1ece6;
-  color: #5a3e36;
-  padding: 20px;
-  text-align: center;
+
+.rodape{
+  background:#f1ece6;
+  color:#5a3e36;
+  padding:20px;
+  text-align:center;
 }
 
-.rodape a {
-  color: #5a3e36;
-  text-decoration: none;
+.rodape a{
+  color:#5a3e36;
+  text-decoration:none;
 }
 
-.rodape a:hover {
-  text-decoration: underline;
+.rodape a:hover{
+  text-decoration:underline;
 }
 
-.redes {
-  margin-top: 10px;
+/* Redes sociais */
+
+.redes{
+  margin-top:10px;
 }
 
-.redes a {
-  font-size: 22px;
-  margin: 0 10px;
-  color: #5a3e36;
-  transition: 0.3s;
+.redes a{
+  font-size:22px;
+  margin:0 10px;
+  color:#5a3e36;
+  transition:.3s;
 }
 
-.redes a:hover {
-  color: #25D366;
+.redes a:hover{
+  color:#25D366;
 }
 /* ================= CARDS DE PRODUTOS ================= */
 .produtos{

@@ -1524,7 +1524,7 @@ main {
 
 .btn-voltar{
   position:absolute;
-  left:10px;
+  left:0px;
   top:50%;
   transform:translateY(-50%);
 
@@ -1549,7 +1549,6 @@ main {
 
   z-index:10;
 }
-
 /* ================= LOGO + NOME ================= */
 
 .logo-nome{

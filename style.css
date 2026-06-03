@@ -1572,20 +1572,19 @@ main {
   font-size:18px;
   font-weight:600;
 }
+
 @media (max-width:768px){
 
-  .btn-voltar{
-    left:5px;
-    padding:3px 6px;
-    font-size:10px;
+  .header-fixo{
+    min-height:70px;
   }
 
   .logo{
-    height:28px;
+    height:30px;
   }
 
   .nome-loja{
-    font-size:13px;
+    font-size:12px;
   }
 
 }

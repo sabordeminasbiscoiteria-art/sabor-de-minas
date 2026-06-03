@@ -25,28 +25,49 @@ body{
 }
 /* ================= LOGO E NOME ================= */
 /* Logo e nome da loja */
-.logo-nome {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-
+/* ================= RESET ================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+body{
+  padding-top: 80px;
+}
+/* ================= HEADER FIXO ================= */
+.header-fixo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
   display: flex;
   align-items: center;
-  justify-content: center;
-
+  justify-content: flex-start;
+  padding: 10px 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 100;
   gap: 10px;
+  flex-wrap: wrap;
+}
+/* ================= LOGO E NOME ================= */
+/* Logo e nome da loja */
+.logo-nome {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .logo {
   height: 40px;
-  margin-left: 0;
+  margin-left: 50px; /* espaço para hamburger */
 }
 
 .nome-loja {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  white-space: nowrap;
+  margin-left: 10px;
 }
 /* ================= MENU PESQUISA ================= */
 /* Wrapper que mantém menu simples + pesquisa lado a lado */

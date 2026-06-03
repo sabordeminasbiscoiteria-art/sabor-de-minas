@@ -1548,6 +1548,11 @@ main {
 
   z-index:10;
 }
+.btn-voltar:hover,
+.btn-voltar:focus,
+.btn-voltar:active{
+  transform: translateY(-50%);
+}
 /* ================= LOGO + NOME ================= */
 
 .logo-nome{

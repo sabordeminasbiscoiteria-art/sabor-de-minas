@@ -49,7 +49,6 @@ body{
   gap: 10px;
   flex-shrink: 0;
 }
-
 /* Menu simples */
 .nav-links {
   display: flex;

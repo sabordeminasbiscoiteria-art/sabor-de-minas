@@ -1522,14 +1522,14 @@ main {
 }
 
 /* ================= BOTÃO VOLTAR ================= */
-
 .btn-voltar{
+  position:absolute;
+  left:15px;
+
   display:inline-flex;
   align-items:center;
-  gap:8px;
 
-  margin:0 20px 10px;
-  padding:10px 16px;
+  padding:8px 14px;
 
   background:#fff;
   color:#333;
@@ -1551,12 +1551,8 @@ main {
 .btn-voltar:hover{
   transform:translateY(-2px);
   box-shadow:0 6px 15px rgba(0,0,0,.12);
-  border-color:#bbb;
 }
 
-.btn-voltar i{
-  font-size:13px;
-}
 @media (max-width:768px){
 
   .nome-loja{

@@ -735,7 +735,13 @@ color:#444;
     font-size:11px;
     padding:4px 0px;
   }
+  @media (max-width:768px){
 
+  .search-box{
+    width:140px;
+  }
+
+}
   /* SOMENTE PARA A PÁGINA PRODUTOS */
   .produtos-geral .card-produto{
     max-width:100px;

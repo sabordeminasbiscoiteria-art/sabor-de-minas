@@ -707,14 +707,12 @@ color:#444;
   }
 
 }
-/* ================= CELULAR ================= */
-
 @media (max-width:768px){
 
   .produtos{
     grid-template-columns: repeat(3, 110px);
     gap:10px;
-    margin-top:50px;
+    margin-top:15px;
   }
 
   .card-produto{
@@ -725,34 +723,28 @@ color:#444;
   .card-produto img{
     height:95px;
   }
- 
- .card-produto h3{
-    min-height: 45px;
- }
- 
+
+  .card-produto h3{
+    min-height:45px;
+  }
+
   .btn-card{
     width:75px;
     font-size:11px;
-    padding:4px 0px;
+    padding:4px 0;
   }
+
   .search-box input{
-  width:130px;
-  font-size:12px;
-}
-  /* SOMENTE PARA A PÁGINA PRODUTOS */
+    width:130px;
+    font-size:12px;
+  }
+
   .produtos-geral .card-produto{
     max-width:100px;
   }
 
-}
-@media (max-width:768px){
-
   .pedido-whatsapp{
-    margin: 40px 0 10px;
-  }
-
-  .produtos{
-    margin-top: 15px;
+    margin:40px 0 10px;
   }
 
 }

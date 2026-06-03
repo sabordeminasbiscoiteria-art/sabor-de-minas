@@ -1591,3 +1591,12 @@ main {
   }
 
 }
+@media (max-width: 1024px) {
+  .header-fixo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+  }
+}

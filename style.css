@@ -1564,3 +1564,21 @@ main {
   }
 
 }
+@media (max-width:768px){
+
+  .btn-voltar{
+    top: 8px;
+    left: 10px;
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .nome-loja{
+    font-size: 12px;
+  }
+
+  .logo{
+    height: 30px;
+  }
+
+}

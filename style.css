@@ -26,21 +26,27 @@ body{
 /* ================= LOGO E NOME ================= */
 /* Logo e nome da loja */
 .logo-nome {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
   display: flex;
   align-items: center;
-  flex-shrink: 0;
+  justify-content: center;
+
+  gap: 10px;
 }
 
 .logo {
   height: 40px;
-  margin-left: 50px; /* espaço para hamburger */
+  margin-left: 0;
 }
 
 .nome-loja {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  margin-left: 10px;
+  white-space: nowrap;
 }
 /* ================= MENU PESQUISA ================= */
 /* Wrapper que mantém menu simples + pesquisa lado a lado */

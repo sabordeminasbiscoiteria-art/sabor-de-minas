@@ -544,7 +544,9 @@ main {
   color:#333;
 }
 
-/* ===== CARD PRINCIPAL ===== */
+/* ================= CONTATO ================= */
+
+/* Card principal */
 
 .contato-card{
   display:flex;
@@ -553,17 +555,18 @@ main {
   gap:25px;
   flex-wrap:wrap;
 
-  background:white;
-  padding:25px 30px;
-  border-radius:15px;
-
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-
   max-width:650px;
   margin:0 auto 40px;
+
+  padding:25px 30px;
+
+  background:#fff;
+  border-radius:15px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
-/* ===== BOTÕES ===== */
+/* Botões */
 
 .contato-btn{
   display:flex;
@@ -572,17 +575,22 @@ main {
 
   padding:12px 22px;
 
-  border-radius:30px;
-
+  color:#fff;
   text-decoration:none;
-  color:white;
   font-weight:600;
 
-  transition:0.3s;
+  border-radius:30px;
+
+  transition:.3s;
 }
 
 .contato-btn i{
   font-size:18px;
+}
+
+.contato-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 6px 15px rgba(0,0,0,.15);
 }
 
 /* WhatsApp */
@@ -597,48 +605,45 @@ main {
   background:#E1306C;
 }
 
-/* Hover */
 
-.contato-btn:hover{
-  transform:translateY(-3px);
-  box-shadow:0 6px 15px rgba(0,0,0,0.15);
-}
-
-
-/* SOBRE */
+/* ================= SOBRE ================= */
 
 .sobre{
-padding:120px 20px 60px;
-text-align:center;
+  padding:120px 20px 60px;
+  text-align:center;
 }
 
 .sobre h2{
-font-size:32px;
-margin-bottom:40px;
+  font-size:32px;
+  margin-bottom:40px;
 }
 
 .sobre-container{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:40px;
-flex-wrap:wrap;
-max-width:1000px;
-margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+
+  max-width:1000px;
+  margin:auto;
 }
 
 .sobre-img img{
-width:100%;
-max-width:400px;
-border-radius:15px;
+  width:100%;
+  max-width:400px;
+
+  border-radius:15px;
 }
 
 .sobre-texto{
-max-width:500px;
-text-align:left;
-font-size:17px;
-line-height:1.7;
-color:#444;
+  max-width:500px;
+
+  text-align:left;
+
+  font-size:17px;
+  line-height:1.7;
+  color:#444;
 }
 /* ===== ENDEREÇO ===== */
 

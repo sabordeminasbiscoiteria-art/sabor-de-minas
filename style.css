@@ -725,7 +725,11 @@ color:#444;
   .card-produto img{
     height:95px;
   }
-
+ 
+.card-produto h3{
+    min-height: 50px;
+ }
+ 
   .btn-card{
     width:75px;
     font-size:11px;

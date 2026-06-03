@@ -23,6 +23,7 @@ body{
   gap: 10px;
   flex-wrap: wrap;
 }
+/* ================= LOGO E NOME ================= */
 /* Logo e nome da loja */
 .logo-nome {
   display: flex;
@@ -41,7 +42,7 @@ body{
   font-size: 18px;
   margin-left: 10px;
 }
-
+/* ================= MENU PESQUISA ================= */
 /* Wrapper que mantém menu simples + pesquisa lado a lado */
 .menu-search-wrapper {
   display: flex;
@@ -68,7 +69,7 @@ body{
 .nav-links a:hover {
   color: #28a745;
 }
-
+/* ================= BARRA DE PESQUISA ================= */
 /* Barra de pesquisa */
 .search-box{
   position:relative;
@@ -101,7 +102,7 @@ body{
   width:18px;
   height:18px;
 }
-/* ================= MENSAGEM PRODUTO NÃO ENCONTRADO ================= */
+/* ================= MENSAGEM  DA BARRA DE PESQUISA ================= */
 #sem-produto {
   display: none;
   text-align: center;

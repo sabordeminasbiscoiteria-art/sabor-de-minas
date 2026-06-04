@@ -65,7 +65,7 @@ body{
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  margin-left: -2px;
+  margin-left: -4px;
 }
 /* ================= MENU PESQUISA ================= */
 /* Wrapper que mantém menu simples + pesquisa lado a lado */
@@ -1563,7 +1563,7 @@ main {
 
  .btn-voltar{
   position:absolute;
-  left:5px;
+  left:-15px;
 }
 
   .logo{

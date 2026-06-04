@@ -53,6 +53,7 @@ body{
 .logo-nome {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-shrink: 0;
 }
 
@@ -923,12 +924,16 @@ main {
   }
 
   .logo {
-    height: 35px;
+    height: 40px;
+    margin-left: 0;
   }
 
   .nome-loja {
-    font-size: 20px;
+    font-size: 16px;
+    margin-left: -3px;
   }
+
+}
 
   .menu-btn {
     top: 8px;

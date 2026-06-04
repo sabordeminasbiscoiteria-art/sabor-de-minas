@@ -1581,12 +1581,6 @@ main {
 
 }
 /* ================= TOPO PRODUTO RESPONSIVO ================= */
-
-.header-fixo{
-  position:relative;
-  justify-content:center;
-}
-
 .logo-nome{
   display:flex;
   align-items:center;

@@ -922,17 +922,6 @@ main {
   .destaque .descricao {
     font-size: 13px;
   }
-
-  .logo {
-    height: 40px;
-    margin-left: 0;
-  }
-
-  .nome-loja {
-    font-size: 16px;
-    margin-left: -3px;
-  }
-
 }
   .menu-btn {
     top: 8px;
@@ -1502,54 +1491,4 @@ main {
   font-size:40px;
 
   cursor:pointer;
-}
-/* ================= TOPO PRODUTO ================= */
-
-.topo-produto{
-  position:relative;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  width:100%;
-}
-
-/* ================= BOTÃO VOLTAR ================= */
-.btn-voltar{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  padding:5px 10px;
-
-  background:#fff;
-  color:#333;
-
-  border:1px solid #ddd;
-  border-radius:8px;
-
-  text-decoration:none;
-
-  font-family:'Poppins', sans-serif;
-  font-size:16px;
-  font-weight:600;
-
-  box-shadow:0 2px 8px rgba(0,0,0,.08);
-}
-/* ================= CELULAR ================= */
-
-@media (max-width:768px){
-
- .btn-voltar{
-  position:absolute;
-  left:-15px;
-}
-
-  .logo{
-    height:45px;
-  }
-
-  .nome-loja{
-    font-size:16px;
-  }
-
 }

@@ -1542,7 +1542,7 @@ main {
 .logo-nome{
   display:flex;
   align-items:center;
-  gap:4px;
+  gap:8px;
 }
 
 .logo{

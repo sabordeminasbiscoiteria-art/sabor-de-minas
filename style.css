@@ -1022,7 +1022,6 @@ main {
 }
 
 /* Botão */
-
 .produto .btn-ver-mais{
   display:inline-block;
 
@@ -1038,8 +1037,8 @@ main {
   text-decoration:none;
   text-align:center;
   font-size:14px;
+  }
 }
-
 /* ================= TABLET ================= */
 
 @media (max-width:1024px){
@@ -1245,7 +1244,6 @@ main {
   .preco{
     font-size: 26px;
   }
-
 }
 /* ================= MODAL DE IMAGEM ================= */
 

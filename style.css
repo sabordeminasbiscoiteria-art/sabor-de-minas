@@ -810,7 +810,7 @@ main {
   }
 
   .card-produto img{
-    height:100px;
+    height:180px;
   }
 
   .card-produto h3{
@@ -993,7 +993,7 @@ main {
 
 .produto-img{
   width:100%;
-  height:220px;
+  height:180px;
 
   object-fit:cover;
 
@@ -1106,7 +1106,7 @@ main {
   }
 
   .produto-img{
-    height:220px;
+    height:180px;
   }
 
   .produto h3{

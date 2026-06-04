@@ -934,12 +934,10 @@ main {
   }
 
 }
-
   .menu-btn {
     top: 8px;
     left: 8px;
   }
-}
 /* ================= VITRINE ================= */
 
 /* Container */
@@ -1073,9 +1071,8 @@ main {
 
   .produto .btn-ver-mais{
     width:100%;
-  }
-}
-
+  } 
+} 
 /* ================= CELULAR ================= */
 
 @media (max-width:768px){

@@ -1599,13 +1599,13 @@ main {
 /* ================= CELULAR ================= */
 
 @media (max-width:768px){
-
   .btn-voltar{
-    left:5px;
+    margin-left:5px;
     padding:5px 8px;
     font-size:11px;
   }
 
+}
  .logo{
     height:45px;
     margin-left:0;

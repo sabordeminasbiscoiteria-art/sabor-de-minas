@@ -789,7 +789,18 @@ main {
   .card-produto img{
     height:170px;
   }
+  .vitrine{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+  }
 
+  .produto{
+    width:auto;
+    min-width:0;
+  }
+
+}
   .search-box input{
     width:130px;
   }
@@ -808,6 +819,7 @@ main {
   }
 
 }
+
 /* ================= CELULAR ================= */
 
 @media (max-width:768px){

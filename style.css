@@ -57,7 +57,7 @@ body{
 }
 
 .logo {
-  height: 40px;
+  height: 50px;
   margin-left: 50px; /* espaço para hamburger */
 }
 
@@ -969,7 +969,7 @@ main {
   }
 
   .nome-loja {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .menu-btn {
@@ -1606,14 +1606,13 @@ main {
     font-size:11px;
   }
 
-  .logo{
-    height:28px;
+ .logo{
+    height:50px;
     margin-left:0;
-  }
+}
 
-  .nome-loja{
-    font-size:11px;
-    margin-left:5px;
-  }
-
+.nome-loja{
+    font-size:18px;
+    font-weight:700;
+    margin-left:8px;
 }

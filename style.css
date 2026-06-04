@@ -57,7 +57,7 @@ body{
 }
 
 .logo {
-  height: 50px;
+  height: 45px;
   margin-left: 50px; /* espaço para hamburger */
 }
 
@@ -65,7 +65,7 @@ body{
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  margin-left: -5px;
+  margin-left: -2px;
 }
 /* ================= MENU PESQUISA ================= */
 /* Wrapper que mantém menu simples + pesquisa lado a lado */

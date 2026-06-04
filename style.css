@@ -1021,17 +1021,17 @@ main {
 /* ================= TABLET ================= */
 
 @media (max-width:1024px){
-
+ 
   .vitrine{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:15px;
-    padding:15px;
+    grid-template-columns:repeat(3,minmax(220px,1fr));
+    gap:20px;
+    padding:20px;
   }
 
   .produto{
     width:100%;
-    padding:12px;
+    min-width:0;
   }
 
   .produto-img{

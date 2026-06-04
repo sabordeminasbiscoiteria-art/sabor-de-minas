@@ -792,7 +792,7 @@ main {
 }
 
 
-/* ================= CELULAR PAGINAS PRODUTOS================= */
+/* ================= CELULAR PAGINAS PRODUTOS ================= */
 
 @media (max-width:768px){
 
@@ -992,7 +992,7 @@ main {
 /* Imagem */
 
 .produto-img{
-  width:130%;
+  width:105%;
   height:150px;
 
   object-fit:cover;

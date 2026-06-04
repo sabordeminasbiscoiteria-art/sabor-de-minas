@@ -1548,9 +1548,10 @@ main {
 /* ================= TOPO PRODUTO ================= */
 
 .topo-produto{
+  position:relative;
   display:flex;
+  justify-content:center;
   align-items:center;
-  gap:8px;
   width:100%;
 }
 
@@ -1602,10 +1603,10 @@ main {
 
 @media (max-width:768px){
 
-  .btn-voltar{
-    padding:5px 8px;
-    font-size:15px;
-  }
+ .btn-voltar{
+  position:absolute;
+  left:5px;
+}
 
   .logo{
     height:45px;

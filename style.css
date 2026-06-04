@@ -774,9 +774,8 @@ main {
 
 
 /* ================= TABLET ================= */
-
 @media (max-width:1024px){
-  /* Cards */
+
   .produtos{
     grid-template-columns:repeat(3,1fr);
     gap:16px;
@@ -791,14 +790,9 @@ main {
     height:170px;
   }
 
-}
-  /* Pesquisa */
-
   .search-box input{
     width:130px;
   }
-
-  /* Banner */
 
   .destaque{
     height:400px;
@@ -808,16 +802,12 @@ main {
     font-size:18px;
   }
 
-  /* Vitrine */
-
   .vitrine-img{
     width:200px;
     height:200px;
   }
 
 }
-
-
 /* ================= CELULAR ================= */
 
 @media (max-width:768px){

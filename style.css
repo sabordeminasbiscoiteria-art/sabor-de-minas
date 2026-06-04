@@ -805,8 +805,8 @@ main {
   }
 
   .card-produto{
-    width:120%;
-    max-width:120px;
+    width:100%;
+    max-width:100px;
   }
 
   .card-produto img{
@@ -814,7 +814,7 @@ main {
   }
 
   .card-produto h3{
-    min-height:45px;
+    min-height:50px;
   }
 
   .btn-card{

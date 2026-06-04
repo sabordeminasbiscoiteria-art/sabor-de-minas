@@ -1600,7 +1600,7 @@ main {
 
 @media (max-width:768px){
   .btn-voltar{
-    margin-left:5px;
+    margin-left:-15px;
     padding:5px 8px;
     font-size:11px;
   }

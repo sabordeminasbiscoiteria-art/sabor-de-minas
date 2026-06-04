@@ -763,7 +763,7 @@ main {
 @media (min-width:1025px){
 
   .card-produto{
-    max-width:none;
+    max-width:200px;
   }
 
   .card-produto img{
@@ -789,7 +789,7 @@ main {
   }
 
   .card-produto img{
-    height:150px;
+    height:170px;
   }
 
   /* Pesquisa */

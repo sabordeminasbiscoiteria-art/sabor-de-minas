@@ -776,22 +776,22 @@ main {
 /* ================= TABLET ================= */
 
 @media (max-width:1024px){
-
   /* Cards */
-
   .produtos{
     grid-template-columns:repeat(3,1fr);
     gap:16px;
   }
 
   .card-produto{
-    max-width:170px;
+    width:100%;
+    max-width:none;
   }
 
   .card-produto img{
     height:170px;
   }
 
+}
   /* Pesquisa */
 
   .search-box input{

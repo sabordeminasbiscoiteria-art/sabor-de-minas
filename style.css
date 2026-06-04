@@ -10,7 +10,7 @@ body {
   padding-top: 100px;
 }
 
-/* ================= HEADER FIXO ================= */
+/* ================= HEADER ================= */
 .header-fixo {
   position: fixed;
   top: 0;
@@ -18,7 +18,7 @@ body {
   background: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* corrigido */
+  justify-content: space-between;
   padding: 10px 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 100;
@@ -28,7 +28,7 @@ body {
 .logo-nome {
   display: flex;
   align-items: center;
-  margin-left: 10px;
+  gap: 10px;
 }
 
 .logo {
@@ -38,27 +38,25 @@ body {
 .nome-loja {
   font-weight: 700;
   font-size: 18px;
-  margin-left: 10px;
 }
 
 /* ================= MENU + SEARCH ================= */
 .menu-search-wrapper {
-  margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
+  margin-left: auto;
 }
 
 .nav-links {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .nav-links a {
-  font-size: 14px;
   text-decoration: none;
   color: #111;
-  padding: 4px 8px;
+  font-size: 14px;
 }
 
 .nav-links a:hover {
@@ -74,7 +72,7 @@ body {
 
 .search-box input {
   padding: 8px 8px 8px 34px;
-  width: 150px;
+  width: 160px;
   border: 1px solid #ccc;
   font-size: 13px;
 }
@@ -82,32 +80,131 @@ body {
 .icone-lupa {
   position: absolute;
   left: 10px;
-  top: 56%;
-  transform: translateY(-50%);
+}
+
+/* ================= PEDIDO WHATSAPP ================= */
+.pedido-whatsapp {
+  text-align: center;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+/* ================= BOTÃO HOME ================= */
+.btn-home {
+  display: inline-block;
+  background: #25D366;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 20px auto;
+}
+
+/* ================= GRID PRODUTOS (PADRÃO INDEX + PRODUTOS) ================= */
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+/* ================= CARD PRODUTO ================= */
+.card-produto {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  transition: .3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-produto:hover {
+  transform: translateY(-4px);
+}
+
+/* IMAGEM PADRÃO */
+.card-produto img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* NOME */
+.nome-produto {
+  font-size: 12px;
+  padding: 5px;
+  min-height: 40px;
+}
+
+/* PREÇO */
+.preco-card {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+/* BOTÃO CARD */
+.btn-card {
+  display: inline-block;
+  background: #28a745;
+  color: #fff;
+  padding: 8px;
+  width: 90%;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 8px auto;
+}
+
+/* ================= "SEM PRODUTO" ================= */
+#sem-produto {
+  display: none;
+  text-align: center;
+  padding: 10px;
+  background: #fff;
+  margin: 20px auto;
+  width: fit-content;
+  border-radius: 8px;
+}
+
+/* ================= WHATSAPP FLUTUANTE ================= */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 28px;
+  z-index: 999;
 }
 
 /* ================= MENU LATERAL ================= */
 .menu-btn {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 28px;
+  font-size: 26px;
   cursor: pointer;
-  z-index: 102;
 }
 
 .menu-lateral {
   position: fixed;
   top: 0;
   left: -260px;
-  width: 260px;
-  height: 100vh;
+  width: 250px;
+  height: 100%;
   background: #fff;
-  transition: 0.3s;
-  z-index: 101;
-  display: flex;
-  flex-direction: column;
   padding-top: 60px;
+  transition: .3s;
 }
 
 .menu-lateral.ativo {
@@ -115,197 +212,105 @@ body {
 }
 
 .menu-lateral a {
-  padding: 15px;
-  border-bottom: 1px solid #eee;
+  display: block;
+  padding: 12px;
   text-decoration: none;
   color: #111;
-  font-weight: 600;
 }
 
-/* ================= PEDIDOS WHATSAPP ================= */
-.pedido-whatsapp {
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  margin: 20px 0;
-  color: #333;
-}
-
-/* ================= PRODUTOS GRID ================= */
-.produtos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 15px;
-  padding: 20px;
-  max-width: 1000px;
-  margin: 50px auto 0;
-  justify-items: center;
-}
-
-/* CARD PRODUTO */
-.card-produto {
-  position: relative;
-  max-width: 120px; /* corrigido */
-  background: #fff;
-  border-radius: 14px;
-  overflow: hidden;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,.08);
-}
-
-.card-produto img {
-  width: 100%;
-  height: 85px; /* corrigido */
-  object-fit: cover;
-}
-
-/* TEXTO */
-.nome-produto {
-  font-size: 12px;
-  font-weight: 600;
-  padding: 5px;
-}
-
-.preco-card {
-  font-size: 15px;
-  font-weight: 600;
-}
-
-/* BOTÃO */
-.btn-card {
-  display: inline-block;
-  background: #28a745;
-  color: #fff;
-  text-decoration: none;
-  padding: 8px;
-  border-radius: 6px;
-  font-size: 13px;
-}
-
-/* SELO GRAMAS */
-.selo-gramas {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  background: #fff;
-  padding: 3px 7px;
-  font-size: 10px;
-}
-
-/* ================= VITRINE INDEX ================= */
-.vitrine {
-  display: flex;
-  gap: 15px;
-  padding: 20px;
-  overflow-x: auto;
-}
-
-.produto {
-  min-width: 160px; /* menor e proporcional */
-  max-width: 180px;
-  background: #fff;
-  border-radius: 14px;
-  padding: 10px;
-  text-align: center;
-  box-shadow: 0 5px 12px rgba(0,0,0,.08);
-}
-
-.produto-img {
-  width: 100%;
-  height: 120px; /* corrigido */
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* ================= BEIJINHO INDEX ================= */
+/* ================= INDEX BANNER (BEIJINHO) ================= */
 .destaque {
   width: 100%;
-  height: 420px;
-  background: url("img/beijinho.jpeg") center/cover no-repeat;
+  height: 450px;
+  background: url('img/beijinho.jpeg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@media (max-width: 768px) {
-  .destaque {
-    height: 260px;
-  }
-}
-
-/* ================= WHATSAPP FLUTUANTE ================= */
-.whatsapp-float {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 65px;
-  height: 65px;
-  background: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
   color: #fff;
-  z-index: 9999;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-/* ================= FOOTER ================= */
-.rodape {
-  background: #f1ece6;
+/* ================= CONTATO ================= */
+.contato {
   text-align: center;
-  padding: 20px;
-  color: #5a3e36;
+  padding: 40px 20px;
+}
+
+.contato-card {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 /* ================= SOBRE ================= */
 .sobre {
-  padding: 120px 20px 60px;
   text-align: center;
+  padding: 40px 20px;
 }
 
-.sobre-container {
+/* ================= PRODUTO DETALHE ================= */
+.produto-detalhe {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
   gap: 40px;
 }
 
-/* ================= CONTATO ================= */
-.contato-card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-/* ================= "SEM PRODUTO" ================= */
-#sem-produto {
+/* ================= MODAL ================= */
+.modal-imagem {
   display: none;
-  text-align: center;
-  margin: 20px auto;
-  padding: 10px 15px;
-  max-width: 250px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
 
-/* ================= RESPONSIVO ================= */
+.modal-imagem img {
+  max-width: 90%;
+  max-height: 90%;
+}
 
-/* TABLET */
+/* ================= RESPONSIVO TABLET ================= */
 @media (max-width: 1024px) {
-  .produtos {
-    grid-template-columns: repeat(3, 1fr);
+  .menu-search-wrapper {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .search-box input {
+    width: 140px;
   }
 }
 
-/* CELULAR */
+/* ================= RESPONSIVO CELULAR ================= */
 @media (max-width: 768px) {
 
+  .nome-loja {
+    font-size: 14px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
   .produtos {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 
@@ -313,23 +318,35 @@ body {
     height: 90px;
   }
 
-  .search-box input {
-    width: 130px;
+  .btn-card {
+    font-size: 11px;
   }
 
-  .menu-search-wrapper {
-    flex-wrap: wrap;
+  .pedido-whatsapp {
+    font-size: 14px;
   }
 
-  .vitrine {
-    flex-wrap: nowrap;
-    overflow-x: auto;
+  .destaque {
+    height: 280px;
   }
 }
 
-/* CELULAR PEQUENO */
+/* ================= CELULAR PEQUENO ================= */
 @media (max-width: 480px) {
+
+  .nome-loja {
+    font-size: 12px;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
   .search-box input {
-    width: 120px;
+    width: 100px;
+  }
+
+  .produtos {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -792,7 +792,7 @@ main {
 }
 
 
-/* ================= CELULAR ================= */
+/* ================= CELULAR PAGINAS PRODUTOS================= */
 
 @media (max-width:768px){
 
@@ -952,7 +952,7 @@ main {
     left: 8px;
   }
 }
-/* ================= VITRINE ================= */
+/* ================= VITRINE TELA INICIAL ================= */
 
 /* Container */
 
@@ -992,8 +992,8 @@ main {
 /* Imagem */
 
 .produto-img{
-  width:100%;
-  height:160px;
+  width:130%;
+  height:150px;
 
   object-fit:cover;
 

@@ -1588,7 +1588,7 @@ main {
 }
 
 .logo{
-  height:45px;
+  height:40px;
   margin:0;
 }
 
@@ -1596,7 +1596,7 @@ main {
   font-family:'Poppins', sans-serif;
   font-size:16px;
   font-weight:700;
-  margin-left:-5px;
+  margin-left:0;
 }
 
 /* ================= CELULAR ================= */

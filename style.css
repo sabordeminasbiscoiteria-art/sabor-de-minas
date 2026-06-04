@@ -805,8 +805,8 @@ main {
   }
 
   .card-produto{
-    width:100%;
-    max-width:100px;
+    width:120%;
+    max-width:120px;
   }
 
   .card-produto img{

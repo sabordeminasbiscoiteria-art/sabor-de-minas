@@ -1580,3 +1580,54 @@ main {
   }
 
 }
+/* ================= TOPO PRODUTO RESPONSIVO ================= */
+
+.header-fixo{
+  position:relative;
+  justify-content:center;
+}
+
+.logo-nome{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+}
+
+.btn-voltar{
+  position:absolute;
+  left:10px;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+/* PC */
+.logo{
+  height:50px;
+}
+
+.nome-loja{
+  font-size:18px;
+}
+
+/* Tablet */
+@media (max-width:1024px){
+  .logo{
+    height:45px;
+  }
+
+  .nome-loja{
+    font-size:17px;
+  }
+}
+
+/* Celular */
+@media (max-width:480px){
+  .logo{
+    height:38px;
+  }
+
+  .nome-loja{
+    font-size:15px;
+  }
+}

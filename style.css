@@ -734,7 +734,6 @@ main {
 /* ================= PC VITRINE DOS PRODUTOS ================= */
 
 @media (min-width:1025px){
-
   .card-produto{
     max-width:200px;
   }
@@ -744,17 +743,11 @@ main {
   }
 
 }
- .produtos{
-    grid-template-columns:repeat(6,1fr);
-    gap:16px;
-  }
-
 /* ================= TABLET ================= */
 
 @media (max-width:1024px){
 
   /* Cards */
-
   .produtos{
     grid-template-columns:repeat(3,1fr);
     gap:16px;
@@ -792,14 +785,12 @@ main {
   }
 
 }
-
-
 /* ================= CELULAR PAGINAS PRODUTOS ================= */
 
 @media (max-width:768px){
 
   .produtos{
-    grid-template-columns:repeat(3,110px);
+    grid-template-columns:repeat(3,200px);
     gap:15px;
     margin-top:15px;
   }

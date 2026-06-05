@@ -791,9 +791,8 @@ main {
  /* Produtos espaçamento dos cards*/
   .produtos{
     grid-template-columns:repeat(3,110px);
-    gap:10px;
+    gap:15px;
     margin-top:15px;
-    padding:4px;
   }
  /* Produtos suspiros e salgadinho*/
   .card-produto{

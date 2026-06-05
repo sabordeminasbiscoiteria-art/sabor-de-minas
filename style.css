@@ -343,6 +343,29 @@ main {
 
   margin:25px 0;
 }
+.produto{
+  position: relative;
+}
+
+.selo-mais-vendido{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  background: #28a745;
+  color: white;
+
+  padding: 5px 10px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  border-radius: 20px;
+
+  z-index: 2;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
 /* ================= ESPAÇAMENTO ENTRE SEÇÕES ================= */
 
 /* Espaço abaixo do banner principal (destaque) */

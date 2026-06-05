@@ -431,7 +431,6 @@ main {
   object-fit:cover;
   display:block;
 }
-
 /* ================= NOME ================= */
 
 .nome-produto{
@@ -446,11 +445,10 @@ main {
   font-family:'Poppins', sans-serif;
   font-size:12px;
   font-weight:600;
-  color:#333;
 
+  text-align:center;
   line-height:1.2;
 }
-
 /* ================= SELO ================= */
 
 .selo-gramas{
@@ -794,6 +792,12 @@ main {
     gap:8px;
     margin-top:15px;
   }
+  @media (max-width:768px){
+
+  .nome-produto{
+    min-height:70px;
+  }
+
  /* Produtos suspiros e salgadinho*/
   .card-produto{
     width:100%;

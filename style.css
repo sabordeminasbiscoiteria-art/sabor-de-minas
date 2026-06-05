@@ -444,7 +444,7 @@ main {
 
   font-family:'Poppins', sans-serif;
   font-size:11px;
-  font-weight:600;
+  font-weight:550;
 
   text-align:center;
   line-height:1.3;
@@ -804,7 +804,7 @@ main {
   }
 
   .card-produto h3{
-    min-height:60px;
+    min-height:50px;
   }
 
   .btn-card{
@@ -814,7 +814,7 @@ main {
   }
 
   .produtos-geral .card-produto{
-    max-width:100px;
+    max-width:110px;
   }
 
   .pedido-whatsapp{

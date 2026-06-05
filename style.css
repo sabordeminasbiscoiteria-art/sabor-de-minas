@@ -797,7 +797,7 @@ main {
 
   .produtos{
     grid-template-columns:repeat(3,110px);
-    gap:8px;
+    gap:10px;
     margin-top:15px;
   }
  /* Produtos suspiros e salgadinho*/
@@ -918,7 +918,7 @@ main {
   padding:20px;
 }
 
-/* Card */
+/* Card pc vitrine */
 
 .produto{
   width:200px;

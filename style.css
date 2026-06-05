@@ -997,7 +997,7 @@ main {
 
   width:120px;
   margin-top:8px;
-  padding:10px 0;
+  padding:10px 5;
 
   background:#28a745;
   color:#fff;
@@ -1079,11 +1079,11 @@ main {
     font-size:14px;
     margin:5px 0;
   }
-
+/* vitrine tela inicial   */
   .produto .btn-ver-mais{
     width:100%;
     font-size:11px;
-    padding:6px 6;
+    padding:6px 2;
   }
 }
 /* ================= RESPONSIVO PC/TABLET ================= */

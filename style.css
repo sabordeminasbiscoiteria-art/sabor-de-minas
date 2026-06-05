@@ -788,9 +788,9 @@ main {
 /* ================= CELULAR PAGINAS PRODUTOS ================= */
 
 @media (max-width:768px){
-
+ /* Produtos espaçamento dos cards*/
   .produtos{
-    grid-template-columns:repeat(3,200px);
+    grid-template-columns:repeat(3,100px);
     gap:15px;
     margin-top:15px;
   }

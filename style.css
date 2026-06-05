@@ -21,13 +21,11 @@ body {
   width: 100%;
   background: #fff;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-start;
   padding: 10px 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 100;
-  gap: 10px;
-  flex-wrap: wrap;
 }
 
 .logo-nome {
@@ -51,9 +49,10 @@ body {
    MENU + PESQUISA
 ===================================================== */
 .menu-search-wrapper {
+  margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .nav-links {
@@ -210,13 +209,10 @@ body {
   color: #fff;
   border-radius: 8px;
   text-decoration: none;
-  font-size: 14px;
-  transition: .3s;
 }
 
 .vitrine-home .btn-ver-mais:hover {
   background: #218838;
-  transform: translateY(-2px);
 }
 
 /* =====================================================
@@ -231,154 +227,4 @@ body {
 }
 
 .vitrine::-webkit-scrollbar {
-  display: none;
-}
-
-.produto {
-  background: #fff;
-  border-radius: 14px;
-  min-width: 200px;
-  padding: 12px;
-  text-align: center;
-  box-shadow: 0 6px 14px rgba(0,0,0,.1);
-  transition: .3s;
-}
-
-.produto:hover {
-  transform: translateY(-5px);
-}
-
-.produto-img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.produto h3 {
-  font-size: 15px;
-  margin: 10px 0;
-}
-
-.produto p {
-  font-size: 13px;
-  color: #777;
-}
-
-.produto .preco {
-  font-weight: 700;
-}
-
-.btn-ver {
-  display: inline-block;
-  background: #28a745;
-  color: #fff;
-  padding: 8px 14px;
-  border-radius: 6px;
-  text-decoration: none;
-  margin-top: 6px;
-}
-
-/* =====================================================
-   GRID PRODUTOS
-===================================================== */
-.produtos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 15px;
-  padding: 20px;
-  max-width: 1000px;
-  margin: 50px auto 0;
-}
-
-.card-produto {
-  background: #fff;
-  border-radius: 14px;
-  overflow: hidden;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,.08);
-  transition: .3s;
-}
-
-.card-produto:hover {
-  transform: translateY(-4px);
-}
-
-.card-produto img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-/* =====================================================
-   WHATSAPP
-===================================================== */
-.whatsapp-float {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 65px;
-  height: 65px;
-  background: #25D366;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-/* =====================================================
-   RESPONSIVO
-===================================================== */
-.header-fixo {
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* empurra menu + pesquisa para direita */
-.menu-search-wrapper {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-/* garante espaçamento correto no PC */
-@media (min-width: 769px) {
-  .menu-search-wrapper {
-    margin-left: auto;
-  }
-}
-/* TABLET */
-@media (max-width:1024px) {
-  .destaque { height: 400px; }
-  .produtos { grid-template-columns: repeat(3, 1fr); }
-}
-
-/* CELULAR */
-@media (max-width:768px) {
-
-  .vitrine {
-    gap: 10px;
-  }
-
-  .card-produto img {
-    height: 120px;
-  }
-
-  .vitrine-home {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .vitrine-home .produto {
-    width: 90%;
-  }
-}
-
-/* PEQUENO */
-@media (max-width:480px) {
-  .logo { height: 35px; }
-  .nome-loja { font-size: 14px; }
-  .destaque { height: 250px; }
-}
+  display

@@ -1,41 +1,39 @@
-/* =====================================================
-   RESET
-===================================================== */
+/* ================= RESET ================= */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
-
-body {
+body{
   padding-top: 80px;
 }
-
-/* =====================================================
-   HEADER FIXO
-===================================================== */
+/* ================= HEADER FIXO ================= */
 .header-fixo {
   position: fixed;
   top: 0;
   width: 100%;
   background: #fff;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: flex-start;
   padding: 10px 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 100;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-
+/* ================= LOGO E NOME ================= */
+/* Logo e nome da loja */
 .logo-nome {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .logo {
   height: 40px;
-  margin-left: 50px;
+  margin-left: 50px; /* espaço para hamburger */
 }
 
 .nome-loja {
@@ -44,62 +42,90 @@ body {
   font-size: 18px;
   margin-left: 10px;
 }
-
-/* =====================================================
-   MENU + PESQUISA
-===================================================== */
+/* ================= MENU PESQUISA ================= */
+/* Wrapper que mantém menu simples + pesquisa lado a lado */
 .menu-search-wrapper {
-  margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
+  flex-shrink: 0;
 }
-
+/* Menu simples */
 .nav-links {
   display: flex;
   gap: 10px;
+  flex-shrink: 0;
 }
 
 .nav-links a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
   text-decoration: none;
   color: #111;
-  font-size: 14px;
   padding: 4px 8px;
 }
 
 .nav-links a:hover {
   color: #28a745;
 }
-
-.search-box {
-  position: relative;
-  display: flex;
-  align-items: center;
+/* ================= BARRA DE PESQUISA ================= */
+/* Barra de pesquisa */
+.search-box{
+  position:relative;
+  display:flex;
+  align-items:center;
 }
 
-.search-box input {
-  padding: 8px 8px 8px 34px;
-  width: 150px;
-  border: 1px solid #ccc;
+.search-box input{
+  padding:8px 8px 8px 34px;
+  width:150px;
+  max-width:200px;
+  border:1px solid #ccc;
+  font-family:'Poppins', sans-serif;
+}
+
+.search-box input,
+.search-box input::placeholder {
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
 }
 
-.icone-lupa {
-  position: absolute;
-  left: 10px;
-  top: 56%;
-  transform: translateY(-50%);
+.icone-lupa{
+  position:absolute;
+  left:10px;
+  top:56%;
+  transform:translateY(-50%);
 }
 
-/* =====================================================
-   MENU LATERAL
-===================================================== */
+.icone-lupa svg{
+  width:18px;
+  height:18px;
+}
+/* ================= MENSAGEM  DA BARRA DE PESQUISA ================= */
+#sem-produto {
+  display: none;
+  text-align: center;
+  color: #666;
+  background-color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin: 20px auto;
+  max-width: 280px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+/* ================= MENU LATERAL ================= */
 .menu-btn {
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 10px; /* antes da logo */
   font-size: 28px;
+  padding: 10px;
   cursor: pointer;
+  color: #333;
   background: transparent;
   border: none;
   z-index: 102;
@@ -108,7 +134,7 @@ body {
 .menu-lateral {
   position: fixed;
   top: 0;
-  left: -260px;
+  left: -260px; /* escondido inicialmente */
   width: 260px;
   height: 100vh;
   background: #fff;
@@ -121,110 +147,1412 @@ body {
 }
 
 .menu-lateral.ativo {
-  left: 0;
+  left: 0; /* desliza para aparecer do lado do hamburger */
 }
 
 .menu-lateral a {
+  display: block;
   padding: 15px 25px;
   text-decoration: none;
   color: #111;
+  font-weight: 600;
   border-bottom: 1px solid #eee;
 }
 
-/* =====================================================
-   BANNER
-===================================================== */
+.menu-lateral a:hover {
+  background: #f5f5f5;
+}
+
+.menu-close {
+  align-self: flex-start;
+  font-size: 28px;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #333;
+}
+.menu-lateral{
+  font-family:'Poppins', sans-serif;
+}
+
+.menu-lateral a{
+  font-family:'Poppins', sans-serif;
+  font-weight:500;
+  font-size:16px;
+  color:#333;
+  text-decoration:none;
+}
+/* ================= CONTEÚDO PRINCIPAL ================= */
+main {
+  margin-top: 6px; /* espaço para o header fixo */
+}
+
+/* Banner do beijinho */
 .destaque {
+  position: relative;
   width: 100%;
   height: 500px;
   background: url('img/beijinho.jpeg') center/cover no-repeat;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 40px;
-}
-
-/* =====================================================
-   VITRINE HOME
-===================================================== */
-.vitrine-home {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-.vitrine-home .produto {
-  width: 260px;
-  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 15px;
-  background: #fff;
-  border-radius: 14px;
+  color: #fff;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+  padding: 0 20px;
+}
+
+.hero{
+  height:300px;
+  overflow:hidden;
+}
+
+.hero img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.btn-ver{
+  display:inline-block;
+  background:#4caf50;
+  color:white;
+  text-decoration:none;
+  padding:7px 14px;
+  border-radius:6px;
+  margin-top:5px;
+}
+
+.destaque .btn-ver:hover{
+  background:#4caf50;
+}
+
+.destaque .descricao {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.destaque .btn-ver:hover {
+  background-color: #4caf50;
+}
+
+/* ================= VITRINE ================= */
+
+.vitrine{
+  display:flex;
+  gap:20px;
+  overflow-x:auto;
+  padding:20px;
+  scroll-behavior:smooth;
+}
+
+/* remove scrollbar */
+.vitrine::-webkit-scrollbar{
+  display:none;
+}
+
+/* ================= CARD DA VITRINE ================= */
+
+.produto{
+  background:#fff;
+  border-radius:14px;
+
+  min-width:200px;
+  flex-shrink:0;
+
+  padding:12px;
+  text-align:center;
+
+  box-shadow:0 6px 14px rgba(0,0,0,.1);
+
+  transition:.3s;
+}
+
+.produto:hover{
+  transform:translateY(-5px);
+}
+
+/* ================= IMAGEM ================= */
+
+.produto-img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+/* ================= TÍTULO ================= */
+.produto h3{
+  font-size:15px;
+  margin:10px 0 5px;
+  font-weight:600;
+  color:#333;
+}
+
+/* ================= DESCRIÇÃO ================= */
+
+.produto p{
+  font-size:13px;
+  color:#777;
+  margin:0;
+}
+
+/* ================= PREÇO ================= */
+
+.produto .preco{
+  display:block;
+  font-weight:700;
+  font-size:16px;
+  color:#111;
+
+  margin:6px 0;
+}
+
+/* ================= BOTÃO VITRINE ================= */
+
+.btn-ver{
+  display:inline-block;
+
+  background:#4caf50;
+  color:#fff;
+  text-decoration:none;
+
+  padding:8px 14px;
+  border-radius:6px;
+
+  margin-top:6px;
+
+  font-size:14px;
+  font-weight:500;
+
+  transition:.3s;
+}
+
+.btn-ver:hover{
+  background:#3e9b41;
+  transform:translateY(-2px);
+}
+
+/* ================= TÍTULO VITRINE ================= */
+
+.titulo-vitrine{
+  text-align:center;
+  font-family:'Poppins', sans-serif;
+  font-size:24px;
+  font-weight:700;
+
+  margin:25px 0;
+}
+/* ================= ESPAÇAMENTO ENTRE SEÇÕES ================= */
+
+/* Espaço abaixo do banner principal (destaque) */
+.destaque {
+  margin-bottom: 40px;  /* aumenta o espaço entre o banner e a vitrine */
+}
+
+/* Espaço acima do rodapé */
+.rodape {
+  margin-top: 50px;    /* deixa espaço entre a última vitrine e o rodapé */
+}
+/* ================= RODAPÉ ================= */
+
+.rodape{
+  background:#f1ece6;
+  color:#5a3e36;
+  padding:20px;
+  text-align:center;
+}
+
+.rodape a{
+  color:#5a3e36;
+  text-decoration:none;
+}
+
+.rodape a:hover{
+  text-decoration:underline;
+}
+
+/* Redes sociais */
+
+.redes{
+  margin-top:10px;
+}
+
+.redes a{
+  font-size:22px;
+  margin:0 10px;
+  color:#5a3e36;
+  transition:.3s;
+}
+
+.redes a:hover{
+  color:#25D366;
+}
+/* ================= GRID DE PRODUTOS ================= */
+
+.produtos{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(130px, 1fr));
+  gap:15px;
+  padding:20px;
+  max-width:1000px;
+  margin:50px auto 0;
+  justify-items:center;
+}
+
+/* ================= CARD ================= */
+
+.card-produto{
+  position:relative;
+  width:100%;
+  max-width:140px;
+
+  background:#fff;
+  border-radius:14px;
+  overflow:hidden;
+
+  text-align:center;
+
+  padding-bottom:10px;
+
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.card-produto:hover{
+  transform:translateY(-4px);
+}
+
+/* ================= IMAGEM ================= */
+
+.card-produto img{
+  width:100%;
+  height:90px;
+  object-fit:cover;
+  display:block;
+}
+
+/* ================= NOME ================= */
+
+.nome-produto{
+  min-height:40px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:0 4px;
+
+  font-family:'Poppins', sans-serif;
+  font-size:12px;
+  font-weight:600;
+  color:#333;
+
+  line-height:1.2;
+}
+
+/* ================= SELO ================= */
+
+.selo-gramas{
+  position:absolute;
+  top:8px;
+  left:8px;
+
+  background:#fff;
+  color:#111;
+
+  padding:3px 7px;
+  border-radius:5px;
+
+  font-size:10px;
+  font-weight:600;
+
+  box-shadow:0 1px 4px rgba(0,0,0,.1);
+}
+
+/* ================= PREÇO ================= */
+
+.preco-card{
+  margin:6px 0;
+
+  font-family:'Poppins', sans-serif;
+  font-size:15px;
+  font-weight:600;
+  color:#111;
+}
+
+/* ================= BOTÃO CARD ================= */
+
+.btn-card{
+  display:inline-block;
+
+  margin-top:6px;
+  padding:8px 0;
+  width:90%;
+
+  background:#28a745;
+  color:#fff;
+
+  border-radius:6px;
+  text-decoration:none;
+
+  font-family:Arial, sans-serif;
+  font-size:13px;
+  font-weight:500;
+
+  transition:.3s;
+}
+
+.btn-card:hover{
+  background:#218838;
+  transform:translateY(-2px);
+}
+
+.pedido-whatsapp{
+  width:100%;
+  text-align:center;
+
+  font-family:'Poppins', sans-serif;
+  font-size:16px;
+  font-weight:600;
+
+  color:#333;
+
+  margin:15px auto;
+}
+/* ================= WHATSAPP FLUTUANTE ================= */
+
+.whatsapp-float{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #25D366;
+  border-radius: 50%;
+
+  text-decoration: none !important;
+
+  box-shadow: 0 8px 25px rgba(37,211,102,.35);
+
+  transition: all .3s ease;
+  z-index: 9999;
+}
+
+.whatsapp-float i{
+  color: #fff;
+  font-size: 34px;
+  line-height: 1;
+  display: block;
+
+  text-decoration: none !important;
+  border: none !important;
+}
+
+.whatsapp-float *,
+.whatsapp-float *::before{
+  text-decoration: none !important;
+  border: none !important;
+}
+/* ================= CONTATO ================= */
+
+.contato{
+  width:90%;
+  max-width:1100px;
+  margin:120px auto 60px;
+  text-align:center;
+}
+
+.contato h2{
+  font-size:32px;
+  margin-bottom:35px;
+  font-weight:600;
+  color:#333;
+}
+
+/* ================= CONTATO ================= */
+
+/* Card principal */
+
+.contato-card{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:25px;
+  flex-wrap:wrap;
+
+  max-width:650px;
+  margin:0 auto 40px;
+
+  padding:25px 30px;
+
+  background:#fff;
+  border-radius:15px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* Botões */
+
+.contato-btn{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  padding:12px 22px;
+
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+
+  border-radius:30px;
+
+  transition:.3s;
+}
+
+.contato-btn i{
+  font-size:18px;
+}
+
+.contato-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 6px 15px rgba(0,0,0,.15);
+}
+
+/* WhatsApp */
+
+.whatsapp{
+  background:#25D366;
+}
+
+/* Instagram */
+
+.insta{
+  background:#E1306C;
+}
+
+
+/* ================= SOBRE ================= */
+
+.sobre{
+  padding:120px 20px 60px;
+  text-align:center;
+}
+
+.sobre h2{
+  font-size:32px;
+  margin-bottom:40px;
+}
+
+.sobre-container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+
+  max-width:1000px;
+  margin:auto;
+}
+
+.sobre-img img{
+  width:100%;
+  max-width:400px;
+
+  border-radius:15px;
+}
+
+.sobre-texto{
+  max-width:500px;
+
+  text-align:left;
+
+  font-size:17px;
+  line-height:1.7;
+  color:#444;
+}
+/* ===== ENDEREÇO ===== */
+
+.endereco{
+  font-size:15px;
+  line-height:1.6;
+  color:#444;
+
+  background:#f7f7f7;
+  padding:15px 20px;
+
+  border-radius:10px;
+}
+
+.endereco i{
+  font-size:20px;
+  color:#c0392b;
+}
+
+/* ===== MAPA ===== */
+
+.mapa{
+  max-width:750px;
+  margin:0 auto;
+
+  border-radius:15px;
+  overflow:hidden;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.mapa iframe{
+  width:100%;
+  height:320px;
+  border:0;
+}
+
+/* ================= CONTATO RESPONSIVO ================= */
+
+@media (max-width:768px){
+
+  .contato h2{
+    font-size:26px;
+  }
+
+  .contato-card{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .mapa iframe{
+    height:250px;
+  }
+
+}
+/* ================= PC ================= */
+
+@media (min-width:1025px){
+
+  .card-produto{
+    max-width:200px;
+  }
+
+  .card-produto img{
+    height:160px;
+  }
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width:1024px){
+
+  /* Cards */
+
+  .produtos{
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+  }
+
+  .card-produto{
+    max-width:200px;
+  }
+
+  .card-produto img{
+    height:200px;
+  }
+
+  /* Pesquisa */
+
+  .search-box input{
+    width:130px;
+  }
+
+  /* Banner */
+
+  .destaque{
+    height:400px;
+  }
+
+  .destaque .descricao{
+    font-size:18px;
+  }
+
+  /* Vitrine */
+
+  .vitrine-img{
+    width:200px;
+    height:200px;
+  }
+
+}
+
+
+/* ================= CELULAR PAGINAS PRODUTOS ================= */
+
+@media (max-width:768px){
+
+  /* Produtos */
+
+  .produtos{
+    grid-template-columns:repeat(3,110px);
+    gap:10px;
+    margin-top:15px;
+  }
+
+  .card-produto{
+    width:150%;
+    max-width:100px;
+  }
+
+  .card-produto img{
+    height:150px;
+  }
+
+  .card-produto h3{
+    min-height:45x;
+  }
+
+  .btn-card{
+    width:75px;
+    font-size:11px;
+    padding:4px 0;
+  }
+
+  .produtos-geral .card-produto{
+    max-width:100px;
+  }
+
+  .pedido-whatsapp{
+    margin:40px 0 10px;
+  }
+
+  /* Menu */
+
+  .menu-search-wrapper{
+    flex-wrap:nowrap;
+    justify-content:center;
+  }
+
+  .nav-links{
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+
+  .menu-lateral{
+    width:200px;
+  }
+
+  /* Pesquisa */
+
+  .search-box{
+    flex:0;
+  }
+
+  .search-box input{
+    width:150px;
+    max-width:150px;
+    height:34px;
+    margin-top:0;
+    font-size:12px;
+  }
+
+  /* Banner */
+
+  .destaque{
+    height:300px;
+  }
+
+  .destaque .descricao{
+    font-size:16px;
+  }
+
+}
+
+
+/* ================= CELULAR PEQUENO ================= */
+
+@media (max-width:480px){
+
+  .nav-links{
+    gap:6px;
+    font-size:12px;
+  }
+
+  .search-box{
+    flex:0;
+  }
+
+  .search-box input{
+    width:140px;
+    max-width:140px;
+  }
+
+  .destaque{
+    height:250px;
+  }
+
+  .destaque .descricao{
+    font-size:13px;
+  }
+
+  .logo{
+    height:35px;
+  }
+
+  .nome-loja{
+    font-size:14px;
+  }
+
+  .menu-btn{
+    top:8px;
+    left:8px;
+  }
+
+}
+/* Celular pequeno */
+@media screen and (max-width: 480px) {
+  .nav-links {
+    gap: 6px;
+    font-size: 12px;
+  }
+
+.search-box {
+  flex: 0;
+}
+
+.search-box input {
+  width: 140px;
+  max-width: 140px;
+}
+ 
+  .destaque {
+    height: 250px;
+  }
+
+  .destaque .descricao {
+    font-size: 13px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  .nome-loja {
+    font-size: 14px;
+  }
+
+  .menu-btn {
+    top: 8px;
+    left: 8px;
+  }
+}
+/* ================= VITRINE TELA INICIAL ================= */
+
+/* Container */
+
+.vitrine{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+  padding:20px;
+}
+
+/* Card */
+
+.produto{
+  width:260px;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  padding:15px;
+
+  background:#fff;
+  border-radius:14px;
+
+  text-align:center;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+  transition:.3s;
+}
+
+.produto:hover{
+  transform:translateY(-5px);
+}
+
+/* Imagem */
+
+.produto-img{
+  width:100%;
+  height:110px;
+
+  object-fit:cover;
+
+  border-radius:10px;
+}
+
+/* Título */
+
+.produto h3{
+  width:100%;
+  min-height:48px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin:10px auto;
+
+  font-size:16px;
+  font-weight:600;
+  line-height:1.2;
+
+  text-align:center;
+}
+
+/* Descrição */
+
+.produto p{
+  font-size:14px;
+  color:#666;
+}
+
+/* Preço */
+
+.produto .preco{
+  margin:10px 0;
+
+  font-size:22px;
+  font-weight:600;
+}
+
+/* Botão */
+
+.produto .btn-ver-mais{
+  display:inline-block;
+
+  width:120px;
+  margin-top:8px;
+  padding:10px 0;
+
+  background:#28a745;
+  color:#fff;
+
+  border-radius:8px;
+
+  text-decoration:none;
+  text-align:center;
+  font-size:14px;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width:1024px){
+
+  .vitrine{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    padding:15px;
+  }
+
+  .produto{
+    width:100%;
+    padding:12px;
+  }
+
+  .produto-img{
+    height:200x;
+  }
+
+  .produto h3{
+    font-size:14px;
+    min-height:40px;
+  }
+
+  .produto .preco{
+    font-size:18px;
+  }
+
+  .produto .btn-ver-mais{
+    width:100%;
+  }
+}
+
+/* ================= CELULAR ================= */
+
+@media (max-width:768px){
+
+  .vitrine{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:8px;
+    padding:8px;
+  }
+
+  .produto{
+    width:100%;
+    min-width:0;
+    padding:8px;
+  }
+
+  .produto-img{
+    height:130px;
+  }
+
+  .produto h3{
+    font-size:12px;
+    min-height:38px;
+    text-align:center;
+    margin:6px 0;
+  }
+
+  .produto p{
+    font-size:11px;
+  }
+
+  .produto .preco{
+    font-size:14px;
+    margin:5px 0;
+  }
+
+  .produto .btn-ver-mais{
+    width:100%;
+    font-size:11px;
+    padding:6px 0;
+  }
+}
+/* ================= RESPONSIVO PC/TABLET ================= */
+@media screen and (min-width: 769px) {
+  .menu-search-wrapper {
+    margin-left: auto;      /* empurra para a direita */
+    gap: 20px;              /* espaço entre menu e pesquisa */
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .search-box {
+    margin-left: 0;
+  }
+}
+
+.produto-detalhe{
+  max-width: 1200px;
+  margin: 20px auto 60px;
+  padding: 0 20px;
+
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.galeria{
+  width: 500px;
+}
+
+.foto-principal{
+  width: 100%;
+  height: 420px;
+
+  object-fit: cover;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 20px rgba(0,0,0,.12);
+}
+
+.miniaturas{
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.miniaturas img{
+  width: 90px;
+  height: 90px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  border: 2px solid transparent;
+
   transition: .3s;
 }
 
-.vitrine-home .produto:hover {
-  transform: translateY(-5px);
+.miniaturas img:hover{
+  border-color: #28a745;
+  transform: scale(1.05);
 }
 
-.vitrine-home .produto-img {
-  width: 100%;
-  height: 110px;
-  object-fit: cover;
-  border-radius: 10px;
+.info-produto{
+  flex: 1;
+  padding-top: 20px;
 }
 
-.vitrine-home .produto h3 {
-  min-height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  margin: 10px 0;
+.info-produto h1{
+  font-size: 38px;
+  color: #333;
+  margin-bottom: 15px;
 }
 
-.vitrine-home .produto p {
-  font-size: 14px;
-  color: #666;
+.preco{
+  font-size: 32px;
+  color: #28a745;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.vitrine-home .preco {
-  font-size: 22px;
-  font-weight: 600;
-  margin: 10px 0;
+.info-produto p{
+  font-size: 17px;
+  line-height: 1.8;
+  color: #555;
 }
 
-.vitrine-home .btn-ver-mais {
+.btn-whatsapp{
   display: inline-block;
-  width: 120px;
-  padding: 10px 0;
-  background: #28a745;
-  color: #fff;
-  border-radius: 8px;
+  margin-top: 25px;
+
+  background: #25D366;
+  color: white;
+
+  padding: 14px 28px;
+
+  border-radius: 10px;
+
   text-decoration: none;
+
+  font-weight: 600;
 }
 
-.vitrine-home .btn-ver-mais:hover {
-  background: #218838;
+@media (max-width:768px){
+
+  .produto-detalhe{
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .galeria{
+    width: 100%;
+  }
+
+  .foto-principal{
+    height: 280px;
+  }
+
+  .info-produto h1{
+    font-size: 28px;
+  }
+
+  .preco{
+    font-size: 26px;
+  }
+
+}
+/* ================= MODAL DE IMAGEM ================= */
+
+.modal-imagem{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+
+  width:100%;
+  height:100%;
+
+  background:rgba(0,0,0,.9);
+
+  justify-content:center;
+  align-items:center;
+
+  z-index:99999;
 }
 
-/* =====================================================
-   VITRINE HORIZONTAL
-===================================================== */
-.vitrine {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding: 20px;
-  scroll-behavior: smooth;
+.modal-imagem img,
+#imagemAmpliada{
+  max-width:90%;
+  max-height:90%;
+  border-radius:10px;
 }
 
-.vitrine::-webkit-scrollbar {
-  display
+.fechar{
+  position:absolute;
+  top:20px;
+  right:30px;
+
+  color:#fff;
+  font-size:40px;
+
+  cursor:pointer;
+}
+.btn-voltar{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  margin:20px;
+  padding:10px 16px;
+
+  background:#fff;
+  color:#333;
+
+  border:1px solid #ddd;
+  border-radius:10px;
+
+  text-decoration:none;
+  font-family:'Poppins', sans-serif;
+  font-size:14px;
+  font-weight:500;
+
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+  transition:.3s;
+}
+
+.btn-voltar:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 15px rgba(0,0,0,.12);
+  border-color:#bbb;
+}
+
+.btn-voltar i{
+  font-size:13px;
+}
+.btn-voltar{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  margin:0 20px 10px 20px;
+  padding:10px 16px;
+
+  background:#fff;
+  color:#333;
+  border:1px solid #ddd;
+  border-radius:10px;
+  text-decoration:none;
+}
+/* ================= MENU PC / TABLET ================= */
+
+@media (min-width:769px){
+
+  .menu-search-wrapper{
+    margin-left:auto;
+    gap:20px;
+  }
+
+  .nav-links{
+    gap:15px;
+  }
+
+  .search-box{
+    margin-left:0;
+  }
+
+}
+
+/* ================= PÁGINA DO PRODUTO ================= */
+
+.produto-detalhe{
+  max-width:1200px;
+  margin:20px auto 60px;
+  padding:0 20px;
+
+  display:flex;
+  gap:60px;
+  align-items:flex-start;
+}
+
+.galeria{
+  width:500px;
+}
+
+.foto-principal{
+  width:100%;
+  height:420px;
+
+  object-fit:cover;
+
+  border-radius:15px;
+
+  box-shadow:0 5px 20px rgba(0,0,0,.12);
+}
+
+.miniaturas{
+  display:flex;
+  gap:12px;
+  margin-top:15px;
+}
+
+.miniaturas img{
+  width:90px;
+  height:90px;
+
+  object-fit:cover;
+
+  border-radius:10px;
+
+  cursor:pointer;
+
+  border:2px solid transparent;
+
+  transition:.3s;
+}
+
+.miniaturas img:hover{
+  border-color:#28a745;
+  transform:scale(1.05);
+}
+
+.info-produto{
+  flex:1;
+  padding-top:20px;
+}
+
+.info-produto h1{
+  font-size:38px;
+  color:#333;
+  margin-bottom:15px;
+}
+
+.preco{
+  font-size:32px;
+  font-weight:700;
+  color:#28a745;
+  margin-bottom:20px;
+}
+
+.info-produto p{
+  font-size:17px;
+  line-height:1.8;
+  color:#555;
+}
+
+.btn-whatsapp{
+  display:inline-block;
+  margin-top:25px;
+
+  padding:14px 28px;
+
+  background:#25D366;
+  color:#fff;
+
+  border-radius:10px;
+
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* ================= RESPONSIVO PRODUTO ================= */
+
+@media (max-width:768px){
+
+  .produto-detalhe{
+    flex-direction:column;
+    gap:25px;
+  }
+
+  .galeria{
+    width:100%;
+  }
+
+  .foto-principal{
+    height:280px;
+  }
+
+  .info-produto h1{
+    font-size:28px;
+  }
+
+  .preco{
+    font-size:26px;
+  }
+
+}
+
+/* ================= MODAL DE IMAGEM ================= */
+
+.modal-imagem{
+  display:none;
+  position:fixed;
+
+  top:0;
+  left:0;
+
+  width:100%;
+  height:100%;
+
+  background:rgba(0,0,0,.9);
+
+  justify-content:center;
+  align-items:center;
+
+  z-index:99999;
+}
+
+.modal-imagem img,
+#imagemAmpliada{
+  max-width:90%;
+  max-height:90%;
+  border-radius:10px;
+}
+
+.fechar{
+  position:absolute;
+  top:20px;
+  right:30px;
+
+  color:#fff;
+  font-size:40px;
+
+  cursor:pointer;
+}
+
+/* ================= BOTÃO VOLTAR ================= */
+
+.btn-voltar{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  margin:0 20px 10px;
+  padding:10px 16px;
+
+  background:#fff;
+  color:#333;
+
+  border:1px solid #ddd;
+  border-radius:10px;
+
+  text-decoration:none;
+
+  font-family:'Poppins', sans-serif;
+  font-size:14px;
+  font-weight:500;
+
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+  transition:.3s;
+}
+
+.btn-voltar:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 15px rgba(0,0,0,.12);
+  border-color:#bbb;
+}
+
+.btn-voltar i{
+  font-size:13px;
+}

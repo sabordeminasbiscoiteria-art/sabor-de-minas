@@ -3,54 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Sabor de Minas Biscoiteria | Biscoitos Artesanais em Minas Gerais</title>
+
+  <title>Sabor de Minas Biscoiteria</title>
+
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-<!-- Header fixo -->
+<!-- ================= HEADER ================= -->
 <header class="header-fixo">
+
   <div class="logo-nome">
-    <img src="img/logo.png" alt="Logo" class="logo">
+    <img src="img/logo.png" class="logo">
     <span class="nome-loja">Biscoiteria Sabor de Minas</span>
   </div>
 
- <!-- WRAPPER PARA MENU + BARRA DE PESQUISA -->
-<div class="menu-search-wrapper">
+  <div class="menu-search-wrapper">
 
-  <nav class="nav-links">
-    <a href="index.html">Início</a>
-    <a href="produtos.html">Produtos</a>
-    <a href="contato.html">Contato</a>
-  </nav>
+    <nav class="nav-links">
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
 
-  <div class="search-box">
-    <span class="icone-lupa">
-      <svg viewBox="0 0 24 24" width="16" height="16">
-        <path fill="#666" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 
-        6.5 6.5 0 109.5 16a6.471 6.471 0 004.23-1.57l.27.28v.79l5 
-        4.99L20.49 19l-4.99-5zM9.5 
-        14C7.01 14 5 11.99 5 
-        9.5S7.01 5 9.5 5 14 
-        7.01 14 9.5 11.99 14 
-        9.5 14z"/>
-      </svg>
-    </span>
+    <div class="search-box">
+      <input type="text" id="inputPesquisa" placeholder="Pesquisar...">
+    </div>
 
-    <input type="text" id="inputPesquisa" placeholder="Pesquisar...">
   </div>
 
-</div>
+  <button class="menu-btn" id="menuBtn">&#9776;</button>
 
-  <!-- Botão Hamburger -->
-  <div class="menu-btn" id="menuBtn">&#9776;</div>
 </header>
 
-<!-- Menu lateral -->
+<!-- ================= MENU LATERAL ================= -->
 <div class="menu-lateral" id="menuLateral">
+
   <div class="menu-close" id="menuClose">&times;</div>
+
   <a href="index.html">Início</a>
   <a href="produtos.html">Produtos</a>
   <a href="Biscoitoscaseiros.html">Biscoito Caseiros</a>
@@ -59,115 +52,112 @@
   <a href="salgadinho.html">Salgadinhos</a>
   <a href="sobre.html">Sobre</a>
   <a href="contato.html">Contato</a>
+
 </div>
 
-<!-- ================= CONTEÚDO PRINCIPAL ================= -->
+<!-- ================= CONTEÚDO ================= -->
 <main>
-  <!-- Banner do beijinho -->
+
+  <!-- BANNER -->
   <section class="destaque">
+
     <p class="descricao">
       Biscoitos caseiros, o sabor que alegra o seu dia.<br>
-      Feitos com carinho desde 2015. Encomendas pelo WhatsApp.
+      Feitos com carinho desde 2015.
     </p>
-   <a href="produtos.html" class="btn-ver">Ver nossos biscoitos</a>
+
+    <a href="produtos.html" class="btn-ver">Ver nossos biscoitos</a>
+
   </section>
-  
-<h2 class="titulo-vitrine">Nossos biscoitos mais vendidos</h2>
 
-<div class="vitrine">
+  <!-- ================= VITRINE SCROLL ================= -->
+  <h2 class="titulo-vitrine">Nossos mais vendidos</h2>
 
-  <div class="produto">
-    <img src="img/sasha.jpeg" class="produto-img">
-    <h3>Biscoito Sasha</h3>
-    <p>210g</p>
-    <span class="preco">R$10,99</span>
-  <a href="biscoito-sasha.html" class="btn-ver-mais">Ver mais</a>
+  <div class="vitrine">
+
+    <div class="produto">
+      <img src="img/sasha.jpeg" class="produto-img">
+      <h3>Biscoito Sasha</h3>
+      <p>210g</p>
+      <span class="preco">R$10,99</span>
+      <a href="biscoito-sasha.html" class="btn-ver">Ver mais</a>
+    </div>
+
+    <div class="produto">
+      <img src="img/ugauga.jpeg" class="produto-img">
+      <h3>Biscoito Ugauga</h3>
+      <p>220g</p>
+      <span class="preco">R$10,99</span>
+      <a href="biscoito-ugauga.html" class="btn-ver">Ver mais</a>
+    </div>
+
+    <div class="produto">
+      <img src="img/casadinho.jpeg" class="produto-img">
+      <h3>Biscoito Casadinho</h3>
+      <p>250g</p>
+      <span class="preco">R$10,99</span>
+      <a href="biscoito-casadinho.html" class="btn-ver">Ver mais</a>
+    </div>
+
   </div>
 
-  <div class="produto">
-    <img src="img/ugauga.jpeg" class="produto-img">
-    <h3>Biscoito Ugauga</h3>
-    <p>220g</p>
-    <span class="preco">R$10,99</span>
-    <a href="biscoito-ugauga.html" class="btn-ver-mais">Ver mais</a>
+  <!-- ================= VITRINE HOME ================= -->
+  <h2 class="titulo-vitrine">Mais pedidos da semana</h2>
+
+  <div class="vitrine-home">
+
+    <div class="produto">
+      <img src="img/sasha.jpeg" class="produto-img">
+      <h3>Biscoito Sasha</h3>
+      <p>210g</p>
+      <span class="preco">R$10,99</span>
+      <a href="biscoito-sasha.html" class="btn-ver-mais">Ver mais</a>
+    </div>
+
+    <div class="produto">
+      <img src="img/ugauga.jpeg" class="produto-img">
+      <h3>Biscoito Ugauga</h3>
+      <p>220g</p>
+      <span class="preco">R$10,99</span>
+      <a href="biscoito-ugauga.html" class="btn-ver-mais">Ver mais</a>
+    </div>
+
   </div>
 
-  <div class="produto">
-    <img src="img/casadinho.jpeg" class="produto-img">
-    <h3>Biscoito Casadinho</h3>
-    <p>250g</p>
-    <span class="preco">R$10,99</span>
-    <a href="biscoito-casadinho.html" class="btn-ver-mais">Ver mais</a>
-  </div>
-
-</div>
-   
 </main>
 
+<!-- ================= FOOTER ================= -->
 <footer class="rodape">
 
-  <p>© 2026 Biscoiteria Sabor de Minas. Todos os direitos reservados.</p>
+  <p>© 2026 Biscoiteria Sabor de Minas</p>
 
   <div class="redes">
-    
-    <a href="https://instagram.com/biscoiteriasabordeminas" target="_blank">
-      <i class="fa-brands fa-instagram"></i>
-    </a>
-
-    <a href="https://wa.me/553192767228" target="_blank">
-      <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <a href="mailto:contato@sabordeminas.com.br">
-      <i class="fa-solid fa-envelope"></i>
-    </a>
-
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://wa.me/553192767228"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="#"><i class="fa-solid fa-envelope"></i></a>
   </div>
 
 </footer>
-  
-<!-- ================= JAVASCRIPT ================= -->
-<script>
-  // MENU LATERAL
-  const menuBtn = document.getElementById('menuBtn');
-  const menuLateral = document.getElementById('menuLateral');
-  const menuClose = document.getElementById('menuClose');
 
-  menuBtn.addEventListener('click', () => {
-    menuLateral.classList.add('ativo');
-  });
-
-  menuClose.addEventListener('click', () => {
-    menuLateral.classList.remove('ativo');
-  });
-
-
-  // PESQUISA DE PRODUTOS
-  const inputPesquisa = document.getElementById("inputPesquisa");
-  const cards = document.querySelectorAll(".card-produto");
-  const semProduto = document.getElementById("sem-produto");
-
-  inputPesquisa.addEventListener("input", () => {
-    const valor = inputPesquisa.value.toLowerCase();
-    let achou = false;
-
-    cards.forEach(card => {
-      const nome = card.querySelector("img").alt.toLowerCase();
-      if (nome.includes(valor)) {
-        card.style.display = "block";
-        achou = true;
-      } else {
-        card.style.display = "none";
-      }
-    });
-
-    semProduto.style.display = achou ? "none" : "block";
-  });
-</script>
-  
-<a href="https://wa.me/553192767228" class="whatsapp-float" target="_blank">
-   <i class="fa-brands fa-whatsapp"></i>
+<!-- ================= WHATSAPP ================= -->
+<a href="https://wa.me/553192767228" class="whatsapp-float">
+  <i class="fa-brands fa-whatsapp"></i>
 </a>
-  
+
+<!-- ================= JS MENU ================= -->
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const menuLateral = document.getElementById('menuLateral');
+const menuClose = document.getElementById('menuClose');
+
+menuBtn.addEventListener('click', () => {
+  menuLateral.classList.add('ativo');
+});
+
+menuClose.addEventListener('click', () => {
+  menuLateral.classList.remove('ativo');
+});
+</script>
+
 </body>
 </html>

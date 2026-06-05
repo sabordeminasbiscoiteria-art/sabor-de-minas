@@ -338,7 +338,7 @@ main {
   color:#fff;
   text-decoration:none;
 
-  padding:8px 14px;
+  padding:4px 10px;
   border-radius:6px;
 
   margin-top:6px;
@@ -1064,11 +1064,11 @@ main {
   }
 
   .produto-img{
-    height:250px;
+    height:280px;
   }
 
   .produto h3{
-    font-size:14px;
+    font-size:16px;
     min-height:40px;
   }
 

@@ -896,15 +896,17 @@ main {
     margin-top:0;
     font-size:12px;
   }
-
   /* Banner */
+  @media (max-width:768px){
 
   .destaque{
     height:300px;
   }
 
   .destaque .descricao{
-    font-size:16px;
+    font-size:14px;
+    max-width:180px;
+    line-height:1.4;
   }
 
 }

@@ -736,7 +736,7 @@ main {
 @media (min-width:1025px){
 
   .card-produto{
-    max-width:200px;
+    max-width:400px;
   }
 
   .card-produto img{

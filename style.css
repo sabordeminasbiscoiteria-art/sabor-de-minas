@@ -804,8 +804,8 @@ main {
   }
 
   .card-produto{
-    width:150%;
-    max-width:150px;
+    width:100%;
+    max-width:100px;
   }
 
   .card-produto img{
@@ -1045,7 +1045,7 @@ main {
   }
 }
 
-/* ================= CELULAR ================= */
+/* ================= CELULAR  VITRINE TELA INICIAL ================= */
 
 @media (max-width:768px){
 
@@ -1063,7 +1063,7 @@ main {
   }
 
   .produto-img{
-    height:100px;
+    height:130px;
   }
 
   .produto h3{

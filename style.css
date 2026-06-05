@@ -795,14 +795,12 @@ main {
 
 @media (max-width:768px){
 
-  /* Produtos */
-
   .produtos{
     grid-template-columns:repeat(3,110px);
     gap:8px;
     margin-top:15px;
   }
-
+ /* Produtos suspiros e salgadinho*/
   .card-produto{
     width:100%;
     max-width:100px;
@@ -817,7 +815,7 @@ main {
   }
 
   .btn-card{
-    width:75px;
+    width:80px;
     font-size:11px;
     padding:4px 0;
   }

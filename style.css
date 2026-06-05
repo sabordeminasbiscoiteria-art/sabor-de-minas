@@ -994,11 +994,10 @@ main {
 
 .produto p{
   font-size:14px;
-  color:#666;
+  color:#333;
 }
 
 /* Preço */
-
 .produto .preco{
   margin:10px 0;
 

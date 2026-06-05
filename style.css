@@ -352,8 +352,9 @@ main {
   top: 10px;
   left: 10px;
 
-  background: #f4c542;
-  color: #5a4200;
+  background: #fff;
+  color: #c89b00;
+  border: 1px solid #f4c542;
   padding: 4px 8px;
 
   font-size: 11px;

@@ -736,7 +736,7 @@ main {
 @media (min-width:1025px){
 
   .card-produto{
-    max-width:400px;
+    max-width:200px;
   }
 
   .card-produto img{
@@ -1063,7 +1063,7 @@ main {
   }
 
   .produto-img{
-    height:130px;
+    height:100px;
   }
 
   .produto h3{

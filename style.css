@@ -371,7 +371,7 @@ main {
 
 /* Espaço abaixo do banner principal (destaque) */
 .destaque {
-  margin-bottom: 40px;  /* aumenta o espaço entre o banner e a vitrine */
+  margin-bottom: 20px;  /* aumenta o espaço entre o banner e a vitrine */
 }
 
 /* Espaço acima do rodapé */

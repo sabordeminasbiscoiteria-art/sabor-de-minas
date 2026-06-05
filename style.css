@@ -338,7 +338,7 @@ main {
 .titulo-vitrine{
   text-align:center;
   font-family:'Poppins', sans-serif;
-  font-size:24px;
+  font-size:20px;
   font-weight:700;
 
   margin:25px 0;
@@ -371,7 +371,7 @@ main {
 
 /* Espaço abaixo do banner principal (destaque) */
 .destaque {
-  margin-bottom: 20px;  /* aumenta o espaço entre o banner e a vitrine */
+  margin-bottom: 15px;  /* aumenta o espaço entre o banner e a vitrine */
 }
 
 /* Espaço acima do rodapé */

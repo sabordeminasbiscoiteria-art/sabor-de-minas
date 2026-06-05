@@ -799,13 +799,13 @@ main {
 
   .produtos{
     grid-template-columns:repeat(3,110px);
-    gap:10px;
+    gap:8px;
     margin-top:15px;
   }
 
   .card-produto{
     width:150%;
-    max-width:100px;
+    max-width:150px;
   }
 
   .card-produto img{

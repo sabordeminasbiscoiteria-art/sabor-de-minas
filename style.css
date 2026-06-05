@@ -330,7 +330,25 @@ body {
 /* =====================================================
    RESPONSIVO
 ===================================================== */
+.header-fixo {
+  justify-content: space-between;
+  align-items: center;
+}
 
+/* empurra menu + pesquisa para direita */
+.menu-search-wrapper {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* garante espaçamento correto no PC */
+@media (min-width: 769px) {
+  .menu-search-wrapper {
+    margin-left: auto;
+  }
+}
 /* TABLET */
 @media (max-width:1024px) {
   .destaque { height: 400px; }

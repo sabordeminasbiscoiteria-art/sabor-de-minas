@@ -357,10 +357,10 @@ main {
 
 .titulo-vitrine{
   text-align:center;
-  font-family:'Poppins', sans-serif;
-  font-size:20px;
-  font-weight:700;
-
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 600;
+}
   margin:25px 0;
 }
 .produto{

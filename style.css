@@ -772,6 +772,11 @@ main {
 
 }
 /* ================= PC VITRINE DOS PRODUTOS ================= */
+ .btn-card{
+    width:85px;
+    font-size:10px;
+    padding:5px 0;
+  }
 
 @media (min-width:1025px){
   .card-produto{
@@ -779,7 +784,7 @@ main {
   }
 
   .card-produto img{
-    height:160px;
+    height:200px;
   }
 
 }

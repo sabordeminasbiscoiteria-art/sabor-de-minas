@@ -782,13 +782,6 @@ main {
   }
 
 }
-@media (min-width:1025px){
-
-  .btn-ver{
-    font-size:22px;
-    padding:16px 32px;
-  }
-
 /* ================= TABLET ================= */
 
 @media (max-width:1024px){
@@ -1081,7 +1074,7 @@ main {
   }
 
   .produto{
-    width:300%;
+    width:100%;
     padding:12px;
   }
 

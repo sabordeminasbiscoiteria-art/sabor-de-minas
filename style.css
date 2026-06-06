@@ -1094,14 +1094,6 @@ main {
   .produto .btn-ver-mais{
     width:100%;
   }
-
-@media (min-width:1025px){
-
-  .btn-ver{
-    font-size:22px;
-    padding:16px 32px;
-  }
-
 }
 /* ================= CELULAR  VITRINE TELA INICIAL ================= */
 @media (max-width:768px){

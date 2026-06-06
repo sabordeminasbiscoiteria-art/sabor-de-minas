@@ -943,7 +943,18 @@ main {
   }
 }
 /* ================= PC VITRINE TELA INICIAL  ================= */
+@media (min-width: 1025px){
 
+  .titulo-vitrine{
+    font-size: 48px;
+  }
+
+  .selo-mais-vendido{
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+}
 /* Container */
 .vitrine{
   display:flex;
@@ -1015,11 +1026,11 @@ main {
   color:#333;
 }
 
-/* Preço */
+/* Preço do card vitrine pc */
 .produto .preco{
   margin:10px 0;
 
-  font-size:48px;
+  font-size:28px;
   font-weight:500;
 }
 

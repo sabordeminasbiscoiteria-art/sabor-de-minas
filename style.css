@@ -959,7 +959,7 @@ main {
 /* Card pc vitrine */
 
 .produto{
-  width:250px;
+  width:300px;
 
   display:flex;
   flex-direction:column;
@@ -984,7 +984,7 @@ main {
 /* Imagem pc vitrine  */
 
 .produto-img{
-  width:100%;
+  width:150%;
   height:200px;
 
   object-fit:cover;
@@ -1014,7 +1014,7 @@ main {
 /* Descrição */
 
 .produto p{
-  font-size:14px;
+  font-size:20px;
   color:#333;
 }
 

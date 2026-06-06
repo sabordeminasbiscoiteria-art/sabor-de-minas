@@ -354,13 +354,11 @@ main {
 }
 
 /* ================= TÍTULO VITRINE ================= */
-
 .titulo-vitrine{
   text-align:center;
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-weight: 500;
-}
+  font-family:'Cormorant Garamond', serif;
+  font-style:italic;
+  font-weight:500;
   margin:25px 0;
 }
 .produto{

@@ -989,7 +989,7 @@ main {
   border-radius:10px;
 }
 
-/* Título */
+/* Título dentro do card vitrine os nomes dos biscoitos*/
 
 .produto h3{
   width:100%;
@@ -1001,7 +1001,7 @@ main {
 
   margin:10px auto;
 
-  font-size:48px;
+  font-size:15px;
   font-weight:600;
   line-height:1.2;
 
@@ -1019,7 +1019,7 @@ main {
 .produto .preco{
   margin:10px 0;
 
-  font-size:22px;
+  font-size:48px;
   font-weight:500;
 }
 

@@ -943,10 +943,20 @@ main {
   }
 }
 /* ================= PC VITRINE TELA INICIAL  ================= */
+@media (min-width:1025px){
+
+  .btn-ver{
+    font-size:18px;
+    padding:14px 28px;
+    border-radius:10px;
+    font-weight:600;
+  }
+
+}
 @media (min-width: 1025px){
 
   .titulo-vitrine{
-    font-size: 48px;
+    font-size: 45px;
   }
 
   .selo-mais-vendido{

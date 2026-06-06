@@ -1077,9 +1077,10 @@ main {
 }
 
 /* ================= CELULAR  VITRINE TELA INICIAL ================= */
-
 @media (max-width:768px){
-
+.titulo-vitrine{
+  font-size:22px;
+ }
   .vitrine{
     display:grid;
     grid-template-columns:repeat(3,1fr);

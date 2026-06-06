@@ -1566,3 +1566,13 @@ main {
 .btn-voltar i{
   font-size:13px;
 }
+/* ================= BTN-VER PC ================= */
+@media (min-width:1025px){
+
+  .btn-ver{
+    font-size:12px;
+    padding:6px 12px;
+    border-radius:5px;
+  }
+
+}

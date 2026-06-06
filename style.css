@@ -329,7 +329,7 @@ main {
   margin:6px 0;
 }
 
-/* ================= BOTÃO VITRINE ================= */
+/* ================= BOTÃO VITRINE BANNER ================= */
 
 .btn-ver{
   display:inline-block;
@@ -339,11 +339,11 @@ main {
   text-decoration:none;
 
   padding:5px 12px;
-  border-radius:6px;
+  border-radius:5px;
 
   margin-top:5px;
 
-  font-size:14px;
+  font-size:12px;
   font-weight:500;
 
   transition:.3s;

@@ -560,6 +560,24 @@ main {
 
   margin:15px auto;
 }
+/* ================= marca d agua ================= */
+.card-produto{
+  position:relative;
+}
+
+.marca-agua{
+  position:absolute;
+  bottom:45px;
+  right:8px;
+
+  color:rgba(255,255,255,.75);
+  font-size:10px;
+  font-weight:600;
+
+  text-shadow:0 1px 3px rgba(0,0,0,.5);
+
+  pointer-events:none;
+}
 /* ================= WHATSAPP FLUTUANTE ================= */
 
 .whatsapp-float{

@@ -984,7 +984,7 @@ main {
 /* Imagem pc vitrine  */
 
 .produto-img{
-  width:100%;
+  width:115%;
   height:200px;
 
   object-fit:cover;

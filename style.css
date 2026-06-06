@@ -897,8 +897,6 @@ main {
     font-size:12px;
   }
   /* Banner */
-  @media (max-width:768px){
-
   .destaque{
     height:300px;
   }

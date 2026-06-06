@@ -772,12 +772,6 @@ main {
 
 }
 /* ================= PC VITRINE DOS PRODUTOS ================= */
- .btn-card{
-    width:85px;
-    font-size:10px;
-    padding:5px 0;
-  }
-
 @media (min-width:1025px){
   .card-produto{
     max-width:200px;
@@ -799,11 +793,11 @@ main {
   }
 
   .card-produto{
-    max-width:180px;
+    max-width:200px;
   }
 
   .card-produto img{
-    height:180px;
+    height:200px;
   }
 
   /* Pesquisa */

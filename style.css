@@ -359,7 +359,7 @@ main {
   text-align:center;
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 500;
 }
   margin:25px 0;
 }
@@ -376,7 +376,7 @@ main {
   color: #fff;
   border: 1px solid rgba(52, 199, 89, 0.35);
   backdrop-filter: blur(4px);
-  padding: 4px 7px;
+  padding: 3px 7px;
 
   font-size: 10px;
   font-weight: 500;

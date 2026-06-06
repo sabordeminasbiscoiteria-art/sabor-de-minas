@@ -794,11 +794,11 @@ main {
   }
 
   .card-produto{
-    max-width:200px;
+    max-width:180px;
   }
 
   .card-produto img{
-    height:200px;
+    height:180px;
   }
 
   /* Pesquisa */
@@ -820,8 +820,8 @@ main {
   /* Vitrine */
 
   .vitrine-img{
-    width:200px;
-    height:200px;
+    width:150px;
+    height:150px;
   }
 
 }
@@ -949,14 +949,14 @@ main {
     font-size:18px;
     padding:14px 28px;
     border-radius:10px;
-    font-weight:600;
+    font-weight:500;
   }
 
 }
 @media (min-width: 1025px){
 
   .titulo-vitrine{
-    font-size: 45px;
+    font-size: 43px;
   }
 
   .selo-mais-vendido{
@@ -1100,8 +1100,9 @@ main {
 /* ================= CELULAR  VITRINE TELA INICIAL ================= */
 @media (max-width:768px){
 .titulo-vitrine{
-  font-size:22px;
+  font-size:20px;
  }
+  
   .vitrine{
     display:grid;
     grid-template-columns:repeat(3,1fr);

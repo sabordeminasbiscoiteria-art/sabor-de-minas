@@ -1,175 +1,421 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Sabor de Minas Biscoiteria | Biscoitos Artesanais em Minas Gerais</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Biscoiteria Sabor de Minas</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
+
 <body>
 
-<!-- Header fixo -->
-<header class="header-fixo">
-  <div class="logo-nome">
-    <img src="img/logo.png" alt="Logo" class="logo">
-    <span class="nome-loja">Biscoiteria Sabor de Minas</span>
-  </div>
+<header>
+    <div class="container">
 
- <!-- WRAPPER PARA MENU + BARRA DE PESQUISA -->
-<div class="menu-search-wrapper">
+        <div class="marca">
+            <img src="logo.png" alt="Biscoiteria Sabor de Minas">
 
-  <nav class="nav-links">
-    <a href="index.html">Início</a>
-    <a href="produtos.html">Produtos</a>
-    <a href="contato.html">Contato</a>
-  </nav>
+            <div>
+                <h2>
+                    Biscoiteria<br>
+                    <span>Sabor de Minas</span>
+                </h2>
+                <p>o sabor que alegra</p>
+            </div>
+        </div>
 
-  <div class="search-box">
-    <span class="icone-lupa">
-      <svg viewBox="0 0 24 24" width="16" height="16">
-        <path fill="#666" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 
-        6.5 6.5 0 109.5 16a6.471 6.471 0 004.23-1.57l.27.28v.79l5 
-        4.99L20.49 19l-4.99-5zM9.5 
-        14C7.01 14 5 11.99 5 
-        9.5S7.01 5 9.5 5 14 
-        7.01 14 9.5 11.99 14 
-        9.5 14z"/>
-      </svg>
-    </span>
+        <nav>
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Início
+            </a>
 
-    <input type="text" id="inputPesquisa" placeholder="Pesquisar...">
-  </div>
+            <a href="produtos.html">
+                <i class="fa-solid fa-cookie-bite"></i>
+                Produtos
+            </a>
 
-</div>
+            <a href="sobre.html">
+                <i class="fa-solid fa-user"></i>
+                Sobre nós
+            </a>
 
-  <!-- Botão Hamburger -->
-  <div class="menu-btn" id="menuBtn">&#9776;</div>
+            <a href="contato.html">
+                <i class="fa-solid fa-envelope"></i>
+                  Contato
+            
+            </a>
+        </nav>
+
+     <a class="whatsapp-topo" href="https://wa.me/5531992767228" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+    (31) 99276-7228
+</a>
+        
+    </div>
 </header>
 
-<!-- Menu lateral -->
-<div class="menu-lateral" id="menuLateral">
-  <div class="menu-close" id="menuClose">&times;</div>
-  <a href="index.html">Início</a>
-  <a href="produtos.html">Produtos</a>
-  <a href="Biscoitoscaseiros.html">Biscoito Caseiros</a>
-  <a href="biscoitopolvilho.html">Biscoitos De Polvilho</a>
-  <a href="Suspiros.html">Suspiros</a>
-  <a href="salgadinho.html">Salgadinhos</a>
-  <a href="sobre.html">Sobre</a>
-  <a href="contato.html">Contato</a>
-</div>
+<section class="banner">
 
-<!-- ================= CONTEÚDO PRINCIPAL ================= -->
-<main>
-  <!-- Banner do beijinho -->
-  <section class="destaque">
-    <p class="descricao">
-      Biscoitos caseiros, o sabor que alegra o seu dia.<br>
-      Feitos com carinho desde 2015. Encomendas pelo WhatsApp.
-    </p>
-   <a href="produtos.html" class="btn-ver">Ver nossos biscoitos</a>
-  </section>
-  
-<h2 class="titulo-vitrine">Nossos biscoitos mais vendidos</h2>
+    <div class="container banner-conteudo">
 
-<div class="vitrine">
-<div class="produto">
-  <span class="selo-mais-vendido">⭐ Mais vendido</span>
-  <img src="img/sasha.jpeg" class="produto-img">
-  <h3>Biscoito Sasha</h3>
-  <p>210g</p>
-  <span class="preco">R$10,99</span>
-  <a href="biscoito-sasha.html" class="btn-ver-mais">Ver mais</a>
-</div>
-  
-  <div class="produto">
-    <span class="selo-mais-vendido">⭐ Mais vendido</span>
-    <img src="img/ugauga.jpeg" class="produto-img">
-    <h3>Biscoito Ugauga</h3>
-    <p>220g</p>
-    <span class="preco">R$10,99</span>
-    <a href="biscoito-ugauga.html" class="btn-ver-mais">Ver mais</a>
-  </div>
+        <div class="texto-banner">
 
-  <div class="produto">
-    <span class="selo-mais-vendido">⭐ Mais vendido</span>
-    <img src="img/casadinho.jpeg" class="produto-img">
-    <h3>Casadinho Avelã</h3>
-    <p>250g</p>
-    <span class="preco">R$10,99</span>
-    <a href="biscoito-casadinho.html" class="btn-ver-mais">Ver mais</a>
-  </div>
+            <div class="titulo-banner">
+                
+                <div class="ornamento">
+                    <i class="fa-solid fa-wheat-awn"></i>
+                    <i class="fa-solid fa-cookie-bite"></i>
+                    <i class="fa-solid fa-wheat-awn"></i>
+                </div>
 
-</div>
-   
-</main>
+                <h1>
+                    O verdadeiro<br>
+                    <span>Sabor de Minas</span><br>
+                    em cada mordida!
+                </h1>
 
-<footer class="rodape">
+            </div>
 
-  <p>© 2026 Biscoiteria Sabor de Minas. Todos os direitos reservados.</p>
+            <p>
+                Biscoitos artesanais feitos com ingredientes
+                selecionados e muito carinho.
+            </p>
 
-  <div class="redes">
+            <a href="https://wa.me/5531992767228" target="_blank" class="botao">
+    <i class="fa-brands fa-whatsapp"></i>
+    Pedir pelo WhatsApp
+</a>
+
+        </div>
+
+       <div class="imagem-banner">
+
+    <div class="slider">
+
+        <img src="preteleira.jpeg" class="slide ativo" alt="Banner 1">
+        <img src="canela.jpeg" class="slide" alt="Banner 2">
+        <img src="sasha.jpeg" class="slide" alt="Banner 3">
+
+        <div class="bolinhas">
+            <span class="bolinha ativa"></span>
+            <span class="bolinha"></span>
+            <span class="bolinha"></span>
+        </div>
+
+     </div>
+
+   </div>  
+</section>
     
-    <a href="https://instagram.com/biscoiteriasabordeminas" target="_blank">
-      <i class="fa-brands fa-instagram"></i>
+<section class="beneficios">
+
+    <div class="beneficio">
+        
+       <i class="fa-solid fa-leaf"></i>
+
+        <div>
+            <h3>Ingredientes selecionados</h3>
+            <p>Qualidade em cada receita</p>
+        </div>
+
+    </div>
+
+    <div class="beneficio">
+        
+     <i class="fa-solid fa-heart"></i>
+        <div>
+            <h3>Feito com muito carinho</h3>
+            <p>Produzido de forma artesanal</p>
+        </div>
+
+    </div>
+
+    <div class="beneficio">
+
+         <i class="fa-solid fa-cookie-bite"></i>
+
+        <div>
+            <h3>Receitas tradicionais</h3>
+            <p>Sabor de Minas de verdade</p>
+        </div>
+
+    </div>
+
+
+    <div class="beneficio">
+       
+       <i class="fa-solid fa-truck-fast"></i>
+        
+        <div>
+            <h3>Entrega para Belo Horizonte e região</h3>
+            <p>Receba no conforto da sua casa</p>
+        </div>
+
+    </div>
+
+
+</section>
+
+<section class="produtos">
+
+    <div class="container">
+
+     <div class="topo-produtos">
+
+    <h2 class="titulo-produtos">
+        <i class="fa-solid fa-cookie-bite"></i>
+        Nossos Produtos
+    </h2>
+
+    <a href="produtos.html" class="btn-ver-produtos">
+        Ver todos os produtos
+        <i class="fa-solid fa-arrow-right"></i>
     </a>
 
-    <a href="https://wa.me/553192767228" target="_blank">
-      <i class="fa-brands fa-whatsapp"></i>
-    </a>
+</div>
+        
+        <div class="produtos-cards">
 
-    <a href="mailto:contato@sabordeminas.com.br">
-      <i class="fa-solid fa-envelope"></i>
-    </a>
 
-  </div>
+            <div class="produto">
+
+                <img src="casadinho.jpeg">
+
+                <h3>Casadinho</h3>
+
+                <p>Biscoito de Avelã.</p>
+
+                <div class="preco-produto">
+                    <span class="peso">250g</span>
+                    <strong>R$ 18,00</strong>
+                </div>
+
+                <a class="botao-produto" href="https://wa.me/5531992767228" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+    Pedir no WhatsApp
+</a>
+
+            </div>
+
+
+            <div class="produto">
+
+                <img src="canela.jpeg">
+
+                <h3>Biscoito Canela</h3>
+
+                <p>Sabor tradicional de Minas.</p>
+
+                <div class="preco-produto">
+                    <span class="peso">250g</span>
+                    <strong>R$ 18,00</strong>
+                </div>
+
+                <a class="botao-produto" href="https://wa.me/5531992767228" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+    Pedir no WhatsApp
+</a>
+
+            </div>
+
+
+            <div class="produto">
+
+                <img src="beijinho.jpeg">
+
+                <h3>Beijinho</h3>
+
+                <p>Doce e delicioso.</p>
+
+                <div class="preco-produto">
+                    <span class="peso">250g</span>
+                    <strong>R$ 18,00</strong>
+                </div>
+
+                <a class="botao-produto" href="https://wa.me/5531992767228" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+    Pedir no WhatsApp
+</a>
+
+            </div>
+
+
+            <div class="produto">
+
+                <img src="banbole.jpeg">
+
+                <h3>Biscoito Especial</h3>
+
+                <p>Receita caseira especial.</p>
+
+                <div class="preco-produto">
+                    <span class="peso">220g</span>
+                    <strong>R$ 18,00</strong>
+                </div>
+
+                 <a class="botao-produto" href="https://wa.me/5531992767228" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+    Pedir no WhatsApp
+</a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+    
+<section class="sobre">
+
+    <div class="container">
+
+        <div class="texto-sobre">
+            <h2>Feito com carinho, sabor e tradição</h2>
+
+            <p>
+                Na Biscoiteria Sabor de Minas, produzimos biscoitos artesanais
+                com receitas tradicionais e ingredientes selecionados.
+            </p>
+
+            <p>
+                Cada biscoito é preparado com aquele cuidado especial para levar
+                até você o verdadeiro sabor de Minas Gerais.
+            </p>
+
+            <a href="sobre.html" class="botao">
+                Conheça nossa história
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+ <footer>
+
+    <div class="container footer-conteudo">
+
+        <div class="footer-marca">
+            <img src="logo.png" alt="Logo">
+
+            <div>
+                <h3>
+                    Biscoiteria<br>
+                    Sabor de Minas
+                </h3>
+
+                <p>o sabor que alegra</p>
+            </div>
+        </div>
+
+
+        <div class="footer-contato">
+
+            <h3>Contato</h3>
+
+             <p>
+                <i class="fa-brands fa-whatsapp"></i>
+                (31) 99276-7228
+            </p>
+            
+            <p>
+                <i class="fa-brands fa-instagram"></i>
+                @biscoiteriasabordeminas.
+            </p>
+            
+             <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Belo Horizonte - MG
+            </p>
+
+        </div>
+
+
+        <div class="footer-menu">
+
+            <h3>Links rápidos</h3>
+
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="contato.html">Contato</a>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ONDA DECORATIVA -->
+
+    <div class="onda-footer">
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
+
+            <path fill="#f5c84c"
+            d="M0,64C80,90,160,106,240,96C320,85,400,43,480,37.3C560,32,640,64,720,80C800,96,880,96,960,80C1040,64,1120,32,1200,32C1280,32,1360,64,1400,80L1440,96L1440,120L0,120Z">
+            </path>
+
+        </svg>
+
+    </div>
+
+
+    <div class="footer-final">
+
+        © 2026 Biscoiteria Sabor de Minas - Todos os direitos reservados
+
+    </div>
+
 
 </footer>
-  
-<!-- ================= JAVASCRIPT ================= -->
+
+
+<!-- CARROSSEL DO BANNER -->
+
 <script>
-  // MENU LATERAL
-  const menuBtn = document.getElementById('menuBtn');
-  const menuLateral = document.getElementById('menuLateral');
-  const menuClose = document.getElementById('menuClose');
 
-  menuBtn.addEventListener('click', () => {
-    menuLateral.classList.add('ativo');
-  });
+const slides = document.querySelectorAll(".slide");
+const bolinhas = document.querySelectorAll(".bolinha");
 
-  menuClose.addEventListener('click', () => {
-    menuLateral.classList.remove('ativo');
-  });
+let atual = 0;
 
 
-  // PESQUISA DE PRODUTOS
-  const inputPesquisa = document.getElementById("inputPesquisa");
-  const cards = document.querySelectorAll(".card-produto");
-  const semProduto = document.getElementById("sem-produto");
+function trocarSlide(){
 
-  inputPesquisa.addEventListener("input", () => {
-    const valor = inputPesquisa.value.toLowerCase();
-    let achou = false;
+    slides[atual].classList.remove("ativo");
+    bolinhas[atual].classList.remove("ativa");
 
-    cards.forEach(card => {
-      const nome = card.querySelector("img").alt.toLowerCase();
-      if (nome.includes(valor)) {
-        card.style.display = "block";
-        achou = true;
-      } else {
-        card.style.display = "none";
-      }
-    });
 
-    semProduto.style.display = achou ? "none" : "block";
-  });
+    atual++;
+
+
+    if(atual >= slides.length){
+
+        atual = 0;
+
+    }
+
+
+    slides[atual].classList.add("ativo");
+    bolinhas[atual].classList.add("ativa");
+
+}
+
+
+setInterval(trocarSlide, 4000);
+
+
 </script>
-  
-<a href="https://wa.me/553192767228" class="whatsapp-float" target="_blank">
-   <i class="fa-brands fa-whatsapp"></i>
-</a>
-  
-</body>
+
+
+</body>  
 </html>
